@@ -1,0 +1,85 @@
+{
+
+// SHELF ROW TOP SALES
+"flex-layout.row#shelf_topsale": {
+    "children": ["list-context.product-list#shelf_topsale"],
+    "props": {
+        "blockClass": "shelf-row"
+    }
+},
+// PRODUCT LIST FOR SHELF
+"list-context.product-list#shelf_topsale": {
+    "blocks": ["product-summary.shelf#shelf_home"],
+    "children": ["slider-layout#shelf_topsale"],
+    "props": {
+    "orderBy": "OrderByTopSaleDESC"
+    }
+},
+    // SHELF SLIDER
+    "slider-layout#shelf_topsale": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf"
+        }
+    },
+
+
+// SHELF ROW TOP RATED
+"flex-layout.row#shelf_toprating": {
+    "children": ["list-context.product-list#shelf_toprating"],
+    "props": {
+        "blockClass": "shelf-row"
+    }
+},
+// PRODUCT LIST FOR SHELF
+    "list-context.product-list#shelf_toprating": {
+    "blocks": ["product-summary.shelf#shelf_home"],
+    "children": ["slider-layout#shelf_toprating"],
+    "props": {
+        "orderBy": "OrderByTopSaleDESC"
+    }
+    },
+    // SHELF SLIDER
+    "slider-layout#shelf_toprating": {
+        "props": {
+        "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+        }
+    },
+
+
+// PRODUCT SUMMARY SHELF
+"product-summary.shelf#shelf_home": {
+    "children": [
+    "product-summary-image",
+    //"stack-layout#prodsum",
+    "product-summary-brand",
+    "product-summary-name",
+    "product-summary-price"
+    ],
+    "props":{
+        
+        "showTitle": true,
+        "titleText": "asdasd"
+    }
+},
+    // PRODUCT SUMMARY PRICE
+    "product-summary-price": {
+        "props": {
+            "showLabels": false,
+            "showDiscountValue": false
+        }
+    }
+}

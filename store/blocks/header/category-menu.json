@@ -1,0 +1,1365 @@
+{
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": 70
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"],
+    "title": "Category Menu"
+  },
+  
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#department-1",
+      "menu-item#department-2",
+      "menu-item#department-3",
+      "menu-item#department-4",
+      "menu-item#department-6",
+      "menu-item#department-7"
+    ],
+    "title": "Category Mega Menu"
+  },
+  "menu-item#department-1": {
+    "props": {
+      "id": "menu-item-department-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos",
+        "noFollow": true,
+        "tagTitle": "Alimentos",
+        "text": "ALIMENTOS"
+      },
+      "blockClass":"header-department-title"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department-1"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department-1": {
+    "props": {
+      "width": "100%"
+      
+    },
+    "children": [
+      "flex-layout.row#department-1-submenu"
+    ]
+  },
+  "flex-layout.row#department-1-submenu": {
+    "children": [
+      "menu#department-1-submenu-col-1",
+      "menu#department-1-submenu-col-2",
+      "flex-layout.col#department-4-submenu-col-2"
+    ]
+  },
+  "menu#department-1-submenu-col-1": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu",
+      "experimentalOptimizeRendering": true,
+      "blockClass": "header-department-submenu-col"
+    },
+    "children": [
+      "menu-item#department-1-category-1",
+      "menu-item#department-1-category-2",
+      "menu-item#department-1-category-3",
+      "menu-item#department-1-category-4",
+      "menu-item#department-1-category-5",
+      "menu-item#department-1-category-6",
+      "menu-item#department-1-category-7",
+      "menu-item#department-1-category-8",
+      "menu-item#department-1-category-9",
+      "menu-item#department-1-category-10",
+      "menu-item#department-1-category-11"
+    ]
+  },
+  "menu-item#department-1-category-1": {
+    "props": {
+      "id": "menu-item-department-1-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida",
+        "noFollow": true,
+        "tagTitle": "Comida",
+        "text": "Comida"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-1-category-2": {
+    "props": {
+      "id": "menu-item-department-1-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/cremas",
+        "noFollow": true,
+        "tagTitle": "Cremas",
+        "text": "Cremas"
+      }
+    }
+  },
+  "menu-item#department-1-category-3": {
+    "props": {
+      "id": "menu-item-department-1-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/sopas",
+        "noFollow": true,
+        "tagTitle": "Sopas",
+        "text": "Sopas"
+      }
+    }
+  },
+  "menu-item#department-1-category-4": {
+    "props": {
+      "id": "menu-item-department-1-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/pure",
+        "noFollow": true,
+        "tagTitle": "Pure",
+        "text": "Pure"
+      }
+    }
+  },
+  "menu-item#department-1-category-5": {
+    "props": {
+      "id": "menu-item-department-1-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/salsas",
+        "noFollow": true,
+        "tagTitle": "Salsas",
+        "text": "Salsas"
+      }
+    }
+  },
+  "menu-item#department-1-category-6": {
+    "props": {
+      "id": "menu-item-department-1-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/pastas",
+        "noFollow": true,
+        "tagTitle": "Pastas",
+        "text": "Pastas"
+      }
+    }
+  },
+  "menu-item#department-1-category-7": {
+    "props": {
+      "id": "menu-item-department-1-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/espesante-instantaneo",
+        "noFollow": true,
+        "tagTitle": "Espesante Instantáneo",
+        "text": "Espesante Instantáneo"
+      }
+    }
+  },
+  "menu-item#department-1-category-8": {
+    "props": {
+      "id": "menu-item-department-1-category-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/mayonesa",
+        "noFollow": true,
+        "tagTitle": "Mayonesa",
+        "text": "Mayonesa"
+      }
+    }
+  },
+  "menu-item#department-1-category-9": {
+    "props": {
+      "id": "menu-item-department-1-category-9",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/ketchup",
+        "noFollow": true,
+        "tagTitle": "Ketchup",
+        "text": "Ketchup"
+      }
+    }
+  },
+  "menu-item#department-1-category-10": {
+    "props": {
+      "id": "menu-item-department-1-category-10",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/caldos",
+        "noFollow": true,
+        "tagTitle": "Caldos",
+        "text": "Caldos"
+      }
+    }
+  },
+  "menu-item#department-1-category-11": {
+    "props": {
+      "id": "menu-item-department-1-category-11",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/alimentos/comida/platos-preparados",
+        "noFollow": true,
+        "tagTitle": "Platos Preparados",
+        "text": "Platos Preparados"
+      }
+    }
+  },
+  "menu#department-1-submenu-col-2": {
+    "props": {
+        "orientation": "vertical",
+        "experimentalOptimizeRendering": true,
+        "tagTitle": "Submenu",
+        "blockClass": "header-department-submenu-col"
+    },
+    "children": [
+      "menu-item#department-1-category-1-col-2",
+      "menu-item#department-1-category-2-col-2",
+      "menu-item#department-1-category-3-col-2",
+      "menu-item#department-1-category-4-col-2",
+      "menu-item#department-1-category-5-col-2"
+    ]
+},
+"menu-item#department-1-category-1-col-2": {
+  "props": {
+    "id": "menu-item-department-1-category-1-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/alimentos/helados",
+      "noFollow": true,
+      "tagTitle": "Helados",
+      "text": "Helados"
+    },
+    "blockClass":"header-department-category-title"
+  }
+},
+"menu-item#department-1-category-2-col-2": {
+  "props": {
+    "id": "menu-item-department-1-category-2-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/alimentos/helados/tarrina",
+      "noFollow": true,
+      "tagTitle": "Tarrina",
+      "text": "Tarrina"
+    }
+  }
+},
+"menu-item#department-1-category-3-col-2": {
+  "props": {
+    "id": "menu-item-department-1-category-3-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/alimentos/helados/infantiles",
+      "noFollow": true,
+      "tagTitle": "Infantiles",
+      "text": "Infantiles"
+    }
+  }
+},
+"menu-item#department-1-category-4-col-2": {
+  "props": {
+    "id": "menu-item-department-1-category-4-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/alimentos/helados/mini-helados",
+      "noFollow": true,
+      "tagTitle": "Mini Helados",
+      "text": "Mini Helados"
+    }
+  }
+},
+"menu-item#department-1-category-5-col-2": {
+  "props": {
+    "id": "menu-item-department-1-category-5-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/alimentos/helados/tarta",
+      "noFollow": true,
+      "tagTitle": "Tarta",
+      "text": "Tarta"
+    }
+  }
+},
+  "flex-layout.col#department-1-submenu-col-3": {
+    "children": [
+      "flex-layout.row#department-1-banner-1",
+      "flex-layout.row#department-1-banner-2",
+      "flex-layout.row#department-1-banner-3"
+    ],
+    "props": {
+      "blockClass": "header-department-promo-col"
+    },
+    "title": "Right Category Banners"
+  },
+  "flex-layout.row#department-1-banner-1": {
+    "children":["image#department-1-banner-1"],
+    "props": {
+      }
+  },
+  "image#department-1-banner-1":{
+    "props":{
+      "src": "assets/logopatadon.png",
+      "maxHeight": 200
+    },
+    "title": "Top Banner"
+  },
+  "flex-layout.row#department-1-banner-2": {
+    "children":["image#department-1-banner-2"],
+    "props": {
+      }
+  },
+  "image#department-1-banner-2":{
+    "props":{
+      "src": "assets/logopatadon.png",
+      "maxHeight": 200
+    },
+    "title": "Bottom Banner"
+  },
+  "flex-layout.row#department-1-banner-3": {
+    "children":["image#department-1-banner-3"],
+    "props": {
+      }
+  },
+  "image#department-1-banner-3":{
+    "props":{
+      "src": "assets/logopatadon.png",
+      "maxHeight": 200
+    },
+    "title": "Top Banner"
+  },
+
+
+
+  
+  "menu-item#department-2": {
+    "props": {
+      "id": "menu-item-department-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidado-del-hogar",
+        "noFollow": true,
+        "tagTitle": "Hogar y Ropa",
+        "text": "HOGAR Y ROPA"
+      },
+      "blockClass":"header-department-title"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department-2"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department-2": {
+    "props": {
+      "width": "100%"
+      
+    },
+    "children": [
+      "flex-layout.row#department-2-submenu"
+    ]
+  },
+  "flex-layout.row#department-2-submenu": {
+    "children": [
+      "flex-layout.col#department-2-submenu-col-1",
+      "flex-layout.col#department-2-submenu-col-2",
+      "flex-layout.col#department-4-submenu-col-2"
+    ],
+    "props":{
+      "colGap": 6
+    }
+  },
+  "flex-layout.col#department-2-submenu-col-1": {
+    "children": [
+      "vtex.menu@2.x:menu#department-2-submenu"
+    ]
+  },
+  "flex-layout.col#department-2-submenu-col-2": {
+    "children": [
+      "menu#department-2-submenu-col-2"
+    ]
+  },
+
+
+
+  "vtex.menu@2.x:menu#department-2-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-2-category-1",
+      "menu-item#department-2-category-2",
+      "menu-item#department-2-category-3",
+      "menu-item#department-2-category-4",
+      "menu-item#department-2-category-5",
+      "menu-item#department-2-category-6",
+      "menu-item#department-2-category-7"
+    ]
+  },
+  "menu-item#department-2-category-1": {
+    "props": {
+      "id": "menu-item-department-2-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidados-del-hogar/ropa",
+        "noFollow": true,
+        "tagTitle": "Ropa",
+        "text": "Ropa"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-2-category-2": {
+    "props": {
+      "id": "menu-item-department-2-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidados-del-hogar/ropa/detergente-para-ropa",
+        "noFollow": true,
+        "tagTitle": "Detergente para Ropa",
+        "text": "Detergente para Ropa"
+      }
+    }
+  },
+  "menu-item#department-2-category-3": {
+    "props": {
+      "id": "menu-item-department-2-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidados-del-hogar/ropa/suavizante",
+        "noFollow": true,
+        "tagTitle": "Suavizante",
+        "text": "Suavizante"
+      }
+    }
+  },
+  "menu-item#department-2-category-4": {
+    "props": {
+      "id": "menu-item-department-2-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidados-del-hogar/ropa/planchado",
+        "noFollow": true,
+        "tagTitle": "Planchado",
+        "text": "Planchado"
+      }
+    }
+  },
+  "menu-item#department-2-category-5": {
+    "props": {
+      "id": "menu-item-department-2-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidados-del-hogar/ropa/quitamanchas",
+        "noFollow": true,
+        "tagTitle": "Quitamanchas",
+        "text": "Quitamanchas"
+      }
+    }
+  },
+  "menu-item#department-2-category-6": {
+    "props": {
+      "id": "menu-item-department-2-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidados-del-hogar/ropa/toallitas-perfumadoras",
+        "noFollow": true,
+        "tagTitle": "Toallitas Perfumadoras",
+        "text": "Toallitas Perfumadoras"
+      }
+    }
+  },
+  "menu-item#department-2-category-7": {
+    "props": {
+      "id": "menu-item-department-2-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "",
+        "text": ""
+      }
+    }
+  },
+  "menu#department-2-submenu-col-2": {
+    "props": {
+        "orientation": "vertical",
+        "experimentalOptimizeRendering": true,
+        "tagTitle": "Submenu",
+        "blockClass": "header-department-submenu-col"
+    },
+    "children": [
+      "menu-item#department-2-category-1-col-2",
+      "menu-item#department-2-category-2-col-2",
+      "menu-item#department-2-category-3-col-2",
+      "menu-item#department-2-category-4-col-2",
+      "menu-item#department-2-category-5-col-2",
+      "menu-item#department-2-category-6-col-2"
+    ]
+},
+"menu-item#department-2-category-1-col-2": {
+  "props": {
+    "id": "menu-item-department-2-category-1-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidados-del-hogar/hogar",
+      "noFollow": true,
+      "tagTitle": "Hogar",
+      "text": "Hogar"
+    },
+    "blockClass":"header-department-category-title"
+  }
+},
+"menu-item#department-2-category-2-col-2": {
+  "props": {
+    "id": "menu-item-department-2-category-2-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidados-del-hogar/hogar/bano",
+      "noFollow": true,
+      "tagTitle": "Baño",
+      "text": "Baño"
+    }
+  }
+},
+"menu-item#department-2-category-3-col-2": {
+  "props": {
+    "id": "menu-item-department-2-category-3-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidados-del-hogar/hogar/quitagrasas",
+      "noFollow": true,
+      "tagTitle": "Quitagrasas",
+      "text": "Quitagrasas"
+    }
+  }
+},
+"menu-item#department-2-category-4-col-2": {
+  "props": {
+    "id": "menu-item-department-2-category-4-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidados-del-hogar/hogar/lejias",
+      "noFollow": true,
+      "tagTitle": "Lejías",
+      "text": "Lejías"
+    }
+  }
+},
+"menu-item#department-2-category-5-col-2": {
+  "props": {
+    "id": "menu-item-department-2-category-5-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidados-del-hogar/hogar/lavajillas",
+      "noFollow": true,
+      "tagTitle": "Lavavajillas",
+      "text": "Lavavajillas"
+    }
+  }
+},
+"menu-item#department-2-category-6-col-2": {
+  "props": {
+    "id": "menu-item-department-2-category-6-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidados-del-hogar/hogar/limpiacristales-y-multiusos",
+      "noFollow": true,
+      "tagTitle": "Limpiacristales y Multiusos",
+      "text": "Limpiacristales y Multiusos"
+    }
+  }
+},
+  "flex-layout.col#department-2-submenu-col-3": {
+    "children": [
+      "flex-layout.row#department-2-banner-1",
+      "flex-layout.row#department-2-banner-2",
+      "flex-layout.row#department-2-banner-3"
+    ],
+    "title": "Right Category Banners"
+  },
+  "flex-layout.row#department-2-banner-1": {
+    "children":["image#department-2-banner-1"],
+    "props": {
+      }
+  },
+  "image#department-2-banner-1":{
+    "props":{
+      "src": "/arquivos/Banners-albercocs-275X102.jpg?v=636947125906130000",
+      "maxHeight": 200
+    },
+    "title": "Top Banner"
+  },
+  "flex-layout.row#department-2-banner-2": {
+    "children":["image#department-2-banner-2"],
+    "props": {
+      }
+  },
+  "image#department-2-banner-2":{
+    "props":{
+      "src": "/arquivos/Banners-cistelles-fruita-275x102.jpg?v=636947126785600000",
+      "maxHeight": 200
+    },
+    "title": "Bottom Banner"
+  },
+  "flex-layout.row#department-2-banner-3": {
+    "children":["image#department-2-banner-3"],
+    "props": {
+      }
+  },
+  "image#department-2-banner-3":{
+    "props":{
+      "src": "/arquivos/Banners-cistelles-fruita-275x102.jpg?v=636947126785600000",
+      "maxHeight": 200
+    },
+    "title": "Bottom Banner"
+  },
+  "menu-item#department-3": {
+    "props": {
+      "id": "menu-item-department-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidado-personal",
+        "noFollow": true,
+        "tagTitle": "Cuidado personal",
+        "text": "CUIDADO PERSONAL"
+      },
+      "blockClass":"header-department-title"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department-3"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department-3": {
+    "props": {
+      "width": "100%"
+      
+    },
+    "children": [
+      "flex-layout.row#department-3-submenu"
+    ]
+  },
+  "flex-layout.row#department-3-submenu": {
+    "children": [
+      "flex-layout.col#department-3-submenu-col-1",
+      "flex-layout.col#department-3-submenu-col-2",
+      "flex-layout.col#department-3-submenu-col-3",
+      "flex-layout.col#department-4-submenu-col-2"
+    ]
+  },
+  "flex-layout.col#department-3-submenu-col-1":{
+    "children": [
+      "vtex.menu@2.x:menu#department-3-submenu"
+    ],
+    "title": "Left Category Links"
+  },
+  "flex-layout.col#department-3-submenu-col-2":{
+    "children": [
+      "menu#department-3-submenu-col-2"
+    ],
+    "title": "Left Category Links"
+  },
+  "flex-layout.col#department-3-submenu-col-3":{
+    "children": [
+      "menu#department-3-submenu-col-3"
+    ],
+    "title": "Left Category Links"
+  },
+
+
+
+  "vtex.menu@2.x:menu#department-3-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-3-category-1",
+      "menu-item#department-3-category-2",
+      "menu-item#department-3-category-3",
+      "menu-item#department-3-category-4",
+      "menu-item#department-3-category-5",
+      "menu-item#department-3-category-6"
+    ]
+  },
+  "menu-item#department-3-category-1": {
+    "props": {
+      "id": "menu-item-department-3-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidado-personal/higiene-corporal",
+        "noFollow": true,
+        "tagTitle": "Higiene Corporal",
+        "text": "Higiene Corporal"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-3-category-2": {
+    "props": {
+      "id": "menu-item-department-3-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidado-personal/higiene-corporal/geles-de-bano",
+        "noFollow": true,
+        "tagTitle": "Geles de Baño",
+        "text": "Geles de Baño"
+      }
+    }
+  },
+  "menu-item#department-3-category-3": {
+    "props": {
+      "id": "menu-item-department-3-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidado-personal/higiene-corporal/desodorantes",
+        "noFollow": true,
+        "tagTitle": "Desodorantes",
+        "text": "Desodorantes"
+      }
+    }
+  },
+  "menu-item#department-3-category-4": {
+    "props": {
+      "id": "menu-item-department-3-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidado-personal/higiene-corporal/jabon-de-manos",
+        "noFollow": true,
+        "tagTitle": "Jabón de Manos",
+        "text": "Jabón de Manos"
+      }
+    }
+  },
+  "menu-item#department-3-category-5": {
+    "props": {
+      "id": "menu-item-department-3-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidado-personal/higiene-corporal/perfumeria",
+        "noFollow": true,
+        "tagTitle": "Perfumería",
+        "text": "Perfumería"
+      }
+    }
+  },
+  "menu-item#department-3-category-6": {
+    "props": {
+      "id": "menu-item-department-3-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidado-personal/higiene-corporal/hidratacion-corporal",
+        "noFollow": true,
+        "tagTitle": "Hidratación Corporal",
+        "text": "Hidratación Corporal"
+      }
+    }
+  },
+  "menu-item#department-3-category-7": {
+    "props": {
+      "id": "menu-item-department-3-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cuidado-personal/higiene-corporal/limpieza-de-la-piel",
+        "noFollow": true,
+        "tagTitle": "Limpieza de la piel",
+        "text": "Limpieza de la piel"
+      }
+    }
+  },
+  "menu#department-3-submenu-col-2": {
+    "props": {
+        "orientation": "vertical",
+        "experimentalOptimizeRendering": true,
+        "tagTitle": "Submenu",
+        "blockClass": "header-department-submenu-col"
+    },
+    "children": [
+      "menu-item#department-3-category-1-col-2",
+      "menu-item#department-3-category-2-col-2",
+      "menu-item#department-3-category-3-col-2",
+      "menu-item#department-3-category-4-col-2",
+      "menu-item#department-3-category-5-col-2"
+    ]
+},
+"menu-item#department-3-category-1-col-2": {
+  "props": {
+    "id": "menu-item-department-3-category-1-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidado-personal/cabello",
+      "noFollow": true,
+      "tagTitle": "Cabello",
+      "text": "Cabello"
+    },
+    "blockClass":"header-department-category-title"
+  }
+},
+"menu-item#department-3-category-2-col-2": {
+  "props": {
+    "id": "menu-item-department-3-category-2-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidado-personal/cabello/champus",
+      "noFollow": true,
+      "tagTitle": "Champús",
+      "text": "Champús"
+    }
+  }
+},
+"menu-item#department-3-category-3-col-2": {
+  "props": {
+    "id": "menu-item-department-3-category-3-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidado-personal/cabello/acondicionadores",
+      "noFollow": true,
+      "tagTitle": "Acondicionadores",
+      "text": "Acondicionadores"
+    }
+  }
+},
+"menu-item#department-3-category-4-col-2": {
+  "props": {
+    "id": "menu-item-department-3-category-4-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidado-personal/cabello/cuidado-y-tratamiento",
+      "noFollow": true,
+      "tagTitle": "Cuidado y Tratamiento",
+      "text": "Cuidado y Tratamiento"
+    }
+  }
+},
+"menu-item#department-3-category-5-col-2": {
+  "props": {
+    "id": "menu-item-department-3-category-5-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/cuidado-personal/cabello/fijadores",
+      "noFollow": true,
+      "tagTitle": "Fijadores",
+      "text": "Fijadores"
+    }
+  }
+},
+"menu#department-3-submenu-col-3": {
+  "props": {
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true,
+      "tagTitle": "Submenu",
+      "blockClass": "header-department-submenu-col"
+  },
+  "children": [
+    "menu-item#department-3-category-1-col-3",
+    "menu-item#department-3-category-2-col-3",
+    "menu-item#department-3-category-3-col-3",
+    "menu-item#department-3-category-4-col-3"
+  ]
+},
+"menu-item#department-3-category-1-col-3": {
+"props": {
+  "id": "menu-item-department-3-category-1-col-3",
+  "type": "custom",
+  "iconId": null,
+  "highlight": false,
+  "itemProps": {
+    "type": "internal",
+    "href": "/cuidado-personal/boca-y-sonrisa",
+    "noFollow": true,
+    "tagTitle": "Boca y Sonrisa",
+    "text": "Boca y Sonrisa"
+  },
+  "blockClass":"header-department-category-title"
+}
+},
+"menu-item#department-3-category-2-col-3": {
+"props": {
+  "id": "menu-item-department-3-category-2-col-3",
+  "type": "custom",
+  "iconId": null,
+  "highlight": false,
+  "itemProps": {
+    "type": "internal",
+    "href": "/cuidado-personal/boca-y-sonrisa/dentifico",
+    "noFollow": true,
+    "tagTitle": "Dentífrico",
+    "text": "Dentífrico"
+  }
+}
+},
+"menu-item#department-3-category-3-col-3": {
+"props": {
+  "id": "menu-item-department-3-category-3-col-3",
+  "type": "custom",
+  "iconId": null,
+  "highlight": false,
+  "itemProps": {
+    "type": "internal",
+    "href": "/cuidado-personal/boca-y-sonrisa/enjuague-bucal",
+    "noFollow": true,
+    "tagTitle": "Enjuague Bucal",
+    "text": "Enjuague Bucal"
+  }
+}
+},
+"menu-item#department-3-category-4-col-3": {
+"props": {
+  "id": "menu-item-department-3-category-4-col-3",
+  "type": "custom",
+  "iconId": null,
+  "highlight": false,
+  "itemProps": {
+    "type": "internal",
+    "href": "/cuidado-personal/boca-y-sonrisa/cepillos",
+    "noFollow": true,
+    "tagTitle": "Cepillos",
+    "text": "Cepillos"
+  }
+}
+},
+
+
+
+  "flex-layout.col#department-3-submenu-col-4": {
+    "children": [
+      "flex-layout.row#department-3-banner-1",
+      "flex-layout.row#department-3-banner-2"
+    ],
+    "title": "Right Category Banners"
+  },
+  "flex-layout.row#department-3-banner-1": {
+    "children":["image#department-3-banner-1"],
+    "props": {
+      }
+  },
+  "image#department-3-banner-1":{
+    "props":{
+      "src": "/arquivos/Banners-cremes-fredes-275X102.jpg?v=636947126842870000",
+      "maxHeight": 200
+    },
+    "title": "Top Banner"
+  },
+  "flex-layout.row#department-3-banner-2": {
+    "children":["image#department-3-banner-2"],
+    "props": {
+      }
+  },
+  "image#department-3-banner-2":{
+    "props":{
+      "src": "/arquivos/Banners-plats-unics-275X102.jpg?v=636947130241970000",
+      "maxHeight": 200
+    },
+    "title": "Bottom Banner"
+  },
+  "menu-item#department-4": {
+    "props": {
+      "id": "menu-item-department-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebes-y-ninos",
+        "noFollow": true,
+        "tagTitle": "Bebés y Niños",
+        "text": "BEBÉS Y NIÑOS"
+      },
+      "blockClass":"header-department-title"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department-4"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department-4": {
+    "props": {
+      "width": "100%"
+      
+    },
+    "children": [
+      "flex-layout.row#department-4-submenu"
+    ]
+  },
+  "flex-layout.row#department-4-submenu": {
+    "children": [
+      "flex-layout.col#department-4-submenu-col-1",
+      "flex-layout.col#department-4-submenu-col-2"
+    ]
+  },
+  "flex-layout.col#department-4-submenu-col-1": {
+    "children": [
+      "vtex.menu@2.x:menu#department-4-submenu"
+    ],
+    "title": "Left Category Links"
+  },
+  "vtex.menu@2.x:menu#department-4-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-4-category-1",
+      "menu-item#department-4-category-2",
+      "menu-item#department-4-category-3",
+      "menu-item#department-4-category-4",
+      "menu-item#department-4-category-5",
+      "menu-item#department-4-category-6",
+      "menu-item#department-4-category-7"
+    ]
+  },
+  "menu-item#department-4-category-1": {
+    "props": {
+      "id": "menu-item-department-4-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebes-y-ninos/",
+        "noFollow": true,
+        "tagTitle": "Bebés y Niños",
+        "text": "Bebés y Niños"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-4-category-2": {
+    "props": {
+      "id": "menu-item-department-4-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebes-y-ninos/gel-de-bano",
+        "noFollow": true,
+        "tagTitle": "Gel de Baño",
+        "text": "Gel de Baño"
+      }
+    }
+  },
+  "menu-item#department-4-category-3": {
+    "props": {
+      "id": "menu-item-department-4-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebes-y-ninos/champu",
+        "noFollow": true,
+        "tagTitle": "Champú",
+        "text": "Champú"
+      }
+    }
+  },
+  "menu-item#department-4-category-4": {
+    "props": {
+      "id": "menu-item-department-4-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebes-y-ninos/locion-corporal",
+        "noFollow": true,
+        "tagTitle": "Loción Corporal",
+        "text": "Loción Corporal"
+      }
+    }
+  },
+  "menu-item#department-4-category-5": {
+    "props": {
+      "id": "menu-item-department-4-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebes-y-ninos/toallitas",
+        "noFollow": true,
+        "tagTitle": "Toallitas",
+        "text": "Toallitas"
+      }
+    }
+  },
+  "menu-item#department-4-category-6": {
+    "props": {
+      "id": "menu-item-department-4-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebes-y-ninos/jabon",
+        "noFollow": true,
+        "tagTitle": "Jabón",
+        "text": "Jabón"
+      }
+    }
+  },
+  "menu-item#department-4-category-7": {
+    "props": {
+      "id": "menu-item-department-4-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bebes-y-ninos/neceser",
+        "noFollow": true,
+        "tagTitle": "Neceser",
+        "text": "Neceser"
+      }
+    }
+  },
+  "flex-layout.col#department-4-submenu-col-2": {
+    "children": [
+      "info-card#bebes-y-ninos"
+    ],
+    "title": "Right Category Banners"
+  },
+  "info-card#bebes-y-ninos": {
+    "props": {
+      "id": "info-card-helados",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/logopatadon.png",
+      "headline": "Mejores productos para el verano",
+      "callToActionText": "Navegar",
+      "callToActionUrl": "/alimentos",
+      "blockClass": "info-card-helados",
+      "textAlignment": "center"
+    },
+    "title": "Infocard Promotions"
+  },
+  "flex-layout.row#department-4-banner-1": {
+    "children":["image#department-4-banner-1"],
+    "props": {
+      }
+  },
+  "image#department-4-banner-1":{
+    "props":{
+      "src": "/arquivos/Banners-llet-ecologica-275X102.jpg?v=636947128036700000",
+      "maxHeight": 200
+    },
+    "title": "Top Banner"
+  },
+  "flex-layout.row#department-4-banner-2": {
+    "children":["image#department-4-banner-2"],
+    "props": {
+      }
+  },
+  "image#department-4-banner-2":{
+    "props":{
+      "src": "/arquivos/Banners-ous-ecos-275x102.jpg?v=636947130227630000",
+      "maxHeight": 200
+    },
+    "title": "Bottom Banner"
+  },
+  "menu-item#department-6": {
+    "props": {
+      "id": "menu-item-deparment-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/promocions",
+        "noFollow": true,
+        "tagTitle": "PROMOCIONS",
+        "text": "PROMOCIONS"
+      },
+      "blockClass":"header-promotions-title"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department-6"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department-6": {
+    "props": {
+      "width": "100%"
+      
+    },
+    "children": [
+      "info-card#promoheader"
+    ]
+  },
+  
+  "info-card#promoheader": {
+    "props": {
+      "id": "info-card-promoheader",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://ametllerorigen.cat/media/custom/banners/File-1582708387.jpg",
+      "headline": "Mejores promos",
+      "callToActionText": "Navegar",
+      "callToActionUrl": "/promocions",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    },
+    "title": "Infocard Promotions"
+  },
+  "menu-item#department-7": {
+    "props": {
+      "id": "menu-item-deparment-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/marcas",
+        "noFollow": true,
+        "tagTitle": "MARCAS",
+        "text": "MARCAS"
+      },
+      "blockClass":"header-promotions-title"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department-7"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department-7": {
+    "props": {
+      "width": "100%"
+      
+    },
+    "children": [
+      "flex-layout.row#home-brands"
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#deals",
+      "flex-layout.row#categories-home",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf_topsale",
+      "flex-layout.row#promo_home",
+      "flex-layout.row#shelf_toprating",
+      "flex-layout.row#home-brands",
+      "newsletter"
+    ]
+  },
+
+  // SLIDER
+    "list-context.image-list#demo": {
+      "children": ["slider-layout#demo-images"],
+      "props": {
+        "height": 720,
+        "images": [
+          {
+            "image": "assets/banner.png",
+            "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          },
+          {
+            "image": "assets/banner.png",
+            "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          }
+        ]
+      }
+    },
+    "slider-layout#demo-images": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": true,
+        "showNavigationArrows": "desktopOnly",
+        "blockClass": "carousel"
+      }
+    },
+  // SHELF TITLE (SUSTITUIR)
+    "rich-text#shelf-title": {
+      "props": {
+        "text": "## Summer",
+        "blockClass": "shelfTitle"
+      }
+    },
+
+  // ROW PROMOS IN HOME
+  "flex-layout.row#promo_home": {
+      "children": [
+        "flex-layout.col#promo_home1", 
+        "flex-layout.col#promo_home2"
+      ],
+      "props": {
+          "rowGap": "15"
+      }
+  },
+    // COLUMNS FOR PROMOS
+    // COL 1
+    "flex-layout.col#promo_home1": {
+      "children": ["info-card#home"],
+      "props": {
+        "width": "60%"
+      }
+    },
+      "info-card#home": {
+        "props": {
+          "id": "info-card-home",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "assets/bannerpromo1.png",
+          "headline": "Tarjeta regalo",
+          "callToActionText": "VER OPCIONES",
+          "callToActionUrl": "/sale/d", 
+          "blockClass": "info-card-home",
+          "textAlignment": "center"
+        }
+      },
+
+    // COL 2
+    "flex-layout.col#promo_home2": {
+      "children": ["stack-layout#promo_home2"],
+      "props": {
+        "width": "40%"
+      }
+    },
+      "stack-layout#promo_home2": {
+          "children": [
+            //"image#promo_home2", 
+            "rich-text#promo_home2"
+          ]
+      },
+      /*
+      "image#promo_home2": {
+          "props": {
+          "src": "assets/promo/bannerpromo2.png"
+          }
+      },
+      */
+      "rich-text#promo_home2": {
+          "props": {
+          "text": "**Outlet**"
+          }
+      },
+  
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  }
+}
