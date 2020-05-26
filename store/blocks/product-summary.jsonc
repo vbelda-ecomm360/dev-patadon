@@ -1,0 +1,53 @@
+{
+    "product-summary.shelf": {
+        "children": [
+          "stack-layout#prodsum",
+          "vtex.store-components:product-brand", 
+          "product-summary-name",
+          "product-rating-inline", 
+          "product-summary-space",
+          "product-list-price#summary",
+          "flex-layout.row#selling-price-savings",
+          "add-to-cart-button"
+        ]
+      },
+    
+      "product-summary-image": {
+        "props": {
+          "height": 220
+        }
+      },
+"stack-layout#prodsum": {
+    "children": [
+        "product-summary-image#shelf",
+        "flex-layout.row#product-summary-specification-badges-shelf"
+    ]
+  },
+  "flex-layout.row#product-summary-specification-badges-shelf":{
+    "children": [
+        "flex-layout.col#product-summary-specification-badges-shelf"
+    ]
+
+},
+  "flex-layout.col#product-summary-specification-badges-shelf":{
+      "children": [
+        "product-summary-specification-badges#promo"
+      ]
+
+  },
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": true,
+      "aspectRatio": "1:1",
+      "height": 180
+    }
+  },
+  "product-summary-specification-badges#promo": {
+    "props": {
+      "specificationGroupName": "allSpecifications",
+      "specificationName": "2x1",
+      "visibleWhen": "Si",
+      "displayValue": "SPECIFICATION_VALUE"
+    }
+  }
+}

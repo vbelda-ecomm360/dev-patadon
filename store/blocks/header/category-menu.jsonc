@@ -17,6 +17,7 @@
       "menu-item#department-2",
       "menu-item#department-3",
       "menu-item#department-4",
+      "menu-item#department-5",
       "menu-item#department-6",
       "menu-item#department-7"
     ],
@@ -30,10 +31,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos",
+        "href": "/palos-de-golf",
         "noFollow": true,
-        "tagTitle": "Alimentos",
-        "text": "ALIMENTOS"
+        "tagTitle": "Palos de golf",
+        "text": "Palos de golf"
       },
       "blockClass":"header-department-title"
     },
@@ -385,7 +386,7 @@
 
 
 
-  
+  // SEGUNDO MENÚ DESPLEGABLE
   "menu-item#department-2": {
     "props": {
       "id": "menu-item-department-2",
@@ -394,10 +395,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/cuidado-del-hogar",
+        "href": "/bolsos-carros-gps",
         "noFollow": true,
-        "tagTitle": "Hogar y Ropa",
-        "text": "HOGAR Y ROPA"
+        "tagTitle": "Bolsos, carros y GPS",
+        "text": "Bolsos, carros y GPS"
       },
       "blockClass":"header-department-title"
     },
@@ -414,10 +415,12 @@
       "flex-layout.row#department-2-submenu"
     ]
   },
+  // COLUMNAS DEL MENÚ
   "flex-layout.row#department-2-submenu": {
     "children": [
       "flex-layout.col#department-2-submenu-col-1",
       "flex-layout.col#department-2-submenu-col-2",
+      "flex-layout.col#department-2-submenu-col-3",
       "flex-layout.col#department-4-submenu-col-2"
     ],
     "props":{
@@ -434,9 +437,13 @@
       "menu#department-2-submenu-col-2"
     ]
   },
+  "flex-layout.col#department-2-submenu-col-3": {
+    "children": [
+      "menu#department-2-submenu-col-3"
+    ]
+  },
 
-
-
+  // COLUMNA 1 DEL MENÚ 2
   "vtex.menu@2.x:menu#department-2-submenu": {
     "props": {
       "orientation": "vertical",
@@ -447,9 +454,7 @@
       "menu-item#department-2-category-2",
       "menu-item#department-2-category-3",
       "menu-item#department-2-category-4",
-      "menu-item#department-2-category-5",
-      "menu-item#department-2-category-6",
-      "menu-item#department-2-category-7"
+      "menu-item#department-2-category-5"
     ]
   },
   "menu-item#department-2-category-1": {
@@ -460,10 +465,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/cuidados-del-hogar/ropa",
+        "href": "/bolsos-carros-gps/carritos",
         "noFollow": true,
-        "tagTitle": "Ropa",
-        "text": "Ropa"
+        "tagTitle": "Carritos de golf",
+        "text": "Carritos de golf"
       },
       "blockClass":"header-department-category-title"
     }
@@ -476,10 +481,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/cuidados-del-hogar/ropa/detergente-para-ropa",
+        "href": "/bolsos-carros-gps/carritos/carros-electricos",
         "noFollow": true,
-        "tagTitle": "Detergente para Ropa",
-        "text": "Detergente para Ropa"
+        "tagTitle": "Carros eléctricos",
+        "text": "Carros eléctricos"
       }
     }
   },
@@ -491,10 +496,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/cuidados-del-hogar/ropa/suavizante",
+        "href": "/bolsos-carros-gps/carritos/carros-manuales",
         "noFollow": true,
-        "tagTitle": "Suavizante",
-        "text": "Suavizante"
+        "tagTitle": "Carros manuales",
+        "text": "Carros manuales"
       }
     }
   },
@@ -506,10 +511,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/cuidados-del-hogar/ropa/planchado",
+        "href": "/bolsos-carros-gps/carritos/accesorios-baterias",
         "noFollow": true,
-        "tagTitle": "Planchado",
-        "text": "Planchado"
+        "tagTitle": "Accesorios y baterías",
+        "text": "Accesorios y baterías"
       }
     }
   },
@@ -521,43 +526,15 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/cuidados-del-hogar/ropa/quitamanchas",
+        "href": "/bolsos-carros-gps/carritos",
         "noFollow": true,
-        "tagTitle": "Quitamanchas",
-        "text": "Quitamanchas"
-      }
+        "tagTitle": "Ver todos los carros",
+        "text": "Ver todos los carros"
+      },
+      "blockClass":"header-department-category-show-all"
     }
   },
-  "menu-item#department-2-category-6": {
-    "props": {
-      "id": "menu-item-department-2-category-6",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cuidados-del-hogar/ropa/toallitas-perfumadoras",
-        "noFollow": true,
-        "tagTitle": "Toallitas Perfumadoras",
-        "text": "Toallitas Perfumadoras"
-      }
-    }
-  },
-  "menu-item#department-2-category-7": {
-    "props": {
-      "id": "menu-item-department-2-category-7",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "",
-        "text": ""
-      }
-    }
-  },
+  // COLUMNA 2 DEL MENÚ 2
   "menu#department-2-submenu-col-2": {
     "props": {
         "orientation": "vertical",
@@ -571,7 +548,9 @@
       "menu-item#department-2-category-3-col-2",
       "menu-item#department-2-category-4-col-2",
       "menu-item#department-2-category-5-col-2",
-      "menu-item#department-2-category-6-col-2"
+      "menu-item#department-2-category-6-col-2",
+      "menu-item#department-2-category-7-col-2",
+      "menu-item#department-2-category-8-col-2"
     ]
 },
 "menu-item#department-2-category-1-col-2": {
@@ -582,10 +561,10 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/cuidados-del-hogar/hogar",
+      "href": "/bolsos-carros-gps/bolsas-palos",
       "noFollow": true,
-      "tagTitle": "Hogar",
-      "text": "Hogar"
+      "tagTitle": "Bolsas de Palos",
+      "text": "Bolsas de Palos"
     },
     "blockClass":"header-department-category-title"
   }
@@ -598,10 +577,10 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/cuidados-del-hogar/hogar/bano",
+      "href": "/bolsos-carros-gps/bolsas-palos/bolsas-carro",
       "noFollow": true,
-      "tagTitle": "Baño",
-      "text": "Baño"
+      "tagTitle": "Bolsas de carro",
+      "text": "Bolsas de carro"
     }
   }
 },
@@ -613,10 +592,10 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/cuidados-del-hogar/hogar/quitagrasas",
+      "href": "/bolsos-carros-gps/bolsas-palos/bolsas-tripode",
       "noFollow": true,
-      "tagTitle": "Quitagrasas",
-      "text": "Quitagrasas"
+      "tagTitle": "Bolsas de trípode",
+      "text": "Bolsas de trípode"
     }
   }
 },
@@ -628,10 +607,10 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/cuidados-del-hogar/hogar/lejias",
+      "href": "/bolsos-carros-gps/bolsas-palos/bolsas-pencil",
       "noFollow": true,
-      "tagTitle": "Lejías",
-      "text": "Lejías"
+      "tagTitle": "Bolsas pencil",
+      "text": "Bolsas pencil"
     }
   }
 },
@@ -643,10 +622,10 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/cuidados-del-hogar/hogar/lavajillas",
+      "href": "/bolsos-carros-gps/bolsas-palos/bolsas-viaje",
       "noFollow": true,
-      "tagTitle": "Lavavajillas",
-      "text": "Lavavajillas"
+      "tagTitle": "Bolsas de viaje",
+      "text": "Bolsa de viaje"
     }
   }
 },
@@ -658,57 +637,137 @@
     "highlight": false,
     "itemProps": {
       "type": "internal",
-      "href": "/cuidados-del-hogar/hogar/limpiacristales-y-multiusos",
+      "href": "/bolsos-carros-gps/bolsas-palos/maletas-mochilas",
       "noFollow": true,
-      "tagTitle": "Limpiacristales y Multiusos",
-      "text": "Limpiacristales y Multiusos"
+      "tagTitle": "Maletas y mochilas",
+      "text": "Maletas y mochilas"
     }
   }
 },
-  "flex-layout.col#department-2-submenu-col-3": {
+"menu-item#department-2-category-7-col-2": {
+  "props": {
+    "id": "menu-item-department-2-category-6-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/bolsos-carros-gps/bolsas-palos/accesorios-bolsas",
+      "noFollow": true,
+      "tagTitle": "Accesorios para bolsas",
+      "text": "Accesorios para bolsas"
+    }
+  }
+},
+"menu-item#department-2-category-8-col-2": {
+  "props": {
+    "id": "menu-item-department-2-category-6-col-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/bolsos-carros-gps/bolsas-palos",
+      "noFollow": true,
+      "tagTitle": "Ver todas las bolsas",
+      "text": "Ver todas las bolsas"
+    },
+    "blockClass":"header-department-category-show-all"
+  }
+},
+// COLUMNA 3 DEL MENÚ 2
+  "menu#department-2-submenu-col-3": {
+    "props": {
+        "orientation": "vertical",
+        "experimentalOptimizeRendering": true,
+        "tagTitle": "Submenu",
+        "blockClass": "header-department-submenu-col"
+    },
     "children": [
-      "flex-layout.row#department-2-banner-1",
-      "flex-layout.row#department-2-banner-2",
-      "flex-layout.row#department-2-banner-3"
-    ],
-    "title": "Right Category Banners"
-  },
-  "flex-layout.row#department-2-banner-1": {
-    "children":["image#department-2-banner-1"],
-    "props": {
-      }
-  },
-  "image#department-2-banner-1":{
-    "props":{
-      "src": "/arquivos/Banners-albercocs-275X102.jpg?v=636947125906130000",
-      "maxHeight": 200
+      "menu-item#department-2-category-1-col-3",
+      "menu-item#department-2-category-2-col-3",
+      "menu-item#department-2-category-3-col-3",
+      "menu-item#department-2-category-4-col-3",
+      "menu-item#department-2-category-5-col-3"
+    ]
+},
+"menu-item#department-2-category-1-col-3": {
+  "props": {
+    "id": "menu-item-department-2-category-1-col-3",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/bolsos-carros-gps/gps-tecnologia",
+      "noFollow": true,
+      "tagTitle": "GPS y Tecnología",
+      "text": "GPS y Tecnología"
     },
-    "title": "Top Banner"
-  },
-  "flex-layout.row#department-2-banner-2": {
-    "children":["image#department-2-banner-2"],
-    "props": {
-      }
-  },
-  "image#department-2-banner-2":{
-    "props":{
-      "src": "/arquivos/Banners-cistelles-fruita-275x102.jpg?v=636947126785600000",
-      "maxHeight": 200
-    },
-    "title": "Bottom Banner"
-  },
-  "flex-layout.row#department-2-banner-3": {
-    "children":["image#department-2-banner-3"],
-    "props": {
-      }
-  },
-  "image#department-2-banner-3":{
-    "props":{
-      "src": "/arquivos/Banners-cistelles-fruita-275x102.jpg?v=636947126785600000",
-      "maxHeight": 200
-    },
-    "title": "Bottom Banner"
-  },
+    "blockClass":"header-department-category-title"
+  }
+},
+"menu-item#department-2-category-2-col-3": {
+  "props": {
+    "id": "menu-item-department-2-category-2-col-3",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/bolsos-carros-gps/gps-tecnologia/medidores-laser",
+      "noFollow": true,
+      "tagTitle": "Medidores Laser",
+      "text": "Medidores Laser"
+    }
+  }
+},
+"menu-item#department-2-category-3-col-3": {
+  "props": {
+    "id": "menu-item-department-2-category-3-col-3",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/bolsos-carros-gps/gps-tecnologia/gps",
+      "noFollow": true,
+      "tagTitle": "GPS",
+      "text": "GPS"
+    }
+  }
+},
+"menu-item#department-2-category-4-col-3": {
+  "props": {
+    "id": "menu-item-department-2-category-4-col-3",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/bolsos-carros-gps/gps-tecnologia/accesorios-gps",
+      "noFollow": true,
+      "tagTitle": "Accesorios de GPS",
+      "text": "Accesorios de GPS"
+    }
+  }
+},
+"menu-item#department-2-category-5-col-3": {
+  "props": {
+    "id": "menu-item-department-2-category-5-col-3",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/bolsos-carros-gps/gps-tecnologia/otras-tecnologias",
+      "noFollow": true,
+      "tagTitle": "Otras tecnologías",
+      "text": "Otras tecnologías"
+    }
+  }
+},
+
   "menu-item#department-3": {
     "props": {
       "id": "menu-item-department-3",
@@ -717,10 +776,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/cuidado-personal",
+        "href": "/ropa-calzado",
         "noFollow": true,
-        "tagTitle": "Cuidado personal",
-        "text": "CUIDADO PERSONAL"
+        "tagTitle": "Ropa y calzado",
+        "text": "Ropa y calzado"
       },
       "blockClass":"header-department-title"
     },
@@ -1094,10 +1153,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bebes-y-ninos",
+        "href": "/bolsas-accesorios",
         "noFollow": true,
-        "tagTitle": "Bebés y Niños",
-        "text": "BEBÉS Y NIÑOS"
+        "tagTitle": "Bolsas y accesorios",
+        "text": "Bolsas y accesorios"
       },
       "blockClass":"header-department-title"
     },
@@ -1291,35 +1350,34 @@
     },
     "title": "Bottom Banner"
   },
-  "menu-item#department-6": {
+  "menu-item#department-5": {
     "props": {
-      "id": "menu-item-deparment-6",
+      "id": "menu-item-deparment-5",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/promocions",
+        "href": "/marcas",
         "noFollow": true,
-        "tagTitle": "PROMOCIONS",
-        "text": "PROMOCIONS"
+        "tagTitle": "Marcas",
+        "text": "Marcas"
       },
       "blockClass":"header-promotions-title"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#department-6"
+      "vtex.menu@2.x:submenu#department-5"
     ]
   },
-  "vtex.menu@2.x:submenu#department-6": {
+  "vtex.menu@2.x:submenu#department-5": {
     "props": {
       "width": "100%"
       
     },
-    "children": [
-      "info-card#promoheader"
+    "children": [      
+      "flex-layout.row#home-brands"
     ]
   },
-  
   "info-card#promoheader": {
     "props": {
       "id": "info-card-promoheader",
@@ -1334,6 +1392,50 @@
     },
     "title": "Infocard Promotions"
   },
+
+  "menu-item#department-6": {
+    "props": {
+      "id": "menu-item-deparment-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/descuentos",
+        "noFollow": true,
+        "tagTitle": "Descuentos",
+        "text": "Descuentos"
+      },
+      "blockClass":"header-promotions-title"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department-6"
+    ]
+  },
+  "vtex.menu@2.x:submenu#department-6": {
+    "props": {
+      "width": "100%"
+      
+    },
+    "children": [
+      "info-card#promoheader_descuento"
+    ]
+  },
+  "info-card#promoheader_descuento": {
+    "props": {
+      "id": "info-card-promoheader_descuentos",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://ametllerorigen.cat/media/custom/banners/File-1582708387.jpg",
+      "headline": "Mejores promos",
+      "callToActionText": "Navegar",
+      "callToActionUrl": "/descuentos",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    },
+    "title": "Infocard Promotions"
+  },
+
   "menu-item#department-7": {
     "props": {
       "id": "menu-item-deparment-7",
@@ -1342,10 +1444,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/marcas",
+        "href": "/tarjeta-regalo",
         "noFollow": true,
-        "tagTitle": "MARCAS",
-        "text": "MARCAS"
+        "tagTitle": "Tarjeta regalo",
+        "text": "Tarjeta regalo"
       },
       "blockClass":"header-promotions-title"
     },
@@ -1359,7 +1461,21 @@
       
     },
     "children": [
-      "flex-layout.row#home-brands"
+      "info-card#promoheader_tarjeta"
     ]
+  },
+  "info-card#promoheader_tarjeta": {
+    "props": {
+      "id": "info-card-promoheader_tarjeta",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://ametllerorigen.cat/media/custom/banners/File-1582708387.jpg",
+      "headline": "Mejores promos",
+      "callToActionText": "Navegar",
+      "callToActionUrl": "/tarjeta-regalo",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    },
+    "title": "Infocard Promotions"
   }
 }

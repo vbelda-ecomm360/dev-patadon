@@ -41,3 +41,13 @@
 .image {
   border-radius: 0.25rem;
 }
+
+
+.badgeContainer--2x1 {
+  background-image: url(https://i-unilever.a8e.net.br/static/images/stopper-promo-lider-novo1.png);
+  height: 45px;
+  width: 65px;
+}
+.badgeContainer--2x1 .badgeText {
+  z-index: -1;
+}

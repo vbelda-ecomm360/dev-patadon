@@ -1,9 +1,10 @@
-.notificationBarContainer {
-  background-color: orange;
-  color: #03034e;
-  font-weight: 700;
-  font-size: 12px;
-  text-decoration: underline;
+.notificationBarContainer {  
+  background-color: #ff6b00;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 2.2;
+  letter-spacing: 0.5px;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {

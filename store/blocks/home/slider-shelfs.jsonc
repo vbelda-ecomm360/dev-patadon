@@ -60,26 +60,19 @@
     },
 
 
-// PRODUCT SUMMARY SHELF
-"product-summary.shelf#shelf_home": {
-    "children": [
-    "product-summary-image",
-    //"stack-layout#prodsum",
-    "product-summary-brand",
-    "product-summary-name",
-    "product-summary-price"
-    ],
-    "props":{
-        
-        "showTitle": true,
-        "titleText": "asdasd"
-    }
-},
-    // PRODUCT SUMMARY PRICE
-    "product-summary-price": {
-        "props": {
-            "showLabels": false,
-            "showDiscountValue": false
+    // PRODUCT SUMMARY SHELF
+    "product-summary.shelf#shelf_home": {
+        "children": [
+        "stack-layout#prodsum",
+        "product-summary-name",
+        "product-summary-brand",
+        "flex-layout.row#summary_prices",
+        "add-to-cart-button"
+        ],
+        "props":{
+            
+            "showTitle": true,
+            "titleText": "asdasd"
         }
     }
 }

@@ -21,7 +21,7 @@
         },
         "image#category1": {
             "props": {
-              "src": "assets/category1.png"
+              "src": "https://patadon.com/arquivos/category1.png"
             }
         },
         "rich-text#category1": {
@@ -40,7 +40,7 @@
         },
         "image#category2": {
             "props": {
-            "src": "assets/category2.png"
+            "src": "https://patadon.com/arquivos/category2.png"
             }
         },
         "rich-text#category2": {
@@ -59,7 +59,7 @@
         },
         "image#category3": {
             "props": {
-            "src": "assets/category3.png"
+            "src": "https://patadon.com/arquivos/category3.png"
             }
         },
         "rich-text#category3": {
@@ -78,7 +78,7 @@
         },
         "image#category4": {
             "props": {
-            "src": "assets/category4.png" 
+            "src": "https://patadon.com/arquivos/category4.png" 
             }
         },
         "rich-text#category4": {

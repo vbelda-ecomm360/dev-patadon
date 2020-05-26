@@ -1,7 +1,9 @@
 .container--deals {
   color: #ffffff;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.69;
+  color: #606060;
 }
 
 .container--shelfTitle {

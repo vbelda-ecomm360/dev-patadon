@@ -28,7 +28,7 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "Advertencia: COVID-19: Seguimos trabajando"
     }
   },
   "flex-layout.row#3-desktop": {
@@ -63,12 +63,11 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "colSizing": "auto"
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      "search-bar",
+      "search-bar#header",
       "locale-switcher",
       "login",
       "minicart.v2"
@@ -89,7 +88,8 @@
   },
   "flex-layout.col#logo-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "width": "20%"
     },
     "children": ["logo#desktop"]
   },
@@ -97,8 +97,13 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/logopatadon.png",
-      "width": "180"
+      "url": "https://patadon.com/arquivos/logo.png",
+      "width": "280px"
+    }
+  },
+  "search-bar#header": {
+    "props": {
+      "width": "grow"
     }
   },
   "header-layout.mobile": {

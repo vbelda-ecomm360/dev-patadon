@@ -9,9 +9,9 @@
       "flex-layout.row#categories-home",
       "rich-text#shelf-title",
       "flex-layout.row#shelf_topsale",
+      "flex-layout.row#home-brands",
       "flex-layout.row#promo_home",
       "flex-layout.row#shelf_toprating",
-      "flex-layout.row#home-brands",
       "newsletter"
     ]
   },
@@ -23,11 +23,11 @@
         "height": 720,
         "images": [
           {
-            "image": "assets/banner.png",
+            "image": "https://patadon.com/arquivos/banner.png",
             "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
           },
           {
-            "image": "assets/banner.png",
+            "image": "https://patadon.com/arquivos/banner.png",
             "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
           }
         ]
@@ -77,7 +77,7 @@
           "id": "info-card-home",
           "isFullModeStyle": false,
           "textPosition": "left",
-          "imageUrl": "assets/bannerpromo1.png",
+          "imageUrl": "https://patadon.com/arquivos/bannerpromo1.png",
           "headline": "Tarjeta regalo",
           "callToActionText": "VER OPCIONES",
           "callToActionUrl": "/sale/d", 

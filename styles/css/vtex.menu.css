@@ -1,7 +1,29 @@
+.styledLinkContent--header-department-title,
 .styledLinkContent--header-promotions-title{
-  color: #FFFFFF;
-
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.05;
+  letter-spacing: 1px;
+  color:#000000;
 }
-.styledLinkContainer--header-promotions-title{
-  background-color: red;
+.styledLinkContent--header-department-title{
+}
+.styledLinkContent--header-promotions-title{
+  color: #ff6b00;
+}
+
+
+.styledLinkContent--header-department-category-title{
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  margin-top:20px;
+  margin-bottom:30px;
+  color:#000000;
+}
+
+.styledLinkContent--header-department-category-show-all{
+  margin-top:30px;
+  text-decoration: underline;
 }
