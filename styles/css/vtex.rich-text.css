@@ -7,11 +7,22 @@
 }
 
 .container--shelfTitle {
-  color: #727273;
-  justify-content: center;
+  padding-top:30px;
+  padding-bottom:20px;
+  background-color: #f8f8f8;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 0.75;
   text-align: center;
+  color: #010101;
 }
 
+.container--priceRecomendado{
+  font-size:10px; 
+}
+.container--pricePatadon{
+  font-size:10px; 
+}
 .headingLevel2--shelfTitle {
   font-weight: 200;
 }
@@ -68,6 +79,30 @@
   font-size: 28px;
   font-weight: 700;
 }
+.container--stacked-category-name{
+  height:100%;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 2.13;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph--main-header-text{
+  margin:0px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.paragraph--footer-title{
+  font-size: 14px;
+  color: #000000;
+  font-weight:bold;
+}
+
 
 @media only screen and (min-width: 640px) {
   .container--question .strong {
@@ -90,3 +125,5 @@
     line-height: 1.3em;
   }
 }
+
+

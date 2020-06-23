@@ -1,3 +1,6 @@
+.menuItem--header-department-title{
+  width:25%;
+}
 .styledLinkContent--header-department-title,
 .styledLinkContent--header-promotions-title{
   font-weight: 600;
@@ -10,7 +13,7 @@
 .styledLinkContent--header-department-title{
 }
 .styledLinkContent--header-promotions-title{
-  color: #ff6b00;
+  color: #C8102E;
 }
 
 
@@ -26,4 +29,13 @@
 .styledLinkContent--header-department-category-show-all{
   margin-top:30px;
   text-decoration: underline;
+}
+
+
+
+.styledLinkContainer--footer-menu-item{
+  margin:5px 0px;
+}
+.styledLinkContent--footer-menu-item{
+  font-size:14px;
 }

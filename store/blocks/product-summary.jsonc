@@ -2,12 +2,9 @@
     "product-summary.shelf": {
         "children": [
           "stack-layout#prodsum",
-          "vtex.store-components:product-brand", 
           "product-summary-name",
-          "product-rating-inline", 
-          "product-summary-space",
-          "product-list-price#summary",
-          "flex-layout.row#selling-price-savings",
+          "product-summary-brand",
+          "flex-layout.row#summary_prices",
           "add-to-cart-button"
         ]
       },

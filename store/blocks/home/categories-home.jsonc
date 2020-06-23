@@ -7,83 +7,106 @@
             "flex-layout.col#category4"
         ],
         "props": {
-            "rowGap": "15"
+            "rowGap": "15", 
+            "colGap": "5",
+            "colSizing": "equal",
+            "blockClass": "categories-home"
         }
     },
     // Category 1
         "flex-layout.col#category1":{
             "children": [
                 "stack-layout#category1"
-            ]
+            ],
+            "props": {
+                "blockClass": "stacked-category"
+            }
         },
         "stack-layout#category1": {
             "children": ["image#category1", "rich-text#category1"]
         },
         "image#category1": {
             "props": {
-              "src": "https://patadon.com/arquivos/category1.png"
+              "src": "assets/home/category1.jpg",
+              "blockClass": "stacked-category-image"
             }
         },
         "rich-text#category1": {
             "props": {
-            "text": "**Palos de golf**"
+            "text": "**Palos de golf**",
+            "blockClass": "stacked-category-name"
             }
         },
     // Category 2
         "flex-layout.col#category2":{
             "children": [
                 "stack-layout#category2"
-            ]
+            ],
+            "props": {
+                "blockClass": "stacked-category"
+            }
         },
         "stack-layout#category2": {
             "children": ["image#category2", "rich-text#category2"]
         },
         "image#category2": {
             "props": {
-            "src": "https://patadon.com/arquivos/category2.png"
+                "src": "assets/home/category2.jpg",
+                "blockClass": "stacked-category-image"
             }
         },
         "rich-text#category2": {
             "props": {
-            "text": "**Bolsos, carros y gps**"
+            "text": "**Bolsos, carros y gps**",
+            "blockClass": "stacked-category-name"
             }
         },
     // Category 3
         "flex-layout.col#category3":{
             "children": [
                 "stack-layout#category3"
-            ]
+            ],
+            "props": {
+                "blockClass": "stacked-category"
+            }
         },
         "stack-layout#category3": {
             "children": ["image#category3", "rich-text#category3"]
         },
         "image#category3": {
             "props": {
-            "src": "https://patadon.com/arquivos/category3.png"
+                "src": "assets/home/category3.jpg",
+                "blockClass": "stacked-category-image"
             }
         },
         "rich-text#category3": {
             "props": {
-            "text": "**Ropa y calzado**"
+            "text": "**Ropa y calzado**",
+            "blockClass": "stacked-category-name"
             }
         },
     // Category 4
         "flex-layout.col#category4":{
             "children": [
                 "stack-layout#category4"
-            ]
+            ],
+            "props": {
+                "blockClass": "stacked-category-last"
+            }
         },
         "stack-layout#category4": {
             "children": ["image#category4", "rich-text#category4"]
         },
         "image#category4": {
             "props": {
-            "src": "https://patadon.com/arquivos/category4.png" 
+                "src": "assets/home/category4.jpg" ,
+                "blockClass": "stacked-category-image"
             }
         },
         "rich-text#category4": {
             "props": {
-            "text": "**Bolsas y accesorios**"
+            "text": "**Bolsas y accesorios**",
+            "blockClass": "stacked-category-name"
             }
         }
 }

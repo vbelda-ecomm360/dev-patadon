@@ -1,17 +1,27 @@
+.flexRow--main-header-menu{
+  background-color:#ffffff;
+}
 .flexRowContent--menu-link,
-.flexRowContent--main-header {
+.flexRowContent--main-header,
+.flexRowContent--main-header-menu{
   padding: 0 0.5rem;
+}
+
+.flexRowContent--main-header-menu{
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--main-header ,
+  .flexRowContent--main-header-menu{
     padding: 0 1rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .flexRowContent--menu-link,
-  .flexRowContent--main-header {
+  .flexRowContent--main-header ,
+  .flexRowContent--main-header-menu{
     padding: 0 0.25rem;
   }
 }
@@ -19,6 +29,10 @@
 .flexRowContent--menu-link {
   background-color: #03044e;
   color: #fff;
+}
+
+.flexRowContent--main-header {
+  background-color: #f0f0f0;
 }
 
 .flexRowContent--main-header {
@@ -36,17 +50,26 @@
   font-size: 14px;
 }
 
-.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+.flexRowContent--main-header-menu :global(.vtex-menu-2-x-styledLink) {
   color: #727273;
   font-size: 14px;
 }
 .flexRow--deals {
   background-color: #ffffff;
-  padding: 30px 100px;
+  padding: 50px 100px 30px 100px;
 }
 
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
+}
+
+.flexRow--categories-home{
+  padding-top:20px;
+  padding-bottom:60px;
+  margin-right:-1rem;
+}
+.flexCol--stacked-category-last{
+  padding-right:1rem;
 }
 
 .flexRow--deals .flexCol {
@@ -99,5 +122,52 @@
 
 
 .flexRow--shelf-row{
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
+  padding-bottom:30px;
 }
+
+.flexRow--summary_prices{
+  text-align:center;
+}
+
+.flexRow--home-brands-row{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+
+.flexCol--summary_price {
+  margin-top:15px;
+  border-top:1px solid #999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.flexColChild--summary_price:empty {
+  display: none;
+}
+
+.flexRow--main-header{
+  background-color: #F0F0F0;
+}
+.flexRowContent--main-header{
+  box-shadow:none !important;
+}
+
+
+
+.flexRow--main-footer{
+  padding:40px 0px 30px 0px;
+}
+
+.flexRow--payment-methods{
+  margin-bottom:15px;
+}
+
+.flexRow--credits{
+  background-color: #f3f3f3;
+}
+

@@ -5,15 +5,18 @@
 }
 
 .sellingPrice {
-  color: #3f3f40;
+  color: #000000;
   font-size: 1.25rem;
 }
 
-.sellingPriceValue {
-  font-size: 2.25rem;
-  font-weight: 700;
+.sellingPriceValue{
+  font-size: 16px;  
+  line-height: 1.25;
 }
-
+.listPriceValue {
+  font-size: 16px;  
+  line-height: 1.25;
+}
 .installments {
   color: #727273;
   margin-bottom: 1rem;
@@ -54,4 +57,49 @@
 .installments--summary {
   margin-bottom: 2rem;
   font-size: 0.875rem;
+}
+
+
+
+
+.listPrice--summary_price {
+  display: block;
+  float: left;
+  font-size: 10px;  
+  line-height: 1.25;
+  text-transform: uppercase;
+  padding:15px;
+  word-spacing: 100vw;
+  border-right: 1px solid #999;
+}
+
+.listPriceValue--summary_price {
+  display: block;
+  margin-top:5px;
+  font-size: 14px;  
+  line-height: 1.25;
+  word-spacing: initial;
+}
+ 
+.sellingPrice--summary_price {
+  display: block;
+  padding:15px;
+  font-size: 10px;  
+  text-transform: uppercase;
+  line-height: 1.25;
+  word-spacing: 100vw;
+}
+
+
+.sellingPriceValue--summary_price {
+  display: block;
+  margin-top:5px;
+  font-size: 16px;  
+  line-height: 1.25;
+  font-weight: bold;
+  word-spacing: initial;
+}
+
+.sellingPrice--summary_price--hasListPrice .sellingPriceValue--summary_price {
+  color:#C8102E;
 }

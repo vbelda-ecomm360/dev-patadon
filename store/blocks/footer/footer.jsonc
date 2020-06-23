@@ -1,0 +1,356 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#footer-1-desktop-1",
+      "flex-layout.col#footer-1-desktop-2",
+      "flex-layout.col#footer-1-desktop-3",
+      "flex-layout.col#footer-1-desktop-4"
+    ],
+    "props": {
+      "blockClass": "main-footer"
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop-1": {
+    "children": [
+      "image#logo-footer",
+      "rich-text#footer-title-1",
+      "social-networks#social-1",
+      "social-networks#social-2"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "image#logo-footer":{
+    "props":{
+      "src": "assets/footer/depique_logo_vertical.png",
+      "blockClass": "logo-footer"
+    },
+    "title": "Visa"
+  },
+  "rich-text#footer-title-1": {
+    "props": {
+      "text": "SÍGUENOS",
+      "blockClass": "footer-title"
+    }
+  },
+  "social-networks#social-1": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Linkedin",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+  "social-networks#social-2": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        },
+        {
+          "name": "Pinterest",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop-2": {
+    "children": [
+      "rich-text#footer-title-2",
+      "vtex.menu@2.x:menu#footer-atencion"
+    ],
+    "props": {
+    }
+  },
+  "rich-text#footer-title-2": {
+    "props": {
+      "text": "ATENCIÓN AL CLIENTE",
+      "blockClass": "footer-title"
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop-3": {
+    "children": [
+      "rich-text#footer-title-3",
+      "vtex.menu@2.x:menu#footer-patadon"
+    ],
+    "props": {
+    }
+  },
+  "rich-text#footer-title-3": {
+    "props": {
+      "text": "PATADON.COM",
+      "blockClass": "footer-title"
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop-4": {
+    "children": [
+      "rich-text#footer-title-4",
+      "image#confianza-online",
+      "rich-text#footer-title-5",
+      //"accepted-payment-methods",
+      "flex-layout.row#accepted-payment-methods",
+      "rich-text#footer-title-6",
+      "flex-layout.row#shipping"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#footer-title-4": {
+    "props": {
+      "text": "SEGURIDAD",
+      "blockClass": "footer-title"
+    }
+  },
+  "image#confianza-online":{
+    "props":{
+      "src": "assets/footer/confianza.png",
+      "blockClass": "imagen-confianza"
+    },
+    "title": "Visa"
+  },
+  "rich-text#footer-title-5": {
+    "props": {
+      "text": "FORMAS DE PAGO",
+      "blockClass": "footer-title"
+    }
+  },
+  "flex-layout.row#accepted-payment-methods":{
+    "children": [
+      "image#visa",
+      "image#master-card",
+      "image#american-express",
+      "image#paypal",
+      "image#maestro"
+    ],
+    "props":{
+      "preventHorizontalStretch": true,
+      "colGap": "3",
+      "blockClass": "payment-methods"
+    }
+  },
+  "image#visa":{
+    "props":{
+      "src": "assets/footer/pagos/visa.png"
+    },
+    "title": "Visa"
+  },
+  "image#master-card":{
+    "props":{
+      "src": "assets/footer/pagos/mastercard.png"
+    },
+    "title": "MasterCard"
+  },
+  "image#american-express":{
+    "props":{
+      "src": "assets/footer/pagos/amex.png"
+    },
+    "title": "American Express"
+  },
+  "image#paypal":{
+    "props":{
+      "src": "assets/footer/pagos/pay-pal.png"
+    },
+    "title": "Paypal"
+  },
+  "image#maestro":{
+    "props":{
+      "src": "assets/footer/pagos/maestro.png"
+    },
+    "title": "Maestro"
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club", "Paypal"]
+    }
+  },
+  "rich-text#footer-title-6": {
+    "props": {
+      "text": "ENVÍOS",
+      "blockClass": "footer-title"
+    }
+  },
+  "flex-layout.row#shipping":{
+    "children": [
+      "image#dhl",
+      "image#seur"
+    ],
+    "props":{
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "colGap": "3"
+    }
+  },
+  "image#dhl":{
+    "props":{
+      "src": "assets/footer/dhl.png"
+    },
+    "title": "Dhl"
+  },
+  "image#seur":{
+    "props":{
+      "src": "assets/footer/seur.png"
+    },
+    "title": "Seur"
+  },
+
+
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "flex-layout.col#footer-2-desktop-1",
+      "flex-layout.col#footer-2-desktop-2"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "flex-layout.col#footer-2-desktop-1": {
+    "children": [
+      "rich-text#footer"
+    ]
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "© Copyright Patadon.com 2020. Todos los derechos reservados.",
+      "blockClass": "footer-copy-text"
+    }
+  },
+  "flex-layout.col#footer-2-desktop-2": {
+    "children": [
+      "menu#footer-legal"
+    ],
+    "props":{
+      "horizontalAlign": "right"
+    }
+  },
+  "menu#footer-legal": {
+    "props": {
+      "orientation": "horizontal"
+    },
+    "children": [
+      "menu-item#aviso",
+      "menu-item#proteccion-datos",
+      "menu-item#condiciones"
+    ]
+  },
+  "menu-item#aviso": {
+    "props": {
+      "id": "menu-item-aviso",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Avíso legal",
+        "text": "Avíso legal"
+      }
+    }
+  },
+  "menu-item#proteccion-datos": {
+    "props": {
+      "id": "menu-item-proteccion-datos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Protección de datos",
+        "text": "Protección de datos"
+      }
+    }
+  },
+  "menu-item#condiciones": {
+    "props": {
+      "id": "menu-item-condiciones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones",
+        "text": "Términos y Condiciones"
+      }
+    }
+  },
+
+
+
+
+
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "accepted-payment-methods",
+      "social-networks",
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  }
+}

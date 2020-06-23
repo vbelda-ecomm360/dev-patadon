@@ -1,0 +1,338 @@
+{
+  "vtex.menu@2.x:menu#footer-atencion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#contacta",
+      "menu-item#ayuda",
+      "menu-item#estado-pedido",
+      "menu-item#como-comprar",      
+      "menu-item#envio",
+      "menu-item#devoluciones",
+      "menu-item#punto-de-venta"
+    ]
+  },
+  "menu-item#contacta": {
+    "props": {
+      "id": "menu-item-contacta",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Contacta con nosotros",
+        "text": "Contacta con nosotros"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#ayuda": {
+    "props": {
+      "id": "menu-item-ayuda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ayuda",
+        "text": "Ayuda"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#estado-pedido": {
+    "props": {
+      "id": "menu-item-estado-pedido",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Estado del pedído",
+        "text": "Estado del pedído"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#como-comprar": {
+    "props": {
+      "id": "menu-item-como-comprar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Cómo comprar",
+        "text": "Cómo comprar"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#envio": {
+    "props": {
+      "id": "menu-item-envio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Envío y entrega",
+        "text": "Envío y entrega"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#devoluciones": {
+    "props": {
+      "id": "menu-item-devoluciones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Devoluciones",
+        "text": "Devoluciones"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#punto-de-venta": {
+    "props": {
+      "id": "menu-item-punto-de-venta",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Punto de venta más cercano",
+        "text": "Punto de venta más cercano"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-patadon": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#quienes-somos",
+      "menu-item#ventajas",
+      "menu-item#club",
+      "menu-item#prensa",      
+      "menu-item#about",
+      "menu-item#comunicados",
+      "menu-item#hablando"
+    ]
+  },
+
+  "menu-item#quienes-somos": {
+    "props": {
+      "id": "menu-item-quienes-somos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Quiénes somos",
+        "text": "Quiénes somos"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#ventajas": {
+    "props": {
+      "id": "menu-item-ventajas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Nuestras ventajas",
+        "text": "Nuestras ventajas"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#club": {
+    "props": {
+      "id": "menu-item-club",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "¿Quieres Depique en tu club?",
+        "text": "¿Quieres Depique en tu club?"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#prensa": {
+    "props": {
+      "id": "menu-item-prensa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Prensa",
+        "text": "Prensa"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#about": {
+    "props": {
+      "id": "menu-item-about",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Acerca de Depique.com",
+        "text": "Acetca de Depique.com"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#comunicados": {
+    "props": {
+      "id": "menu-item-comunicados",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Comunicados de prensa",
+        "text": "Comunicados de prensa"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+  "menu-item#hablando": {
+    "props": {
+      "id": "menu-item-hablando",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Hablando de Depique.com",
+        "text": "Hablando de Depique.com"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
+
+  /* MOBILE */
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#clothing-mobile",
+      "menu-item#decoration-mobile",
+      "menu-item#sale-mobile"
+    ]
+  },
+
+  "menu-item#clothing-mobile": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "vtex.menu@2.x:submenu.accordion#clothing": {
+    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#clothing-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+    ]
+  },
+
+  "menu-item#decoration-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Decoration",
+        "text": "Decoration"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+  },
+  "vtex.menu@2.x:submenu.accordion#decoration": {
+    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-decoration-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+    ]
+  },
+
+  "menu-item#sale-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+  },
+  "vtex.menu@2.x:submenu.accordion#sale": {
+    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-sale-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+    ]
+  }
+}

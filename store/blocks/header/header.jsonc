@@ -63,29 +63,126 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "colGap": 8
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "search-bar#header",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#locale-switcher",
+      "flex-layout.col#login",
+      "flex-layout.col#minicart"
     ]
   },
-  "flex-layout.row#5-desktop": {
+  // IDIOMA
+  "flex-layout.col#locale-switcher": {
     "props": {
-      "blockClass": "main-header",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "blockClass": "header-main-menu",
+      "preventVerticalStretch": false,
+      "verticalAlign": "middle"
     },
     "children": [
-      "flex-layout.col#category-menu"
+      "flex-layout.row#image-icon-locale",
+      "flex-layout.row#text-locale"
     ]
   },
+    "flex-layout.row#image-icon-locale": {    
+      "props": {
+        "width": "100%"
+      },
+      "children": [
+          "image#icon-locale"
+      ]
+    },
+    "image#icon-locale": {
+      "props": {
+        "src": "assets/header/flag.png"
+      }
+    },
+    "flex-layout.row#text-locale": {
+        "props": {
+          "horizontalAlign": "center",
+          "colSizing": "auto",
+          "colGap": 0
+        },    
+        "children": [
+          "rich-text#desc-locale",
+          "locale-switcher"
+      ]
+    },
+    "rich-text#desc-locale": {
+      "props": {
+        "text": "Idioma:",
+        "blockClass": "main-header-text"
+      }
+    },
+  // LOGIN
+  "flex-layout.col#login": {
+    "props": {
+      "blockClass": "header-main-menu",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "flex-layout.row#image-icon-login",
+      "flex-layout.row#login"
+    ]
+  },
+  "flex-layout.row#image-icon-login": {    
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+        "image#icon-login"
+    ]
+  },
+    "image#icon-login": {
+      "props": {
+        "src": "assets/header/user.svg",
+        "maxWidth": "100%"
+      }
+    },
+  "flex-layout.row#login": {    
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+        "login"
+    ]
+  },
+
+  // CARRITO
+  "flex-layout.col#minicart": {
+    "props": {
+      "blockClass": "header-main-menu",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "minicart.v2",
+      "rich-text#desc-minicart"
+    ]
+  },
+    "rich-text#desc-minicart": {
+      "props": {
+        "text": "Carrito",
+        "blockClass": "main-header-text"
+      }
+    },
+
+
+  "flex-layout.row#5-desktop": {
+    "props": {
+      "blockClass": "main-header-menu",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#category-menu", // category-menu.json
+      "flex-layout.col#promos-menu" // category-menu.json
+    ]
+  },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle",
@@ -97,10 +194,10 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://patadon.com/arquivos/logo.png",
+      "url": "assets/depique_logo.svg",
       "width": "280px"
     }
-  },
+  }, 
   "search-bar#header": {
     "props": {
       "width": "grow"

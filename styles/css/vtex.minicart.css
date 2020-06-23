@@ -1,0 +1,20 @@
+.openIconContainer{
+    padding:0px;
+}
+.openIconContainer :global(.vtex-button) {
+    min-height:0px;
+}
+.openIconContainer :global(.vtex-button):hover{
+    background-color: transparent;
+}
+.minicartIconContainer{
+    background-image: url('https://patadon.com/arquivos/header/cesta-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    width: 16px;
+    height: 20px;
+}
+.cartIcon{
+    display:none;
+}

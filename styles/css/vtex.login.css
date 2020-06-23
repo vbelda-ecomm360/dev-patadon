@@ -1,0 +1,13 @@
+.container :global(.vtex-button) {
+    min-height:0px;
+}
+.container :global(.vtex-button):hover{
+    background-color: transparent;
+}
+.container :global(.vtex-button__label) {
+    padding: 0px!important;
+}
+.label{
+    padding:0px;
+    color:#000000;
+}

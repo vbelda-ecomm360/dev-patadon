@@ -141,7 +141,7 @@
     "children": ["search-content"]
   },
   "search-content": {
-    "blocks": ["gallery", "not-found"]
+    "blocks": ["gallery#depique", "not-found"]
   },
 
   "search-result-layout.mobile": {
@@ -224,7 +224,14 @@
     }
   },
 
-  "gallery": {
-    "blocks": ["product-summary.shelf"]
+  "gallery#depique": {
+    "blocks": ["product-summary.shelf"],
+    "props":{
+      "maxItemsPerRow": { 
+        "desktop": 3, 
+        "tablet": 3, 
+        "phone": 2
+        }
+    }
   }
 }

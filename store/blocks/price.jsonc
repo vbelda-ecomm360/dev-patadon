@@ -62,38 +62,36 @@
 
   "flex-layout.row#summary_prices": {
     "props": {
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 2,
-      "marginTop": 5
+      "blockClass": "summary_prices"
     },
     "children": [
-      "flex-layout.col#summary_prices1", 
-      "flex-layout.col#summary_prices2", 
-      "flex-layout.col#summary_prices3"
+      "flex-layout.col#summary_prices"
     ]
   },
-  "flex-layout.col#summary_prices1": {
+  "flex-layout.col#summary_prices": {
     "children": [
-      "product-selling-price"
-    ]
-  },
-  "flex-layout.col#summary_prices2": {
-    "children": [
-      "product-price-savings#summary_prices"
-    ]
-  },
-  "product-price-savings#summary_prices": {
+      "product-list-price#summary_price",
+      "product-selling-price#summary_price"
+    ],
     "props": {
+      "blockClass": "summary_price",
+      "horizontalAlign": "center"
+    }
+  },
+  "product-list-price#summary_price": {
+    "props": {
+      "blockClass": "summary_price",
       "markers": [
-        "savingsPercentage"
+        "highlight"
       ]
     }
   },
-  "flex-layout.col#summary_prices3": {
-    "children": [
-      "product-list-price"
-    ]
+  "product-selling-price#summary_price": {
+    "props": {
+      "blockClass": "summary_price",
+      "markers": [
+        "highlight"
+      ]
+    }
   }
 }

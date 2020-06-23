@@ -9,3 +9,32 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+
+.socialNetworkLink{
+  background-repeat: no-repeat;
+  margin-right:10px;
+  margin-top:10px;
+}
+.socialNetworkImage{
+  visibility:hidden;
+}
+
+.socialNetworkLink--twitter{
+  background-image:url(https://patadon.com/arquivos/footer/twitter.png);
+}
+.socialNetworkLink--facebook{
+  background-image:url(https://patadon.com/arquivos/footer/fb.png);
+}
+.socialNetworkLink--instagram{
+  background-image:url(https://patadon.com/arquivos/footer/insta.png);
+}
+.socialNetworkLink--linkedin{
+  background-image:url(https://patadon.com/arquivos/footer/lik.png);
+}
+.socialNetworkLink--youtube{
+  background-image:url(https://patadon.com/arquivos/footer/youtube.png);
+}
+.socialNetworkLink--pinterest{
+  background-image:url(https://patadon.com/arquivos/footer/pinte.png);
+}

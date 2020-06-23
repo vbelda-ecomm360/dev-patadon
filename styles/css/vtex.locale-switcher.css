@@ -1,0 +1,10 @@
+.stretchChildrenWidth {
+    width:auto;
+}
+.container {
+    margin:0px;
+    text-transform: uppercase;
+}
+.globeIcon{
+    display:none;
+}

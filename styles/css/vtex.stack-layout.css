@@ -7,3 +7,12 @@
   top: 0;
   left: auto;
 }
+.stackItem--stacked-category-name{
+  width:100%;
+  left: 0;
+  top: 0;
+  bottom:0;
+  text-align:center;
+  margin:auto;
+}
+

@@ -9,7 +9,7 @@
 },
 // PRODUCT LIST FOR SHELF
 "list-context.product-list#shelf_topsale": {
-    "blocks": ["product-summary.shelf#shelf_home"],
+    "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#shelf_topsale"],
     "props": {
     "orderBy": "OrderByTopSaleDESC"
@@ -25,6 +25,7 @@
             },
             "infinite": true,
             "fullWidth": false,
+            "showPaginationDots": false,
             "blockClass": "shelf"
         }
     },
@@ -39,7 +40,7 @@
 },
 // PRODUCT LIST FOR SHELF
     "list-context.product-list#shelf_toprating": {
-    "blocks": ["product-summary.shelf#shelf_home"],
+    "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#shelf_toprating"],
     "props": {
         "orderBy": "OrderByTopSaleDESC"
@@ -55,24 +56,8 @@
         },
         "infinite": true,
         "fullWidth": false,
+        "showPaginationDots": false,
         "blockClass": "shelf"
-        }
-    },
-
-
-    // PRODUCT SUMMARY SHELF
-    "product-summary.shelf#shelf_home": {
-        "children": [
-        "stack-layout#prodsum",
-        "product-summary-name",
-        "product-summary-brand",
-        "flex-layout.row#summary_prices",
-        "add-to-cart-button"
-        ],
-        "props":{
-            
-            "showTitle": true,
-            "titleText": "asdasd"
         }
     }
 }

@@ -7,10 +7,10 @@
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
       "flex-layout.row#categories-home",
-      "rich-text#shelf-title",
+      "rich-text#shelf-title-1",
       "flex-layout.row#shelf_topsale",
       "flex-layout.row#home-brands",
-      "flex-layout.row#promo_home",
+      "rich-text#shelf-title-2",
       "flex-layout.row#shelf_toprating",
       "newsletter"
     ]
@@ -23,12 +23,12 @@
         "height": 720,
         "images": [
           {
-            "image": "https://patadon.com/arquivos/banner.png",
-            "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+            "image": "assets/home/banner.jpg",
+            "mobileImage": "assets/home/banner.jpg"
           },
           {
-            "image": "https://patadon.com/arquivos/banner.png",
-            "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+            "image": "assets/home/banner.jpg",
+            "mobileImage": "assets/home/banner.jpg"
           }
         ]
       }
@@ -43,75 +43,27 @@
         "infinite": true,
         "fullWidth": true,
         "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": false,
         "blockClass": "carousel"
       }
     },
-  // SHELF TITLE (SUSTITUIR)
-    "rich-text#shelf-title": {
+  // SHELF TITLE
+    "rich-text#shelf-title-1": {
       "props": {
-        "text": "## Summer",
-        "blockClass": "shelfTitle"
+        "text": "## PRODUCTOS MÁS VENDIDOS",
+        "blockClass": "shelfTitle",
+        "textPosition": "CENTER"
       }
     },
 
-  // ROW PROMOS IN HOME
-  "flex-layout.row#promo_home": {
-      "children": [
-        "flex-layout.col#promo_home1", 
-        "flex-layout.col#promo_home2"
-      ],
+  // SHELF TITLE
+    "rich-text#shelf-title-2": {
       "props": {
-          "rowGap": "15"
-      }
-  },
-    // COLUMNS FOR PROMOS
-    // COL 1
-    "flex-layout.col#promo_home1": {
-      "children": ["info-card#home"],
-      "props": {
-        "width": "60%"
+        "text": "## NUESTROS FAVORITOS",
+        "blockClass": "shelfTitle",
+        "textPosition": "CENTER"
       }
     },
-      "info-card#home": {
-        "props": {
-          "id": "info-card-home",
-          "isFullModeStyle": false,
-          "textPosition": "left",
-          "imageUrl": "https://patadon.com/arquivos/bannerpromo1.png",
-          "headline": "Tarjeta regalo",
-          "callToActionText": "VER OPCIONES",
-          "callToActionUrl": "/sale/d", 
-          "blockClass": "info-card-home",
-          "textAlignment": "center"
-        }
-      },
-
-    // COL 2
-    "flex-layout.col#promo_home2": {
-      "children": ["stack-layout#promo_home2"],
-      "props": {
-        "width": "40%"
-      }
-    },
-      "stack-layout#promo_home2": {
-          "children": [
-            //"image#promo_home2", 
-            "rich-text#promo_home2"
-          ]
-      },
-      /*
-      "image#promo_home2": {
-          "props": {
-          "src": "assets/promo/bannerpromo2.png"
-          }
-      },
-      */
-      "rich-text#promo_home2": {
-          "props": {
-          "text": "**Outlet**"
-          }
-      },
-  
 
   "rich-text#question": {
     "props": {
@@ -125,5 +77,12 @@
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
     }
+  },
+
+  "newsletter": {    
+    "props": {
+      "label": "Consigue un 5% de descuento\ncon nuestra NEWSLETTER"
+    }
   }
+
 }

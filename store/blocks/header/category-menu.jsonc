@@ -1,13 +1,14 @@
 {
+
+  // CATEGORY MENU
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle",
-      "width": 70
+      "width": "grow"
     },
     "children": ["vtex.menu@2.x:menu#category-menu"],
     "title": "Category Menu"
   },
-  
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
       "experimentalOptimizeRendering": true
@@ -16,13 +17,35 @@
       "menu-item#department-1",
       "menu-item#department-2",
       "menu-item#department-3",
-      "menu-item#department-4",
+      "menu-item#department-4"
+    ],
+    "title": "Category Mega Menu"
+  },
+
+  // PROMOS MENU
+  "flex-layout.col#promos-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": 30
+    },
+    "children": ["vtex.menu@2.x:menu#promos-menu"],
+    "title": "Promos Menu"
+  },
+  "vtex.menu@2.x:menu#promos-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
       "menu-item#department-5",
       "menu-item#department-6",
       "menu-item#department-7"
     ],
-    "title": "Category Mega Menu"
+    "title": "Promos Mega Menu"
   },
+
+
+
+  // PRIMER MENÚ DESPLEGABLE
   "menu-item#department-1": {
     "props": {
       "id": "menu-item-department-1",
@@ -51,340 +74,579 @@
       "flex-layout.row#department-1-submenu"
     ]
   },
+  // COLUMNAS DEL MENÚ
   "flex-layout.row#department-1-submenu": {
     "children": [
-      "menu#department-1-submenu-col-1",
-      "menu#department-1-submenu-col-2",
-      "flex-layout.col#department-4-submenu-col-2"
+      "flex-layout.col#department-1",
+      "flex-layout.col#department-1-extra-col-5"
+    ],
+    "props":{
+      "colGap": 6,
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#department-1": {
+    "children": [
+      "flex-layout.row#department-1-categories"
+    ],
+    "props":{
+      "width": "70%"
+    }
+  },
+  "flex-layout.row#department-1-categories": {
+    "children": [
+      "flex-layout.col#department-1-submenu-col-1",
+      "flex-layout.col#department-1-submenu-col-2",
+      "flex-layout.col#department-1-submenu-col-3",
+      "flex-layout.col#department-1-submenu-col-4"
     ]
   },
+
+  "flex-layout.col#department-1-submenu-col-1": {
+    "children": [
+      "menu#department-1-submenu-col-1"
+    ]
+  },
+  "flex-layout.col#department-1-submenu-col-2": {
+    "children": [
+      "menu#department-1-submenu-col-2"
+    ]
+  },
+  "flex-layout.col#department-1-submenu-col-3": {
+    "children": [
+      "menu#department-1-submenu-col-3"
+    ]
+  },
+  "flex-layout.col#department-1-submenu-col-4": {
+    "children": [
+      "menu#department-1-submenu-col-4"
+    ]
+  },
+  // COLUMNA 1 DEL MENÚ 1
   "menu#department-1-submenu-col-1": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu",
-      "experimentalOptimizeRendering": true,
-      "blockClass": "header-department-submenu-col"
+      "tagTitle": "Submenu"
     },
     "children": [
-      "menu-item#department-1-category-1",
-      "menu-item#department-1-category-2",
-      "menu-item#department-1-category-3",
-      "menu-item#department-1-category-4",
-      "menu-item#department-1-category-5",
-      "menu-item#department-1-category-6",
-      "menu-item#department-1-category-7",
-      "menu-item#department-1-category-8",
-      "menu-item#department-1-category-9",
-      "menu-item#department-1-category-10",
-      "menu-item#department-1-category-11"
+      "menu-item#department-1-col-1-category-1",
+      "menu-item#department-1-col-1-category-2",
+      "menu-item#department-1-col-1-category-3",
+      "menu-item#department-1-col-1-category-4",
+      "menu-item#department-1-col-1-category-5",      
+      "menu-item#department-1-col-1-category-6",
+      "menu-item#department-1-col-1-category-7",
+      "menu-item#department-1-col-1-category-8",
+      "menu-item#department-1-col-1-category-9"
     ]
   },
-  "menu-item#department-1-category-1": {
+  "menu-item#department-1-col-1-category-1": {
     "props": {
-      "id": "menu-item-department-1-category-1",
+      "id": "menu-item-department-1-col-1-category-1",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos/comida",
+        "href": "/palos-de-golf/standard",
         "noFollow": true,
-        "tagTitle": "Comida",
-        "text": "Comida"
+        "tagTitle": "Palos Standard",
+        "text": "Palos Standard"
       },
       "blockClass":"header-department-category-title"
     }
   },
-  "menu-item#department-1-category-2": {
+  "menu-item#department-1-col-1-category-2": {
     "props": {
-      "id": "menu-item-department-1-category-2",
+      "id": "menu-item-department-1-col-1-category-2",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos/comida/cremas",
+        "href": "/palos-de-golf/standard/drivers",
         "noFollow": true,
-        "tagTitle": "Cremas",
-        "text": "Cremas"
+        "tagTitle": "Drivers",
+        "text": "Drivers"
       }
     }
   },
-  "menu-item#department-1-category-3": {
+  "menu-item#department-1-col-1-category-3": {
     "props": {
-      "id": "menu-item-department-1-category-3",
+      "id": "menu-item-department-1-col-1-category-3",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos/comida/sopas",
+        "href": "/palos-de-golf/standard/madera-de-calle",
         "noFollow": true,
-        "tagTitle": "Sopas",
-        "text": "Sopas"
+        "tagTitle": "Maderas de calle",
+        "text": "Maderas de calle"
       }
     }
   },
-  "menu-item#department-1-category-4": {
+  "menu-item#department-1-col-1-category-4": {
     "props": {
-      "id": "menu-item-department-1-category-4",
+      "id": "menu-item-department-1-col-1-category-4",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos/comida/pure",
+        "href": "/palos-de-golf/standard/hibridos-utility-irons",
         "noFollow": true,
-        "tagTitle": "Pure",
-        "text": "Pure"
+        "tagTitle": "Híbridos y utility Irons",
+        "text": "Híbridos y utility Irons"
       }
     }
   },
-  "menu-item#department-1-category-5": {
+  "menu-item#department-1-col-1-category-5": {
     "props": {
-      "id": "menu-item-department-1-category-5",
+      "id": "menu-item-department-1-col-1-category-5",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos/comida/salsas",
+        "href": "/palos-de-golf/standard/sets-hierros",
         "noFollow": true,
-        "tagTitle": "Salsas",
-        "text": "Salsas"
+        "tagTitle": "Sets de hierros",
+        "text": "Sets de hierros"
       }
     }
   },
-  "menu-item#department-1-category-6": {
+  "menu-item#department-1-col-1-category-6": {
     "props": {
-      "id": "menu-item-department-1-category-6",
+      "id": "menu-item-department-1-col-1-category-6",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos/comida/pastas",
+        "href": "/palos-de-golf/standard/wedgers-chippers",
         "noFollow": true,
-        "tagTitle": "Pastas",
-        "text": "Pastas"
+        "tagTitle": "Wedges y chippers",
+        "text": "Wedges y chippers"
       }
     }
   },
-  "menu-item#department-1-category-7": {
+  "menu-item#department-1-col-1-category-7": {
     "props": {
-      "id": "menu-item-department-1-category-7",
+      "id": "menu-item-department-1-col-1-category-7",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos/comida/espesante-instantaneo",
+        "href": "/palos-de-golf/standard/hierros-sueltos",
         "noFollow": true,
-        "tagTitle": "Espesante Instantáneo",
-        "text": "Espesante Instantáneo"
+        "tagTitle": "Hierros Sueltos",
+        "text": "Hierros Sueltos"
       }
     }
   },
-  "menu-item#department-1-category-8": {
+  "menu-item#department-1-col-1-category-8": {
     "props": {
-      "id": "menu-item-department-1-category-8",
+      "id": "menu-item-department-1-col-1-category-8",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos/comida/mayonesa",
+        "href": "/palos-de-golf/standard/putters",
         "noFollow": true,
-        "tagTitle": "Mayonesa",
-        "text": "Mayonesa"
+        "tagTitle": "Putters",
+        "text": "Putters"
       }
     }
   },
-  "menu-item#department-1-category-9": {
+  "menu-item#department-1-col-1-category-9": {
     "props": {
-      "id": "menu-item-department-1-category-9",
+      "id": "menu-item-department-1-col-1-category-9",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/alimentos/comida/ketchup",
+        "href": "/palos-de-golf/standard",
         "noFollow": true,
-        "tagTitle": "Ketchup",
-        "text": "Ketchup"
-      }
+        "tagTitle": "Ver todos Palos Standard",
+        "text": "Ver todos Palos Standard"
+      },
+      "blockClass":"header-department-category-show-all"
     }
   },
-  "menu-item#department-1-category-10": {
-    "props": {
-      "id": "menu-item-department-1-category-10",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/alimentos/comida/caldos",
-        "noFollow": true,
-        "tagTitle": "Caldos",
-        "text": "Caldos"
-      }
-    }
-  },
-  "menu-item#department-1-category-11": {
-    "props": {
-      "id": "menu-item-department-1-category-11",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/alimentos/comida/platos-preparados",
-        "noFollow": true,
-        "tagTitle": "Platos Preparados",
-        "text": "Platos Preparados"
-      }
-    }
-  },
+  // COLUMNA 2 DEL MENÚ 1
   "menu#department-1-submenu-col-2": {
     "props": {
-        "orientation": "vertical",
-        "experimentalOptimizeRendering": true,
-        "tagTitle": "Submenu",
-        "blockClass": "header-department-submenu-col"
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
     },
     "children": [
-      "menu-item#department-1-category-1-col-2",
-      "menu-item#department-1-category-2-col-2",
-      "menu-item#department-1-category-3-col-2",
-      "menu-item#department-1-category-4-col-2",
-      "menu-item#department-1-category-5-col-2"
+      "menu-item#department-1-col-2-category-1",
+      "menu-item#department-1-col-2-category-2",
+      "menu-item#department-1-col-2-category-3",
+      "menu-item#department-1-col-2-category-4",
+      "menu-item#department-1-col-2-category-5",      
+      "menu-item#department-1-col-2-category-6",
+      "menu-item#department-1-col-2-category-7",
+      "menu-item#department-1-col-2-category-8"
     ]
-},
-"menu-item#department-1-category-1-col-2": {
-  "props": {
-    "id": "menu-item-department-1-category-1-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/alimentos/helados",
-      "noFollow": true,
-      "tagTitle": "Helados",
-      "text": "Helados"
+  },
+  "menu-item#department-1-col-2-category-1": {
+    "props": {
+      "id": "menu-item-department-1-col-2-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados",
+        "noFollow": true,
+        "tagTitle": "Palos Personalizados",
+        "text": "Palos Personalizados"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-1-col-2-category-2": {
+    "props": {
+      "id": "menu-item-department-1-col-2-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/drivers",
+        "noFollow": true,
+        "tagTitle": "Drivers",
+        "text": "Drivers"
+      }
+    }
+  },
+  "menu-item#department-1-col-2-category-3": {
+    "props": {
+      "id": "menu-item-department-1-col-2-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/madera-de-calle",
+        "noFollow": true,
+        "tagTitle": "Maderas de calle",
+        "text": "Maderas de calle"
+      }
+    }
+  },
+  "menu-item#department-1-col-2-category-4": {
+    "props": {
+      "id": "menu-item-department-1-col-2-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/hibridos-utility-irons",
+        "noFollow": true,
+        "tagTitle": "Híbridos y utility Irons",
+        "text": "Híbridos y utility Irons"
+      }
+    }
+  },
+  "menu-item#department-1-col-2-category-5": {
+    "props": {
+      "id": "menu-item-department-1-col-2-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/serts-hierros",
+        "noFollow": true,
+        "tagTitle": "Sets de hierros",
+        "text": "Sets de hierros"
+      }
+    }
+  },
+  "menu-item#department-1-col-2-category-6": {
+    "props": {
+      "id": "menu-item-department-1-col-2-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/wedgers-chippers",
+        "noFollow": true,
+        "tagTitle": "Wedges y chippers",
+        "text": "Wedges y chippers"
+      }
+    }
+  },
+  "menu-item#department-1-col-2-category-7": {
+    "props": {
+      "id": "menu-item-department-1-col-2-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/putters",
+        "noFollow": true,
+        "tagTitle": "Putters",
+        "text": "Putters"
+      }
+    }
+  },
+  "menu-item#department-1-col-2-category-8": {
+    "props": {
+      "id": "menu-item-department-1-col-2-category-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados",
+        "noFollow": true,
+        "tagTitle": "Ver todos Palos Personalizados",
+        "text": "Ver todos Palos Personalizados"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  // COLUMNA 3 DEL MENÚ 1
+  "menu#department-1-submenu-col-3": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
     },
-    "blockClass":"header-department-category-title"
-  }
-},
-"menu-item#department-1-category-2-col-2": {
-  "props": {
-    "id": "menu-item-department-1-category-2-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/alimentos/helados/tarrina",
-      "noFollow": true,
-      "tagTitle": "Tarrina",
-      "text": "Tarrina"
-    }
-  }
-},
-"menu-item#department-1-category-3-col-2": {
-  "props": {
-    "id": "menu-item-department-1-category-3-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/alimentos/helados/infantiles",
-      "noFollow": true,
-      "tagTitle": "Infantiles",
-      "text": "Infantiles"
-    }
-  }
-},
-"menu-item#department-1-category-4-col-2": {
-  "props": {
-    "id": "menu-item-department-1-category-4-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/alimentos/helados/mini-helados",
-      "noFollow": true,
-      "tagTitle": "Mini Helados",
-      "text": "Mini Helados"
-    }
-  }
-},
-"menu-item#department-1-category-5-col-2": {
-  "props": {
-    "id": "menu-item-department-1-category-5-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/alimentos/helados/tarta",
-      "noFollow": true,
-      "tagTitle": "Tarta",
-      "text": "Tarta"
-    }
-  }
-},
-  "flex-layout.col#department-1-submenu-col-3": {
     "children": [
-      "flex-layout.row#department-1-banner-1",
-      "flex-layout.row#department-1-banner-2",
-      "flex-layout.row#department-1-banner-3"
+      "menu-item#department-1-col-3-category-1",
+      "menu-item#department-1-col-3-category-2",
+      "menu-item#department-1-col-3-category-3",
+      "menu-item#department-1-col-3-category-4",
+      "menu-item#department-1-col-3-category-5"
+    ]
+  },
+  "menu-item#department-1-col-3-category-1": {
+    "props": {
+      "id": "menu-item-department-1-col-3-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack",
+        "noFollow": true,
+        "tagTitle": "Pack",
+        "text": "Pack"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-1-col-3-category-2": {
+    "props": {
+      "id": "menu-item-department-1-col-3-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/hombre",
+        "noFollow": true,
+        "tagTitle": "Pack de Iniciación Hombre",
+        "text": "Pack de Iniciación Hombre"
+      }
+    }
+  },
+  "menu-item#department-1-col-3-category-3": {
+    "props": {
+      "id": "menu-item-department-1-col-3-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/mujer",
+        "noFollow": true,
+        "tagTitle": "Pack de Iniciación Mujer",
+        "text": "Pack de Iniciación Mujer"
+      }
+    }
+  },
+  "menu-item#department-1-col-3-category-4": {
+    "props": {
+      "id": "menu-item-department-1-col-3-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/junior",
+        "noFollow": true,
+        "tagTitle": "Pack Junior",
+        "text": "Pack Junior"
+      }
+    }
+  },
+  "menu-item#department-1-col-3-category-5": {
+    "props": {
+      "id": "menu-item-department-1-col-3-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack",
+        "noFollow": true,
+        "tagTitle": "Ver todos Pack",
+        "text": "Ver todos Pack"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  // COLUMNA 4 DEL MENÚ 1
+  "menu#department-1-submenu-col-4": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-1-col-4-category-1",
+      "menu-item#department-1-col-4-category-2",
+      "menu-item#department-1-col-4-category-3",
+      "menu-item#department-1-col-4-category-4",
+      "menu-item#department-1-col-4-category-5",      
+      "menu-item#department-1-col-4-category-6",
+      "menu-item#department-1-col-4-category-7"
+    ]
+  },
+  "menu-item#department-1-col-4-category-1": {
+    "props": {
+      "id": "menu-item-department-1-col-4-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/otros",
+        "noFollow": true,
+        "tagTitle": "Otras categorías",
+        "text": "Otras categorías"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-1-col-4-category-2": {
+    "props": {
+      "id": "menu-item-department-1-col-4-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/otros/palos-de-mujer",
+        "noFollow": true,
+        "tagTitle": "Palos de Golf de Mujer",
+        "text": "Palos de Golf de Mujer"
+      }
+    }
+  },
+  "menu-item#department-1-col-4-category-3": {
+    "props": {
+      "id": "menu-item-department-1-col-4-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/otros/palos-junior",
+        "noFollow": true,
+        "tagTitle": "Palos de Golf de Junior",
+        "text": "Palos de Golf de Junior"
+      }
+    }
+  },
+  "menu-item#department-1-col-4-category-4": {
+    "props": {
+      "id": "menu-item-department-1-col-4-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/otros/palos-para-zurdos",
+        "noFollow": true,
+        "tagTitle": "Palos de Zurdo",
+        "text": "Palos de Zurdo"
+      }
+    }
+  },
+  "menu-item#department-1-col-4-category-5": {
+    "props": {
+      "id": "menu-item-department-1-col-4-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/otros/palos-segunda-mano",
+        "noFollow": true,
+        "tagTitle": "Palos de 2ª mano",
+        "text": "Palos de 2ª mano"
+      }
+    }
+  },
+  "menu-item#department-1-col-4-category-6": {
+    "props": {
+      "id": "menu-item-department-1-col-4-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/otros/palos-demo",
+        "noFollow": true,
+        "tagTitle": "Palos de Demo",
+        "text": "Palos de Demo"
+      }
+    }
+  },
+  "menu-item#department-1-col-4-category-7": {
+    "props": {
+      "id": "menu-item-department-1-col-4-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/otros",
+        "noFollow": true,
+        "tagTitle": "Ver todos Otras categorías",
+        "text": "Ver todos Otras categorías"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  // EXTRA MENU 1
+  "flex-layout.col#department-1-extra-col-5": {
+    "props":{
+      "width": "30%"
+    },
+    "children": [
+      "image#department-1-extra-col-5"
     ],
-    "props": {
-      "blockClass": "header-department-promo-col"
-    },
-    "title": "Right Category Banners"
+    "title": "Extra menu banner"
   },
-  "flex-layout.row#department-1-banner-1": {
-    "children":["image#department-1-banner-1"],
-    "props": {
-      }
-  },
-  "image#department-1-banner-1":{
+  "image#department-1-extra-col-5":{
     "props":{
-      "src": "assets/logopatadon.png",
+      "src": "assets/header/banner_menu.jpg",
       "maxHeight": 200
     },
-    "title": "Top Banner"
+    "title": "Menu banner"
   },
-  "flex-layout.row#department-1-banner-2": {
-    "children":["image#department-1-banner-2"],
-    "props": {
-      }
-  },
-  "image#department-1-banner-2":{
-    "props":{
-      "src": "assets/logopatadon.png",
-      "maxHeight": 200
-    },
-    "title": "Bottom Banner"
-  },
-  "flex-layout.row#department-1-banner-3": {
-    "children":["image#department-1-banner-3"],
-    "props": {
-      }
-  },
-  "image#department-1-banner-3":{
-    "props":{
-      "src": "assets/logopatadon.png",
-      "maxHeight": 200
-    },
-    "title": "Top Banner"
-  },
-
-
 
   // SEGUNDO MENÚ DESPLEGABLE
   "menu-item#department-2": {
@@ -395,10 +657,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bolsos-carros-gps",
+        "href": "/complementos-de-golf",
         "noFollow": true,
-        "tagTitle": "Bolsos, carros y GPS",
-        "text": "Bolsos, carros y GPS"
+        "tagTitle": "Complementos de golf",
+        "text": "Complementos de golf"
       },
       "blockClass":"header-department-title"
     },
@@ -421,7 +683,7 @@
       "flex-layout.col#department-2-submenu-col-1",
       "flex-layout.col#department-2-submenu-col-2",
       "flex-layout.col#department-2-submenu-col-3",
-      "flex-layout.col#department-4-submenu-col-2"
+      "flex-layout.col#department-2-extra-col-4"
     ],
     "props":{
       "colGap": 6
@@ -429,7 +691,7 @@
   },
   "flex-layout.col#department-2-submenu-col-1": {
     "children": [
-      "vtex.menu@2.x:menu#department-2-submenu"
+      "menu#department-2-submenu-col-1"
     ]
   },
   "flex-layout.col#department-2-submenu-col-2": {
@@ -444,22 +706,22 @@
   },
 
   // COLUMNA 1 DEL MENÚ 2
-  "vtex.menu@2.x:menu#department-2-submenu": {
+  "menu#department-2-submenu-col-1": {
     "props": {
       "orientation": "vertical",
       "tagTitle": "Submenu"
     },
     "children": [
-      "menu-item#department-2-category-1",
-      "menu-item#department-2-category-2",
-      "menu-item#department-2-category-3",
-      "menu-item#department-2-category-4",
-      "menu-item#department-2-category-5"
+      "menu-item#department-2-col-1-category-1",
+      "menu-item#department-2-col-1-category-2",
+      "menu-item#department-2-col-1-category-3",
+      "menu-item#department-2-col-1-category-4",
+      "menu-item#department-2-col-1-category-5"
     ]
   },
-  "menu-item#department-2-category-1": {
+  "menu-item#department-2-col-1-category-1": {
     "props": {
-      "id": "menu-item-department-2-category-1",
+      "id": "menu-item-department-2-col-1-category-1",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -473,9 +735,9 @@
       "blockClass":"header-department-category-title"
     }
   },
-  "menu-item#department-2-category-2": {
+  "menu-item#department-2-col-1-category-2": {
     "props": {
-      "id": "menu-item-department-2-category-2",
+      "id": "menu-item-department-2-col-1-category-2",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -488,9 +750,9 @@
       }
     }
   },
-  "menu-item#department-2-category-3": {
+  "menu-item#department-2-col-1-category-3": {
     "props": {
-      "id": "menu-item-department-2-category-3",
+      "id": "menu-item-department-2-col-1-category-3",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -503,9 +765,9 @@
       }
     }
   },
-  "menu-item#department-2-category-4": {
+  "menu-item#department-2-col-1-category-4": {
     "props": {
-      "id": "menu-item-department-2-category-4",
+      "id": "menu-item-department-2-col-1-category-4",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -518,9 +780,9 @@
       }
     }
   },
-  "menu-item#department-2-category-5": {
+  "menu-item#department-2-col-1-category-5": {
     "props": {
-      "id": "menu-item-department-2-category-5",
+      "id": "menu-item-department-2-col-1-category-5",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -543,19 +805,19 @@
         "blockClass": "header-department-submenu-col"
     },
     "children": [
-      "menu-item#department-2-category-1-col-2",
-      "menu-item#department-2-category-2-col-2",
-      "menu-item#department-2-category-3-col-2",
-      "menu-item#department-2-category-4-col-2",
-      "menu-item#department-2-category-5-col-2",
-      "menu-item#department-2-category-6-col-2",
-      "menu-item#department-2-category-7-col-2",
-      "menu-item#department-2-category-8-col-2"
+      "menu-item#department-2-col-2-category-1",
+      "menu-item#department-2-col-2-category-2",
+      "menu-item#department-2-col-2-category-3",
+      "menu-item#department-2-col-2-category-4",
+      "menu-item#department-2-col-2-category-5",
+      "menu-item#department-2-col-2-category-6",
+      "menu-item#department-2-col-2-category-7",
+      "menu-item#department-2-col-2-category-8"
     ]
 },
-"menu-item#department-2-category-1-col-2": {
+"menu-item#department-2-col-2-category-1": {
   "props": {
-    "id": "menu-item-department-2-category-1-col-2",
+    "id": "menu-item-department-2-col-2-category-1",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -569,9 +831,9 @@
     "blockClass":"header-department-category-title"
   }
 },
-"menu-item#department-2-category-2-col-2": {
+"menu-item#department-2-col-2-category-2": {
   "props": {
-    "id": "menu-item-department-2-category-2-col-2",
+    "id": "menu-item-department-2-col-2-category-2",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -584,9 +846,9 @@
     }
   }
 },
-"menu-item#department-2-category-3-col-2": {
+"menu-item#department-2-col-2-category-3": {
   "props": {
-    "id": "menu-item-department-2-category-3-col-2",
+    "id": "menu-item-department-2-col-2-category-3",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -599,9 +861,9 @@
     }
   }
 },
-"menu-item#department-2-category-4-col-2": {
+"menu-item#department-2-col-2-category-4": {
   "props": {
-    "id": "menu-item-department-2-category-4-col-2",
+    "id": "menu-item-department-2-col-2-category-4",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -614,9 +876,9 @@
     }
   }
 },
-"menu-item#department-2-category-5-col-2": {
+"menu-item#department-2-col-2-category-5": {
   "props": {
-    "id": "menu-item-department-2-category-5-col-2",
+    "id": "menu-item-department-2-col-2-category-5",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -629,9 +891,9 @@
     }
   }
 },
-"menu-item#department-2-category-6-col-2": {
+"menu-item#department-2-col-2-category-6": {
   "props": {
-    "id": "menu-item-department-2-category-6-col-2",
+    "id": "menu-item-department-2-col-2-category-6",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -644,9 +906,9 @@
     }
   }
 },
-"menu-item#department-2-category-7-col-2": {
+"menu-item#department-2-col-2-category-7": {
   "props": {
-    "id": "menu-item-department-2-category-6-col-2",
+    "id": "menu-item-department-2-col-2-category-7",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -659,9 +921,9 @@
     }
   }
 },
-"menu-item#department-2-category-8-col-2": {
+"menu-item#department-2-col-2-category-8": {
   "props": {
-    "id": "menu-item-department-2-category-6-col-2",
+    "id": "menu-item-department-2-col-2-category-8",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -684,16 +946,16 @@
         "blockClass": "header-department-submenu-col"
     },
     "children": [
-      "menu-item#department-2-category-1-col-3",
-      "menu-item#department-2-category-2-col-3",
-      "menu-item#department-2-category-3-col-3",
-      "menu-item#department-2-category-4-col-3",
-      "menu-item#department-2-category-5-col-3"
+      "menu-item#department-2-col-3-category-1",
+      "menu-item#department-2-col-3-category-2",
+      "menu-item#department-2-col-3-category-3",
+      "menu-item#department-2-col-3-category-4",
+      "menu-item#department-2-col-3-category-5"
     ]
 },
-"menu-item#department-2-category-1-col-3": {
+"menu-item#department-2-col-3-category-1": {
   "props": {
-    "id": "menu-item-department-2-category-1-col-3",
+    "id": "menu-item-department-2-col-3-category-1",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -707,9 +969,9 @@
     "blockClass":"header-department-category-title"
   }
 },
-"menu-item#department-2-category-2-col-3": {
+"menu-item#department-2-col-3-category-2": {
   "props": {
-    "id": "menu-item-department-2-category-2-col-3",
+    "id": "menu-item-department-2-col-3-category-2",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -722,9 +984,9 @@
     }
   }
 },
-"menu-item#department-2-category-3-col-3": {
+"menu-item#department-2-col-3-category-3": {
   "props": {
-    "id": "menu-item-department-2-category-3-col-3",
+    "id": "menu-item-department-2-col-3-category-3",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -737,9 +999,9 @@
     }
   }
 },
-"menu-item#department-2-category-4-col-3": {
+"menu-item#department-2-col-3-category-4": {
   "props": {
-    "id": "menu-item-department-2-category-4-col-3",
+    "id": "menu-item-department-2-col-3-category-4",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -752,9 +1014,9 @@
     }
   }
 },
-"menu-item#department-2-category-5-col-3": {
+"menu-item#department-2-col-3-category-5": {
   "props": {
-    "id": "menu-item-department-2-category-5-col-3",
+    "id": "menu-item-department-2-col-3-category-5",
     "type": "custom",
     "iconId": null,
     "highlight": false,
@@ -767,7 +1029,22 @@
     }
   }
 },
+"flex-layout.col#department-2-extra-col-4": {
+  "children": [
+    "image#department-2-extra-col-4"
+  ],
+  "title": "Extra menu banner"
+},
+"image#department-2-extra-col-4":{
+  "props":{
+    "src": "assets/header/banner_menu.jpg",
+    "maxHeight": 200
+  },
+  "title": "Menu banner"
+},
 
+
+  // TERCER MENÚ DESPLEGABLE
   "menu-item#department-3": {
     "props": {
       "id": "menu-item-department-3",
@@ -778,8 +1055,8 @@
         "type": "internal",
         "href": "/ropa-calzado",
         "noFollow": true,
-        "tagTitle": "Ropa y calzado",
-        "text": "Ropa y calzado"
+        "tagTitle": "Ropa y Calzado",
+        "text": "Ropa y Calzado"
       },
       "blockClass":"header-department-title"
     },
@@ -796,355 +1073,369 @@
       "flex-layout.row#department-3-submenu"
     ]
   },
+  // COLUMNAS DEL MENÚ
   "flex-layout.row#department-3-submenu": {
     "children": [
       "flex-layout.col#department-3-submenu-col-1",
       "flex-layout.col#department-3-submenu-col-2",
       "flex-layout.col#department-3-submenu-col-3",
-      "flex-layout.col#department-4-submenu-col-2"
+      "flex-layout.col#department-3-extra-col-4"
+    ],
+    "props":{
+      "colGap": 6
+    }
+  },
+  "flex-layout.col#department-3-submenu-col-1": {
+    "children": [
+      "menu#department-3-submenu-col-1"
     ]
   },
-  "flex-layout.col#department-3-submenu-col-1":{
-    "children": [
-      "vtex.menu@2.x:menu#department-3-submenu"
-    ],
-    "title": "Left Category Links"
-  },
-  "flex-layout.col#department-3-submenu-col-2":{
+  "flex-layout.col#department-3-submenu-col-2": {
     "children": [
       "menu#department-3-submenu-col-2"
-    ],
-    "title": "Left Category Links"
+    ]
   },
-  "flex-layout.col#department-3-submenu-col-3":{
+  "flex-layout.col#department-3-submenu-col-3": {
     "children": [
       "menu#department-3-submenu-col-3"
-    ],
-    "title": "Left Category Links"
-  },
-
-
-
-  "vtex.menu@2.x:menu#department-3-submenu": {
-    "props": {
-      "orientation": "vertical",
-      "tagTitle": "Submenu"
-    },
-    "children": [
-      "menu-item#department-3-category-1",
-      "menu-item#department-3-category-2",
-      "menu-item#department-3-category-3",
-      "menu-item#department-3-category-4",
-      "menu-item#department-3-category-5",
-      "menu-item#department-3-category-6"
     ]
   },
-  "menu-item#department-3-category-1": {
-    "props": {
-      "id": "menu-item-department-3-category-1",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cuidado-personal/higiene-corporal",
-        "noFollow": true,
-        "tagTitle": "Higiene Corporal",
-        "text": "Higiene Corporal"
-      },
-      "blockClass":"header-department-category-title"
-    }
-  },
-  "menu-item#department-3-category-2": {
-    "props": {
-      "id": "menu-item-department-3-category-2",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cuidado-personal/higiene-corporal/geles-de-bano",
-        "noFollow": true,
-        "tagTitle": "Geles de Baño",
-        "text": "Geles de Baño"
-      }
-    }
-  },
-  "menu-item#department-3-category-3": {
-    "props": {
-      "id": "menu-item-department-3-category-3",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cuidado-personal/higiene-corporal/desodorantes",
-        "noFollow": true,
-        "tagTitle": "Desodorantes",
-        "text": "Desodorantes"
-      }
-    }
-  },
-  "menu-item#department-3-category-4": {
-    "props": {
-      "id": "menu-item-department-3-category-4",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cuidado-personal/higiene-corporal/jabon-de-manos",
-        "noFollow": true,
-        "tagTitle": "Jabón de Manos",
-        "text": "Jabón de Manos"
-      }
-    }
-  },
-  "menu-item#department-3-category-5": {
-    "props": {
-      "id": "menu-item-department-3-category-5",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cuidado-personal/higiene-corporal/perfumeria",
-        "noFollow": true,
-        "tagTitle": "Perfumería",
-        "text": "Perfumería"
-      }
-    }
-  },
-  "menu-item#department-3-category-6": {
-    "props": {
-      "id": "menu-item-department-3-category-6",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cuidado-personal/higiene-corporal/hidratacion-corporal",
-        "noFollow": true,
-        "tagTitle": "Hidratación Corporal",
-        "text": "Hidratación Corporal"
-      }
-    }
-  },
-  "menu-item#department-3-category-7": {
-    "props": {
-      "id": "menu-item-department-3-category-7",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/cuidado-personal/higiene-corporal/limpieza-de-la-piel",
-        "noFollow": true,
-        "tagTitle": "Limpieza de la piel",
-        "text": "Limpieza de la piel"
-      }
-    }
-  },
-  "menu#department-3-submenu-col-2": {
-    "props": {
+  // COLUMNA 1 DEL MENÚ 3
+  "menu#department-3-submenu-col-1": {
+      "props": {
         "orientation": "vertical",
-        "experimentalOptimizeRendering": true,
-        "tagTitle": "Submenu",
-        "blockClass": "header-department-submenu-col"
+        "tagTitle": "Submenu"
+      },
+      "children": [
+        "menu-item#department-3-col-1-category-1",
+        "menu-item#department-3-col-1-category-2",
+        "menu-item#department-3-col-1-category-3",
+        "menu-item#department-3-col-1-category-4",
+        "menu-item#department-3-col-1-category-5",      
+        "menu-item#department-3-col-1-category-6"
+      ]
     },
-    "children": [
-      "menu-item#department-3-category-1-col-2",
-      "menu-item#department-3-category-2-col-2",
-      "menu-item#department-3-category-3-col-2",
-      "menu-item#department-3-category-4-col-2",
-      "menu-item#department-3-category-5-col-2"
-    ]
-},
-"menu-item#department-3-category-1-col-2": {
-  "props": {
-    "id": "menu-item-department-3-category-1-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/cuidado-personal/cabello",
-      "noFollow": true,
-      "tagTitle": "Cabello",
-      "text": "Cabello"
+    "menu-item#department-3-col-1-category-1": {
+      "props": {
+        "id": "menu-item-department-3-col-1-category-1",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-hombre",
+          "noFollow": true,
+          "tagTitle": "Ropa de golf para hombre",
+          "text": "Ropa de golf para hombre"
+        },
+        "blockClass":"header-department-category-title"
+      }
     },
-    "blockClass":"header-department-category-title"
-  }
-},
-"menu-item#department-3-category-2-col-2": {
-  "props": {
-    "id": "menu-item-department-3-category-2-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/cuidado-personal/cabello/champus",
-      "noFollow": true,
-      "tagTitle": "Champús",
-      "text": "Champús"
-    }
-  }
-},
-"menu-item#department-3-category-3-col-2": {
-  "props": {
-    "id": "menu-item-department-3-category-3-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/cuidado-personal/cabello/acondicionadores",
-      "noFollow": true,
-      "tagTitle": "Acondicionadores",
-      "text": "Acondicionadores"
-    }
-  }
-},
-"menu-item#department-3-category-4-col-2": {
-  "props": {
-    "id": "menu-item-department-3-category-4-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/cuidado-personal/cabello/cuidado-y-tratamiento",
-      "noFollow": true,
-      "tagTitle": "Cuidado y Tratamiento",
-      "text": "Cuidado y Tratamiento"
-    }
-  }
-},
-"menu-item#department-3-category-5-col-2": {
-  "props": {
-    "id": "menu-item-department-3-category-5-col-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/cuidado-personal/cabello/fijadores",
-      "noFollow": true,
-      "tagTitle": "Fijadores",
-      "text": "Fijadores"
-    }
-  }
-},
-"menu#department-3-submenu-col-3": {
-  "props": {
-      "orientation": "vertical",
-      "experimentalOptimizeRendering": true,
-      "tagTitle": "Submenu",
-      "blockClass": "header-department-submenu-col"
-  },
-  "children": [
-    "menu-item#department-3-category-1-col-3",
-    "menu-item#department-3-category-2-col-3",
-    "menu-item#department-3-category-3-col-3",
-    "menu-item#department-3-category-4-col-3"
-  ]
-},
-"menu-item#department-3-category-1-col-3": {
-"props": {
-  "id": "menu-item-department-3-category-1-col-3",
-  "type": "custom",
-  "iconId": null,
-  "highlight": false,
-  "itemProps": {
-    "type": "internal",
-    "href": "/cuidado-personal/boca-y-sonrisa",
-    "noFollow": true,
-    "tagTitle": "Boca y Sonrisa",
-    "text": "Boca y Sonrisa"
-  },
-  "blockClass":"header-department-category-title"
-}
-},
-"menu-item#department-3-category-2-col-3": {
-"props": {
-  "id": "menu-item-department-3-category-2-col-3",
-  "type": "custom",
-  "iconId": null,
-  "highlight": false,
-  "itemProps": {
-    "type": "internal",
-    "href": "/cuidado-personal/boca-y-sonrisa/dentifico",
-    "noFollow": true,
-    "tagTitle": "Dentífrico",
-    "text": "Dentífrico"
-  }
-}
-},
-"menu-item#department-3-category-3-col-3": {
-"props": {
-  "id": "menu-item-department-3-category-3-col-3",
-  "type": "custom",
-  "iconId": null,
-  "highlight": false,
-  "itemProps": {
-    "type": "internal",
-    "href": "/cuidado-personal/boca-y-sonrisa/enjuague-bucal",
-    "noFollow": true,
-    "tagTitle": "Enjuague Bucal",
-    "text": "Enjuague Bucal"
-  }
-}
-},
-"menu-item#department-3-category-4-col-3": {
-"props": {
-  "id": "menu-item-department-3-category-4-col-3",
-  "type": "custom",
-  "iconId": null,
-  "highlight": false,
-  "itemProps": {
-    "type": "internal",
-    "href": "/cuidado-personal/boca-y-sonrisa/cepillos",
-    "noFollow": true,
-    "tagTitle": "Cepillos",
-    "text": "Cepillos"
-  }
-}
-},
-
-
-
-  "flex-layout.col#department-3-submenu-col-4": {
+    "menu-item#department-3-col-1-category-2": {
+      "props": {
+        "id": "menu-item-department-3-col-1-category-2",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-hombre/zapatos-de-golf",
+          "noFollow": true,
+          "tagTitle": "Zapatos",
+          "text": "Zapatos"
+        }
+      }
+    },
+    "menu-item#department-3-col-1-category-3": {
+      "props": {
+        "id": "menu-item-department-3-col-1-category-3",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-hombre/ropa-de-golf",
+          "noFollow": true,
+          "tagTitle": "Textil",
+          "text": "Textil"
+        }
+      }
+    },
+    "menu-item#department-3-col-1-category-4": {
+      "props": {
+        "id": "menu-item-department-3-col-1-category-4",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-hombre/pantalones-de-golf",
+          "noFollow": true,
+          "tagTitle": "Pantalones",
+          "text": "Pantalones"
+        }
+      }
+    },
+    "menu-item#department-3-col-1-category-5": {
+      "props": {
+        "id": "menu-item-department-3-col-1-category-5",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-hombre/complementos-golf",
+          "noFollow": true,
+          "tagTitle": "Complementos de hombre",
+          "text": "Complementos de hombre"
+        }
+      }
+    },
+    "menu-item#department-3-col-1-category-6": {
+      "props": {
+        "id": "menu-item-department-3-col-1-category-6",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-hombre",
+          "noFollow": true,
+          "tagTitle": "Ver todos Ropa de golf para hombre",
+          "text": "Ver todos Ropa de golf para hombre"
+        },
+        "blockClass":"header-department-category-show-all"
+      }
+    },
+    // COLUMNA 2 DEL MENÚ 3
+    "menu#department-3-submenu-col-2": {
+      "props": {
+        "orientation": "vertical",
+        "tagTitle": "Submenu"
+      },
+      "children": [
+        "menu-item#department-3-col-2-category-1",
+        "menu-item#department-3-col-2-category-2",
+        "menu-item#department-3-col-2-category-3",
+        "menu-item#department-3-col-2-category-4",
+        "menu-item#department-3-col-2-category-5",      
+        "menu-item#department-3-col-2-category-6"
+      ]
+    },
+    "menu-item#department-3-col-2-category-1": {
+      "props": {
+        "id": "menu-item-department-3-col-2-category-1",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-mujer",
+          "noFollow": true,
+          "tagTitle": "Ropa de golf para mujer",
+          "text": "Ropa de golf para mujer"
+        },
+        "blockClass":"header-department-category-title"
+      }
+    },
+    "menu-item#department-3-col-2-category-2": {
+      "props": {
+        "id": "menu-item-department-3-col-2-category-2",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-mujer/zapatos",
+          "noFollow": true,
+          "tagTitle": "Zapatos",
+          "text": "Zapatos"
+        }
+      }
+    },
+    "menu-item#department-3-col-2-category-3": {
+      "props": {
+        "id": "menu-item-department-3-col-2-category-3",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-mujer/ropa",
+          "noFollow": true,
+          "tagTitle": "Textil",
+          "text": "Textil"
+        }
+      }
+    },
+    "menu-item#department-3-col-2-category-4": {
+      "props": {
+        "id": "menu-item-department-3-col-2-category-4",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-mujer/pantalones-de-golf",
+          "noFollow": true,
+          "tagTitle": "Pantalones",
+          "text": "Pantalones"
+        }
+      }
+    },
+    "menu-item#department-3-col-2-category-5": {
+      "props": {
+        "id": "menu-item-department-3-col-2-category-5",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-mujer/complementos-golf",
+          "noFollow": true,
+          "tagTitle": "Complementos de mujer",
+          "text": "Complementos de mujer"
+        }
+      }
+    },
+    "menu-item#department-3-col-2-category-6": {
+      "props": {
+        "id": "menu-item-department-3-col-2-category-6",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/para-mujer",
+          "noFollow": true,
+          "tagTitle": "Ver todos Ropa de golf para mujer",
+          "text": "Ver todos Ropa de golf para mujer"
+        },
+        "blockClass":"header-department-category-show-all"
+      }
+    },
+    // COLUMNA 3 DEL MENÚ 3
+    "menu#department-3-submenu-col-3": {
+      "props": {
+        "orientation": "vertical",
+        "tagTitle": "Submenu"
+      },
+      "children": [
+        "menu-item#department-3-col-3-category-1",
+        "menu-item#department-3-col-3-category-2",
+        "menu-item#department-3-col-3-category-3",
+        "menu-item#department-3-col-3-category-4",
+        "menu-item#department-3-col-3-category-5",      
+        "menu-item#department-3-col-3-category-6"
+      ]
+    },
+    "menu-item#department-3-col-3-category-1": {
+      "props": {
+        "id": "menu-item-department-3-col-3-category-1",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/junior",
+          "noFollow": true,
+          "tagTitle": "Ropa de golf Junior",
+          "text": "Ropa de golf Junior"
+        },
+        "blockClass":"header-department-category-title"
+      }
+    },
+    "menu-item#department-3-col-3-category-2": {
+      "props": {
+        "id": "menu-item-department-3-col-3-category-2",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/junior/zapatos",
+          "noFollow": true,
+          "tagTitle": "Zapatos",
+          "text": "Zapatos"
+        }
+      }
+    },
+    "menu-item#department-3-col-3-category-3": {
+      "props": {
+        "id": "menu-item-department-3-col-3-category-3",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/junior/ropa-junior",
+          "noFollow": true,
+          "tagTitle": "Ropa Junior",
+          "text": "Ropa Junior"
+        }
+      }
+    },
+    "menu-item#department-3-col-3-category-4": {
+      "props": {
+        "id": "menu-item-department-3-col-3-category-4",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/junior/gorras",
+          "noFollow": true,
+          "tagTitle": "Gorras",
+          "text": "Gorras"
+        }
+      }
+    },
+    "menu-item#department-3-col-3-category-5": {
+      "props": {
+        "id": "menu-item-department-3-col-3-category-5",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/junior/viseras",
+          "noFollow": true,
+          "tagTitle": "Viseras",
+          "text": "Viseras"
+        }
+      }
+    },
+    "menu-item#department-3-col-3-category-6": {
+      "props": {
+        "id": "menu-item-department-3-col-3-category-6",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/ropa-calzado/junior",
+          "noFollow": true,
+          "tagTitle": "Ver todos Ropa de golf Junior",
+          "text": "Ver todos Ropa de golf Junior"
+        },
+        "blockClass":"header-department-category-show-all"
+      }
+    },
+  "flex-layout.col#department-3-extra-col-4": {
     "children": [
-      "flex-layout.row#department-3-banner-1",
-      "flex-layout.row#department-3-banner-2"
+      "image#department-3-extra-col-4"
     ],
-    "title": "Right Category Banners"
+    "title": "Extra menu banner"
   },
-  "flex-layout.row#department-3-banner-1": {
-    "children":["image#department-3-banner-1"],
-    "props": {
-      }
-  },
-  "image#department-3-banner-1":{
+  "image#department-3-extra-col-4":{
     "props":{
-      "src": "/arquivos/Banners-cremes-fredes-275X102.jpg?v=636947126842870000",
+      "src": "assets/header/banner_menu.jpg",
       "maxHeight": 200
     },
-    "title": "Top Banner"
+    "title": "Menu banner"
   },
-  "flex-layout.row#department-3-banner-2": {
-    "children":["image#department-3-banner-2"],
-    "props": {
-      }
-  },
-  "image#department-3-banner-2":{
-    "props":{
-      "src": "/arquivos/Banners-plats-unics-275X102.jpg?v=636947130241970000",
-      "maxHeight": 200
-    },
-    "title": "Bottom Banner"
-  },
+
+  // CUARTO MENÚ DESPLEGABLE
   "menu-item#department-4": {
     "props": {
       "id": "menu-item-department-4",
@@ -1153,10 +1444,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bolsas-accesorios",
+        "href": "/bolas-accesorios",
         "noFollow": true,
-        "tagTitle": "Bolsas y accesorios",
-        "text": "Bolsas y accesorios"
+        "tagTitle": "Bolas y Accesorios",
+        "text": "Bolas y Accesorios"
       },
       "blockClass":"header-department-title"
     },
@@ -1173,183 +1464,547 @@
       "flex-layout.row#department-4-submenu"
     ]
   },
+  // COLUMNAS DEL MENÚ
   "flex-layout.row#department-4-submenu": {
     "children": [
       "flex-layout.col#department-4-submenu-col-1",
-      "flex-layout.col#department-4-submenu-col-2"
-    ]
+      "flex-layout.col#department-4-submenu-col-2",
+      "flex-layout.col#department-4-submenu-col-3",
+      "flex-layout.col#department-4-submenu-col-4",
+      "flex-layout.col#department-4-submenu-col-5",
+      "flex-layout.col#department-4-extra-col-6"
+    ],
+    "props":{
+      "colGap": 6
+    }
   },
   "flex-layout.col#department-4-submenu-col-1": {
     "children": [
-      "vtex.menu@2.x:menu#department-4-submenu"
-    ],
-    "title": "Left Category Links"
+      "menu#department-4-submenu-col-1"
+    ]
   },
-  "vtex.menu@2.x:menu#department-4-submenu": {
+  "flex-layout.col#department-4-submenu-col-2": {
+    "children": [
+      "menu#department-4-submenu-col-2"
+    ]
+  },
+  "flex-layout.col#department-4-submenu-col-3": {
+    "children": [
+      "menu#department-4-submenu-col-3"
+    ]
+  },
+  "flex-layout.col#department-4-submenu-col-4": {
+    "children": [
+      "menu#department-4-submenu-col-4"
+    ]
+  },
+  "flex-layout.col#department-4-submenu-col-5": {
+    "children": [
+      "menu#department-4-submenu-col-5"
+    ]
+  },
+  // COLUMNA 1 DEL MENÚ 4
+  "menu#department-4-submenu-col-1": {
     "props": {
       "orientation": "vertical",
       "tagTitle": "Submenu"
     },
     "children": [
-      "menu-item#department-4-category-1",
-      "menu-item#department-4-category-2",
-      "menu-item#department-4-category-3",
-      "menu-item#department-4-category-4",
-      "menu-item#department-4-category-5",
-      "menu-item#department-4-category-6",
-      "menu-item#department-4-category-7"
+      "menu-item#department-4-col-1-category-1",
+      "menu-item#department-4-col-1-category-2",
+      "menu-item#department-4-col-1-category-3",
+      "menu-item#department-4-col-1-category-4",
+      "menu-item#department-4-col-1-category-5"
     ]
   },
-  "menu-item#department-4-category-1": {
+  "menu-item#department-4-col-1-category-1": {
     "props": {
-      "id": "menu-item-department-4-category-1",
+      "id": "menu-item-department-4-col-1-category-1",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bebes-y-ninos/",
+        "href": "/bolas",
         "noFollow": true,
-        "tagTitle": "Bebés y Niños",
-        "text": "Bebés y Niños"
+        "tagTitle": "Bolas",
+        "text": "Bolas"
       },
       "blockClass":"header-department-category-title"
     }
   },
-  "menu-item#department-4-category-2": {
+  "menu-item#department-4-col-1-category-2": {
     "props": {
-      "id": "menu-item-department-4-category-2",
+      "id": "menu-item-department-4-col-1-category-2",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bebes-y-ninos/gel-de-bano",
+        "href": "/bolas/bolas-de-golf",
         "noFollow": true,
-        "tagTitle": "Gel de Baño",
-        "text": "Gel de Baño"
+        "tagTitle": "Bolas de golf",
+        "text": "Bolas de golf"
       }
     }
   },
-  "menu-item#department-4-category-3": {
+  "menu-item#department-4-col-1-category-3": {
     "props": {
-      "id": "menu-item-department-4-category-3",
+      "id": "menu-item-department-4-col-1-category-3",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bebes-y-ninos/champu",
+        "href": "/bolas/bolas-recuperadas",
         "noFollow": true,
-        "tagTitle": "Champú",
-        "text": "Champú"
+        "tagTitle": "Bolas recuperadas",
+        "text": "Bolas recuperadas"
       }
     }
   },
-  "menu-item#department-4-category-4": {
+  "menu-item#department-4-col-1-category-4": {
     "props": {
-      "id": "menu-item-department-4-category-4",
+      "id": "menu-item-department-4-col-1-category-4",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bebes-y-ninos/locion-corporal",
+        "href": "/bolas/saco-de-bolas",
         "noFollow": true,
-        "tagTitle": "Loción Corporal",
-        "text": "Loción Corporal"
+        "tagTitle": "Saco de bolas",
+        "text": "Saco de bolas"
       }
     }
   },
-  "menu-item#department-4-category-5": {
+  "menu-item#department-4-col-1-category-5": {
     "props": {
-      "id": "menu-item-department-4-category-5",
+      "id": "menu-item-department-4-col-1-category-5",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/bebes-y-ninos/toallitas",
+        "href": "/bolas",
         "noFollow": true,
-        "tagTitle": "Toallitas",
-        "text": "Toallitas"
-      }
+        "tagTitle": "Ver todos Bolas",
+        "text": "Ver todos Bolas"
+      },
+      "blockClass":"header-department-category-show-all"
     }
   },
-  "menu-item#department-4-category-6": {
+  // COLUMNA 2 DEL MENÚ 4
+  "menu#department-4-submenu-col-2": {
     "props": {
-      "id": "menu-item-department-4-category-6",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bebes-y-ninos/jabon",
-        "noFollow": true,
-        "tagTitle": "Jabón",
-        "text": "Jabón"
-      }
-    }
-  },
-  "menu-item#department-4-category-7": {
-    "props": {
-      "id": "menu-item-department-4-category-7",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bebes-y-ninos/neceser",
-        "noFollow": true,
-        "tagTitle": "Neceser",
-        "text": "Neceser"
-      }
-    }
-  },
-  "flex-layout.col#department-4-submenu-col-2": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
     "children": [
-      "info-card#bebes-y-ninos"
+      "menu-item#department-4-col-2-category-1",
+      "menu-item#department-4-col-2-category-2",
+      "menu-item#department-4-col-2-category-3",
+      "menu-item#department-4-col-2-category-4",
+      "menu-item#department-4-col-2-category-5"
+    ]
+  },
+  "menu-item#department-4-col-2-category-1": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/guantes-de-golf",
+        "noFollow": true,
+        "tagTitle": "Guantes de golf",
+        "text": "Guantes de golf"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-4-col-2-category-2": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/guantes-de-golf-hombre",
+        "noFollow": true,
+        "tagTitle": "Guantes de golf para hombre",
+        "text": "Guantes de golf para hombre"
+      }
+    }
+  },
+  "menu-item#department-4-col-2-category-3": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/guantes-de-golf-mujer",
+        "noFollow": true,
+        "tagTitle": "Guantes de golf para mujer",
+        "text": "Guantes de golf para mujer"
+      }
+    }
+  },
+  "menu-item#department-4-col-2-category-4": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/guantes-de-golf-junior",
+        "noFollow": true,
+        "tagTitle": "Guantes de golf Junior",
+        "text": "Guantes de golf Junior"
+      }
+    }
+  },
+  "menu-item#department-4-col-2-category-5": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/guantes-de-golf",
+        "noFollow": true,
+        "tagTitle": "Ver todos Guantes de golf",
+        "text": "Ver todos Guantes de golf"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  // COLUMNA 3 DEL MENÚ 4
+  "menu#department-4-submenu-col-3": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-4-col-3-category-1",
+      "menu-item#department-4-col-3-category-2",
+      "menu-item#department-4-col-3-category-3",
+      "menu-item#department-4-col-3-category-4",
+      "menu-item#department-4-col-3-category-5",      
+      "menu-item#department-4-col-3-category-6"
+    ]
+  },
+  "menu-item#department-4-col-3-category-1": {
+    "props": {
+      "id": "menu-item-department-4-col-3-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tees-accesorios",
+        "noFollow": true,
+        "tagTitle": "Tees y Accesorios",
+        "text": "Tees y Accesorios"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-4-col-3-category-2": {
+    "props": {
+      "id": "menu-item-department-4-col-3-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tees-accesorios/tees",
+        "noFollow": true,
+        "tagTitle": "Tees",
+        "text": "Tees"
+      }
+    }
+  },
+  "menu-item#department-4-col-3-category-3": {
+    "props": {
+      "id": "menu-item-department-4-col-3-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tees-accesorios/paraguas",
+        "noFollow": true,
+        "tagTitle": "Paraguas",
+        "text": "Paraguas"
+      }
+    }
+  },
+  "menu-item#department-4-col-3-category-4": {
+    "props": {
+      "id": "menu-item-department-4-col-3-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tees-accesorios/recogebolas",
+        "noFollow": true,
+        "tagTitle": "Recogebolas",
+        "text": "Recogebolas"
+      }
+    }
+  },
+  "menu-item#department-4-col-3-category-5": {
+    "props": {
+      "id": "menu-item-department-4-col-3-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tees-accesorios/mas-accesorios",
+        "noFollow": true,
+        "tagTitle": "Más accesorios",
+        "text": "Más accesorios"
+      }
+    }
+  },
+  "menu-item#department-4-col-3-category-6": {
+    "props": {
+      "id": "menu-item-department-4-col-3-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tees-accesorios",
+        "noFollow": true,
+        "tagTitle": "Ver todos Tees y Accesorios",
+        "text": "Ver todos Tees y Accesorios"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  // COLUMNA 4 DEL MENÚ 4
+  "menu#department-4-submenu-col-4": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-4-col-4-category-1",
+      "menu-item#department-4-col-4-category-2",
+      "menu-item#department-4-col-4-category-3",
+      "menu-item#department-4-col-4-category-4",
+      "menu-item#department-4-col-4-category-5"
+    ]
+  },
+  "menu-item#department-4-col-4-category-1": {
+    "props": {
+      "id": "menu-item-department-4-col-4-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/entrenamiento",
+        "noFollow": true,
+        "tagTitle": "Entreno",
+        "text": "Entreno"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-4-col-4-category-2": {
+    "props": {
+      "id": "menu-item-department-4-col-4-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/entrenamiento/alfombras-y-redes",
+        "noFollow": true,
+        "tagTitle": "Alfombras y redes",
+        "text": "Alfombras y redes"
+      }
+    }
+  },
+  "menu-item#department-4-col-4-category-3": {
+    "props": {
+      "id": "menu-item-department-4-col-4-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/entrenamiento/material-de-entreno",
+        "noFollow": true,
+        "tagTitle": "Material de entreno",
+        "text": "Material de entreno"
+      }
+    }
+  },
+  "menu-item#department-4-col-4-category-4": {
+    "props": {
+      "id": "menu-item-department-4-col-4-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/entrenamiento/libros-dvd",
+        "noFollow": true,
+        "tagTitle": "Libros y DVD",
+        "text": "Libros y DVD"
+      }
+    }
+  },
+  "menu-item#department-4-col-4-category-5": {
+    "props": {
+      "id": "menu-item-department-4-col-4-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/entrenamiento/",
+        "noFollow": true,
+        "tagTitle": "Ver todos Entreno",
+        "text": "Ver todos Entreno"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },  
+  // COLUMNA 5 DEL MENÚ 4
+  "menu#department-4-submenu-col-5": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-4-col-5-category-1",
+      "menu-item#department-4-col-5-category-2",
+      "menu-item#department-4-col-5-category-3",
+      "menu-item#department-4-col-5-category-4",
+      "menu-item#department-4-col-5-category-5",      
+      "menu-item#department-4-col-5-category-6"
+    ]
+  },
+  "menu-item#department-4-col-5-category-1": {
+    "props": {
+      "id": "menu-item-department-4-col-5-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mantenimiento",
+        "noFollow": true,
+        "tagTitle": "Mantenimiento",
+        "text": "Mantenimiento"
+      },
+      "blockClass":"header-department-category-title"
+    }
+  },
+  "menu-item#department-4-col-5-category-2": {
+    "props": {
+      "id": "menu-item-department-4-col-5-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mantenimiento/toallas",
+        "noFollow": true,
+        "tagTitle": "Toallas",
+        "text": "Toallas"
+      }
+    }
+  },
+  "menu-item#department-4-col-5-category-3": {
+    "props": {
+      "id": "menu-item-department-4-col-5-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mantenimiento/fundas-de-palos",
+        "noFollow": true,
+        "tagTitle": "Fundas de palos",
+        "text": "Fundas de palos"
+      }
+    }
+  },
+  "menu-item#department-4-col-5-category-4": {
+    "props": {
+      "id": "menu-item-department-4-col-5-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mantenimiento/productos-de-limpieza",
+        "noFollow": true,
+        "tagTitle": "Productos de limpieza",
+        "text": "Productos de limpieza"
+      }
+    }
+  },
+  "menu-item#department-4-col-5-category-5": {
+    "props": {
+      "id": "menu-item-department-4-col-5-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mantenimiento/arreglapiques",
+        "noFollow": true,
+        "tagTitle": "Arreglapiques",
+        "text": "Arreglapiques"
+      }
+    }
+  },
+  "menu-item#department-4-col-5-category-6": {
+    "props": {
+      "id": "menu-item-department-4-col-5-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mantenimiento",
+        "noFollow": true,
+        "tagTitle": "Ver todos Mantenimiento",
+        "text": "Ver todos Mantenimiento"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  "flex-layout.col#department-4-extra-col-6": {
+    "children": [
+      "image#department-4-extra-col-6"
     ],
-    "title": "Right Category Banners"
+    "title": "Extra menu banner"
   },
-  "info-card#bebes-y-ninos": {
-    "props": {
-      "id": "info-card-helados",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "assets/logopatadon.png",
-      "headline": "Mejores productos para el verano",
-      "callToActionText": "Navegar",
-      "callToActionUrl": "/alimentos",
-      "blockClass": "info-card-helados",
-      "textAlignment": "center"
-    },
-    "title": "Infocard Promotions"
-  },
-  "flex-layout.row#department-4-banner-1": {
-    "children":["image#department-4-banner-1"],
-    "props": {
-      }
-  },
-  "image#department-4-banner-1":{
+  "image#department-4-extra-col-6":{
     "props":{
-      "src": "/arquivos/Banners-llet-ecologica-275X102.jpg?v=636947128036700000",
+      "src": "assets/header/banner_menu.jpg",
       "maxHeight": 200
     },
-    "title": "Top Banner"
+    "title": "Menu banner"
   },
-  "flex-layout.row#department-4-banner-2": {
-    "children":["image#department-4-banner-2"],
-    "props": {
-      }
-  },
-  "image#department-4-banner-2":{
-    "props":{
-      "src": "/arquivos/Banners-ous-ecos-275x102.jpg?v=636947130227630000",
-      "maxHeight": 200
-    },
-    "title": "Bottom Banner"
-  },
+
+
   "menu-item#department-5": {
     "props": {
       "id": "menu-item-deparment-5",
@@ -1358,7 +2013,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/marcas",
+        "href": "/marcas-de-golf",
         "noFollow": true,
         "tagTitle": "Marcas",
         "text": "Marcas"
@@ -1378,20 +2033,7 @@
       "flex-layout.row#home-brands"
     ]
   },
-  "info-card#promoheader": {
-    "props": {
-      "id": "info-card-promoheader",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://ametllerorigen.cat/media/custom/banners/File-1582708387.jpg",
-      "headline": "Mejores promos",
-      "callToActionText": "Navegar",
-      "callToActionUrl": "/promocions",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    },
-    "title": "Infocard Promotions"
-  },
+
 
   "menu-item#department-6": {
     "props": {
@@ -1401,40 +2043,123 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/descuentos",
+        "href": "/ofertas",
         "noFollow": true,
-        "tagTitle": "Descuentos",
-        "text": "Descuentos"
+        "tagTitle": "Ofertas / descuentos",
+        "text": "Ofertas / descuentos"
       },
       "blockClass":"header-promotions-title"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#department-6"
+      "submenu#department-6"
     ]
   },
-  "vtex.menu@2.x:submenu#department-6": {
+  "submenu#department-6": {
     "props": {
-      "width": "100%"
-      
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
     },
     "children": [
-      "info-card#promoheader_descuento"
+      "menu-item#department-6-category-1",
+      "menu-item#department-6-category-2",
+      "menu-item#department-6-category-3",
+      "menu-item#department-6-category-4",
+      "menu-item#department-6-category-5",      
+      "menu-item#department-6-category-6"
     ]
   },
-  "info-card#promoheader_descuento": {
+  "menu-item#department-6-category-1": {
     "props": {
-      "id": "info-card-promoheader_descuentos",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://ametllerorigen.cat/media/custom/banners/File-1582708387.jpg",
-      "headline": "Mejores promos",
-      "callToActionText": "Navegar",
-      "callToActionUrl": "/descuentos",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    },
-    "title": "Infocard Promotions"
+      "id": "menu-item-department-6-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas/ofertas-al-50-descuento",
+        "noFollow": true,
+        "tagTitle": "Ofertas al 50%",
+        "text": "Ofertas al 50%"
+      }
+    }
   },
+  "menu-item#department-6-category-2": {
+    "props": {
+      "id": "menu-item-department-6-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas/material-de-golf-usado",
+        "noFollow": true,
+        "tagTitle": "Material de golf Usado",
+        "text": "Material de golf Usado"
+      }
+    }
+  },
+  "menu-item#department-6-category-3": {
+    "props": {
+      "id": "menu-item-department-6-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas/ropa-de-golf",
+        "noFollow": true,
+        "tagTitle": "Textil",
+        "text": "Textil"
+      }
+    }
+  },
+  "menu-item#department-6-category-4": {
+    "props": {
+      "id": "menu-item-department-6-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas/zapatos-de-golf",
+        "noFollow": true,
+        "tagTitle": "Zapatos",
+        "text": "Zapatos"
+      }
+    }
+  },
+  "menu-item#department-6-category-5": {
+    "props": {
+      "id": "menu-item-department-6-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas/vender-palos-golf",
+        "noFollow": true,
+        "tagTitle": "Vende tus palos de golf",
+        "text": "Vende tus palos de golf"
+      }
+    }
+  },
+  "menu-item#department-6-category-6": {
+    "props": {
+      "id": "menu-item-department-6-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas/segunda-mano",
+        "noFollow": true,
+        "tagTitle": "Segunda mano",
+        "text": "Segunda mano"
+      }
+    }
+  },
+
+
 
   "menu-item#department-7": {
     "props": {
@@ -1444,38 +2169,35 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/tarjeta-regalo",
+        "href": "/noticias",
         "noFollow": true,
-        "tagTitle": "Tarjeta regalo",
-        "text": "Tarjeta regalo"
+        "tagTitle": "Noticias",
+        "text": "Noticias"
       },
       "blockClass":"header-promotions-title"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#department-7"
+      "submenu#department-7"
     ]
   },
-  "vtex.menu@2.x:submenu#department-7": {
-    "props": {
-      "width": "100%"
-      
-    },
+  "submenu#department-7": {
     "children": [
-      "info-card#promoheader_tarjeta"
+      "menu-item#department-7-category-1"
     ]
   },
-  "info-card#promoheader_tarjeta": {
+  "menu-item#department-7-category-1": {
     "props": {
-      "id": "info-card-promoheader_tarjeta",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://ametllerorigen.cat/media/custom/banners/File-1582708387.jpg",
-      "headline": "Mejores promos",
-      "callToActionText": "Navegar",
-      "callToActionUrl": "/tarjeta-regalo",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    },
-    "title": "Infocard Promotions"
+      "id": "menu-item-department-7-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/consejos-de-profesionales",
+        "noFollow": true,
+        "tagTitle": "Consejos de profesionales",
+        "text": "Consejos de profesionales"
+      }
+    }
   }
 }

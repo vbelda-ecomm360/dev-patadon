@@ -1,5 +1,5 @@
 .notificationBarContainer {  
-  background-color: #ff6b00;
+  background-color: #C8102E;
   color: #ffffff;
   font-size: 10px;
   font-weight: 300;
@@ -7,9 +7,25 @@
   letter-spacing: 0.5px;
 }
 
-.searchBarContainer :global(.vtex-styleguide-9-x-input) {
-  max-width: 208px;
+.searchBarContainer{
+  max-width:none;
+  padding-left:20px;
+  padding-right:20px;
 }
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: 1px solid #000;
+  border-radius: 0;
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  max-width: none;
+  padding-left:30px;
+  font-size:14px;
+  color:#000;
+  letter-spacing: 1px;
+}
+
+
+
 
 .infoCardContainer--info-card-home {
   max-width: 1520px;
@@ -17,16 +33,40 @@
   background-color: #e6f1e6;
   padding: 0px;
 }
-
+ 
 .newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
+  background-image: url('https://patadon.com/arquivos/newsletter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
 }
-
 .newsletter .container {
   padding: 60px 10px;
 }
+.newsletter .form {
+  max-width:100%;
+  min-width:900px;
+  margin-left:300px;
+}
+.newsletter :global(.vtex-input-prefix__group ) {
+  border:0px;
+}
+.newsletter .inputGroup {
+  border-bottom:1px solid #fff;
+}
+.newsletter :global(.vtex-styleguide-9-x-input) {
+  padding:0px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.newsletter :global(.vtex-button) {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+
 
 .label {
   color: #fff;
@@ -43,6 +83,19 @@
   background-color: transparent;
   color: #fff;
   border: none;
+}
+
+.discountContainer{
+  width:100%;
+}
+
+.discountInsideContainer{
+  background-color: transparent;
+  background-image: url('https://patadon.com/arquivos/iconos/descuento.png');
+  background-repeat: no-repeat;
+  height:36px;
+  width:30px;
+  right:20px;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
@@ -69,6 +122,17 @@
 .skuSelectorContainer {
   margin: 1rem 0;
 }
+
+.imageElement--logo-footer{
+  margin-top:1em;
+  margin-bottom:30px;
+}
+
+.imageElement--imagen-confianza{
+  margin-bottom:15px;
+}
+
+
 
 @media only screen and (min-width: 640px) {
   .newsletter .container {
@@ -116,3 +180,16 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+
+
+.notificationBarInner{
+  min-height:0px
+}
+
+
+.imageElement--stacked-category-image{
+  width:100%;
+} 
+
+

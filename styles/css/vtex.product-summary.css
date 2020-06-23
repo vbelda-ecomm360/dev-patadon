@@ -1,7 +1,16 @@
+.element{
+  padding:0px;
+}
+.element :global(.vtex-button){
+  border-radius:0;
+}
+
 .skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
   border-radius: 50%;
 }
-
+.container{
+  border-radius:0;
+}
 .container :global(.vtex-modal-layout-0-x-triggerContainer) {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
@@ -18,22 +27,27 @@
 }
 
 .nameContainer {
-  justify-content: start;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 9px;
+  text-align: center;
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2E2E2E;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.35px;
+  text-align: center;
+  color: #000000;
 }
 
 .container {
   text-align: start;
+  background-color: #FFFFFF;
 }
 
 .imageContainer {
+  margin-top:15px;
   text-align: center;
   background:#ffffff;
 }
@@ -43,11 +57,28 @@
 }
 
 
+.groupContainer {
+  margin:0px 15px;
+}
+
 .badgeContainer--2x1 {
-  background-image: url(https://i-unilever.a8e.net.br/static/images/stopper-promo-lider-novo1.png);
-  height: 45px;
-  width: 65px;
+  background-image: url('https://patadon.com/arquivos/iconos/etiqueta.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  height:44px;
+  width:35px;
 }
 .badgeContainer--2x1 .badgeText {
   z-index: -1;
+}
+
+.productBrandContainer{
+  text-align:center;
+  font-size: 11px;
+  letter-spacing: 0.55px;
+  color: #8a8a8a;
+}
+.productBrand {
+  display:block;
+  min-height:34px;
 }

@@ -44,7 +44,7 @@
       },
         "image#deal1": {
           "props": {
-            "src": "https://patadon.com/arquivos/confianza/envios-m.png",
+            "src": "assets/confianza/envios.svg",
             "maxHeight": "32px"
           }
         },
@@ -95,7 +95,7 @@
       },
         "image#deal2": {
           "props": {
-            "src": "https://patadon.com/arquivos/confianza/pago-m.png",
+            "src": "assets/confianza/pago.svg",
             "maxHeight": "32px"
           }
         },
@@ -146,7 +146,7 @@
       },
         "image#deal3": {
           "props": {
-            "src": "https://patadon.com/arquivos/confianza/devoluciones-m.png",
+            "src": "assets/confianza/devoluciones.svg",
             "maxHeight": "32px"
           }
         },
