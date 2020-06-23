@@ -1,35 +1,35 @@
 {
-    "product-summary.shelf": {
-        "children": [
-          "stack-layout#prodsum",
-          "product-summary-name",
-          "product-summary-brand",
-          "flex-layout.row#summary_prices",
-          "add-to-cart-button"
-        ]
-      },
-    
-      "product-summary-image": {
-        "props": {
-          "height": 220
-        }
-      },
-"stack-layout#prodsum": {
+  "product-summary.shelf": {
     "children": [
-        "product-summary-image#shelf",
-        "flex-layout.row#product-summary-specification-badges-shelf"
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-summary-brand",
+      "flex-layout.row#summary_prices",
+      "product-summary-buy-button"
     ]
   },
-  "flex-layout.row#product-summary-specification-badges-shelf":{
+
+  "product-summary-image": {
+    "props": {
+      "height": 220
+    }
+  },
+  "stack-layout#prodsum": {
     "children": [
-        "flex-layout.col#product-summary-specification-badges-shelf"
+      "product-summary-image#shelf",
+      "flex-layout.row#product-summary-specification-badges-shelf"
+    ]
+  },
+  "flex-layout.row#product-summary-specification-badges-shelf": {
+    "children": [
+      "flex-layout.col#product-summary-specification-badges-shelf"
     ]
 
-},
-  "flex-layout.col#product-summary-specification-badges-shelf":{
-      "children": [
-        "product-summary-specification-badges#promo"
-      ]
+  },
+  "flex-layout.col#product-summary-specification-badges-shelf": {
+    "children": [
+      "product-summary-specification-badges#promo"
+    ]
 
   },
   "product-summary-image#shelf": {
@@ -45,6 +45,11 @@
       "specificationName": "2x1",
       "visibleWhen": "Si",
       "displayValue": "SPECIFICATION_VALUE"
+    }
+  },
+  "product-summary-buy-button": {
+    "props": {
+      "buyButtonBehavior": "default"
     }
   }
 }
