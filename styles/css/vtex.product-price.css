@@ -103,3 +103,48 @@
 .sellingPrice--summary_price--hasListPrice .sellingPriceValue--summary_price {
   color:#C8102E;
 }
+
+
+.listPrice--product_price {
+  display: block;
+  float: left;
+  font-size: 12px;  
+  line-height: 1.25;
+  text-transform: uppercase;
+  padding:15px;
+  margin:10px 0px;
+  word-spacing: 100vw;
+  border-right: 1px solid #999;
+}
+
+.listPriceValue--product_price {
+  display: block;
+  margin-top:5px;
+  font-size: 18px;  
+  line-height: 1.25;
+  word-spacing: initial;
+}
+ 
+.sellingPrice--product_price {
+  display: block;
+  padding:15px;
+  margin:10px 0px;
+  font-size: 12px;  
+  text-transform: uppercase;
+  line-height: 1.25;
+  word-spacing: 100vw;
+}
+
+
+.sellingPriceValue--product_price {
+  display: block;
+  margin-top:5px;
+  font-size: 20px;  
+  line-height: 1.25;
+  font-weight: bold;
+  word-spacing: initial;
+}
+
+.sellingPrice--product_price--hasListPrice .sellingPriceValue--product_price {
+  color:#C8102E;
+}

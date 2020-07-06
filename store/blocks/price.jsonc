@@ -93,5 +93,40 @@
         "highlight"
       ]
     }
+  },
+
+  "flex-layout.row#product_prices": {
+    "props": {
+      "blockClass": "product_prices"
+    },
+    "children": [
+      "flex-layout.col#product_prices"
+    ]
+  },
+  "flex-layout.col#product_prices": {
+    "children": [
+      "product-list-price#product_price",
+      "product-selling-price#product_price"
+    ],
+    "props": {
+      "blockClass": "product_price",
+      "horizontalAlign": "center"
+    }
+  },
+  "product-list-price#product_price": {
+    "props": {
+      "blockClass": "product_price",
+      "markers": [
+        "highlight"
+      ]
+    }
+  },
+  "product-selling-price#product_price": {
+    "props": {
+      "blockClass": "product_price",
+      "markers": [
+        "highlight"
+      ]
+    }
   }
 }

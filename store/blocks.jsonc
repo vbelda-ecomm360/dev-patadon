@@ -54,5 +54,16 @@
   },
   "store.not-found#search": {
     "blocks": ["rich-text#not-found"]
-  }
+  },
+
+  "autocomplete-result-list.v2": {
+      "blocks": ["product-summary.shelf#search"],
+      "props":{
+        "maxSuggestedProducts": 2,
+        "__unstableProductOriginVtex": true
+      }
+    }
 }
+
+
+

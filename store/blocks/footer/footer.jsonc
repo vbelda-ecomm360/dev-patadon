@@ -33,7 +33,7 @@
   },
   "image#logo-footer":{
     "props":{
-      "src": "assets/footer/depique_logo_vertical.png",
+      "src": "assets/footer/depique_logo_v.png",
       "blockClass": "logo-footer"
     },
     "title": "Visa"
@@ -58,10 +58,6 @@
         {
           "name": "Instagram",
           "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Linkedin",
-          "url": "https://www.youtube.com/user/VTEXTV"
         }
       ]
     }
@@ -74,9 +70,15 @@
           "url": "https://www.youtube.com/user/VTEXTV"
         },
         {
+          "name": "Linkedin",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+        /*
+        {
           "name": "Pinterest",
           "url": "https://www.youtube.com/user/VTEXTV"
         }
+        */
       ]
     }
   },
@@ -106,7 +108,7 @@
   },
   "rich-text#footer-title-3": {
     "props": {
-      "text": "PATADON.COM",
+      "text": "DEPIQUE.COM",
       "blockClass": "footer-title"
     }
   },
@@ -148,7 +150,7 @@
     "children": [
       "image#visa",
       "image#master-card",
-      "image#american-express",
+      //"image#american-express",
       "image#paypal",
       "image#maestro"
     ],
@@ -240,7 +242,7 @@
   },
   "rich-text#footer": {
     "props": {
-      "text": "© Copyright Patadon.com 2020. Todos los derechos reservados.",
+      "text": "© Copyright Depique.com 2020. Todos los derechos reservados.",
       "blockClass": "footer-copy-text"
     }
   },

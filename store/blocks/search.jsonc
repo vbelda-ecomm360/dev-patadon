@@ -1,10 +1,11 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout#search"],
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -17,7 +18,8 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -27,7 +29,8 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -37,7 +40,8 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -47,7 +51,8 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -59,14 +64,23 @@
       "search-not-found-layout"
     ]
   },
+  // Especial para el search
+    "search-result-layout#search": {
+      "blocks": [
+        "search-result-layout.desktop#search",
+        "search-result-layout.mobile",
+        "search-not-found-layout"
+      ]
+    },
 
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
+      "flex-layout.row#ordersort",
       "flex-layout.row#result"
     ],
     "props": {
+      "blockClass": "search-results-desktop",
       "pagination": "show-more",
       "preventRouteChange": true,
       "mobileLayout": {
@@ -75,48 +89,49 @@
       }
     }
   },
+  // Especial para el search
+    "search-result-layout.desktop#search": {
+      "children": [
+        "flex-layout.row#searchbread",
+        "flex-layout.row#ordersort",
+        "flex-layout.row#result_search"
+      ],
+      "props": {
+        "blockClass": "search-results-desktop",
+        "pagination": "show-more",
+        "preventRouteChange": true,
+        "mobileLayout": {
+          "mode1": "small",
+          "mode2": "normal"
+        }
+      }
+    },
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "searchbread"
     }
   },
-  "flex-layout.row#searchtitle": {
-    "children": ["search-title.v2"]
-  },
-  "flex-layout.row#result": {
-    "children": ["flex-layout.col#filter", "flex-layout.col#content"],
-    "props": {
-      "preventHorizontalStretch": true,
-      "fullWidth": true
-    }
-  },
-  "flex-layout.col#filter": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "filterCol"
-    }
-  },
-  "flex-layout.col#content": {
+  "flex-layout.row#ordersort": {
     "children": [
-      "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products",
-      "flex-layout.row#fetchmore"
+      "flex-layout.col#filter-title",
+      "flex-layout.col#orderby"
     ],
     "props": {
-      "width": "grow",
-      "preventVerticalStretch": true
+      "blockClass": "ordersort"
     }
   },
-  "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.col#orderby"]
+  "flex-layout.col#filter-title": {
+    "children": [
+      "rich-text#filter-title"
+    ]
   },
-  "flex-layout.col#productCount": {
-    "children": ["total-products.v2"],
+  "rich-text#filter-title": {
     "props": {
-      "blockClass": "productCountCol"
+      "text": "Filtro",
+      "blockClass": "filter-title"
     }
   },
   "flex-layout.col#orderby": {
@@ -125,6 +140,67 @@
       "blockClass": "orderByCol"
     }
   },
+  
+  "flex-layout.row#result": {
+    "children": [
+      "flex-layout.col#filter", 
+      "flex-layout.col#content"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "searchResult",
+      "colGap": 8
+    }
+  },
+  // Especial para el search
+    "flex-layout.row#result_search": {
+      "children": [
+        "flex-layout.col#filter", 
+        "flex-layout.col#content_search"
+      ],
+      "props": {
+        "fullWidth": true,
+        "blockClass": "searchResult",
+        "colGap": 8
+      }
+    },
+  "flex-layout.col#filter": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterCol",
+      "width": "25%"
+    }
+  },
+  "flex-layout.col#content": {
+    "children": [
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore",
+      "rich-text#category-title",
+      "rich-text#category-desc"
+      //"search-title.v2"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "searchContent",
+      "width": "75%"
+    }
+  },
+  // Especial para el search
+    "flex-layout.col#content_search": {
+      "children": [
+        "flex-layout.row#fetchprevious",
+        "flex-layout.row#products",
+        "flex-layout.row#fetchmore",
+        "search-title.v2"
+      ],
+      "props": {
+        "preventVerticalStretch": true,
+        "blockClass": "searchContent",
+        "width": "75%"
+      }
+    },
+  
   "flex-layout.row#fetchprevious": {
     "props": {
       "marginBottom": 3
@@ -139,6 +215,18 @@
   },
   "flex-layout.row#products": {
     "children": ["search-content"]
+  },
+  "rich-text#category-title": {
+    "props": {
+      "text": "##Nombre categoría",
+      "blockClass": "category-title"
+    }
+  },
+  "rich-text#category-desc": {
+    "props": {
+      "text": "Estos palos de golf se utilizan para salir en hoyos largos y realizar mucha distancia. A la hora de escoger un Driver no basta con ir a la tienda o dejarnos guiar por el que utilicen golfistas como Tiger Woods, Sergio García.... Escogeremos función de nuestra edad, velocidad de swing y nivel de practica, debemos tener en cuenta; el material de la cabeza, los grados de la cara y el tipo de varilla son también elementos importantes que debemos considerar. El material y la dureza de la varilla es posiblemente una de las partes mas fundamentales a la hora de lograr la dirección mas idonea de la bola. Debemos tener en cuenta nuestro nivel de practica y edad, existiendo diferentes tipos de varillas en función de su rigidez. “Lady”, “Amateur” o “Senior”, “Regular”, “Stiff”",
+      "blockClass": "category-desc"
+    }
   },
   "search-content": {
     "blocks": ["gallery#depique", "not-found"]
@@ -229,8 +317,8 @@
     "props":{
       "maxItemsPerRow": { 
         "desktop": 3, 
-        "tablet": 3, 
-        "phone": 2
+        "tablet": 2, 
+        "phone": 1
         }
     }
   }
