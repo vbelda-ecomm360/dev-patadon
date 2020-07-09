@@ -1,19 +1,30 @@
 {
-    "product-summary.shelf": {
-        "children": [
-          "stack-layout#prodsum",
-          "product-summary-name",
-          "product-summary-brand",
-          "flex-layout.row#summary_prices",
-          "add-to-cart-button"
-        ]
-      },
-    
-      "product-summary-image": {
-        "props": {
-          "height": 220
-        }
-      },
+"product-summary.shelf": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-summary-brand",
+      "flex-layout.row#summary_prices",
+      "add-to-cart-button"
+    ]
+  },
+"product-summary.shelf#search": {
+  "children": [
+    "stack-layout#prodsum",
+    "product-summary-name",
+    "product-summary-brand",
+    "flex-layout.row#summary_prices",
+    "add-to-cart-button"
+  ],
+  "props": {
+    "blockClass": "product-search"
+  }
+},
+"product-summary-image": {
+  "props": {
+    "height": 220
+  }
+},
 "stack-layout#prodsum": {
     "children": [
         "product-summary-image#shelf",
@@ -46,5 +57,12 @@
       "visibleWhen": "Si",
       "displayValue": "SPECIFICATION_VALUE"
     }
+  },
+  "add-to-cart-button":{
+    "props": {
+      "text": "Añadir"
+    }
   }
+  
+
 }

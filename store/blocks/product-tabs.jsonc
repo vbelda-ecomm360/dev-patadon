@@ -1,0 +1,105 @@
+{
+    "tab-layout#product_tabs": {
+        "children": [
+          "tab-list#product_tabs",
+          "flex-layout.row#product_tabs_content"
+        ],
+        "props": {
+          "blockClass": "product_tabs",
+          "defaultActiveTabId": "prod1"
+        }
+    },
+    "tab-list#product_tabs": {
+        "children": [
+            "tab-list.item#prod1",
+            "tab-list.item#prod2",
+            "tab-list.item#prod3"
+            ],
+            "props": {
+            "blockClass": "product_tabs"
+            }
+        },
+    "tab-list.item#prod1": {
+        "props": {
+            "tabId": "prod1",
+            "label": "Más información",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#prod2": {
+        "props": {
+            "tabId": "prod2",
+            "label": "Vídeos"
+        }
+    },
+    "tab-list.item#prod3": {
+        "props": {
+            "tabId": "prod3",
+            "label": "Comentarios"
+        }
+    },
+    "flex-layout.row#product_tabs_content": {
+        "props": {
+            "blockClass": "product_tabs",
+            "fullWidth": true
+        },
+        "children": [
+            "tab-content#product_tabs"
+        ]
+    },
+    "tab-content#product_tabs": {
+        "children": [
+            "tab-content.item#prod1",
+            "tab-content.item#prod2",
+            "tab-content.item#prod3"
+        ],
+        "props": {
+            "blockClass": "product_tabs_content"
+        }
+    },
+    "tab-content.item#prod1": {
+        "children": [
+            "rich-text#prod1",
+            "flex-layout.row#description"
+        ],
+        "props": {
+            "tabId": "prod1"
+        }
+    },
+    "rich-text#prod1": {
+        "props": {
+            "text": "Más información",
+            "blockClass": "tab_title"
+        }
+    },
+    "tab-content.item#prod2": {
+        "children": [
+            "rich-text#prod2"
+        ],
+        "props": {
+            "tabId": "prod2"
+        }
+    },
+    "rich-text#prod2": {
+        "props": {
+            "text": "Vídeos",
+            "blockClass": "tab_title"
+        }
+    },
+    "tab-content.item#prod3": {
+        "children": [
+            "rich-text#prod3",
+            "product-reviews",
+            "product-questions-and-answers"
+        ],
+        "props": {
+            "tabId": "prod3"
+        }
+    },
+    "rich-text#prod3": {
+        "props": {
+            "text": "Opiniones",
+            "blockClass": "tab_title"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.searchResultContainer {
+    padding-top:0px;
+}
+.searchResultContainer--search-results-desktop{
+    max-width:none !important;
+}
+.filter__container--title{
+    display:none;
+}
+.filterAvailable{
+    font-weight: bold;
+    color:#000000;
+    font-size: 13px;  
+    letter-spacing: 0.65px;
+}
+.filterItem{
+    padding:5px 0px;
+}
+.filterItem :global(.vtex-checkbox__label) {
+    font-size: 12px;
+    color: #4c4c4c;
+    font-weight:bold;
+    letter-spacing: 0.65px;
+}
+.gallery {
+    padding:0px;
+}
+.galleryTitle--layout{
+    margin-top: 30px;
+    font-size: 14px;
+    margin-bottom:0px;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+.orderByButton {
+    background-color: #ffffff;
+}
+.filterPopupTitle {
+    font-size:0px;
+}
+.orderByText {
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 2.23;
+    letter-spacing: 0.65px;
+    color: #4c4c4c;
+}

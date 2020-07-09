@@ -199,7 +199,10 @@
     }
   }, 
   "search-bar#header": {
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
+      "autocompleteFullWidth": false,
+      "openAutocompleteOnFocus": true,
       "width": "grow"
     }
   },

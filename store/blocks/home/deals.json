@@ -50,13 +50,13 @@
         },
         "rich-text#deal1-1": {
           "props": {
-            "text": "Envíos 24/48h.",
+            "text": "Envíos 72h.",
             "blockClass": "deals"
           }
         },
         "rich-text#deal1-2": {
           "props": {
-            "text": "Gratis a partir de 150 €",
+            "text": "Gratis a partir de 89 €",
             "blockClass": "deals"
           }
         },
@@ -139,7 +139,7 @@
         "children": [
           "rich-text#deal3-1",
           "rich-text#deal3-2"
-        ],
+        ], 
         "props": {
           "verticalAlign": "middle"
         }
@@ -158,7 +158,7 @@
         },
         "rich-text#deal3-2": {
           "props": {
-            "text": "Más de 40 puntos de venta",
+            "text": "Más de 15 puntos de venta",
             "blockClass": "deals"
           }
         }

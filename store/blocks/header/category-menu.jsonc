@@ -67,8 +67,8 @@
   },
   "vtex.menu@2.x:submenu#department-1": {
     "props": {
-      "width": "100%"
-      
+      "width": "100%",
+      "blockClass": "header-submenus"
     },
     "children": [
       "flex-layout.row#department-1-submenu"
@@ -82,7 +82,8 @@
     ],
     "props":{
       "colGap": 6,
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "fullWidth": true
     }
   },
   "flex-layout.col#department-1": {
@@ -670,7 +671,8 @@
   },
   "vtex.menu@2.x:submenu#department-2": {
     "props": {
-      "width": "100%"
+      "width": "100%",
+      "blockClass": "header-submenus"
       
     },
     "children": [
@@ -680,14 +682,29 @@
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-2-submenu": {
     "children": [
-      "flex-layout.col#department-2-submenu-col-1",
-      "flex-layout.col#department-2-submenu-col-2",
-      "flex-layout.col#department-2-submenu-col-3",
+      "flex-layout.col#department-2",
       "flex-layout.col#department-2-extra-col-4"
     ],
     "props":{
-      "colGap": 6
+      "colGap": 6,
+      "horizontalAlign": "center",
+      "fullWidth": true
     }
+  },
+  "flex-layout.col#department-2": {
+    "children": [
+      "flex-layout.row#department-2-categories"
+    ],
+    "props":{
+      "width": "70%"
+    }
+  },
+  "flex-layout.row#department-2-categories": {
+    "children": [
+      "flex-layout.col#department-2-submenu-col-1",
+      "flex-layout.col#department-2-submenu-col-2",
+      "flex-layout.col#department-2-submenu-col-3"
+    ]
   },
   "flex-layout.col#department-2-submenu-col-1": {
     "children": [
@@ -1030,6 +1047,9 @@
   }
 },
 "flex-layout.col#department-2-extra-col-4": {
+  "props":{
+    "width": "30%"
+  },
   "children": [
     "image#department-2-extra-col-4"
   ],
@@ -1066,7 +1086,8 @@
   },
   "vtex.menu@2.x:submenu#department-3": {
     "props": {
-      "width": "100%"
+      "width": "100%",
+      "blockClass": "header-submenus"
       
     },
     "children": [
@@ -1076,14 +1097,29 @@
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-3-submenu": {
     "children": [
-      "flex-layout.col#department-3-submenu-col-1",
-      "flex-layout.col#department-3-submenu-col-2",
-      "flex-layout.col#department-3-submenu-col-3",
+      "flex-layout.col#department-3",
       "flex-layout.col#department-3-extra-col-4"
     ],
     "props":{
-      "colGap": 6
+      "colGap": 6,
+      "horizontalAlign": "center",
+      "fullWidth": true
     }
+  },
+  "flex-layout.col#department-3": {
+    "children": [
+      "flex-layout.row#department-3-categories"
+    ],
+    "props":{
+      "width": "70%"
+    }
+  },
+  "flex-layout.row#department-3-categories": {
+    "children": [
+      "flex-layout.col#department-3-submenu-col-1",
+      "flex-layout.col#department-3-submenu-col-2",
+      "flex-layout.col#department-3-submenu-col-3"
+    ]
   },
   "flex-layout.col#department-3-submenu-col-1": {
     "children": [
@@ -1422,6 +1458,9 @@
       }
     },
   "flex-layout.col#department-3-extra-col-4": {
+    "props":{
+      "width": "30%"
+    },
     "children": [
       "image#department-3-extra-col-4"
     ],
@@ -1457,7 +1496,8 @@
   },
   "vtex.menu@2.x:submenu#department-4": {
     "props": {
-      "width": "100%"
+      "width": "100%",
+      "blockClass": "header-submenus"
       
     },
     "children": [
@@ -1467,16 +1507,31 @@
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-4-submenu": {
     "children": [
+      "flex-layout.col#department-4",
+      "flex-layout.col#department-4-extra-col-6"
+    ],
+    "props":{
+      "colGap": 6,
+      "horizontalAlign": "center",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#department-4": {
+    "children": [
+      "flex-layout.row#department-4-categories"
+    ],
+    "props":{
+      "width": "70%"
+    }
+  },
+  "flex-layout.row#department-4-categories": {
+    "children": [
       "flex-layout.col#department-4-submenu-col-1",
       "flex-layout.col#department-4-submenu-col-2",
       "flex-layout.col#department-4-submenu-col-3",
       "flex-layout.col#department-4-submenu-col-4",
-      "flex-layout.col#department-4-submenu-col-5",
-      "flex-layout.col#department-4-extra-col-6"
-    ],
-    "props":{
-      "colGap": 6
-    }
+      "flex-layout.col#department-4-submenu-col-5"
+    ]
   },
   "flex-layout.col#department-4-submenu-col-1": {
     "children": [
@@ -1991,6 +2046,9 @@
     }
   },
   "flex-layout.col#department-4-extra-col-6": {
+    "props":{
+      "width": "30%"
+    },
     "children": [
       "image#department-4-extra-col-6"
     ],
@@ -2026,7 +2084,8 @@
   },
   "vtex.menu@2.x:submenu#department-5": {
     "props": {
-      "width": "100%"
+      "width": "100%",
+      "blockClass": "header-submenus"
       
     },
     "children": [      
@@ -2181,6 +2240,9 @@
     ]
   },
   "submenu#department-7": {
+    "props": {
+      "blockClass":"header-last-item"
+    },
     "children": [
       "menu-item#department-7-category-1"
     ]

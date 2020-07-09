@@ -1,0 +1,42 @@
+
+.container {
+    padding:20px 0px;
+}
+
+.homeLink{
+    letter-spacing: 1px;
+    color:#4c4c4c;
+    font-size:14px;
+}
+.homeLink::before{
+    content: "Home";
+}
+.homeIcon{
+    display:none;
+}
+.arrow{
+    font-weight:bold;
+    letter-spacing: 1px;
+    color:#4c4c4c;
+    font-size:14px;
+    padding:0px;
+    vertical-align:middle;
+    line-height: 18px;
+    display: inline-block;
+}
+.arrow::before{
+    padding:0px 5px;
+    content: "/";
+    font-size:18px;
+    vertical-align: middle;
+    color:#4c4c4c;
+}
+.link{
+    color:#4c4c4c;
+}
+.caretIcon{
+    display:none;
+}
+.arrow::last-of-type .link{
+    color:#000;
+}

@@ -15,20 +15,20 @@
     "orderBy": "OrderByTopSaleDESC"
     }
 },
-    // SHELF SLIDER
-    "slider-layout#shelf_topsale": {
-        "props": {
-            "itemsPerPage": {
-            "desktop": 4,
-            "tablet": 3,
-            "phone": 1
-            },
-            "infinite": true,
-            "fullWidth": false,
-            "showPaginationDots": false,
-            "blockClass": "shelf"
-        }
-    },
+// SHELF SLIDER
+"slider-layout#shelf_topsale": {
+    "props": {
+        "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "showPaginationDots": false,
+        "blockClass": "shelf"
+    }
+},
 
 
 // SHELF ROW TOP RATED
