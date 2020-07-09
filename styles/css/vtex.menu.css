@@ -11,11 +11,42 @@
   color:#000000;
 }
 .styledLinkContent--header-department-title{
+  display:block;
+}
+.styledLinkContent--header-department-title::after{
+  content:"";
+  display:inline-block;
+  width: 10px;
+  height: 16px; 
+  margin-left:10px;
+  background:transparent url(https://patadon.com/arquivos/iconos/arrow-down.png) center no-repeat !important;
+}
+.styledLinkContent--header-department-title::after{
+  content:"";
+  display:inline-block;
+  width: 10px;
+  height: 16px; 
+  margin-left:10px;
+  background:transparent url(https://patadon.com/arquivos/iconos/arrow-down.png) center no-repeat !important;
 }
 .styledLinkContent--header-promotions-title{
   color: #C8102E;
 }
-
+.submenu--header-submenus{
+  padding-top:20px;
+  padding-bottom:20px;
+  max-width:1500px;
+  margin:auto;
+  display:block;
+}
+.submenuWrapper{
+  background-color:#ffffff;
+  border: solid 1px #f3f3f3;
+}
+.submenuWrapper--header-last-item{
+  right:0;
+  left:auto;
+}
 
 .styledLinkContent--header-department-category-title{
   font-weight: 600;
@@ -39,3 +70,6 @@
 .styledLinkContent--footer-menu-item{
   font-size:14px;
 }
+
+
+

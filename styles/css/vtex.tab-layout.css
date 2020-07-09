@@ -1,0 +1,19 @@
+.contentContainer--product_tabs_content{
+    padding-top:40px;
+    max-width:96rem;
+    margin:auto;
+}
+.listItem :global(.vtex-button){
+    border-radius:0;
+    border:0px;
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+    color: #000000;
+    outline: 0px;
+  }
+.listItemActive :global(.vtex-button){
+    background-color: transparent;
+    color: #c8102e;
+}

@@ -1,5 +1,7 @@
 .flexRow--main-header-menu{
   background-color:#ffffff;
+  border-top: solid 1px #f3f3f3;
+  border-bottom: solid 1px #f3f3f3;
 }
 .flexRowContent--menu-link,
 .flexRowContent--main-header,
@@ -120,16 +122,27 @@
   padding-bottom: 1rem;
 }
 
+.flexRow--categories-home{
+  background-color:#ffffff;
+}
+.flexRow--home-brands-row{
+  background-color:#ffffff;
+}
+.flexRow--main-footer{
+  background-color:#ffffff;
+}
 
 .flexRow--shelf-row{
-  background-color: #f8f8f8;
   padding-bottom:30px;
 }
 
 .flexRow--summary_prices{
   text-align:center;
 }
-
+.flexRow--product_prices{
+  text-align:center;
+  margin-bottom:15px;
+}
 .flexRow--home-brands-row{
   padding-top:80px;
   padding-bottom:80px;
@@ -149,6 +162,21 @@
 .flexColChild--summary_price:empty {
   display: none;
 }
+.flexCol--product_price {
+  margin-top:0px;
+  border-top:1px solid #999;
+  border-bottom:1px solid #999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.flexColChild--product_price:empty {
+  display: none;
+}
+
 
 .flexRow--main-header{
   background-color: #F0F0F0;
@@ -167,7 +195,59 @@
   margin-bottom:15px;
 }
 
-.flexRow--credits{
-  background-color: #f3f3f3;
+
+.flexRow--searchResult{
+  padding-bottom:80px;
 }
 
+.flexRow--ordersort{
+  background-color: #ffffff;
+}
+.flexRowContent--searchbread{
+  margin:auto;
+  max-width:96rem;
+}
+.flexRowContent--ordersort{
+  margin:auto;
+  max-width:96rem;
+}
+.flexRowContent--searchResult{
+  margin:auto;
+  max-width:96rem;
+}
+
+.flexCol--filterCol{
+  padding:20px;
+  background-color: #ffffff;
+}
+.flexCol--searchContent{
+  padding-top:20px;
+}
+
+
+.flexCol--product-button-add :global(.vtex-button){
+  border-radius:0;
+}
+
+.flexRow--product-product-name :global(.vtex-store-components-3-x-productBrand){
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 0.71;
+  letter-spacing: 0.88px;
+}
+.flexRow--brand-rating :global(.vtex-store-components-3-x-container){
+  border-bottom: 1px solid #999;
+}
+
+.flexRow--brand-rating :global(.vtex-store-components-3-x-productBrandName){
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0.75px;
+  color: #8a8a8a;
+}
+
+
+.flexRow--product_tabs{
+  background:#ffffff;
+  box-shadow: inset 0px 3px 7px 0 rgba(0, 0, 0, 0.19);
+}
