@@ -140,7 +140,7 @@
       "initialSelection": "empty",
       "showVariationsErrorMessage": true,
       "showVariationsLabels": true,
-      "showValueNameForImageVariation":  true
+      "showValueForVariation": "all"
     }
   },
 
@@ -186,5 +186,16 @@
         "Pinterest": true
       }
     }
-  }
+  },
+  "shelf.relatedProducts": {
+      "blocks": ["product-summary.shelf"],
+      "props": {
+        "blockClass": "relatedProducts",
+        "recommendation": "view",
+        "productList": {
+            "titleText": "Te puede interesar...",
+            "itemsPerPage": 4
+        }
+      }
+    }
 }

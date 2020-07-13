@@ -1,0 +1,19 @@
+
+.title--relatedProducts{
+    padding-top:30px;
+    padding-bottom:20px;
+    background-color: #f8f8f8;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 0.75;
+    text-align: center;
+    color: #010101;
+    text-transform: uppercase;
+}
+
+.shelfContentContainer--relatedProducts{
+    padding-bottom:40px;
+}
+.shelfContentContainer--relatedProducts :global(.vtex-slider-0-x-dotsContainer){
+    display:none;
+} 

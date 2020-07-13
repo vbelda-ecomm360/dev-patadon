@@ -60,6 +60,7 @@
   },
   "add-to-cart-button":{
     "props": {
+      "onClickBehaviour": "ensure-sku-selection",
       "text": "Añadir"
     }
   }
