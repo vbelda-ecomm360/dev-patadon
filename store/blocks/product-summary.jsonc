@@ -5,7 +5,7 @@
       "product-summary-name",
       "product-summary-brand",
       "flex-layout.row#summary_prices",
-      "add-to-cart-button"
+      "add-to-cart-button#summary"
     ]
   },
 "product-summary.shelf#search": {
@@ -14,7 +14,7 @@
     "product-summary-name",
     "product-summary-brand",
     "flex-layout.row#summary_prices",
-    "add-to-cart-button"
+    "add-to-cart-button#summary"
   ],
   "props": {
     "blockClass": "product-search"
@@ -58,12 +58,12 @@
       "displayValue": "SPECIFICATION_VALUE"
     }
   },
-  "add-to-cart-button":{
+  "add-to-cart-button#summary":{
     "props": {
-      "onClickBehaviour": "ensure-sku-selection",
+      "onClickBehavior": "ensure-sku-selection",
       "text": "Añadir"
     }
-  }
-  
+  } 
+   
 
 }

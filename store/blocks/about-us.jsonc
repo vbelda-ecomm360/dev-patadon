@@ -1,0 +1,150 @@
+{
+  "store.custom#about-us": {
+    "blocks": [
+      "flex-layout.row#somos",
+      "flex-layout.row#mejor",
+      "flex-layout.row#pioneros",
+      "flex-layout.row#deals"
+    ]
+  },
+
+  // COMPAÑIA DE GOLF
+  "flex-layout.row#somos": {
+    "children": [
+      "image#somos",
+      "flex-layout.col#text-somos"
+    ],
+    "props": {
+      "blockClass": "about"
+    }
+  },
+
+  "flex-layout.col#text-somos": {
+    "children": [
+      "rich-text#title-somos",
+      "rich-text#somos"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-somos": {
+    "props": {
+      "text":
+      "# **UNA COMPAÑÍA DE GOLF**\ny una experiencia 360",
+      "blockClass": "title-about"
+    }
+  },
+
+  "image#somos": {
+    "props": {
+      "src": "assets/about-us/Imagen-3.jpg",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "image-about"
+    }
+  },
+
+  "rich-text#somos": {
+    "props": {
+      "text": "Sin el golf, Depique no tendriá razón de ser. Empezamos en 1997 fabricando palos a medida en un pequeño taller en Barcelona y, 20 años después, podemos estar orgullosos de haber ayudado a un gran número de jugadores a disfrutar más del golf y bajar de hándicap.\n      Desde que se fundó Depique, hemos querido compartir nuestra pasión por el golf y somos conocidos por haber cambiado las cosas en el sector, acercando a todos los jugadores el asesoramiento, el material y la tecnología que antes sólo estaba disponible para profesionales.\n​Si bien nuestra especialidad son los Fittings y el ensamblaje y configuración de palos de golf, hacemos muchas otras cosas dentro del sector. También somos un taller de golf; una red de tiendas de venta de ropa y material; un portal con noticias, consejos y todo tipo de contenidos sobre golf; una Academia de Golf con un sistema de enseñanza propio; y una plataforma de venta de calzado de golf.",
+      "blockClass": "text-about"
+    }
+  },
+
+  // LO MEJOR PARA TI
+  "flex-layout.row#mejor": {
+    "children": [
+      "flex-layout.col#text-mejor",
+      "image#mejor"
+    ],
+    "props": {
+      "blockClass": "about-white"
+    }
+  },
+
+  "flex-layout.col#text-mejor": {
+    "children": [
+      "rich-text#title-mejor",
+      "rich-text#mejor"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-mejor": {
+    "props": {
+      "text":
+      "# **TENEMOS LO MEJOR PARA TI**\nasesoramiento y expertos a tu disposición",
+      "blockClass": "title-about"
+    }
+  },
+
+  "image#mejor": {
+    "props": {
+      "src": "assets/about-us/Imagen-2.jpg",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "image-about"
+    }
+  },
+
+  "rich-text#mejor": {
+    "props": {
+      "text": "En el mercado del golf hay infinidad de palos de golf, modelos de varillas, grips, bolas, accesorios o ropa técnica. La figura de un profesional que asesore con honestidad e independiente de las firmas comerciales es fundamental. Antiguamente las tiendas de golf se casaban con una marca limitando su capacidad de independencia. Desde Depique creemos que eso va en contra del jugador.\nQueremos que tengas lo mejor. Nos gusta comparar diferentes opciones y ver juntos cuál es el material que mejor resultado te ofrece. Sin importarnos si es de una marca o de otra. Lo importante aquí eres tú. Para poder ofrecer esto hemos hecho una importante inversión en última tecnología, formación de personal y hemos desarrollado una amplia red de tiendas.\nNuestro equipo humano, integrado por profesionales del material del golf, es experto en ofrecer las soluciones que realmente se adaptan al estilo de juego de cada golfista con el claro objetivo de hacerle progresar.",
+      "blockClass": "text-about"
+    }
+  },
+
+  // PIONEROS
+  "flex-layout.row#pioneros": {
+    "children": [
+      "image#pioneros",
+      "flex-layout.col#text-pioneros"
+    ],
+    "props": {
+      "blockClass": "about"
+    }
+  },
+
+  "flex-layout.col#text-pioneros": {
+    "children": [
+      "rich-text#title-pioneros",
+      "rich-text#pioneros"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-pioneros": {
+    "props": {
+      "text":
+      "# **Tres pioneros del clubmaking**\n¿Quién hay detrás de Depique?",
+      "blockClass": "title-about"
+    }
+  },
+
+  "image#pioneros": {
+    "props": {
+      "src": "assets/about-us/Imagen.jpg",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "image-about"
+    }
+  },
+
+  "rich-text#pioneros": {
+    "props": {
+      "text": "**Edu Sibina**\nDirector y Responsable de Compras. Socio fundador\nAnteriormente clubmaker en Golfclónicos y Taller de Golf FM\n\n​**Iván Llonch**\nConsejero estratégico. Socio fundador. Economista.\nAnteriormente consultor de estrategia en Europraxis\nActualmente embarcado en nuestra nueva aventura Depique.com",
+      "blockClass": "text-about"
+    }
+  }
+
+
+}

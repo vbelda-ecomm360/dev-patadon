@@ -93,13 +93,13 @@
 
 .discountInsideContainer{
   background-color: transparent;
-  background-image: url(https://patadon.com/arquivos/iconos/descuento.png);
+  background-image: url('https://patadon.com/arquivos/iconos/descuento.png');
   background-repeat: no-repeat;
-  height: 44px;
-  width: 35px;
+  height: 58px;
+  width: 45px;
   right: 15px;
   top: -15px;
-  padding: 5px 3px;
+  padding: 16px 3px;
   font-size: 13.5px;
   line-height: 1.59;
   letter-spacing: -1px;

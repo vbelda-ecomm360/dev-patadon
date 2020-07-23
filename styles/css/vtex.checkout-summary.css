@@ -1,0 +1,13 @@
+.summaryItemContainer{
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.summarySmallDisclaimer {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 3.08;
+    letter-spacing: normal;
+    color: #8a8a8a;
+}

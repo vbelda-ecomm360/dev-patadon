@@ -251,3 +251,23 @@
   background:#ffffff;
   box-shadow: inset 0px 3px 7px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+
+.flexRow--minicart-footer {
+  box-shadow: none;
+}
+
+
+
+
+/* ABOUT US */
+.flexRow--about {
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.flexRow--about-white {
+  padding-top:50px;
+  padding-bottom:50px;
+  background:#ffffff;
+}
