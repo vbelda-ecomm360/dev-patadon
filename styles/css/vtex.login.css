@@ -11,3 +11,9 @@
     padding:0px;
     color:#000000;
 }
+
+@media screen and (max-width: 50em) {
+    .container{
+
+    }
+}

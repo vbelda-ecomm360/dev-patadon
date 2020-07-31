@@ -34,9 +34,21 @@
 }
 .orderByButton {
     background-color: #ffffff;
+    border:0px !important;
 }
+
 .filterPopupTitle {
     font-size:0px;
+}
+.filtersWrapperMobile .filterPopupTitle {
+    font-size: 13px;
+    line-height: 2.23;
+    letter-spacing: 0.65px;
+    color: #4c4c4c;
+    text-transform: uppercase;
+}
+.filtersWrapperMobile .filterPopupButton{
+    height:auto;
 }
 .orderByText {
     font-size: 13px;
@@ -44,4 +56,8 @@
     line-height: 2.23;
     letter-spacing: 0.65px;
     color: #4c4c4c;
+}
+
+.galleryItem--small{
+    padding:5px;
 }

@@ -1,0 +1,296 @@
+{
+  "store.custom#brands-index": {
+    "blocks": [
+      "flex-layout.row#brands-index"
+    ]
+  },
+    "flex-layout.row#brands-index": {
+      "children": [
+        "flex-layout.col#callaway",
+        "flex-layout.col#footjoy",
+        "flex-layout.col#under-armour",
+        "flex-layout.col#ecco",
+        "flex-layout.col#adidas",
+        "flex-layout.col#nike",
+        "flex-layout.col#ashworth",
+        "flex-layout.col#brand1"
+      ],
+      "props": {
+        "blockClass": "brands-index",
+        "colSizing": "auto"
+      }
+    },
+    /////////////////////////////
+      "flex-layout.col#callaway": {
+        "children": [
+          "link#callaway"
+        ],
+        "props": {
+          "blockClass": "brand-item",
+          "width": "25%"
+        }
+      },
+      "link#callaway": {
+        "props": {
+          "href": "/brands",
+          "label": ""
+        },
+        "children": [
+          "image#callaway",
+          "rich-text#callaway"
+        ]
+      },
+      "image#callaway": {
+        "props": {
+          "src": "assets/categorias/descarga-1.png",
+          "maxHeight": "",
+          "maxWidth": "",
+          "blockClass": "brand-image"
+        }
+      },
+      "rich-text#callaway": {
+        "props": {
+          "blockClass": "brand-name",
+          "text":"Callaway"
+        }
+      },
+    /////////////////////////////
+      "flex-layout.col#footjoy": {
+        "children": [
+          "link#footjoy"
+        ],
+        "props": {
+          "blockClass": "brand-item",
+          "width": "25%"
+        }
+      },
+      "link#footjoy": {
+        "props": {
+          "href": "/brands",
+          "label": ""
+        },
+        "children": [
+          "image#footjoy",
+          "rich-text#footjoy"
+        ]
+      },
+      "image#footjoy": {
+        "props": {
+          "src": "assets/categorias/descarga-2.png",
+          "maxHeight": "",
+          "maxWidth": "",
+          "blockClass": "brand-image"
+        }
+      },
+      "rich-text#footjoy": {
+        "props": {
+          "blockClass": "brand-name",
+          "text":"FootJoy"
+        }
+      },
+    /////////////////////////////
+      "flex-layout.col#under-armour": {
+        "children": [
+          "link#under-armour"
+        ],
+        "props": {
+          "blockClass": "brand-item",
+          "width": "25%"
+        }
+      },
+      "link#under-armour": {
+        "props": {
+          "href": "/brands",
+          "label": ""
+        },
+        "children": [
+          "image#under-armour",
+          "rich-text#under-armour"
+        ]
+      },
+      "image#under-armour": {
+        "props": {
+          "src": "assets/categorias/descarga-3.png",
+          "maxHeight": "",
+          "maxWidth": "",
+          "blockClass": "brand-image"
+        }
+      },
+      "rich-text#under-armour": {
+        "props": {
+          "blockClass": "brand-name",
+          "text":"Under Armour"
+        }
+      },
+    /////////////////////////////
+      "flex-layout.col#ecco": {
+        "children": [
+          "link#ecco"
+        ],
+        "props": {
+          "blockClass": "brand-item",
+          "width": "25%"
+        }
+      },
+      "link#ecco": {
+        "props": {
+          "href": "/brands",
+          "label": ""
+        },
+        "children": [
+          "image#ecco",
+          "rich-text#ecco"
+        ]
+      },
+      "image#ecco": {
+        "props": {
+          "src": "assets/categorias/descarga-4.png",
+          "maxHeight": "",
+          "maxWidth": "",
+          "blockClass": "brand-image"
+        }
+      },
+      "rich-text#ecco": {
+        "props": {
+          "blockClass": "brand-name",
+          "text":"ECCO"
+        }
+      },
+    /////////////////////////////
+      "flex-layout.col#adidas": {
+        "children": [
+          "link#adidas"
+        ],
+        "props": {
+          "blockClass": "brand-item",
+          "width": "25%"
+        }
+      },
+      "link#adidas": {
+        "props": {
+          "href": "/brands",
+          "label": ""
+        },
+        "children": [
+          "image#adidas",
+          "rich-text#adidas"
+        ]
+      },
+      "image#adidas": {
+        "props": {
+          "src": "assets/categorias/descarga-5.png",
+          "maxHeight": "",
+          "maxWidth": "",
+          "blockClass": "brand-image"
+        }
+      },
+      "rich-text#adidas": {
+        "props": {
+          "blockClass": "brand-name",
+          "text":"Adidas"
+        }
+      },
+    /////////////////////////////
+      "flex-layout.col#nike": {
+        "children": [
+          "link#nike"
+        ],
+        "props": {
+          "blockClass": "brand-item",
+          "width": "25%"
+        }
+      },
+      "link#nike": {
+        "props": {
+          "href": "/brands",
+          "label": ""
+        },
+        "children": [
+          "image#nike",
+          "rich-text#nike"
+        ]
+      },
+      "image#nike": {
+        "props": {
+          "src": "assets/categorias/descarga-6.png",
+          "maxHeight": "",
+          "maxWidth": "",
+          "blockClass": "brand-image"
+        }
+      },
+      "rich-text#nike": {
+        "props": {
+          "blockClass": "brand-name",
+          "text":"Nike"
+        }
+      },
+    /////////////////////////////
+      "flex-layout.col#ashworth": {
+        "children": [
+          "link#ashworth"
+        ],
+        "props": {
+          "blockClass": "brand-item",
+          "width": "25%"
+        }
+      },
+      "link#ashworth": {
+        "props": {
+          "href": "/brands",
+          "label": ""
+        },
+        "children": [
+          "image#ashworth",
+          "rich-text#ashworth"
+        ]
+      },
+      "image#ashworth": {
+        "props": {
+          "src": "assets/categorias/descarga-7.png",
+          "maxHeight": "",
+          "maxWidth": "",
+          "blockClass": "brand-image"
+        }
+      },
+      "rich-text#ashworth": {
+        "props": {
+          "blockClass": "brand-name",
+          "text":"Ashworth"
+        }
+      },
+    /////////////////////////////
+      "flex-layout.col#brand1": {
+        "children": [
+          "link#brand1"
+        ],
+        "props": {
+          "blockClass": "brand-item",
+          "width": "25%"
+        }
+      },
+      "link#brand1": {
+        "props": {
+          "href": "/brands",
+          "label": ""
+        },
+        "children": [
+          "image#brand1",
+          "rich-text#brand1"
+        ]
+      },
+      "image#brand1": {
+        "props": {
+          "src": "assets/categorias/descarga-1.png",
+          "maxHeight": "",
+          "maxWidth": "",
+          "blockClass": "brand-image"
+        }
+      },
+      "rich-text#brand1": {
+        "props": {
+          "blockClass": "brand-name",
+          "text":"brand1"
+        }
+      }
+    
+} 

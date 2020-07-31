@@ -1,0 +1,21 @@
+{
+    "store.custom#click-collect": {
+    "blocks": [
+        "flex-layout.row#click-collect"
+        ]
+    },
+        "flex-layout.row#click-collect": {
+            "children": [
+                "rich-text#click-collect"
+            ],
+            "props": {
+                "blockClass": "institutional"
+            }
+        },
+        "rich-text#click-collect": {
+            "props": {
+                "blockClass": "institutional-text",
+                "text":"## SERVICIO CLICK&COLLECT\n**Envíos ¡Gratis! a un punto de venta DEPIQUE**\n- Con el servicio **Click & Collect** puedes hacer la compra por internet y recogerla en el punto de venta DEPIQUE que tú elijas.\n- Click & Collect es un servicio gratuito pensado para ayudarte.\n- Los puntos de venta DEPIQUE están por toda España y Baleares y te facilitan la recogida de tu pedido: Si no tienes tiempo para ir de compras, compra un producto en nuestra web y simplemente ve al punto de venta DEPIQUE a recogerlo; nosotros te avisaremos cuando el pedido esté preparado.\n- Durante la tramitación del pedido tendrás la opción de seleccionar, entre el listado que aparece en el desplegable, el punto de venta DEPIQUE que prefieras.\n- Te avisaremos vía correo electrónico cuando el pedido esté disponible para su recogida en el punto seleccionado\n- Puedes recogerlo con tu DNI u otra persona en tu nombre, en cuyo caso deberá llevar una fotocopia de tu DNI (o documento de identificación) y una autorización firmada.\n- Si tienes alguna duda sobre el servicio Click & Collect, contacta con nosotros a través de info@Depique.com o del teléfono **93 414 52 35**."
+            }
+        }
+}

@@ -80,7 +80,13 @@
   line-height: 1.25;
   word-spacing: initial;
 }
- 
+@media screen and (max-width: 50em) {
+  .listPriceValue--summary_price {
+    font-size: 12px;  
+    font-weight:normal;
+  }
+}
+
 .sellingPrice--summary_price {
   display: block;
   padding:15px;
@@ -99,7 +105,11 @@
   font-weight: bold;
   word-spacing: initial;
 }
-
+@media screen and (max-width: 50em) {
+  .sellingPriceValue--summary_price {
+    font-size: 15px;  
+  }
+}
 .sellingPrice--summary_price--hasListPrice .sellingPriceValue--summary_price {
   color:#C8102E;
 }

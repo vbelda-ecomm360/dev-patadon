@@ -11,7 +11,8 @@
   },
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
-      "experimentalOptimizeRendering": true
+      "experimentalOptimizeRendering": true,
+      "blockClass": "main-menu-header"
     },
     "children": [
       "menu-item#department-1",
@@ -26,14 +27,15 @@
   "flex-layout.col#promos-menu": {
     "props": {
       "verticalAlign": "middle",
-      "width": 30
+      "width": "30%"
     },
     "children": ["vtex.menu@2.x:menu#promos-menu"],
     "title": "Promos Menu"
   },
   "vtex.menu@2.x:menu#promos-menu": {
     "props": {
-      "experimentalOptimizeRendering": true
+      "experimentalOptimizeRendering": true,
+      "blockClass": "header-promotions-holder"
     },
     "children": [
       "menu-item#department-5",
@@ -1159,7 +1161,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-hombre",
+          "href": "/ropa-calzado/genero_hombre",
           "noFollow": true,
           "tagTitle": "Ropa de golf para hombre",
           "text": "Ropa de golf para hombre"
@@ -1175,7 +1177,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-hombre/zapatos-de-golf",
+          "href": "/ropa-calzado/zapatos-de-golf/genero_hombre",
           "noFollow": true,
           "tagTitle": "Zapatos",
           "text": "Zapatos"
@@ -1190,7 +1192,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-hombre/ropa-de-golf",
+          "href": "/ropa-calzado/ropa-de-golf/genero_hombre",
           "noFollow": true,
           "tagTitle": "Textil",
           "text": "Textil"
@@ -1205,7 +1207,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-hombre/pantalones-de-golf",
+          "href": "/ropa-calzado/pantalones-de-golf/genero_hombre",
           "noFollow": true,
           "tagTitle": "Pantalones",
           "text": "Pantalones"
@@ -1220,7 +1222,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-hombre/complementos-golf",
+          "href": "/ropa-calzado/complementos-golf/genero_hombre",
           "noFollow": true,
           "tagTitle": "Complementos de hombre",
           "text": "Complementos de hombre"
@@ -1235,7 +1237,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-hombre",
+          "href": "/ropa-calzado/genero_hombre",
           "noFollow": true,
           "tagTitle": "Ver todos Ropa de golf para hombre",
           "text": "Ver todos Ropa de golf para hombre"
@@ -1266,7 +1268,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-mujer",
+          "href": "/ropa-calzado/genero_mujer",
           "noFollow": true,
           "tagTitle": "Ropa de golf para mujer",
           "text": "Ropa de golf para mujer"
@@ -1282,7 +1284,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-mujer/zapatos",
+          "href": "/ropa-calzado/zapatos/genero_mujer",
           "noFollow": true,
           "tagTitle": "Zapatos",
           "text": "Zapatos"
@@ -1297,7 +1299,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-mujer/ropa",
+          "href": "/ropa-calzado/ropa/genero_mujer",
           "noFollow": true,
           "tagTitle": "Textil",
           "text": "Textil"
@@ -1312,7 +1314,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-mujer/pantalones-de-golf",
+          "href": "/ropa-calzado/pantalones-de-golf/genero_mujer",
           "noFollow": true,
           "tagTitle": "Pantalones",
           "text": "Pantalones"
@@ -1327,7 +1329,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-mujer/complementos-golf",
+          "href": "/ropa-calzado/complementos-golf/genero_mujer",
           "noFollow": true,
           "tagTitle": "Complementos de mujer",
           "text": "Complementos de mujer"
@@ -1342,7 +1344,7 @@
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/ropa-calzado/para-mujer",
+          "href": "/ropa-calzado/genero_mujer",
           "noFollow": true,
           "tagTitle": "Ver todos Ropa de golf para mujer",
           "text": "Ver todos Ropa de golf para mujer"

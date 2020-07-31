@@ -10,7 +10,8 @@
             "rowGap": "15", 
             "colGap": "5",
             "colSizing": "equal",
-            "blockClass": "categories-home"
+            "blockClass": "categories-home",
+            "preserveLayoutOnMobile": true
         }
     },
     // Category 1

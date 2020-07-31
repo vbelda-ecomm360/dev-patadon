@@ -1,5 +1,20 @@
 {
-    "store.custom#about-us": {
+  "store.custom#about-us": {
     "path": "/about-us"
+  },
+  "store.custom#brands-index": {
+    "path": "/marcas-de-golf"
+  },
+  "store.custom#click-collect": {
+    "path": "/click-collect"
+  },
+  "store.custom#devoluciones": {
+    "path": "/devoluciones"
+  },
+  "store.custom#condiciones": {
+    "path": "/condiciones"
+  },
+  "store.custom#politicas": { 
+    "path": "/politicas"
   }
 }

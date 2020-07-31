@@ -1,5 +1,7 @@
 .menuItem--header-department-title{
-  width:25%;
+}
+.menuContainer--main-menu-header{
+  justify-content: space-between;
 }
 .styledLinkContent--header-department-title,
 .styledLinkContent--header-promotions-title{
@@ -9,6 +11,13 @@
   line-height: 3.05;
   letter-spacing: 1px;
   color:#000000;
+}
+.menuContainer--header-promotions-holder{
+  justify-content: flex-end;
+}
+.styledLinkContainer--header-promotions-title{
+  margin:0px !important;
+  margin-left:30px !important;
 }
 .styledLinkContent--header-department-title{
   display:block;

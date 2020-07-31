@@ -56,13 +56,44 @@
   color: #727273;
   font-size: 14px;
 }
+@media screen and (max-width: 50em) {
+  .flexCol--header-main-menu{
+    position:relative;
+  }
+  .flexRow--login-header{
+    position:absolute;
+    width:100%;
+    z-index: 9;
+    top:0;
+  }
+}
+
+.flexRow--credits :global(.vtex-rich-text-0-x-wrapper--footer-copy-text),
+.flexRow--credits :global(.vtex-menu-2-x-styledLinkContent){
+  font-size:12px;
+
+}
+@media screen and (max-width: 50em) {
+  .flexRow--credits{
+    background-color: #f3f3f3;
+  }
+}
+
+
 .flexRow--deals {
   background-color: #ffffff;
   padding: 50px 100px 30px 100px;
 }
-
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
+}
+@media screen and (max-width: 50em) {
+  .flexRow--deals {
+    padding: 20px 0px 0px 0px;
+  }
+  .flexRow--deals .flexCol{
+    margin-bottom:15px;
+  }
 }
 
 .flexRow--categories-home{
@@ -74,13 +105,26 @@
   padding-right:1rem;
 }
 
-.flexRow--deals .flexCol {
-  align-items: center;
+@media screen and (max-width: 50em) {
+  .flexRow--categories-home{
+    margin:auto;
+  }
+  .flexRowContent--categories-home {
+    flex-wrap: wrap;
+  }
+  .flexRowContent--categories-home .stretchChildrenWidth {
+    width:50% !important;
+    padding:5px;
+  }
+  .flexCol--stacked-category,
+  .flexCol--stacked-category-last{
+    padding: 0px;
+  }
 }
 
-.flexCol--filterCol {
-  max-width: 500px;
-  min-width: 230px;
+
+.flexRow--deals .flexCol {
+  align-items: center;
 }
 
 .flexCol--productCountCol {
@@ -187,6 +231,7 @@
 
 
 
+
 .flexRow--main-footer{
   padding:40px 0px 30px 0px;
 }
@@ -217,8 +262,14 @@
 }
 
 .flexCol--filterCol{
-  padding:20px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 50em) {
+  .flexCol--filterCol {
+    max-width: 500px;
+    min-width: 230px;
+    padding:20px;
+  }
 }
 .flexCol--searchContent{
   padding-top:20px;
@@ -270,4 +321,38 @@
   padding-top:50px;
   padding-bottom:50px;
   background:#ffffff;
+}
+
+
+
+/* MARCAS */
+.flexRow--brands-index {
+  max-width:1100px;
+  margin:80px auto;
+}
+.flexRowContent--brands-index{
+  flex-wrap: wrap;
+}
+.flexCol--brand-item {
+  border:2px solid #333333;
+  padding:20px;
+  margin:20px;
+  height:auto;
+  background-color: #ffffff;
+  text-align:center;
+}
+.flexCol--brand-item :global(.vtex-rich-text-0-x-wrapper--brand-name){
+  width:100%;
+}
+.flexCol--brand-item :global(.vtex-rich-text-0-x-paragraph--brand-name){
+  text-align:center;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+
+/* INSTITUCIONALES */
+.flexRow--institutional {
+  max-width:1100px;
+  margin:80px auto;
 }

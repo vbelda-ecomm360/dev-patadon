@@ -1,14 +1,46 @@
 {
   "store.product": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"
+    ]
+  },
+  "responsive-layout.desktop": {
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-name",
       "flex-layout.row#brand-rating",
       "flex-layout.row#product-main",
       "tab-layout#product_tabs",
-      "shelf.relatedProducts"
+      "shelf.relatedProducts",
+      "flex-layout.row#deals"
     ]
   },
+  "responsive-layout.tablet": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-name",
+      "flex-layout.row#brand-rating",
+      "flex-layout.row#product-main",
+      "tab-layout#product_tabs",
+      "shelf.relatedProducts",
+      "flex-layout.row#deals"
+    ]
+  },
+  "responsive-layout.phone": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#stack-mobile", 
+      "flex-layout.row#product-name",
+      "flex-layout.row#brand-rating",
+      "flex-layout.row#right-col-mobile",
+      "tab-layout#product_tabs",
+      "shelf.relatedProducts",
+      "flex-layout.row#deals"
+    ]
+  },
+
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4
@@ -52,7 +84,11 @@
       "displayValue": "SPECIFICATION_NAME"
     }
   },
-
+  "flex-layout.row#stack-mobile": {
+    "children": [
+      "flex-layout.col#stack"
+    ]
+  },
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
@@ -80,6 +116,11 @@
       "showNavigationArrows": false,
       "showPaginationDots": false
     }
+  },
+  "flex-layout.row#right-col-mobile": {
+    "children": [
+      "flex-layout.col#right-col"
+    ]
   },
   "flex-layout.col#right-col": {
     "props": {
@@ -156,7 +197,8 @@
       "marginTop": 4,
       "marginBottom": 7,
       "colGap": 3,
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
     },
     "children": [
       "flex-layout.col#quantity",

@@ -1,5 +1,5 @@
 {
-  "vtex.menu@2.x:menu#footer-atencion": {
+  "menu#footer-atencion": {
     "props": {
       "orientation": "vertical"
     },
@@ -126,7 +126,7 @@
     }
   },
 
-  "vtex.menu@2.x:menu#footer-patadon": {
+  "menu#footer-patadon": {
     "props": {
       "orientation": "vertical"
     },
@@ -255,84 +255,51 @@
   },
 
   /* MOBILE */
-  "vtex.menu@2.x:menu#footer-mobile": {
+  "menu#footer-mobile": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
+      "menu-item#footer-atencion-mobile",
+      "menu-item#footer-patadon-mobile"
     ]
   },
 
-  "menu-item#clothing-mobile": {
+  "menu-item#footer-atencion-mobile": {
     "props": {
-      "id": "menu-item-category-clothing",
+      "id": "menu-item-footer-atencion-mobile",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/d",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Atención al cliente",
+        "text": "Atención al cliente"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+    "blocks": ["submenu.accordion#footer-atencion-mobile"]
   },
-  "vtex.menu@2.x:submenu.accordion#clothing": {
-    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
-  },
-
-  "vtex.menu@2.x:menu#clothing-accordion": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-    ]
+  "submenu.accordion#footer-atencion-mobile": {
+    "children": ["menu#footer-atencion"]
   },
 
-  "menu-item#decoration-mobile": {
+  "menu-item#footer-patadon-mobile": {
     "props": {
+      "id": "menu-item-footer-patadon-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
       "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Depique.com",
+        "text": "Depique.com"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+    "blocks": ["submenu.accordion#footer-patadon-mobile"]
   },
-  "vtex.menu@2.x:submenu.accordion#decoration": {
-    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
-  },
-
-  "vtex.menu@2.x:menu#footer-decoration-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-    ]
-  },
-
-  "menu-item#sale-mobile": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
-  },
-  "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
-  },
-
-  "vtex.menu@2.x:menu#footer-sale-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-    ]
+  "submenu.accordion#footer-patadon-mobile": {
+    "children": ["menu#footer-patadon"]
   }
 }

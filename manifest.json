@@ -1,7 +1,7 @@
 {
   "vendor": "patadon",
   "name": "store",
-  "version": "0.0.15",
+  "version": "0.0.17",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -57,7 +57,8 @@
     "vtex.product-gifts": "0.x",
     "vtex.product-price": "1.x",
     "vtex.search": "1.x",
-    "vtex.tab-layout": "0.x"
+    "vtex.tab-layout": "0.x",
+    "vtex.responsive-layout": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

@@ -46,9 +46,9 @@
   padding: 60px 10px;
 }
 .newsletter .form {
-  max-width:100%;
-  min-width:900px;
-  margin-left:300px;
+  max-width: 100%;
+  width: 700px;
+  margin:auto;
 }
 .newsletter :global(.vtex-input-prefix__group ) {
   border:0px;
@@ -65,9 +65,19 @@
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
+  background-color: #ffffff !important;
+  border-radius:0px;
+  color: #282726 !important;
+  border: none !important;
+  margin-right: 0px !important;
 }
-
-
+@media screen and (max-width: 50em) {
+  .newsletter .form {
+    max-width:100%;
+    min-width:0px;
+    margin-left:0px;
+  }
+}
 
 
 .label {
@@ -104,7 +114,12 @@
   line-height: 1.59;
   letter-spacing: -1px;
 }
-
+@media screen and (max-width: 50em) {
+  .discountInsideContainer{
+    right: 0px;
+    top: 0px;
+  }
+}
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   color: #fff;
   font-size: 16px;

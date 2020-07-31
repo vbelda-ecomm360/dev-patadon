@@ -143,13 +143,13 @@
     },
   "flex-layout.row#login": {    
     "props": {
+      "blockClass": "login-header",
       "width": "100%"
     },
     "children": [
         "login"
     ]
   },
-
   // CARRITO
   "flex-layout.col#minicart": {
     "props": {
@@ -183,6 +183,7 @@
     ]
   },
 
+  ////// MOBILE
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle",
@@ -194,7 +195,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/depique_logo.svg",
+      "url": "assets/logo.png",
       "width": "280px"
     }
   }, 
@@ -210,46 +211,90 @@
     "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": [
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#1-mobile"
+    ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
-      "drawer",
-      "logo#mobile",
+      "flex-layout.col#drawer",
+      "flex-layout.col#logo-mobile",
       "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
+      //"search-bar#header",
+      "flex-layout.col#login-mobile",
+      "flex-layout.col#minicart-mobile"
     ],
     "props": {
       "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
+  // DRAWER MOBILE
+  "flex-layout.col#drawer": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "10%"
+    },
+    "children": ["drawer"]
+  },
   "drawer": {
     "children": ["menu#drawer"]
   },
-
   "menu#drawer": {
     "children": [
       "menu-item#department-1",
       "menu-item#department-2",
       "menu-item#department-3",
       "menu-item#department-4",
+      "menu-item#department-5",
       "menu-item#department-6"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
-
+  // LOGO MOBILE
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "40%"
+    },
+    "children": ["logo#mobile"]
+  },
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
+      "url": "assets/logo.png",
+      "width": "100%"
     }
+  },
+  // LOGIN MOBILE
+  "flex-layout.col#login-mobile": {
+    "props": {
+      "blockClass": "header-main-menu",
+      "verticalAlign": "middle",
+      "width": "15%"
+    },
+    "children": [
+      "flex-layout.row#image-icon-login",
+      "flex-layout.row#login"
+    ]
+  },
+  // CARRITO MOBILE
+  "flex-layout.col#minicart-mobile": {
+    "props": {
+      "blockClass": "header-main-menu",
+      "verticalAlign": "middle",
+      "width": "15%"
+    },
+    "children": [
+      "minicart.v2"
+    ]
   }
+
+
+
 }

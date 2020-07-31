@@ -1,7 +1,8 @@
 .container--deals {
   color: #ffffff;
   text-align: left;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
   line-height: 1.69;
   color: #606060;
 }
@@ -16,7 +17,13 @@
   text-align: center;
   color: #010101;
 }
-
+@media screen and (max-width: 50em) {
+  .container--shelfTitle .heading {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+  }
+}
 .container--priceRecomendado{
   font-size:10px; 
 }
@@ -205,4 +212,17 @@
 .wrapper--title-about :global(.vtex-rich-text-0-x-strong){
   font-size: 28px !important;
   font-weight: 600;
+}
+
+
+/* INSTITUCIONAL */
+
+.headingLevel3--institutional-text {
+  font-weight:normal;
+  font-size:20px;
+  color:#C8102E;
+  margin-top:50px;
+}
+.listItem--institutional-text{
+  margin-bottom:30px;
 }

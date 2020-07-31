@@ -86,7 +86,7 @@
   "flex-layout.col#footer-1-desktop-2": {
     "children": [
       "rich-text#footer-title-2",
-      "vtex.menu@2.x:menu#footer-atencion"
+      "menu#footer-atencion"
     ],
     "props": {
     }
@@ -101,7 +101,7 @@
   "flex-layout.col#footer-1-desktop-3": {
     "children": [
       "rich-text#footer-title-3",
-      "vtex.menu@2.x:menu#footer-patadon"
+      "menu#footer-patadon"
     ],
     "props": {
     }
@@ -157,7 +157,8 @@
     "props":{
       "preventHorizontalStretch": true,
       "colGap": "3",
-      "blockClass": "payment-methods"
+      "blockClass": "payment-methods",
+      "preserveLayoutOnMobile": true
     }
   },
   "image#visa":{
@@ -209,6 +210,7 @@
     "props":{
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
       "colGap": "3"
     }
   },
@@ -314,45 +316,77 @@
 
 
 
-
+/* MOBILE */
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#1-footer-mobile",
       "flex-layout.row#2-footer-mobile"
     ]
   },
-  "flex-layout.row#2-footer-mobile": {
+  "flex-layout.row#1-footer-mobile": {
     "children": ["flex-layout.col#footer-1-mobile"],
     "props": {
-      "blockClass": "payment-methods",
       "paddingTop": 4,
       "paddingBottom": 4
     }
   },
   "flex-layout.col#footer-1-mobile": {
     "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
+      "menu#footer-mobile",
+      "rich-text#footer-title-1",
+      "social-networks#social-mobile",
+      "rich-text#footer-title-4",
+      "image#confianza-online",
+      "rich-text#footer-title-5",
+      //"accepted-payment-methods",
+      "flex-layout.row#accepted-payment-methods",
+      "rich-text#footer-title-6",
+      "flex-layout.row#shipping"
     ],
     "props": {
-      "blockClass": "payment-methods",
       "paddingTop": 4,
       "paddingBottom": 4,
       "rowGap": 4
     }
   },
-  "flex-layout.row#1-footer-mobile": {
+  "social-networks#social-mobile": {
     "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+      "socialNetworks": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/depiquegolf?lang=pt"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/depiquegolf/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/depiquegolf/"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/channel/UCt1x7vI2YhG7fd1zpxI4iiQ/videos"
+        },
+        {
+          "name": "Linkedin",
+          "url": "https://www.linkedin.com/company/depique/?originalSubdomain=es"
+        }
+        /*
+        {
+          "name": "Pinterest",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+        */
+      ]
+    }
   },
-  "rich-text#footer-mobile": {
+  "flex-layout.row#2-footer-mobile": {
+    "children": [
+      "flex-layout.col#footer-2-desktop-1"
+    ],
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "blockClass": "credits"
     }
   }
 }
