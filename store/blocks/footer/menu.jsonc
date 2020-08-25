@@ -4,13 +4,12 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#contacta",
-      "menu-item#ayuda",
+      //"menu-item#ayuda",
       "menu-item#estado-pedido",
-      "menu-item#como-comprar",      
+      //"menu-item#como-comprar",      
       "menu-item#envio",
-      "menu-item#devoluciones",
-      "menu-item#punto-de-venta"
+      "menu-item#devoluciones"
+      //"menu-item#punto-de-venta"
     ]
   },
   "menu-item#contacta": {
@@ -132,12 +131,13 @@
     },
     "children": [
       "menu-item#quienes-somos",
-      "menu-item#ventajas",
+      "menu-item#contacta"
+      /*"menu-item#ventajas",
       "menu-item#club",
       "menu-item#prensa",      
       "menu-item#about",
       "menu-item#comunicados",
-      "menu-item#hablando"
+      "menu-item#hablando"*/
     ]
   },
 

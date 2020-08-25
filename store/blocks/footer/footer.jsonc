@@ -89,6 +89,7 @@
       "menu#footer-atencion"
     ],
     "props": {
+      "preventVerticalStretch": true
     }
   },
   "rich-text#footer-title-2": {
@@ -104,6 +105,7 @@
       "menu#footer-patadon"
     ],
     "props": {
+      "preventVerticalStretch": true
     }
   },
   "rich-text#footer-title-3": {
@@ -261,7 +263,7 @@
       "orientation": "horizontal"
     },
     "children": [
-      "menu-item#aviso",
+      //"menu-item#aviso",
       "menu-item#proteccion-datos",
       "menu-item#condiciones"
     ]
@@ -306,8 +308,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Términos y Condiciones",
-        "text": "Términos y Condiciones"
+        "tagTitle": "Aviso Legal, Términos y Condiciones",
+        "text": "Aviso Legal, Términos y Condiciones"
       }
     }
   },

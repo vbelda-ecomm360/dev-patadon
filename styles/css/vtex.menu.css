@@ -82,3 +82,13 @@
 
 
 
+/* PRODUCT */
+.menuContainerNav--menu-product-tab{
+  margin-top:30px;
+}
+.menuItem--menu-item-product-tab{
+  padding: 20px;
+  background:#ffffff;
+  border-top:1px solid #CBCBCB;
+}
+

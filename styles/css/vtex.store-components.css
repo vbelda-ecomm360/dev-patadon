@@ -248,6 +248,14 @@
   letter-spacing: 0.88px;
 }
 
+@media screen and (max-width: 50em) {
+  .productNameContainer--product-product-name{
+    font-size: 30px;
+    line-height: 0.83;
+    letter-spacing: 0.75px;
+  }
+}
+
 .carouselGaleryThumbs {
   margin: 30px -15px;
 }

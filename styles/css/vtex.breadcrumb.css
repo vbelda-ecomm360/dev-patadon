@@ -3,6 +3,13 @@
     padding:20px 0px;
 }
 
+@media screen and (max-width: 50em) {
+    .container {
+        margin-bottom:20px;
+        padding:0px 0px 20px 0px;
+        background:#ffffff;
+    }
+}
 .homeLink{
     letter-spacing: 1px;
     color:#4c4c4c;
@@ -14,7 +21,7 @@
 .homeIcon{
     display:none;
 }
-.arrow{
+.arrow, .term{
     font-weight:bold;
     letter-spacing: 1px;
     color:#4c4c4c;

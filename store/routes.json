@@ -16,5 +16,8 @@
   },
   "store.custom#politicas": { 
     "path": "/politicas"
+  },
+  "store.custom#contacto": { 
+    "path": "/contacto" 
   }
 }

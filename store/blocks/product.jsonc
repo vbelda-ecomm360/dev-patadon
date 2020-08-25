@@ -35,7 +35,7 @@
       "flex-layout.row#product-name",
       "flex-layout.row#brand-rating",
       "flex-layout.row#right-col-mobile",
-      "tab-layout#product_tabs",
+      "menu#product_tabs_mobile",
       "shelf.relatedProducts",
       "flex-layout.row#deals"
     ]
@@ -75,7 +75,6 @@
       "product-specification-badges"
     ]
   },
-
   "product-specification-badges": {
     "props": {
       "specificationGroupName": "Group",

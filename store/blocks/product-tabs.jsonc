@@ -101,5 +101,85 @@
             "text": "Opiniones",
             "blockClass": "tab_title"
         }
+    },
+
+
+    /* MOBILE */
+    "menu#product_tabs_mobile": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-product-tab"
+        },
+        "children": [
+            "menu-item#product_prod1",
+            "menu-item#product_prod2",
+            "menu-item#product_prod3"
+        ]
+    },
+    "menu-item#product_prod1": {
+        "props": {
+            "id": "menu-item-product-tab",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "menu-item-product-tab",
+            "itemProps": {
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Más información",
+                "text": "Más información"
+            }
+        },
+        "blocks": ["submenu.accordion#product_prod1"]
+    },
+    "submenu.accordion#product_prod1": {
+        "children": [
+            "rich-text#prod1",
+            "flex-layout.row#description"
+        ]
+    },
+    "menu-item#product_prod2": {
+        "props": {
+            "id": "menu-item-product-tab",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "menu-item-product-tab",
+            "itemProps": {
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Vídeos",
+                "text": "Vídeos"
+            }
+        },
+        "blocks": ["submenu.accordion#product_prod2"]
+    },
+    "submenu.accordion#product_prod2": {
+        "children": [
+            "rich-text#prod2"
+        ]
+    },
+    "menu-item#product_prod3": {
+        "props": {
+            "id": "menu-item-product-tab",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "menu-item-product-tab",
+            "itemProps": {
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Opiniones",
+                "text": "Opiniones"
+            }
+        },
+        "blocks": ["submenu.accordion#product_prod3"]
+    },
+    "submenu.accordion#product_prod3": {
+        "children": [
+            "rich-text#prod3",
+            "product-reviews",
+            "product-questions-and-answers"
+        ]
     }
 }
