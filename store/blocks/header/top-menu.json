@@ -1,12 +1,15 @@
 {
-  "vtex.menu@2.x:menu#websites": {
+  "vtex.menu@2.x:menu#top-bar-menu": {
     "children": [
-      "menu-item#shop"
+      "menu-item#venta-tele",
+      "menu-item#tiendas",
+      "menu-item#contacto",
+      "menu-item#about-us"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#venta-tele": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-venta-tele",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -14,28 +17,53 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "Venta Telefónica",
+        "text": "Venta Telefónica"
       }
     }
   },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
-  },
-  "menu-item#vtex-website": {
+  "menu-item#tiendas": {
     "props": {
-      "id": "menu-item-vtex-website",
+      "id": "menu-item-tiendas",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
+        "tagTitle": "Nuestras Tiendas",
+        "text": "Nuestras Tiendas"
+      }
+    }
+  },
+  "menu-item#contacto": {
+    "props": {
+      "id": "menu-item-contacto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Formulario de Contacto",
+        "text": "Formulario de Contacto"
+      }
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sobre Depique",
+        "text": "Sobre Depique"
       }
     }
   }

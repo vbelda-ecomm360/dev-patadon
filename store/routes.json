@@ -19,5 +19,14 @@
   },
   "store.custom#contacto": { 
     "path": "/contacto" 
+  },
+  "store.custom#fitting": { 
+    "path": "/fitting" 
+  },
+  "store.custom#venta-telefonica": { 
+    "path": "/venta-telefonica" 
+  },
+  "store.custom#tiendas": { 
+    "path": "/tiendas" 
   }
 }

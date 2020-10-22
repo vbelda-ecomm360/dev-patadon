@@ -21,9 +21,15 @@
   },
 
   "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
+    "children": [
+      "flex-layout.col#top-bar-1",
+      "flex-layout.col#spacer",
+      "flex-layout.col#top-bar-2"
+    ],
     "props": {
-      "fullWidth": "true"
+      "fullWidth": "true",
+      "preventHorizontalStretch": true,
+      "blockClass": "top-bar"
     }
   },
   "notification.bar#home": {
@@ -31,20 +37,30 @@
       "content": "Advertencia: COVID-19: Seguimos trabajando"
     }
   },
-  "flex-layout.row#3-desktop": {
+  "flex-layout.col#top-bar-1": {
     "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "width": "50%"
     },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+    "children": [ 
+      "rich-text#top-bar-fitting"
     ]
   },
+  "rich-text#top-bar-fitting": {
+    "props": {
+      "text": "¿Por qué un fitting o palos a medida? Te lo contamos aquí",
+      "blockClass": "main-header-text"
+    }
+  },
+  "flex-layout.col#top-bar-2": {
+    "props": {
+      "width": "50%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#top-bar-menu"
+    ]
+  },
+
+
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -69,7 +85,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "search-bar#header",
-      "flex-layout.col#locale-switcher",
+      //"flex-layout.col#locale-switcher",
       "flex-layout.col#login",
       "flex-layout.col#minicart"
     ]

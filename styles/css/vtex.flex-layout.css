@@ -1,3 +1,12 @@
+.flexRow--top-bar{
+  background-color: #C8102E;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 2.2;
+  letter-spacing: 0.5px;
+}
+
 .flexRow--main-header-menu{
   background-color:#ffffff;
   border-top: solid 1px #f3f3f3;

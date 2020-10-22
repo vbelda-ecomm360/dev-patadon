@@ -16,8 +16,8 @@
     },
     "children": [
       "menu-item#department-1",
-      "menu-item#department-2",
       "menu-item#department-3",
+      "menu-item#department-2",
       "menu-item#department-4"
     ],
     "title": "Category Mega Menu"
@@ -38,9 +38,9 @@
       "blockClass": "header-promotions-holder"
     },
     "children": [
-      "menu-item#department-5",
+      "menu-item#department-7",
       "menu-item#department-6",
-      "menu-item#department-7"
+      "menu-item#department-5"
     ],
     "title": "Promos Mega Menu"
   },
@@ -662,8 +662,8 @@
         "type": "internal",
         "href": "/complementos-de-golf",
         "noFollow": true,
-        "tagTitle": "Complementos de golf",
-        "text": "Complementos de golf"
+        "tagTitle": "Bolsas y carros",
+        "text": "Bolsas y carros"
       },
       "blockClass":"header-department-title"
     },
@@ -1487,8 +1487,8 @@
         "type": "internal",
         "href": "/bolas-accesorios",
         "noFollow": true,
-        "tagTitle": "Bolas y Accesorios",
-        "text": "Bolas y Accesorios"
+        "tagTitle": "Accesorios",
+        "text": "Accesorios"
       },
       "blockClass":"header-department-title"
     },

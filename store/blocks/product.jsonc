@@ -130,14 +130,14 @@
       "sku-selector",
       "flex-layout.row#product_prices",
       "flex-layout.row#buy-button",
-      "shipping-simulator"
+      "shipping-simulator",
       //"product-rating-summary",
       //"flex-layout.row#list-price-savings",
       //"flex-layout.row#selling-price",
       //"product-installments",
       //"product-separator",
       //"product-identifier.product",
-      //"product-assembly-options",
+      "product-assembly-options"
       //"product-gifts",
       //"availability-subscriber"      
     ]
