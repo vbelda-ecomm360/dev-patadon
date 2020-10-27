@@ -15,7 +15,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/venta-telefonica",
         "noFollow": false,
         "tagTitle": "Venta Telefónica",
         "text": "Venta Telefónica"
@@ -30,7 +30,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/tienda",
         "noFollow": false,
         "tagTitle": "Nuestras Tiendas",
         "text": "Nuestras Tiendas"
@@ -45,7 +45,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/contacto",
         "noFollow": false,
         "tagTitle": "Formulario de Contacto",
         "text": "Formulario de Contacto"
@@ -60,7 +60,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/about-us",
         "noFollow": false,
         "tagTitle": "Sobre Depique",
         "text": "Sobre Depique"

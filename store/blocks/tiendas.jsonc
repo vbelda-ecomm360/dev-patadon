@@ -1,150 +1,960 @@
 {
   "store.custom#tiendas": {
     "blocks": [
-      "flex-layout.row#somos",
-      "flex-layout.row#mejor",
-      "flex-layout.row#pioneros",
-      "flex-layout.row#deals"
+      "flex-layout.row#tienda-1",
+      "flex-layout.row#tienda-2",
+      "flex-layout.row#tienda-3",
+      "flex-layout.row#tienda-4",
+      "flex-layout.row#tienda-5",
+      "flex-layout.row#tienda-6",
+      "flex-layout.row#tienda-7",
+      "flex-layout.row#tienda-8",
+      "flex-layout.row#tienda-9",
+      "flex-layout.row#tienda-10",
+      "flex-layout.row#tienda-11",
+      "flex-layout.row#tienda-12",
+      "flex-layout.row#tienda-13",
+      "flex-layout.row#tienda-14"
     ]
   },
 
-  // COMPAÑIA DE GOLF
-  "flex-layout.row#somos": {
+// TIENDAS
+  // Tienda 1
+    "flex-layout.row#tienda-1": {
+      "children": [
+        "flex-layout.col#imagen-tienda-1",
+        "flex-layout.col#info-tienda-1",
+        "flex-layout.col#horario-tienda-1"
+      ],
+      "props": {
+        "blockClass": "tienda"
+      }
+    },
+      "flex-layout.col#imagen-tienda-1": {
+        "children": [
+          "image#imagen-tienda-1"
+        ],
+        "props": {
+          "blockClass": "info-tinda"
+        }
+      },
+      "image#imagen-tienda-1": {
+        "props": {
+          "src": "assets/fitting/tienda.png",
+          "width": "100%",
+          "blockClass": "image-tinda"
+        }
+      },
+      "flex-layout.col#info-tienda-1": {
+        "children": [
+          "rich-text#title-info-tienda-1",
+          "rich-text#direccion-info-tienda-1",
+          "link#link-info-tienda-1"
+        ],
+        "props": {
+        }
+      },
+      "rich-text#title-info-tienda-1": {
+        "props": {
+          "text": "**DEPIQUE BARCELONA**",
+          "blockClass": "title-info-tienda"
+        }
+      },
+      "rich-text#direccion-info-tienda-1": {
+        "props": {
+          "text": "Carrer de Johann Sebastian Bach, 9\nLink Ubicación: \nTelefóno: +34.93.201.29.31\nEmail",
+          "blockClass": "direccion-info-tienda"
+        }
+      },
+      "link#link-info-tienda-1": {
+        "props": {
+          "href": "#",
+          "label": "RESERVA FITTING",
+          "blockClass": "link-info-tienda"
+        }
+      },
+      "flex-layout.col#horario-tienda-1": {
+        "children": [
+          "rich-text#horario-tienda-1"
+        ],
+        "props": {
+        }
+      },
+      "rich-text#horario-tienda-1": {
+        "props": {
+          "text": "Horario\nDe Lun a Vie 10:00 20:30\nSab 10:00 14:00\nDom Cerrado",
+          "blockClass": "direccion-info-tienda"
+        }
+      },
+  // Tienda 2
+  "flex-layout.row#tienda-2": {
     "children": [
-      "image#somos",
-      "flex-layout.col#text-somos"
+      "flex-layout.col#imagen-tienda-2",
+      "flex-layout.col#info-tienda-2",
+      "flex-layout.col#horario-tienda-2"
     ],
     "props": {
-      "blockClass": "about"
+      "blockClass": "tienda"
     }
   },
-
-  "flex-layout.col#text-somos": {
+    "flex-layout.col#imagen-tienda-2": {
+      "children": [
+        "image#imagen-tienda-2"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-2": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-2": {
+      "children": [
+        "rich-text#title-info-tienda-2",
+        "rich-text#direccion-info-tienda-2",
+        "link#link-info-tienda-2"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-2": {
+      "props": {
+        "text": "**DEPIQUE VALENCIA**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-2": {
+      "props": {
+        "text": "Avinguda Regne de Valencia, 64, 46005, València\nLink Ubicación: \nTelefóno: +34 96.167.88.25\nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-2": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-2": {
+      "children": [
+        "rich-text#horario-tienda-2"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-2": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:30 a 20:30 y 16:30 a 20:00\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 3
+  "flex-layout.row#tienda-3": {
     "children": [
-      "rich-text#title-somos",
-      "rich-text#somos"
+      "flex-layout.col#imagen-tienda-3",
+      "flex-layout.col#info-tienda-3",
+      "flex-layout.col#horario-tienda-3"
     ],
     "props": {
-      "blockClass": "textColumn",
-      "preventVerticalStretch": true
+      "blockClass": "tienda"
     }
   },
-
-  "rich-text#title-somos": {
-    "props": {
-      "text":
-      "# **UNA COMPAÑÍA DE GOLF**\ny una experiencia 360",
-      "blockClass": "title-about"
-    }
-  },
-
-  "image#somos": {
-    "props": {
-      "src": "assets/about-us/Imagen-3.jpg",
-      "maxHeight": "",
-      "maxWidth": "",
-      "blockClass": "image-about"
-    }
-  },
-
-  "rich-text#somos": {
-    "props": {
-      "text": "Sin el golf, Depique no tendriá razón de ser. Empezamos en 1997 fabricando palos a medida en un pequeño taller en Barcelona y, 20 años después, podemos estar orgullosos de haber ayudado a un gran número de jugadores a disfrutar más del golf y bajar de hándicap.\n      Desde que se fundó Depique, hemos querido compartir nuestra pasión por el golf y somos conocidos por haber cambiado las cosas en el sector, acercando a todos los jugadores el asesoramiento, el material y la tecnología que antes sólo estaba disponible para profesionales.\n​Si bien nuestra especialidad son los Fittings y el ensamblaje y configuración de palos de golf, hacemos muchas otras cosas dentro del sector. También somos un taller de golf; una red de tiendas de venta de ropa y material; un portal con noticias, consejos y todo tipo de contenidos sobre golf; una Academia de Golf con un sistema de enseñanza propio; y una plataforma de venta de calzado de golf.",
-      "blockClass": "text-about"
-    }
-  },
-
-  // LO MEJOR PARA TI
-  "flex-layout.row#mejor": {
+    "flex-layout.col#imagen-tienda-3": {
+      "children": [
+        "image#imagen-tienda-3"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-3": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-3": {
+      "children": [
+        "rich-text#title-info-tienda-3",
+        "rich-text#direccion-info-tienda-3",
+        "link#link-info-tienda-3"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-3": {
+      "props": {
+        "text": "**DEPIQUE PALMA**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-3": {
+      "props": {
+        "text": "Real Club de Golf de Bendinat\nCarrer Campoamor, s/n, 07181 Bendinat, Illes Balears\nLink Ubicación: \nTelefóno: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-3": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-3": {
+      "children": [
+        "rich-text#horario-tienda-3"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-3": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:30 a 20:30 y 16:30 a 20:00\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 4
+  "flex-layout.row#tienda-4": {
     "children": [
-      "flex-layout.col#text-mejor",
-      "image#mejor"
+      "flex-layout.col#imagen-tienda-4",
+      "flex-layout.col#info-tienda-4",
+      "flex-layout.col#horario-tienda-4"
     ],
     "props": {
-      "blockClass": "about-white"
+      "blockClass": "tienda"
     }
   },
-
-  "flex-layout.col#text-mejor": {
+    "flex-layout.col#imagen-tienda-4": {
+      "children": [
+        "image#imagen-tienda-4"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-4": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-4": {
+      "children": [
+        "rich-text#title-info-tienda-4",
+        "rich-text#direccion-info-tienda-4",
+        "link#link-info-tienda-4"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-4": {
+      "props": {
+        "text": "**DEPIQUE SANTA PONÇA**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-4": {
+      "props": {
+        "text": "Polígon Son Bugadelles, Carrer d'Alcant, 1, 07183, 07183 Santa Ponça, Illes Balears\nLink Ubicación: \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-4": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-4": {
+      "children": [
+        "rich-text#horario-tienda-4"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-4": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:30 a 20:30 y 16:30 a 20:00\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 5
+  "flex-layout.row#tienda-5": {
     "children": [
-      "rich-text#title-mejor",
-      "rich-text#mejor"
+      "flex-layout.col#imagen-tienda-5",
+      "flex-layout.col#info-tienda-5",
+      "flex-layout.col#horario-tienda-5"
     ],
     "props": {
-      "blockClass": "textColumn",
-      "preventVerticalStretch": true
+      "blockClass": "tienda"
     }
   },
-
-  "rich-text#title-mejor": {
-    "props": {
-      "text":
-      "# **TENEMOS LO MEJOR PARA TI**\nasesoramiento y expertos a tu disposición",
-      "blockClass": "title-about"
-    }
-  },
-
-  "image#mejor": {
-    "props": {
-      "src": "assets/about-us/Imagen-2.jpg",
-      "maxHeight": "",
-      "maxWidth": "",
-      "blockClass": "image-about"
-    }
-  },
-
-  "rich-text#mejor": {
-    "props": {
-      "text": "En el mercado del golf hay infinidad de palos de golf, modelos de varillas, grips, bolas, accesorios o ropa técnica. La figura de un profesional que asesore con honestidad e independiente de las firmas comerciales es fundamental. Antiguamente las tiendas de golf se casaban con una marca limitando su capacidad de independencia. Desde Depique creemos que eso va en contra del jugador.\nQueremos que tengas lo mejor. Nos gusta comparar diferentes opciones y ver juntos cuál es el material que mejor resultado te ofrece. Sin importarnos si es de una marca o de otra. Lo importante aquí eres tú. Para poder ofrecer esto hemos hecho una importante inversión en última tecnología, formación de personal y hemos desarrollado una amplia red de tiendas.\nNuestro equipo humano, integrado por profesionales del material del golf, es experto en ofrecer las soluciones que realmente se adaptan al estilo de juego de cada golfista con el claro objetivo de hacerle progresar.",
-      "blockClass": "text-about"
-    }
-  },
-
-  // PIONEROS
-  "flex-layout.row#pioneros": {
+    "flex-layout.col#imagen-tienda-5": {
+      "children": [
+        "image#imagen-tienda-5"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-5": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-5": {
+      "children": [
+        "rich-text#title-info-tienda-5",
+        "rich-text#direccion-info-tienda-5",
+        "link#link-info-tienda-5"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-5": {
+      "props": {
+        "text": "**DEPIQUE MADRID**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-5": {
+      "props": {
+        "text": "Club de Golf Olivar de la Hinojosa\nCampo De Las Naciones, Vía Dublín, 0 S N, 28001 Madrid\nLink Ubicación: \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-5": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-5": {
+      "children": [
+        "rich-text#horario-tienda-5"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-5": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:30 a 20:30 y 16:30 a 20:00\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 6
+  "flex-layout.row#tienda-6": {
     "children": [
-      "image#pioneros",
-      "flex-layout.col#text-pioneros"
+      "flex-layout.col#imagen-tienda-6",
+      "flex-layout.col#info-tienda-6",
+      "flex-layout.col#horario-tienda-6"
     ],
     "props": {
-      "blockClass": "about"
+      "blockClass": "tienda"
     }
   },
-
-  "flex-layout.col#text-pioneros": {
+    "flex-layout.col#imagen-tienda-6": {
+      "children": [
+        "image#imagen-tienda-6"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-6": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-6": {
+      "children": [
+        "rich-text#title-info-tienda-6",
+        "rich-text#direccion-info-tienda-6",
+        "link#link-info-tienda-6"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-6": {
+      "props": {
+        "text": "**REAL CLUB DE GOLF EL PRAT**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-6": {
+      "props": {
+        "text": "Plans de Bonvilar, 17, 08227 Terrassa, Barcelona\nLink Ubicación: \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-6": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-6": {
+      "children": [
+        "rich-text#horario-tienda-6"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-6": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:30 a 20:30 y 16:30 a 20:00\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 7
+  "flex-layout.row#tienda-7": {
     "children": [
-      "rich-text#title-pioneros",
-      "rich-text#pioneros"
+      "flex-layout.col#imagen-tienda-7",
+      "flex-layout.col#info-tienda-7",
+      "flex-layout.col#horario-tienda-7"
     ],
     "props": {
-      "blockClass": "textColumn",
-      "preventVerticalStretch": true
+      "blockClass": "tienda"
     }
   },
-
-  "rich-text#title-pioneros": {
+    "flex-layout.col#imagen-tienda-7": {
+      "children": [
+        "image#imagen-tienda-7"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-7": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-7": {
+      "children": [
+        "rich-text#title-info-tienda-7",
+        "rich-text#direccion-info-tienda-7",
+        "link#link-info-tienda-7"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-7": {
+      "props": {
+        "text": "**CLUB DE GOLF DE TERRAMAR **",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-7": {
+      "props": {
+        "text": "Carretera del golf, s/n, 08870 Sitges, Barcelona\nLink Ubicación: \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-7": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-7": {
+      "children": [
+        "rich-text#horario-tienda-7"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-7": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:00 20:30\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 8
+  "flex-layout.row#tienda-8": {
+    "children": [
+      "flex-layout.col#imagen-tienda-8",
+      "flex-layout.col#info-tienda-8",
+      "flex-layout.col#horario-tienda-8"
+    ],
     "props": {
-      "text":
-      "# **Tres pioneros del clubmaking**\n¿Quién hay detrás de Depique?",
-      "blockClass": "title-about"
+      "blockClass": "tienda"
     }
   },
-
-  "image#pioneros": {
+    "flex-layout.col#imagen-tienda-8": {
+      "children": [
+        "image#imagen-tienda-8"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-8": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-8": {
+      "children": [
+        "rich-text#title-info-tienda-8",
+        "rich-text#direccion-info-tienda-8",
+        "link#link-info-tienda-8"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-8": {
+      "props": {
+        "text": "**CLUB DE GOLF DE LLAVANERAS**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-8": {
+      "props": {
+        "text": "Camí Golf, 49, 51, 08392 Sant Andreu de Llavaneres\nLink Ubicaciones: \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-8": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-8": {
+      "children": [
+        "rich-text#horario-tienda-8"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-8": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:00 20:30\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 9
+  "flex-layout.row#tienda-9": {
+    "children": [
+      "flex-layout.col#imagen-tienda-9",
+      "flex-layout.col#info-tienda-9",
+      "flex-layout.col#horario-tienda-9"
+    ],
     "props": {
-      "src": "assets/about-us/Imagen.jpg",
-      "maxHeight": "",
-      "maxWidth": "",
-      "blockClass": "image-about"
+      "blockClass": "tienda"
     }
   },
-
-  "rich-text#pioneros": {
+    "flex-layout.col#imagen-tienda-9": {
+      "children": [
+        "image#imagen-tienda-9"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-9": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-9": {
+      "children": [
+        "rich-text#title-info-tienda-9",
+        "rich-text#direccion-info-tienda-9",
+        "link#link-info-tienda-9"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-9": {
+      "props": {
+        "text": "**CLUB DE GOLF DE ST. VICENÇ DE MONTALT**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-9": {
+      "props": {
+        "text": "Carrer Vinyes d'en Mandri, 82, 08394 Sant Vicenç de Montalt, Barcelona",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-9": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-9": {
+      "children": [
+        "rich-text#horario-tienda-9"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-9": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:00 20:30\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 10
+  "flex-layout.row#tienda-10": {
+    "children": [
+      "flex-layout.col#imagen-tienda-10",
+      "flex-layout.col#info-tienda-10",
+      "flex-layout.col#horario-tienda-10"
+    ],
     "props": {
-      "text": "**Edu Sibina**\nDirector y Responsable de Compras. Socio fundador\nAnteriormente clubmaker en Golfclónicos y Taller de Golf FM\n\n​**Iván Llonch**\nConsejero estratégico. Socio fundador. Economista.\nAnteriormente consultor de estrategia en Europraxis\nActualmente embarcado en nuestra nueva aventura Depique.com",
-      "blockClass": "text-about"
+      "blockClass": "tienda"
     }
-  }
-
-
+  },
+    "flex-layout.col#imagen-tienda-10": {
+      "children": [
+        "image#imagen-tienda-10"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-10": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-10": {
+      "children": [
+        "rich-text#title-info-tienda-10",
+        "rich-text#direccion-info-tienda-10",
+        "link#link-info-tienda-10"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-10": {
+      "props": {
+        "text": "**EL VALLÈS GOLF (BARCELONA)**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-10": {
+      "props": {
+        "text": "Plans de Bonvilar, 6, 08227 Terrassa, Barcelona, España\nLink Ubicación \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-10": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-10": {
+      "children": [
+        "rich-text#horario-tienda-10"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-10": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:00 20:30\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 11
+  "flex-layout.row#tienda-11": {
+    "children": [
+      "flex-layout.col#imagen-tienda-11",
+      "flex-layout.col#info-tienda-11",
+      "flex-layout.col#horario-tienda-11"
+    ],
+    "props": {
+      "blockClass": "tienda"
+    }
+  },
+    "flex-layout.col#imagen-tienda-11": {
+      "children": [
+        "image#imagen-tienda-11"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-11": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-11": {
+      "children": [
+        "rich-text#title-info-tienda-11",
+        "rich-text#direccion-info-tienda-11",
+        "link#link-info-tienda-11"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-11": {
+      "props": {
+        "text": "**CLUB VALLE GUADIANA**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-11": {
+      "props": {
+        "text": "Av. Juan Pablo II, 21400, Huelva\nLink Ubicación \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-11": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-11": {
+      "children": [
+        "rich-text#horario-tienda-11"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-11": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:00 20:30\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 12
+  "flex-layout.row#tienda-12": {
+    "children": [
+      "flex-layout.col#imagen-tienda-12",
+      "flex-layout.col#info-tienda-12",
+      "flex-layout.col#horario-tienda-12"
+    ],
+    "props": {
+      "blockClass": "tienda"
+    }
+  },
+    "flex-layout.col#imagen-tienda-12": {
+      "children": [
+        "image#imagen-tienda-12"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-12": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-12": {
+      "children": [
+        "rich-text#title-info-tienda-12",
+        "rich-text#direccion-info-tienda-12",
+        "link#link-info-tienda-12"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-12": {
+      "props": {
+        "text": "**REAL CLUB DE GOLF LA PEÑAZA **",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-12": {
+      "props": {
+        "text": "N-II, km308, 50197 Zaragoza, España\nLink Ubicación \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-12": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-12": {
+      "children": [
+        "rich-text#horario-tienda-12"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-12": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:00 20:30\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 13
+  "flex-layout.row#tienda-13": {
+    "children": [
+      "flex-layout.col#imagen-tienda-13",
+      "flex-layout.col#info-tienda-13",
+      "flex-layout.col#horario-tienda-13"
+    ],
+    "props": {
+      "blockClass": "tienda"
+    }
+  },
+    "flex-layout.col#imagen-tienda-13": {
+      "children": [
+        "image#imagen-tienda-13"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-13": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-13": {
+      "children": [
+        "rich-text#title-info-tienda-13",
+        "rich-text#direccion-info-tienda-13",
+        "link#link-info-tienda-13"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-13": {
+      "props": {
+        "text": "**CLUB DE GOLF EL BOSQUE**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-13": {
+      "props": {
+        "text": "A-3 dirección Madrid salida 337, km. 4,1, 46370 Godelleta\nLink Ubicación \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-13": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-13": {
+      "children": [
+        "rich-text#horario-tienda-13"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-13": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:00 20:30\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+  // Tienda 14
+  "flex-layout.row#tienda-14": {
+    "children": [
+      "flex-layout.col#imagen-tienda-14",
+      "flex-layout.col#info-tienda-14",
+      "flex-layout.col#horario-tienda-14"
+    ],
+    "props": {
+      "blockClass": "tienda"
+    }
+  },
+    "flex-layout.col#imagen-tienda-14": {
+      "children": [
+        "image#imagen-tienda-14"
+      ],
+      "props": {
+        "blockClass": "info-tinda"
+      }
+    },
+    "image#imagen-tienda-14": {
+      "props": {
+        "src": "assets/fitting/tienda.png",
+        "width": "100%",
+        "blockClass": "image-tinda"
+      }
+    },
+    "flex-layout.col#info-tienda-14": {
+      "children": [
+        "rich-text#title-info-tienda-14",
+        "rich-text#direccion-info-tienda-14",
+        "link#link-info-tienda-14"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#title-info-tienda-14": {
+      "props": {
+        "text": "**DEPIQUE GOLF ACADEMY GRÀCIA**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-tienda-14": {
+      "props": {
+        "text": "Travessera de Gràcia, 72 · 934 14 52 35\nLink Ubicación \nTeléfono: \nEmail:",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-tienda-14": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "link-info-tienda"
+      }
+    },
+    "flex-layout.col#horario-tienda-14": {
+      "children": [
+        "rich-text#horario-tienda-14"
+      ],
+      "props": {
+      }
+    },
+    "rich-text#horario-tienda-14": {
+      "props": {
+        "text": "Horario\nDe Lun a Vie 10:00 20:30\nSab 10:00 14:00\nDom Cerrado",
+        "blockClass": "direccion-info-tienda"
+      }
+    }
 }

@@ -47,7 +47,7 @@
   },
   "rich-text#top-bar-fitting": {
     "props": {
-      "text": "¿Por qué un fitting o palos a medida? Te lo contamos aquí",
+      "text": "¿Por qué un fitting o palos a medida? Te lo contamos [aquí](/fitting)",
       "blockClass": "main-header-text"
     }
   },

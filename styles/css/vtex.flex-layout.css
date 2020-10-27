@@ -1,10 +1,24 @@
 .flexRow--top-bar{
   background-color: #C8102E;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 10px;
   font-weight: 300;
   line-height: 2.2;
   letter-spacing: 0.5px;
+}
+
+.flexRowContent--top-bar :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+.flexRowContent--top-bar :global(.vtex-rich-text-0-x-paragraph--main-header-text) {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 60px;
+  padding:0px 15px;
+}
+.flexRowContent--top-bar :global(.vtex-rich-text-0-x-link){
+  color: #ffffff;
 }
 
 .flexRow--main-header-menu{
@@ -364,4 +378,11 @@
 .flexRow--institutional {
   max-width:1100px;
   margin:80px auto;
+}
+
+
+
+/* FITTING */
+.flexColChild--proceso{
+  padding:20px;
 }

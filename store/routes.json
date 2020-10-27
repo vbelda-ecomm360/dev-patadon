@@ -23,6 +23,9 @@
   "store.custom#fitting": { 
     "path": "/fitting" 
   },
+  "store.custom#precios": { 
+    "path": "/precios" 
+  },
   "store.custom#venta-telefonica": { 
     "path": "/venta-telefonica" 
   },
