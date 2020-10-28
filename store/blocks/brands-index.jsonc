@@ -4,293 +4,2142 @@
       "flex-layout.row#brands-index"
     ]
   },
-    "flex-layout.row#brands-index": {
-      "children": [
-        "flex-layout.col#callaway",
-        "flex-layout.col#footjoy",
-        "flex-layout.col#under-armour",
-        "flex-layout.col#ecco",
-        "flex-layout.col#adidas",
-        "flex-layout.col#nike",
-        "flex-layout.col#ashworth",
-        "flex-layout.col#brand1"
-      ],
-      "props": {
-        "blockClass": "brands-index",
-        "colSizing": "auto"
-      }
+  "flex-layout.row#brands-index": {
+    "children": [
+      "flex-layout.col#alberto",
+      "flex-layout.col#asbri",
+      "flex-layout.col#benross",
+      "flex-layout.col#big+max",
+      "flex-layout.col#boss",
+      "flex-layout.col#boston+golf",
+      "flex-layout.col#brax",
+      "flex-layout.col#bridgestone+golf",
+      "flex-layout.col#bushnell",
+      "flex-layout.col#callaway+golf",
+      "flex-layout.col#calvin+klein",
+      "flex-layout.col#champ",
+      "flex-layout.col#chervo",
+      "flex-layout.col#cleveland+golf",
+      "flex-layout.col#clicgear",
+      "flex-layout.col#cobra+golf",
+      "flex-layout.col#daily",
+      "flex-layout.col#daphne%27s+headcovers",
+      "flex-layout.col#depique",
+      "flex-layout.col#ecco",
+      "flex-layout.col#epon",
+      "flex-layout.col#footjoy",
+      "flex-layout.col#galvin+green",
+      "flex-layout.col#garmin",
+      "flex-layout.col#gfore",
+      "flex-layout.col#gloveit",
+      "flex-layout.col#golf+pride",
+      "flex-layout.col#honma",
+      "flex-layout.col#jucad",
+      "flex-layout.col#justar",
+      "flex-layout.col#lacoste",
+      "flex-layout.col#lignum",
+      "flex-layout.col#lindeberg",
+      "flex-layout.col#masters",
+      "flex-layout.col#masters+golf",
+      "flex-layout.col#mizuno+golf",
+      "flex-layout.col#motocaddy",
+      "flex-layout.col#nike+golf",
+      "flex-layout.col#oakley",
+      "flex-layout.col#odyssey",
+      "flex-layout.col#oscar+jacobson",
+      "flex-layout.col#ping",
+      "flex-layout.col#player+layer",
+      "flex-layout.col#powakaddy",
+      "flex-layout.col#prg",
+      "flex-layout.col#pro+tekt",
+      "flex-layout.col#puma+golf",
+      "flex-layout.col#pure+2+improve",
+      "flex-layout.col#rife",
+      "flex-layout.col#rohnisch",
+      "flex-layout.col#rovic",
+      "flex-layout.col#scotty+cameron",
+      "flex-layout.col#skechers",
+      "flex-layout.col#sklz",
+      "flex-layout.col#sky+caddie",
+      "flex-layout.col#softspikes",
+      "flex-layout.col#spoon",
+      "flex-layout.col#srixon",
+      "flex-layout.col#stuburt",
+      "flex-layout.col#superstroke",
+      "flex-layout.col#tasco",
+      "flex-layout.col#taylormade",
+      "flex-layout.col#the+golfers+club",
+      "flex-layout.col#titleist",
+      "flex-layout.col#tourdri",
+      "flex-layout.col#under+armour",
+      "flex-layout.col#us+kids+golf",
+      "flex-layout.col#uskids",
+      "flex-layout.col#volvik",
+      "flex-layout.col#wilson",
+      "flex-layout.col#xxio"
+    ],
+    "props": {
+      "blockClass": "brands-index",
+      "colSizing": "auto"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#alberto": {
+    "children": ["link#alberto"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#alberto": {
+    "props": {
+      "href": "/alberto?map=b",
+      "label": ""
     },
-    /////////////////////////////
-      "flex-layout.col#callaway": {
-        "children": [
-          "link#callaway"
-        ],
-        "props": {
-          "blockClass": "brand-item",
-          "width": "25%"
-        }
-      },
-      "link#callaway": {
-        "props": {
-          "href": "/brands",
-          "label": ""
-        },
-        "children": [
-          "image#callaway",
-          "rich-text#callaway"
-        ]
-      },
-      "image#callaway": {
-        "props": {
-          "src": "assets/categorias/descarga-1.png",
-          "maxHeight": "",
-          "maxWidth": "",
-          "blockClass": "brand-image"
-        }
-      },
-      "rich-text#callaway": {
-        "props": {
-          "blockClass": "brand-name",
-          "text":"Callaway"
-        }
-      },
-    /////////////////////////////
-      "flex-layout.col#footjoy": {
-        "children": [
-          "link#footjoy"
-        ],
-        "props": {
-          "blockClass": "brand-item",
-          "width": "25%"
-        }
-      },
-      "link#footjoy": {
-        "props": {
-          "href": "/brands",
-          "label": ""
-        },
-        "children": [
-          "image#footjoy",
-          "rich-text#footjoy"
-        ]
-      },
-      "image#footjoy": {
-        "props": {
-          "src": "assets/categorias/descarga-2.png",
-          "maxHeight": "",
-          "maxWidth": "",
-          "blockClass": "brand-image"
-        }
-      },
-      "rich-text#footjoy": {
-        "props": {
-          "blockClass": "brand-name",
-          "text":"FootJoy"
-        }
-      },
-    /////////////////////////////
-      "flex-layout.col#under-armour": {
-        "children": [
-          "link#under-armour"
-        ],
-        "props": {
-          "blockClass": "brand-item",
-          "width": "25%"
-        }
-      },
-      "link#under-armour": {
-        "props": {
-          "href": "/brands",
-          "label": ""
-        },
-        "children": [
-          "image#under-armour",
-          "rich-text#under-armour"
-        ]
-      },
-      "image#under-armour": {
-        "props": {
-          "src": "assets/categorias/descarga-3.png",
-          "maxHeight": "",
-          "maxWidth": "",
-          "blockClass": "brand-image"
-        }
-      },
-      "rich-text#under-armour": {
-        "props": {
-          "blockClass": "brand-name",
-          "text":"Under Armour"
-        }
-      },
-    /////////////////////////////
-      "flex-layout.col#ecco": {
-        "children": [
-          "link#ecco"
-        ],
-        "props": {
-          "blockClass": "brand-item",
-          "width": "25%"
-        }
-      },
-      "link#ecco": {
-        "props": {
-          "href": "/brands",
-          "label": ""
-        },
-        "children": [
-          "image#ecco",
-          "rich-text#ecco"
-        ]
-      },
-      "image#ecco": {
-        "props": {
-          "src": "assets/categorias/descarga-4.png",
-          "maxHeight": "",
-          "maxWidth": "",
-          "blockClass": "brand-image"
-        }
-      },
-      "rich-text#ecco": {
-        "props": {
-          "blockClass": "brand-name",
-          "text":"ECCO"
-        }
-      },
-    /////////////////////////////
-      "flex-layout.col#adidas": {
-        "children": [
-          "link#adidas"
-        ],
-        "props": {
-          "blockClass": "brand-item",
-          "width": "25%"
-        }
-      },
-      "link#adidas": {
-        "props": {
-          "href": "/brands",
-          "label": ""
-        },
-        "children": [
-          "image#adidas",
-          "rich-text#adidas"
-        ]
-      },
-      "image#adidas": {
-        "props": {
-          "src": "assets/categorias/descarga-5.png",
-          "maxHeight": "",
-          "maxWidth": "",
-          "blockClass": "brand-image"
-        }
-      },
-      "rich-text#adidas": {
-        "props": {
-          "blockClass": "brand-name",
-          "text":"Adidas"
-        }
-      },
-    /////////////////////////////
-      "flex-layout.col#nike": {
-        "children": [
-          "link#nike"
-        ],
-        "props": {
-          "blockClass": "brand-item",
-          "width": "25%"
-        }
-      },
-      "link#nike": {
-        "props": {
-          "href": "/brands",
-          "label": ""
-        },
-        "children": [
-          "image#nike",
-          "rich-text#nike"
-        ]
-      },
-      "image#nike": {
-        "props": {
-          "src": "assets/categorias/descarga-6.png",
-          "maxHeight": "",
-          "maxWidth": "",
-          "blockClass": "brand-image"
-        }
-      },
-      "rich-text#nike": {
-        "props": {
-          "blockClass": "brand-name",
-          "text":"Nike"
-        }
-      },
-    /////////////////////////////
-      "flex-layout.col#ashworth": {
-        "children": [
-          "link#ashworth"
-        ],
-        "props": {
-          "blockClass": "brand-item",
-          "width": "25%"
-        }
-      },
-      "link#ashworth": {
-        "props": {
-          "href": "/brands",
-          "label": ""
-        },
-        "children": [
-          "image#ashworth",
-          "rich-text#ashworth"
-        ]
-      },
-      "image#ashworth": {
-        "props": {
-          "src": "assets/categorias/descarga-7.png",
-          "maxHeight": "",
-          "maxWidth": "",
-          "blockClass": "brand-image"
-        }
-      },
-      "rich-text#ashworth": {
-        "props": {
-          "blockClass": "brand-name",
-          "text":"Ashworth"
-        }
-      },
-    /////////////////////////////
-      "flex-layout.col#brand1": {
-        "children": [
-          "link#brand1"
-        ],
-        "props": {
-          "blockClass": "brand-item",
-          "width": "25%"
-        }
-      },
-      "link#brand1": {
-        "props": {
-          "href": "/brands",
-          "label": ""
-        },
-        "children": [
-          "image#brand1",
-          "rich-text#brand1"
-        ]
-      },
-      "image#brand1": {
-        "props": {
-          "src": "assets/categorias/descarga-1.png",
-          "maxHeight": "",
-          "maxWidth": "",
-          "blockClass": "brand-image"
-        }
-      },
-      "rich-text#brand1": {
-        "props": {
-          "blockClass": "brand-name",
-          "text":"brand1"
-        }
-      }
-    
-} 
+    "children": ["image#alberto", "rich-text#alberto"]
+  },
+  "image#alberto": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#alberto": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Alberto"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#asbri": {
+    "children": ["link#asbri"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#asbri": {
+    "props": {
+      "href": "/asbri?map=b",
+      "label": ""
+    },
+    "children": ["image#asbri", "rich-text#asbri"]
+  },
+  "image#asbri": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#asbri": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Asbri"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#benross": {
+    "children": ["link#benross"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#benross": {
+    "props": {
+      "href": "/benross?map=b",
+      "label": ""
+    },
+    "children": ["image#benross", "rich-text#benross"]
+  },
+  "image#benross": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#benross": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Benross"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#big+max": {
+    "children": ["link#big+max"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#big+max": {
+    "props": {
+      "href": "/big+max?map=b",
+      "label": ""
+    },
+    "children": ["image#big+max", "rich-text#big+max"]
+  },
+  "image#big+max": {
+    "props": {
+      "src": "assets/categorias/descarga-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#big+max": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Big max"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#boss": {
+    "children": ["link#boss"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#boss": {
+    "props": {
+      "href": "/boss?map=b",
+      "label": ""
+    },
+    "children": ["image#boss", "rich-text#boss"]
+  },
+  "image#boss": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#boss": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Boss"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#boston+golf": {
+    "children": ["link#boston+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#boston+golf": {
+    "props": {
+      "href": "/boston+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#boston+golf", "rich-text#boston+golf"]
+  },
+  "image#boston+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#boston+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Boston golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#brax": {
+    "children": ["link#brax"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#brax": {
+    "props": {
+      "href": "/brax?map=b",
+      "label": ""
+    },
+    "children": ["image#brax", "rich-text#brax"]
+  },
+  "image#brax": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#brax": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Brax"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#bridgestone+golf": {
+    "children": ["link#bridgestone+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#bridgestone+golf": {
+    "props": {
+      "href": "/bridgestone+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#bridgestone+golf", "rich-text#bridgestone+golf"]
+  },
+  "image#bridgestone+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#bridgestone+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Bridgestone golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#bushnell": {
+    "children": ["link#bushnell"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#bushnell": {
+    "props": {
+      "href": "/bushnell?map=b",
+      "label": ""
+    },
+    "children": ["image#bushnell", "rich-text#bushnell"]
+  },
+  "image#bushnell": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#bushnell": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Bushnell"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#callaway+golf": {
+    "children": ["link#callaway+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#callaway+golf": {
+    "props": {
+      "href": "/callaway+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#callaway+golf", "rich-text#callaway+golf"]
+  },
+  "image#callaway+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#callaway+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Callaway golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#calvin+klein": {
+    "children": ["link#calvin+klein"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#calvin+klein": {
+    "props": {
+      "href": "/calvin+klein?map=b",
+      "label": ""
+    },
+    "children": ["image#calvin+klein", "rich-text#calvin+klein"]
+  },
+  "image#calvin+klein": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#calvin+klein": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Calvin klein"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#champ": {
+    "children": ["link#champ"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#champ": {
+    "props": {
+      "href": "/champ?map=b",
+      "label": ""
+    },
+    "children": ["image#champ", "rich-text#champ"]
+  },
+  "image#champ": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#champ": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Champ"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#chervo": {
+    "children": ["link#chervo"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#chervo": {
+    "props": {
+      "href": "/chervo?map=b",
+      "label": ""
+    },
+    "children": ["image#chervo", "rich-text#chervo"]
+  },
+  "image#chervo": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#chervo": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Chervo"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#cleveland+golf": {
+    "children": ["link#cleveland+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#cleveland+golf": {
+    "props": {
+      "href": "/cleveland+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#cleveland+golf", "rich-text#cleveland+golf"]
+  },
+  "image#cleveland+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#cleveland+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Cleveland golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#clicgear": {
+    "children": ["link#clicgear"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#clicgear": {
+    "props": {
+      "href": "/clicgear?map=b",
+      "label": ""
+    },
+    "children": ["image#clicgear", "rich-text#clicgear"]
+  },
+  "image#clicgear": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#clicgear": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Clicgear"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#cobra+golf": {
+    "children": ["link#cobra+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#cobra+golf": {
+    "props": {
+      "href": "/cobra+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#cobra+golf", "rich-text#cobra+golf"]
+  },
+  "image#cobra+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#cobra+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Cobra golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#daily": {
+    "children": ["link#daily"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#daily": {
+    "props": {
+      "href": "/daily?map=b",
+      "label": ""
+    },
+    "children": ["image#daily", "rich-text#daily"]
+  },
+  "image#daily": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#daily": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Daily"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#daphne%27s+headcovers": {
+    "children": ["link#daphne%27s+headcovers"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#daphne%27s+headcovers": {
+    "props": {
+      "href": "/daphne%27s+headcovers?map=b",
+      "label": ""
+    },
+    "children": ["image#daphne%27s+headcovers", "rich-text#daphne%27s+headcovers"]
+  },
+  "image#daphne%27s+headcovers": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#daphne%27s+headcovers": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Daphne's headcovers"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#depique": {
+    "children": ["link#depique"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#depique": {
+    "props": {
+      "href": "/depique?map=b",
+      "label": ""
+    },
+    "children": ["image#depique", "rich-text#depique"]
+  },
+  "image#depique": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#depique": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Depique"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#ecco": {
+    "children": ["link#ecco"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#ecco": {
+    "props": {
+      "href": "/ecco?map=b",
+      "label": ""
+    },
+    "children": ["image#ecco", "rich-text#ecco"]
+  },
+  "image#ecco": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#ecco": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Ecco"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#epon": {
+    "children": ["link#epon"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#epon": {
+    "props": {
+      "href": "/epon?map=b",
+      "label": ""
+    },
+    "children": ["image#epon", "rich-text#epon"]
+  },
+  "image#epon": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#epon": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Epon"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#footjoy": {
+    "children": ["link#footjoy"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#footjoy": {
+    "props": {
+      "href": "/footjoy?map=b",
+      "label": ""
+    },
+    "children": ["image#footjoy", "rich-text#footjoy"]
+  },
+  "image#footjoy": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#footjoy": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Footjoy"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#galvin+green": {
+    "children": ["link#galvin+green"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#galvin+green": {
+    "props": {
+      "href": "/galvin+green?map=b",
+      "label": ""
+    },
+    "children": ["image#galvin+green", "rich-text#galvin+green"]
+  },
+  "image#galvin+green": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#galvin+green": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Galvin green"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#garmin": {
+    "children": ["link#garmin"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#garmin": {
+    "props": {
+      "href": "/garmin?map=b",
+      "label": ""
+    },
+    "children": ["image#garmin", "rich-text#garmin"]
+  },
+  "image#garmin": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#garmin": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Garmin"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#gfore": {
+    "children": ["link#gfore"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#gfore": {
+    "props": {
+      "href": "/gfore?map=b",
+      "label": ""
+    },
+    "children": ["image#gfore", "rich-text#gfore"]
+  },
+  "image#gfore": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#gfore": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Gfore"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#gloveit": {
+    "children": ["link#gloveit"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#gloveit": {
+    "props": {
+      "href": "/gloveit?map=b",
+      "label": ""
+    },
+    "children": ["image#gloveit", "rich-text#gloveit"]
+  },
+  "image#gloveit": {
+    "props": {
+      "src": "assets/categorias/descarga-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#gloveit": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Gloveit"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#golf+pride": {
+    "children": ["link#golf+pride"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#golf+pride": {
+    "props": {
+      "href": "/golf+pride?map=b",
+      "label": ""
+    },
+    "children": ["image#golf+pride", "rich-text#golf+pride"]
+  },
+  "image#golf+pride": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#golf+pride": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Golf pride"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#honma": {
+    "children": ["link#honma"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#honma": {
+    "props": {
+      "href": "/honma?map=b",
+      "label": ""
+    },
+    "children": ["image#honma", "rich-text#honma"]
+  },
+  "image#honma": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#honma": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Honma"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#jucad": {
+    "children": ["link#jucad"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#jucad": {
+    "props": {
+      "href": "/jucad?map=b",
+      "label": ""
+    },
+    "children": ["image#jucad", "rich-text#jucad"]
+  },
+  "image#jucad": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#jucad": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Jucad"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#justar": {
+    "children": ["link#justar"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#justar": {
+    "props": {
+      "href": "/justar?map=b",
+      "label": ""
+    },
+    "children": ["image#justar", "rich-text#justar"]
+  },
+  "image#justar": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#justar": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Justar"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#lacoste": {
+    "children": ["link#lacoste"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#lacoste": {
+    "props": {
+      "href": "/lacoste?map=b",
+      "label": ""
+    },
+    "children": ["image#lacoste", "rich-text#lacoste"]
+  },
+  "image#lacoste": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#lacoste": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Lacoste"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#lignum": {
+    "children": ["link#lignum"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#lignum": {
+    "props": {
+      "href": "/lignum?map=b",
+      "label": ""
+    },
+    "children": ["image#lignum", "rich-text#lignum"]
+  },
+  "image#lignum": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#lignum": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Lignum"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#lindeberg": {
+    "children": ["link#lindeberg"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#lindeberg": {
+    "props": {
+      "href": "/lindeberg?map=b",
+      "label": ""
+    },
+    "children": ["image#lindeberg", "rich-text#lindeberg"]
+  },
+  "image#lindeberg": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#lindeberg": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Lindeberg"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#masters": {
+    "children": ["link#masters"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#masters": {
+    "props": {
+      "href": "/masters?map=b",
+      "label": ""
+    },
+    "children": ["image#masters", "rich-text#masters"]
+  },
+  "image#masters": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#masters": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Masters"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#masters+golf": {
+    "children": ["link#masters+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#masters+golf": {
+    "props": {
+      "href": "/masters+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#masters+golf", "rich-text#masters+golf"]
+  },
+  "image#masters+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#masters+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Masters golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#mizuno+golf": {
+    "children": ["link#mizuno+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#mizuno+golf": {
+    "props": {
+      "href": "/mizuno+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#mizuno+golf", "rich-text#mizuno+golf"]
+  },
+  "image#mizuno+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#mizuno+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Mizuno golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#motocaddy": {
+    "children": ["link#motocaddy"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#motocaddy": {
+    "props": {
+      "href": "/motocaddy?map=b",
+      "label": ""
+    },
+    "children": ["image#motocaddy", "rich-text#motocaddy"]
+  },
+  "image#motocaddy": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#motocaddy": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Motocaddy"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#nike+golf": {
+    "children": ["link#nike+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#nike+golf": {
+    "props": {
+      "href": "/nike+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#nike+golf", "rich-text#nike+golf"]
+  },
+  "image#nike+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#nike+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Nike golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#oakley": {
+    "children": ["link#oakley"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#oakley": {
+    "props": {
+      "href": "/oakley?map=b",
+      "label": ""
+    },
+    "children": ["image#oakley", "rich-text#oakley"]
+  },
+  "image#oakley": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#oakley": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Oakley"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#odyssey": {
+    "children": ["link#odyssey"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#odyssey": {
+    "props": {
+      "href": "/odyssey?map=b",
+      "label": ""
+    },
+    "children": ["image#odyssey", "rich-text#odyssey"]
+  },
+  "image#odyssey": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#odyssey": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Odyssey"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#oscar+jacobson": {
+    "children": ["link#oscar+jacobson"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#oscar+jacobson": {
+    "props": {
+      "href": "/oscar+jacobson?map=b",
+      "label": ""
+    },
+    "children": ["image#oscar+jacobson", "rich-text#oscar+jacobson"]
+  },
+  "image#oscar+jacobson": {
+    "props": {
+      "src": "assets/categorias/descarga-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#oscar+jacobson": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Oscar jacobson"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#ping": {
+    "children": ["link#ping"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#ping": {
+    "props": {
+      "href": "/ping?map=b",
+      "label": ""
+    },
+    "children": ["image#ping", "rich-text#ping"]
+  },
+  "image#ping": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#ping": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Ping"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#player+layer": {
+    "children": ["link#player+layer"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#player+layer": {
+    "props": {
+      "href": "/player+layer?map=b",
+      "label": ""
+    },
+    "children": ["image#player+layer", "rich-text#player+layer"]
+  },
+  "image#player+layer": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#player+layer": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Player layer"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#powakaddy": {
+    "children": ["link#powakaddy"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#powakaddy": {
+    "props": {
+      "href": "/powakaddy?map=b",
+      "label": ""
+    },
+    "children": ["image#powakaddy", "rich-text#powakaddy"]
+  },
+  "image#powakaddy": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#powakaddy": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Powakaddy"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#prg": {
+    "children": ["link#prg"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#prg": {
+    "props": {
+      "href": "/prg?map=b",
+      "label": ""
+    },
+    "children": ["image#prg", "rich-text#prg"]
+  },
+  "image#prg": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#prg": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Prg"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#pro+tekt": {
+    "children": ["link#pro+tekt"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#pro+tekt": {
+    "props": {
+      "href": "/pro+tekt?map=b",
+      "label": ""
+    },
+    "children": ["image#pro+tekt", "rich-text#pro+tekt"]
+  },
+  "image#pro+tekt": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#pro+tekt": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Pro tekt"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#puma+golf": {
+    "children": ["link#puma+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#puma+golf": {
+    "props": {
+      "href": "/puma+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#puma+golf", "rich-text#puma+golf"]
+  },
+  "image#puma+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#puma+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Puma golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#pure+2+improve": {
+    "children": ["link#pure+2+improve"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#pure+2+improve": {
+    "props": {
+      "href": "/pure+2+improve?map=b",
+      "label": ""
+    },
+    "children": ["image#pure+2+improve", "rich-text#pure+2+improve"]
+  },
+  "image#pure+2+improve": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#pure+2+improve": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Pure 2 improve"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#rife": {
+    "children": ["link#rife"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#rife": {
+    "props": {
+      "href": "/rife?map=b",
+      "label": ""
+    },
+    "children": ["image#rife", "rich-text#rife"]
+  },
+  "image#rife": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#rife": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Rife"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#rohnisch": {
+    "children": ["link#rohnisch"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#rohnisch": {
+    "props": {
+      "href": "/rohnisch?map=b",
+      "label": ""
+    },
+    "children": ["image#rohnisch", "rich-text#rohnisch"]
+  },
+  "image#rohnisch": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#rohnisch": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Rohnisch"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#rovic": {
+    "children": ["link#rovic"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#rovic": {
+    "props": {
+      "href": "/rovic?map=b",
+      "label": ""
+    },
+    "children": ["image#rovic", "rich-text#rovic"]
+  },
+  "image#rovic": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#rovic": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Rovic"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#scotty+cameron": {
+    "children": ["link#scotty+cameron"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#scotty+cameron": {
+    "props": {
+      "href": "/scotty+cameron?map=b",
+      "label": ""
+    },
+    "children": ["image#scotty+cameron", "rich-text#scotty+cameron"]
+  },
+  "image#scotty+cameron": {
+    "props": {
+      "src": "assets/categorias/descarga-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#scotty+cameron": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Scotty cameron"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#skechers": {
+    "children": ["link#skechers"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#skechers": {
+    "props": {
+      "href": "/skechers?map=b",
+      "label": ""
+    },
+    "children": ["image#skechers", "rich-text#skechers"]
+  },
+  "image#skechers": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#skechers": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Skechers"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#sklz": {
+    "children": ["link#sklz"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#sklz": {
+    "props": {
+      "href": "/sklz?map=b",
+      "label": ""
+    },
+    "children": ["image#sklz", "rich-text#sklz"]
+  },
+  "image#sklz": {
+    "props": {
+      "src": "assets/categorias/descarga-2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#sklz": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Sklz"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#sky+caddie": {
+    "children": ["link#sky+caddie"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#sky+caddie": {
+    "props": {
+      "href": "/sky+caddie?map=b",
+      "label": ""
+    },
+    "children": ["image#sky+caddie", "rich-text#sky+caddie"]
+  },
+  "image#sky+caddie": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#sky+caddie": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Sky caddie"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#softspikes": {
+    "children": ["link#softspikes"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#softspikes": {
+    "props": {
+      "href": "/softspikes?map=b",
+      "label": ""
+    },
+    "children": ["image#softspikes", "rich-text#softspikes"]
+  },
+  "image#softspikes": {
+    "props": {
+      "src": "assets/categorias/descarga-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#softspikes": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Softspikes"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#spoon": {
+    "children": ["link#spoon"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#spoon": {
+    "props": {
+      "href": "/spoon?map=b",
+      "label": ""
+    },
+    "children": ["image#spoon", "rich-text#spoon"]
+  },
+  "image#spoon": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#spoon": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Spoon"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#srixon": {
+    "children": ["link#srixon"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#srixon": {
+    "props": {
+      "href": "/srixon?map=b",
+      "label": ""
+    },
+    "children": ["image#srixon", "rich-text#srixon"]
+  },
+  "image#srixon": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#srixon": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Srixon"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#stuburt": {
+    "children": ["link#stuburt"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#stuburt": {
+    "props": {
+      "href": "/stuburt?map=b",
+      "label": ""
+    },
+    "children": ["image#stuburt", "rich-text#stuburt"]
+  },
+  "image#stuburt": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#stuburt": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Stuburt"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#superstroke": {
+    "children": ["link#superstroke"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#superstroke": {
+    "props": {
+      "href": "/superstroke?map=b",
+      "label": ""
+    },
+    "children": ["image#superstroke", "rich-text#superstroke"]
+  },
+  "image#superstroke": {
+    "props": {
+      "src": "assets/categorias/descarga-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#superstroke": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Superstroke"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#tasco": {
+    "children": ["link#tasco"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#tasco": {
+    "props": {
+      "href": "/tasco?map=b",
+      "label": ""
+    },
+    "children": ["image#tasco", "rich-text#tasco"]
+  },
+  "image#tasco": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#tasco": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Tasco"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#taylormade": {
+    "children": ["link#taylormade"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#taylormade": {
+    "props": {
+      "href": "/taylormade?map=b",
+      "label": ""
+    },
+    "children": ["image#taylormade", "rich-text#taylormade"]
+  },
+  "image#taylormade": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#taylormade": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Taylormade"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#the+golfers+club": {
+    "children": ["link#the+golfers+club"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#the+golfers+club": {
+    "props": {
+      "href": "/the+golfers+club?map=b",
+      "label": ""
+    },
+    "children": ["image#the+golfers+club", "rich-text#the+golfers+club"]
+  },
+  "image#the+golfers+club": {
+    "props": {
+      "src": "assets/categorias/descarga-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#the+golfers+club": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "The golfers club"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#titleist": {
+    "children": ["link#titleist"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#titleist": {
+    "props": {
+      "href": "/titleist?map=b",
+      "label": ""
+    },
+    "children": ["image#titleist", "rich-text#titleist"]
+  },
+  "image#titleist": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#titleist": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Titleist"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#tourdri": {
+    "children": ["link#tourdri"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#tourdri": {
+    "props": {
+      "href": "/tourdri?map=b",
+      "label": ""
+    },
+    "children": ["image#tourdri", "rich-text#tourdri"]
+  },
+  "image#tourdri": {
+    "props": {
+      "src": "assets/categorias/descarga-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#tourdri": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Tourdri"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#under+armour": {
+    "children": ["link#under+armour"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#under+armour": {
+    "props": {
+      "href": "/under+armour?map=b",
+      "label": ""
+    },
+    "children": ["image#under+armour", "rich-text#under+armour"]
+  },
+  "image#under+armour": {
+    "props": {
+      "src": "assets/categorias/descarga-6.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#under+armour": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Under armour"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#us+kids+golf": {
+    "children": ["link#us+kids+golf"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#us+kids+golf": {
+    "props": {
+      "href": "/us+kids+golf?map=b",
+      "label": ""
+    },
+    "children": ["image#us+kids+golf", "rich-text#us+kids+golf"]
+  },
+  "image#us+kids+golf": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#us+kids+golf": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Us kids golf"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#uskids": {
+    "children": ["link#uskids"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#uskids": {
+    "props": {
+      "href": "/uskids?map=b",
+      "label": ""
+    },
+    "children": ["image#uskids", "rich-text#uskids"]
+  },
+  "image#uskids": {
+    "props": {
+      "src": "assets/categorias/descarga-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#uskids": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Uskids"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#volvik": {
+    "children": ["link#volvik"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#volvik": {
+    "props": {
+      "href": "/volvik?map=b",
+      "label": ""
+    },
+    "children": ["image#volvik", "rich-text#volvik"]
+  },
+  "image#volvik": {
+    "props": {
+      "src": "assets/categorias/descarga-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#volvik": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Volvik"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#wilson": {
+    "children": ["link#wilson"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#wilson": {
+    "props": {
+      "href": "/wilson?map=b",
+      "label": ""
+    },
+    "children": ["image#wilson", "rich-text#wilson"]
+  },
+  "image#wilson": {
+    "props": {
+      "src": "assets/categorias/descarga-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#wilson": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Wilson"
+    }
+  },
+  /////////////////////////////
+  "flex-layout.col#xxio": {
+    "children": ["link#xxio"],
+    "props": {
+      "blockClass": "brand-item",
+      "width": "25%"
+    }
+  },
+  "link#xxio": {
+    "props": {
+      "href": "/xxio?map=b",
+      "label": ""
+    },
+    "children": ["image#xxio", "rich-text#xxio"]
+  },
+  "image#xxio": {
+    "props": {
+      "src": "assets/categorias/descarga-5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "brand-image"
+    }
+  },
+  "rich-text#xxio": {
+    "props": {
+      "blockClass": "brand-name",
+      "text": "Xxio"
+    }
+  }
+}
