@@ -1,6 +1,6 @@
 
 .container {
-    padding:20px 0px;
+    padding:5px 0px;
 }
 
 @media screen and (max-width: 50em) {
@@ -13,7 +13,7 @@
 .homeLink{
     letter-spacing: 1px;
     color:#4c4c4c;
-    font-size:14px;
+    font-size:14px; 
 }
 .homeLink::before{
     content: "Home";

@@ -99,7 +99,7 @@
   "flex-layout.row#department-1-categories": {
     "children": [
       "flex-layout.col#department-1-submenu-col-1",
-      "flex-layout.col#department-1-submenu-col-2",
+      //"flex-layout.col#department-1-submenu-col-2",
       "flex-layout.col#department-1-submenu-col-3",
       "flex-layout.col#department-1-submenu-col-4"
     ]
@@ -2238,7 +2238,7 @@
       "blockClass":"header-promotions-title"
     },
     "blocks": [
-      "submenu#department-7"
+      //"submenu#department-7"
     ]
   },
   "submenu#department-7": {

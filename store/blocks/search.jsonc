@@ -16,7 +16,7 @@
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 10,
+        "maxItemsPerPage": 36,
         "skusFilter": "ALL",
         "simulationBehavior": "skip",
         "__unstableProductOriginVtex": true
@@ -29,6 +29,7 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
+        "maxItemsPerPage": 36,
         "simulationBehavior": "skip",
         "__unstableProductOriginVtex": true
       }
@@ -40,6 +41,7 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
+        "maxItemsPerPage": 36,
         "simulationBehavior": "skip",
         "__unstableProductOriginVtex": true
       }
@@ -51,6 +53,7 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
+        "maxItemsPerPage": 36,
         "simulationBehavior": "skip",
         "__unstableProductOriginVtex": true
       }

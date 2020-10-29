@@ -1,5 +1,5 @@
 .flexRow--top-bar{
-  background-color: #C8102E;
+  background-color: #000000;
   color: #ffffff !important;
   font-size: 10px;
   font-weight: 300;
@@ -383,6 +383,37 @@
 
 
 /* FITTING */
-.flexColChild--proceso{
-  padding:20px;
+.flexRowContent--fitting{
 }
+.flexRowContent--fitting-spacer{
+  padding-top:50px;
+}
+.flexColChild--proceso{
+  padding:40px 0px;
+}
+
+.flexColChild--info-fitting :global(.vtex-store-components-3-x-imageElement){
+  width:100%;
+}
+
+.flexRowContent--testimonio-fitting{
+  background:#1B3F5B;
+  color:#fff;
+  text-align:center;
+}
+
+
+/* TIENDAS */
+.flexCol--info-tinda{
+  text-align:center;
+}
+.flexCol--info-tinda :global(.vtex-rich-text-0-x-wrapper){
+  width:100%;
+  text-align:center;
+}
+.flexRow--tienda{
+  margin-bottom:50px;
+}
+
+
+

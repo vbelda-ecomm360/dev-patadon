@@ -3,26 +3,38 @@
     "blocks": [
       //"flex-layout.row#banner",
       "image#banner",
+      "flex-layout.row#fitting-spacer",
       "flex-layout.row#video",
+      "flex-layout.row#fitting-spacer",
       "flex-layout.row#nuestro-proceso",
+      "flex-layout.row#fitting-spacer",
       "flex-layout.row#info-fitting-1",
+      "flex-layout.row#fitting-spacer",
       "flex-layout.row#info-fitting-2",
-      "rich-text#more-info-1",
-      "rich-text#more-info-2",
-      "rich-text#more-info-3",
-      "rich-text#more-info-4",
+      "flex-layout.row#fitting-spacer",
+      "flex-layout.row#more-info-1",
+      "flex-layout.row#more-info-2",
+      "flex-layout.row#more-info-3",
+      "flex-layout.row#more-info-4",
+      "flex-layout.row#fitting-spacer",
       "flex-layout.row#testimonio-1",
+      "flex-layout.row#fitting-spacer",
       "flex-layout.row#testimonio-2"
     ]
   },
-
+  "flex-layout.row#fitting-spacer": {
+    "children": [],
+    "props": {
+      "blockClass": "fitting-spacer"
+    }
+  },
   // BANNER
   "flex-layout.row#banner": {
     "children": [
       "image#banner"
     ],
     "props": {
-      "blockClass": "about"
+      "blockClass": "fitting"
     }
   },
 
@@ -31,7 +43,7 @@
       "src": "assets/fitting/banner.jpg",
       "maxHeight": "",
       "maxWidth": "",
-      "blockClass": "image-about"
+      "blockClass": "image-fitting"
     }
   },
 
@@ -42,7 +54,7 @@
       "flex-layout.col#video-2"
     ],
     "props": {
-      "blockClass": "about"
+      "blockClass": "fitting"
     }
   },
   // col 1
@@ -51,24 +63,24 @@
       "rich-text#trackman"
     ],
     "props": {
-      "blockClass": "proceso",
+      "blockClass": "fitting-video",
       "width": "30%"
     }
   },
   "rich-text#trackman": {
     "props": {
-      "text": "**Conoce como Trackman ayuda a mejorar tu golf y diseñar palos a medida**",
-      "blockClass": "text-about"
+      "text": "#### Conoce como Trackman ayuda a mejorar tu golf y diseñar palos a medida\n**Trackman Pro**\nLa tecnología lider entre todos los profesionales de la PGA",
+      "blockClass": "fitting-video"
     }
   },
-  // col 1
+  // col 2
   "flex-layout.col#video-2": {
     "children": [
       "iframe#trackman"
     ],
     "props": {
       "width": "70%",
-      "blockClass": "proceso"
+      "blockClass": "fitting-video"
     }
   },
   "iframe#trackman": {
@@ -86,7 +98,7 @@
       "flex-layout.col#nuestro-proceso-2"
     ],
     "props": {
-      "blockClass": "about",
+      "blockClass": "fitting",
       "colGap": "10"
     }
   },
@@ -104,25 +116,25 @@
   },
   "rich-text#nuestro-proceso-col1text1": {
     "props": {
-      "text": "**Agenda tu fitting**\nElige el tipo de fitting que quieres. Selecciona la fecha y la hora para tu sesión. Puedes escoger el fitting center y el fitter profesional que quieres que te hafa el fitting,\n\nPuedes reservar online, por teléfono o directamente en el fitting center",
+      "text": "### 1\n**Agenda tu fitting**\nElige el tipo de fitting que quieres. Selecciona la fecha y la hora para tu sesión. Puedes escoger el fitting center y el fitter profesional que quieres que te hafa el fitting,\n\nPuedes reservar online, por teléfono o directamente en el [fitting center](/tiendas)",
       "blockClass": "text-proceso"
     }
   },
   "rich-text#nuestro-proceso-col1text2": {
     "props": {
-      "text": "**Preparate para el fitting**\nEs conveniente venir con tus zapatos de golf y un guante. Trae ropa que te permita estar cómodo en el swing. Puedes cambiarte en nuestros probadores si lo deseas. Si lo que quieres es cambiar de palos, lo ideal es que traigas tu equipo actual para poder comparar con el nuevo material. Si son hierros lo que desae cambiar, con traer el 6 y 7 será suficiente.",
+      "text": "### 2\n**Preparate para el fitting**\nEs conveniente venir con tus zapatos de golf y un guante. Trae ropa que te permita estar cómodo en el swing. Puedes cambiarte en nuestros probadores si lo deseas. Si lo que quieres es cambiar de palos, lo ideal es que traigas tu equipo actual para poder comparar con el nuevo material. Si son hierros lo que desae cambiar, con traer el 6 y 7 será suficiente.",
       "blockClass": "text-proceso"
     }
   },
   "rich-text#nuestro-proceso-col1text3": {
     "props": {
-      "text": "**La entrevista**\nUn fitter te estará esperando. Comenzarás la sesción con unos ejercicios de calentamiento y una entrevista. Queremos compartir contigo el potencial de un fitting y marcar los objetivos. Analizatemos aspectos físicos y tomaremos las mediciones estáticas como altura, tamaño de mano entre otros.",
+      "text": "### 3\n**La entrevista**\nUn fitter te estará esperando. Comenzarás la sesción con unos ejercicios de calentamiento y una entrevista. Queremos compartir contigo el potencial de un fitting y marcar los objetivos. Analizatemos aspectos físicos y tomaremos las mediciones estáticas como altura, tamaño de mano entre otros.",
       "blockClass": "text-proceso"
     }
   },
   "rich-text#nuestro-proceso-col1text4": {
     "props": {
-      "text": "**Análisis dinámico**\nEs hora de probarte con el radar. Conoceremos los aspectos dinámicos de tu juego tales como ángulos de ataque y lanzamiento, vuelo de bola o distancia, calidad del impacto entre otros.",
+      "text": "### 4\n**Análisis dinámico**\nEs hora de probarte con el radar. Conoceremos los aspectos dinámicos de tu juego tales como ángulos de ataque y lanzamiento, vuelo de bola o distancia, calidad del impacto entre otros.",
       "blockClass": "text-proceso"
     }
   },
@@ -140,25 +152,25 @@
   },
   "rich-text#nuestro-proceso-col2text1": {
     "props": {
-      "text": "**Ajustes de configuración**\nA medida que avanza la sesión vamos identificando las variables que podmeos modificar para conseguir nuestro objetivo. Iremos viendo la evolución y tendremos una idea clara de cual es la mejora experimentada respecto a los palos que teníamos previamente. Hemos pasado de más de 30.000 combinaciones a 2 o 3 opciones que sacan el máximo rendimiento de tu juego.",
+      "text": "### 5\n**Ajustes de configuración**\nA medida que avanza la sesión vamos identificando las variables que podmeos modificar para conseguir nuestro objetivo. Iremos viendo la evolución y tendremos una idea clara de cual es la mejora experimentada respecto a los palos que teníamos previamente. Hemos pasado de más de 30.000 combinaciones a 2 o 3 opciones que sacan el máximo rendimiento de tu juego.",
       "blockClass": "text-proceso"
     }
   },
   "rich-text#nuestro-proceso-col2text2": {
     "props": {
-      "text": "**Decisión de compra**\nYa tenemos todo lo necesario. \n- Datos de fitting y ajustes a realizar \n- Comparativa respecto al material anterior \n- Material óptimo y presupuesto",
+      "text": "### 6\n**Decisión de compra**\nYa tenemos todo lo necesario. \n- Datos de fitting y ajustes a realizar \n- Comparativa respecto al material anterior \n- Material óptimo y presupuesto",
       "blockClass": "text-proceso"
     }
   },
   "rich-text#nuestro-proceso-col2text3": {
     "props": {
-      "text": "**Orden de montaje**\nCon el presupuesto aprobado empezamos a montar los palos. Hay dos posibilidades: Los podemos pedir a fábrica con las especificaciones de monraje o podemos montarlos en nuestro taller con nuestros clubmakers. Cuando estén listos, revisaremos que han sido montados siguiendo nuestras especificiones y te los entregaremos.",
+      "text": "### 7\n**Orden de montaje**\nCon el presupuesto aprobado empezamos a montar los palos. Hay dos posibilidades: Los podemos pedir a fábrica con las especificaciones de monraje o podemos montarlos en nuestro taller con nuestros clubmakers. Cuando estén listos, revisaremos que han sido montados siguiendo nuestras especificiones y te los entregaremos.",
       "blockClass": "text-proceso"
     }
   },
   "rich-text#nuestro-proceso-col2text4": {
     "props": {
-      "text": "**Esto es solo el principio**\nQueremos asegurarnos de que todo sigue bien. Una vez que hayas jugado 4 o 5 veces tus nuevos palos a medida te ofrecemos la posibilidad de venir a la tienda para que podamos leer tus palos y que compartas tus sensaciones con nosotros. Es el momento de hacer los últimos ajustes y sin ningún coste adisional.",
+      "text": "### 8\n**Esto es solo el principio**\nQueremos asegurarnos de que todo sigue bien. Una vez que hayas jugado 4 o 5 veces tus nuevos palos a medida te ofrecemos la posibilidad de venir a la tienda para que podamos leer tus palos y que compartas tus sensaciones con nosotros. Es el momento de hacer los últimos ajustes y sin ningún coste adisional.",
       "blockClass": "text-proceso"
     }
   },
@@ -171,7 +183,8 @@
         "flex-layout.col#info-fitting-1-2"
       ],
       "props": {
-        "blockClass": "info-fitting"
+        "blockClass": "info-fitting",
+        "colGap": "8"
       }
     },
     // col 1
@@ -187,7 +200,7 @@
     "rich-text#info-fitting-text-1": {
       "props": {
         "text": "**Equipo de Fitter y Clubmakers en Depique**\nDepique es la suma de muchos profesionales de golf. Un talento a tu disposición, con la misión de hacerte jugar mejor. Un equipo con más de 20 años de experiencia como filters y clubmakers, que se forma continuamente.",
-        "blockClass": "text-proceso"
+        "blockClass": "info-fitting"
       }
     },
     // col 2
@@ -213,7 +226,8 @@
       "flex-layout.col#info-fitting-2-2"
     ],
     "props": {
-      "blockClass": "about"
+      "blockClass": "fitting",
+      "colGap": "8"
     }
   },
   // col 1
@@ -229,7 +243,7 @@
   "image#info-fitting-img-2": {
     "props": {
       "src": "assets/fitting/banner3.png",
-      "blockClass": "image-about"
+      "blockClass": "image-fitting"
     }
   },
   // col 2
@@ -244,16 +258,34 @@
   },
   "rich-text#info-fitting-text-2": {
     "props": {
-      "text": "**La mejor tecnología**\nTrabajamos tanto con Trackman como con FlightScope. Puedes saber con qué tecnología contamos en cada fitting center.\n\nConoce a nuestro equípo y tecnología",
-      "blockClass": "text-proceso"
+      "text": "**La mejor tecnología**\nTrabajamos tanto con Trackman como con FlightScope. Puedes saber con qué tecnología contamos en cada fitting center.\n\n[Conoce a nuestro equípo y tecnología](/venta-telefonica)",
+      "blockClass": "info-fitting"
     }
   },
 
   // MORE INFO
+  "flex-layout.row#more-info-1": {
+    "children": [
+      "rich-text#more-info-1"
+    ],
+    "props": {
+      "blockClass": "fitting",
+      "colGap": "8"
+    }
+  },
   "rich-text#more-info-1": {
     "props": {
-      "text": "**Un fitting para cada tipo de jugador**\n",
+      "text": "### Un fitting para cada tipo de jugador\n",
       "blockClass": "text-fitting"
+    }
+  },
+  "flex-layout.row#more-info-2": {
+    "children": [
+      "rich-text#more-info-2"
+    ],
+    "props": {
+      "blockClass": "fitting",
+      "colGap": "8"
     }
   },
   "rich-text#more-info-2": {
@@ -262,10 +294,28 @@
       "blockClass": "text-fitting"
     }
   },
+  "flex-layout.row#more-info-3": {
+    "children": [
+      "rich-text#more-info-3"
+    ],
+    "props": {
+      "blockClass": "fitting",
+      "colGap": "8"
+    }
+  },
   "rich-text#more-info-3": {
     "props": {
       "text": "**Jugadores habituales**\nTenemos el equipo de fitters y clubmakers más profesional del mercado, con una experiencia de más de 20 años haciendo fittings a jugadores de todos los niveles y haciendo palos a medida en nuestros talleres. Disponemos de la última tecnología que nos permite guiarte y analizar juntos el resultado de las diferentes posibilidades que el mercado nos brinda. Hay demasiadas combinaciones de palos en el mercado y nosotros podemos ayudarte a encontrar la que mejor te hará jugar.",
       "blockClass": "text-fitting"
+    }
+  },
+  "flex-layout.row#more-info-4": {
+    "children": [
+      "rich-text#more-info-4"
+    ],
+    "props": {
+      "blockClass": "fitting",
+      "colGap": "8"
     }
   },
   "rich-text#more-info-4": {
@@ -283,7 +333,8 @@
       "flex-layout.col#testimonio-1-2"
     ],
     "props": {
-      "blockClass": "info-fitting"
+      "blockClass": "testimonio-fitting",
+      "colGap": "8"
     }
   },
   // col 1
@@ -299,7 +350,7 @@
   "image#testimonio-img-1": {
     "props": {
       "src": "assets/fitting/banner4.png",
-      "blockClass": "image-about"
+      "blockClass": "image-fitting"
     }
   },
   // col 2
@@ -315,18 +366,19 @@
   "rich-text#testimonio-text-1": {
     "props": {
       "text": "**Testimonio**\n\n\nTestimonio de ejemplo.",
-      "blockClass": "text-proceso"
+      "blockClass": "testimonio-fitting" 
     }
   },
   // row 2
   "flex-layout.row#testimonio-2": {
     "children": [
       "flex-layout.col#testimonio-2-1",
-      "flex-layout.col#testimonio-2-2",
+      "flex-layout.col#testimonio-2-2", 
       "flex-layout.col#testimonio-2-3"
     ],
     "props": {
-      "blockClass": "info-fitting"
+      "blockClass": "info-fitting",
+      "colGap": "5"
     }
   },
   // col 1
@@ -343,19 +395,20 @@
   "image#testimonio-img-2": {
     "props": {
       "src": "assets/fitting/banner5.png",
-      "blockClass": "image-about"
+      "blockClass": "image-fitting"
     }
   },
   "rich-text#testimonio-text-2": {
     "props": {
-      "text": "**Testimonio**\n\n\nTestimonio de ejemplo.",
-      "blockClass": "text-proceso"
+      "text": "**Precios**",
+      "blockClass": "text-fitting"
     }
   },
   "link#testimonio-button-1": {
     "props": {
-      "href": "/login?returnUrl={queryString.returnUrl}",
-      "label": "Saber más"
+      "href": "/precios",
+      "label": "Saber más",
+      "blockClass": "testiomnios-link"
     }
   },
   // col 2
@@ -372,19 +425,20 @@
   "image#testimonio-img-3": {
     "props": {
       "src": "assets/fitting/banner5.png",
-      "blockClass": "image-about"
+      "blockClass": "image-fitting"
     }
   },
   "rich-text#testimonio-text-3": {
     "props": {
-      "text": "**Testimonio**\n\n\nTestimonio de ejemplo.",
-      "blockClass": "text-proceso"
+      "text": "**¿No tienes un centro cerca?**",
+      "blockClass": "text-fitting"
     }
   },
   "link#testimonio-button-2": {
     "props": {
-      "href": "/login?returnUrl={queryString.returnUrl}",
-      "label": "Saber más"
+      "href": "/tiendas",
+      "label": "Saber más",
+      "blockClass": "testiomnios-link"
     }
   },
   // col 3
@@ -401,19 +455,20 @@
   "image#testimonio-img-4": {
     "props": {
       "src": "assets/fitting/banner5.png",
-      "blockClass": "image-about"
+      "blockClass": "image-fitting"
     }
   },
   "rich-text#testimonio-text-4": {
-    "props": {
-      "text": "**Testimonio**\n\n\nTestimonio de ejemplo.",
-      "blockClass": "text-proceso"
+    "props": {      
+      "text": "**¿No tienes un centro cerca?**",
+      "blockClass": "text-fitting"
     }
   },
   "link#testimonio-button-3": {
     "props": {
-      "href": "/login?returnUrl={queryString.returnUrl}",
-      "label": "Saber más"
+      "href": "/tiendas",
+      "label": "Saber más",
+      "blockClass": "testiomnios-link"
     }
   }
 }
