@@ -15,17 +15,6 @@
     }
   },
 
-  "flex-layout.col#text-somos": {
-    "children": [
-      "rich-text#title-somos",
-      "rich-text#somos"
-    ],
-    "props": {
-      "blockClass": "textColumn",
-      "preventVerticalStretch": true
-    }
-  },
-
   "rich-text#tabla-precios": {
     "props": {
       "text":"## Tabla de precios fitting\n| | | |\n| --- | --- | --- |\n| **Drive y maderas**Tu drive debe responder a la potencia de tu swing en un equilibrio con la precisión y la consistencia | 1h | 100€ |\n| **Hierros e hibridos**Consigue un juego de hierros que la distancia entre palos sea homogénea y que te ofezca lo que necesitas a nivel de sensaciones. | 1h | 100€ |\n| **Bolsa entera**El fitting más completo y exigente | 3h | 300€ |\n| **Putt**Descubre qué tipo de putt es el más adecuado para ti. Es el palo con el que das más goles de tu bolsa seguro | 30min | 100€ |\n| **Gapping**Te construimos el mapa de distancias entre palos de tu bolsa | 1h | 100€ |\n| **Bola**¿Cual es el tipo de bolsa que deberías jugar? | 1h | 100€ |",

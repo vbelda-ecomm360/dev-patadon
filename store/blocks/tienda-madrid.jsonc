@@ -1,0 +1,14 @@
+{
+    "store.custom#tienda-madrid": {
+      "blocks": [
+        "iframe#tienda-madrid"
+        ]
+    },
+    "iframe#tienda-madrid": {
+        "props": {
+        "src": "https://ivan-patadon.zohobookings.com/portal-embed#/customer/depiquemadrid",
+        "width":"100%",
+        "height":"750"
+        }
+    }
+}

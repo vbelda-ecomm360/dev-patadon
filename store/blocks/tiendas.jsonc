@@ -91,7 +91,7 @@
       },
       "link#link-info-tienda-1": {
         "props": {
-          "href": "#",
+          "href": "/tienda-barcelona",
           "label": "RESERVA FITTING",
           "blockClass": "link-info-tienda"
         }
@@ -160,7 +160,7 @@
     },
     "link#link-info-tienda-2": {
       "props": {
-        "href": "#",
+        "href": "/tienda-valencia",
         "label": "RESERVA FITTING",
         "blockClass": "link-info-tienda"
       }
@@ -229,7 +229,7 @@
     },
     "link#link-info-tienda-3": {
       "props": {
-        "href": "#",
+        "href": "/tienda-mallorca",
         "label": "RESERVA FITTING",
         "blockClass": "link-info-tienda"
       }
@@ -367,7 +367,7 @@
     },
     "link#link-info-tienda-5": {
       "props": {
-        "href": "#",
+        "href": "/tienda-madrid",
         "label": "RESERVA FITTING",
         "blockClass": "link-info-tienda"
       }

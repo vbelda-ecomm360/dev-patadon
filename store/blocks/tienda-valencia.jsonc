@@ -1,0 +1,14 @@
+{
+    "store.custom#tienda-valencia": {
+      "blocks": [
+        "iframe#tienda-valencia"
+        ]
+    },
+    "iframe#tienda-valencia": {
+        "props": {
+        "src": "https://ivan-patadon.zohobookings.com/portal-embed#/customer/depiquevalencia",
+        "width":"100%",
+        "height":"750"
+        }
+    }
+}

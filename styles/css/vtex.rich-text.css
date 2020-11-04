@@ -333,3 +333,26 @@
   font-size:18px;
   border-bottom:1px solid #000;
 } 
+
+
+/* TOP BAR */
+.paragraph--top-bar-header-text{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 32px;
+  padding:0px 15px;
+}
+.link--top-bar-header-text{
+  color: #ffffff;
+}
+@media screen and (max-width: 50em) {
+  .wrapper--top-bar-header-text{
+    width:100%;
+  }
+  .paragraph--top-bar-header-text{
+    width:100%;
+    font-size: 10px;
+    text-align: center;
+    line-height: 20px;
+  }
+} 

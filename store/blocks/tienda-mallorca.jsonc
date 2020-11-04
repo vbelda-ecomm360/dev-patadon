@@ -1,0 +1,14 @@
+{
+    "store.custom#tienda-mallorca": {
+      "blocks": [
+        "iframe#tienda-mallorca"
+        ]
+    },
+    "iframe#tienda-mallorca": {
+        "props": {
+        "src": "https://ivan-patadon.zohobookings.com/portal-embed#/customer/depiquepalma",
+        "width":"100%",
+        "height":"750"
+        }
+    }
+}

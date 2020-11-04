@@ -9,6 +9,7 @@
   },
   "menu-item#venta-tele": {
     "props": {
+      "blockClass": "link-top-bar-menu",
       "id": "menu-item-venta-tele",
       "type": "custom",
       "iconId": null,
@@ -24,6 +25,7 @@
   },
   "menu-item#tiendas": {
     "props": {
+      "blockClass": "link-top-bar-menu",
       "id": "menu-item-tiendas",
       "type": "custom",
       "iconId": null,
@@ -39,6 +41,7 @@
   },
   "menu-item#contacto": {
     "props": {
+      "blockClass": "link-top-bar-menu",
       "id": "menu-item-contacto",
       "type": "custom",
       "iconId": null,
@@ -54,6 +57,7 @@
   },
   "menu-item#about-us": {
     "props": {
+      "blockClass": "link-top-bar-menu",
       "id": "menu-item-about-us",
       "type": "custom",
       "iconId": null,

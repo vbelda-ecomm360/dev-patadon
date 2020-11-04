@@ -31,5 +31,17 @@
   },
   "store.custom#tiendas": { 
     "path": "/tiendas" 
+  },
+  "store.custom#tienda-barcelona": { 
+    "path": "/tienda-barcelona" 
+  },
+  "store.custom#tienda-valencia": { 
+    "path": "/tienda-valencia" 
+  },
+  "store.custom#tienda-mallorca": { 
+    "path": "/tienda-mallorca" 
+  },
+  "store.custom#tienda-madrid": { 
+    "path": "/tienda-madrid" 
   }
 }

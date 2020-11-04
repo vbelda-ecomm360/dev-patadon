@@ -7,19 +7,6 @@
   letter-spacing: 0.5px;
 }
 
-.flexRowContent--top-bar :global(.vtex-menu-2-x-styledLink) {
-  color: #ffffff;
-  font-size: 14px;
-}
-.flexRowContent--top-bar :global(.vtex-rich-text-0-x-paragraph--main-header-text) {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 60px;
-  padding:0px 15px;
-}
-.flexRowContent--top-bar :global(.vtex-rich-text-0-x-link){
-  color: #ffffff;
-}
 
 .flexRow--main-header-menu{
   background-color:#ffffff;
@@ -356,14 +343,23 @@
 .flexRowContent--brands-index{
   flex-wrap: wrap;
 }
+.flexRowContent--brands-index :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  width:25% !important;
+}
+@media screen and (max-width: 50em) {
+  .flexRowContent--brands-index :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    width:100% !important;
+  }
+}
 .flexCol--brand-item {
   border:2px solid #333333;
   padding:20px;
   margin:20px;
   height:auto;
-  background-color: #ffffff;
+  background-color: #ffffff; 
   text-align:center;
 }
+
 .flexCol--brand-item :global(.vtex-rich-text-0-x-wrapper--brand-name){
   width:100%;
 }
