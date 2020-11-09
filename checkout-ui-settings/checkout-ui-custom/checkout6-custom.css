@@ -1,13 +1,3 @@
-/* Content copied from "checkout5-custom.css" at 2019-03-01T05:12:59.334Z */
-
-/* /files/checkout5-custom.css */
-
-/* Displays the option to enter a foreign document */
-.document-box { display: block; }
-
-/* Displays the option to enter an international phone */
-.phone-box { display: block; }
-
 /* GENERAL */
 *{
   box-sizing:border-box;
@@ -15,6 +5,16 @@
 body{  
   padding:0px;
   background-color: #f8f8f8;
+}
+@media (max-width: 767px){
+  body .container {
+      padding:15px !important;
+  }
+}
+@media (max-width: 490px){
+  body .container {
+      padding:15px !important;
+  }
 }
 header{
   padding:40px 0px;
@@ -60,10 +60,10 @@ h1{
 
 td.quantity {
   position: relative;
-  width:70px;
+  width:70px !important;
 }
 td.quantity input{
-    width: 70px;
+    width: 70px !important;
     height: 34px;
     border: 1px solid #000;
     border-radius: 0px;
@@ -93,6 +93,19 @@ td.quantity input{
 }
 .icon-plus-sign:before {
     content: "+";
+}
+@media (max-width: 767px){
+  .item-quantity-change-decrement{
+    left:6px;
+  }
+  .item-quantity-change-increment{
+    right:6px;
+  }
+  .item-quantity-change {
+    position: absolute;
+    line-height: 1 !important;
+    top: calc(50% - 16px);
+  }
 }
 
 footer{
@@ -129,6 +142,24 @@ footer #menu_footer ul li a{
 }
 
 
+.add-service{
+  border:0px !important;
+  border-radius: 1px !important;
+  background-color: #134CD8 !important;
+  font-size: 14px !important;
+  letter-spacing: 1.4px !important;
+  color: #ffffff !important;
+  
+  background-image:none !important;
+  outline:none !important;
+}
+.add-service:hover{
+  background-color: #0C389F !important;
+}
+.add-service:active{
+  background-color: #0C389F !important;
+}
+
 
 /* CART */
 
@@ -164,6 +195,14 @@ tbody, tfoot{
 }
 .table td:last-child {
   padding-left:0;
+}
+@media (max-width: 767px){
+  .table td:last-child {
+      padding-right: 5px !important;
+  }
+  .full-cart .cart table tbody tr td.product-name {
+      padding: 0 10px 10px 0px !important;
+  }
 }
 .table td a{
   font-weight: 600;
@@ -676,8 +715,4 @@ button.vtex-omnishipping-1-x-buttonCreateAddress:hover{
 #go-to-cart-button{
   display:none;
 }
-
-
-
-
 

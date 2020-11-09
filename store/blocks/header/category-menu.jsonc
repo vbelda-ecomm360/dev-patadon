@@ -2112,7 +2112,7 @@
       "blockClass":"header-promotions-title"
     },
     "blocks": [
-      "submenu#department-6"
+      //"submenu#department-6"
     ]
   },
   "submenu#department-6": {

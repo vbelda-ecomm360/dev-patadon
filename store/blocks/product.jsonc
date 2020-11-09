@@ -215,9 +215,15 @@
       "width": "grow"
     },
     "children": [
-      "add-to-cart-button"
+      "add-to-cart-button#product"
     ]
   },
+  "add-to-cart-button#product": {
+    "props": {
+      "text": "Añadir al carrito"
+    }
+  },
+  
   "share#default": {
     "props": {
       "social": {
