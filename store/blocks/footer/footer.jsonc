@@ -12,7 +12,7 @@
     "children": [
       "flex-layout.col#footer-1-desktop-1",
       "flex-layout.col#footer-1-desktop-2",
-      "flex-layout.col#footer-1-desktop-3",
+      // "flex-layout.col#footer-1-desktop-3",
       "flex-layout.col#footer-1-desktop-4"
     ],
     "props": {
@@ -23,9 +23,7 @@
   "flex-layout.col#footer-1-desktop-1": {
     "children": [
       "image#logo-footer",
-      "rich-text#footer-title-1",
-      "social-networks#social-1",
-      "social-networks#social-2"
+      "flex-layout.col#footer-1-desktop-3"
     ],
     "props": {
       "preventVerticalStretch": true
@@ -33,14 +31,15 @@
   },
   "image#logo-footer":{
     "props":{
-      "src": "assets/footer/depique_logo_v.png",
-      "blockClass": "logo-footer"
+      "src": "assets/logo.png",
+      "blockClass": "logo-footer",
+      "width": "200px"
     },
     "title": "Visa"
   },
   "rich-text#footer-title-1": {
     "props": {
-      "text": "SÍGUENOS",
+      "text": "SOCIAL",
       "blockClass": "footer-title"
     }
   },
@@ -85,6 +84,9 @@
 
   "flex-layout.col#footer-1-desktop-2": {
     "children": [
+      "rich-text#footer-title-1",
+      "social-networks#social-1",
+      "social-networks#social-2",
       "rich-text#footer-title-2",
       "menu#footer-atencion"
     ],
@@ -110,15 +112,15 @@
   },
   "rich-text#footer-title-3": {
     "props": {
-      "text": "DEPIQUE.COM",
+      "text": "EMPRESA",
       "blockClass": "footer-title"
     }
   },
 
   "flex-layout.col#footer-1-desktop-4": {
     "children": [
-      "rich-text#footer-title-4",
-      "image#confianza-online",
+      // "rich-text#footer-title-4",
+      // "image#confianza-online",
       "rich-text#footer-title-5",
       //"accepted-payment-methods",
       "flex-layout.row#accepted-payment-methods",
