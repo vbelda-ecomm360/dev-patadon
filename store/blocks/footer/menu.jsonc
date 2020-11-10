@@ -260,8 +260,8 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#footer-atencion-mobile",
-      "menu-item#footer-patadon-mobile"
+      "menu-item#footer-patadon-mobile",
+      "menu-item#footer-atencion-mobile"
     ]
   },
 
@@ -293,8 +293,8 @@
       "itemProps": {
         "type": "internal",
         "noFollow": true,
-        "tagTitle": "Depique.com",
-        "text": "Depique.com"
+        "tagTitle": "Empresa",
+        "text": "Empresa"
       }
     },
     "blocks": ["submenu.accordion#footer-patadon-mobile"]

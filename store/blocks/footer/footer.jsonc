@@ -195,8 +195,8 @@
   },
   "flex-layout.row#shipping":{
     "children": [
-      "image#dhl",
-      "image#seur"
+      "image#dhl2",
+      "image#seur2"
     ],
     "props":{
       "preventHorizontalStretch": true,
@@ -205,15 +205,15 @@
       "colGap": "3"
     }
   },
-  "image#dhl":{
+  "image#dhl2":{
     "props":{
-      "src": "assets/footer/dhl.png"
+      "src": "assets/footer/dhl2.png"
     },
     "title": "Dhl"
   },
-  "image#seur":{
+  "image#seur2":{
     "props":{
-      "src": "assets/footer/seur.png"
+      "src": "assets/footer/seur2.png"
     },
     "title": "Seur"
   },
@@ -325,11 +325,12 @@
   },
   "flex-layout.col#footer-1-mobile": {
     "children": [
+      "image#logo-footer",
       "menu#footer-mobile",
       "rich-text#footer-title-1",
       "social-networks#social-mobile",
-      "rich-text#footer-title-4",
-      "image#confianza-online",
+      // "rich-text#footer-title-4",
+      // "image#confianza-online",
       "rich-text#footer-title-5",
       //"accepted-payment-methods",
       "flex-layout.row#accepted-payment-methods",
