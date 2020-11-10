@@ -1,74 +1,75 @@
 {
-  "vtex.menu@2.x:menu#top-bar-menu": {
-    "children": [
-      "menu-item#venta-tele",
-      "menu-item#tiendas",
-      "menu-item#contacto",
-      "menu-item#about-us"
-    ]
-  },
-  "menu-item#venta-tele": {
-    "props": {
-      "blockClass": "link-top-bar-menu",
-      "id": "menu-item-venta-tele",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/venta-telefonica",
-        "noFollow": false,
-        "tagTitle": "Venta Telefónica",
-        "text": "Venta Telefónica"
-      }
+    "vtex.menu@2.x:menu#top-bar-menu": {
+        "children": [
+            "menu-item#venta-tele",
+            "menu-item#tiendas",
+            "menu-item#contacto",
+            "menu-item#about-us"
+        ],
+        "props": {
+            "blockClass": "top-bar-menu-container"
+        }
+    },
+    "menu-item#venta-tele": {
+        "props": {
+            "id": "menu-item-venta-tele",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/venta-telefonica",
+                "noFollow": false,
+                "tagTitle": "Venta Telefónica",
+                "text": "Venta Telefónica"
+            }
+        }
+    },
+    "menu-item#tiendas": {
+        "props": {
+            "id": "menu-item-tiendas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/tiendas",
+                "noFollow": false,
+                "tagTitle": "Nuestras Tiendas",
+                "text": "Nuestras Tiendas"
+            }
+        }
+    },
+    "menu-item#contacto": {
+        "props": {
+            "blockClass": "top-bar-menu-contacto",
+            "id": "menu-item-contacto",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/contacto",
+                "noFollow": false,
+                "tagTitle": "Formulario de Contacto",
+                "text": "Formulario de Contacto"
+            }
+        }
+    },
+    "menu-item#about-us": {
+        "props": {
+            "blockClass": "top-bar-menu-aboutus",
+            "id": "menu-item-about-us",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/about-us",
+                "noFollow": false,
+                "tagTitle": "Sobre Depique",
+                "text": "Sobre Depique"
+            }
+        }
     }
-  },
-  "menu-item#tiendas": {
-    "props": {
-      "blockClass": "link-top-bar-menu",
-      "id": "menu-item-tiendas",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/tiendas",
-        "noFollow": false,
-        "tagTitle": "Nuestras Tiendas",
-        "text": "Nuestras Tiendas"
-      }
-    }
-  },
-  "menu-item#contacto": {
-    "props": {
-      "blockClass": "link-top-bar-menu",
-      "id": "menu-item-contacto",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/contacto",
-        "noFollow": false,
-        "tagTitle": "Formulario de Contacto",
-        "text": "Formulario de Contacto"
-      }
-    }
-  },
-  "menu-item#about-us": {
-    "props": {
-      "blockClass": "link-top-bar-menu",
-      "id": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": false,
-        "tagTitle": "Sobre Depique",
-        "text": "Sobre Depique"
-      }
-    }
-  }
 }

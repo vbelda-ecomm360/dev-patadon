@@ -57,13 +57,7 @@
         {
           "name": "Instagram",
           "url": "https://www.instagram.com/depiquegolf/"
-        }
-      ]
-    }
-  },
-  "social-networks#social-2": {
-    "props": {
-      "socialNetworks": [
+        },
         {
           "name": "Youtube",
           "url": "https://www.youtube.com/channel/UCt1x7vI2YhG7fd1zpxI4iiQ/videos"
@@ -72,21 +66,14 @@
           "name": "Linkedin",
           "url": "https://www.linkedin.com/company/depique/?originalSubdomain=es"
         }
-        /*
-        {
-          "name": "Pinterest",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-        */
       ]
     }
   },
-
   "flex-layout.col#footer-1-desktop-2": {
     "children": [
       "rich-text#footer-title-1",
       "social-networks#social-1",
-      "social-networks#social-2",
+      // "social-networks#social-2",
       "rich-text#footer-title-2",
       "menu#footer-atencion"
     ],
@@ -153,10 +140,10 @@
   "flex-layout.row#accepted-payment-methods":{
     "children": [
       "image#visa",
-      "image#master-card",
-      //"image#american-express",
       "image#paypal",
-      "image#maestro"
+      "image#master-card"
+      //"image#american-express",
+      // "image#maestro"
     ],
     "props":{
       "preventHorizontalStretch": true,
@@ -297,7 +284,8 @@
         "noFollow": false,
         "tagTitle": "Protección de datos",
         "text": "Protección de datos"
-      }
+      },
+      "blockClass": "footer-legal-menu"
     }
   },
   "menu-item#condiciones": {
@@ -312,7 +300,8 @@
         "noFollow": false,
         "tagTitle": "Aviso Legal, Términos y Condiciones",
         "text": "Aviso Legal, Términos y Condiciones"
-      }
+      },
+      "blockClass": "footer-legal-menu"
     }
   },
 

@@ -23,7 +23,7 @@
   "flex-layout.row#2-desktop": {
     "children": [
       "flex-layout.col#top-bar-1",
-      "flex-layout.col#spacer",
+      // "flex-layout.col#spacer",
       "flex-layout.col#top-bar-2"
     ],
     "props": {
@@ -39,9 +39,9 @@
   },
   "flex-layout.col#top-bar-1": {
     "props": {
-      "width": "50%"
+      "width": "grow"
     },
-    "children": [ 
+    "children": [
       "rich-text#top-bar-fitting"
     ]
   },
@@ -53,7 +53,7 @@
   },
   "flex-layout.col#top-bar-2": {
     "props": {
-      "width": "50%"
+      "blockClass": "top-menu-bar"
     },
     "children": [
       "vtex.menu@2.x:menu#top-bar-menu"
