@@ -12,7 +12,7 @@
     "children": [
       "flex-layout.col#footer-1-desktop-1",
       "flex-layout.col#footer-1-desktop-2",
-      "flex-layout.col#footer-1-desktop-3",
+      // "flex-layout.col#footer-1-desktop-3",
       "flex-layout.col#footer-1-desktop-4"
     ],
     "props": {
@@ -23,9 +23,7 @@
   "flex-layout.col#footer-1-desktop-1": {
     "children": [
       "image#logo-footer",
-      "rich-text#footer-title-1",
-      "social-networks#social-1",
-      "social-networks#social-2"
+      "flex-layout.col#footer-1-desktop-3"
     ],
     "props": {
       "preventVerticalStretch": true
@@ -33,14 +31,15 @@
   },
   "image#logo-footer":{
     "props":{
-      "src": "assets/footer/depique_logo_v.png",
-      "blockClass": "logo-footer"
+      "src": "assets/logo.png",
+      "blockClass": "logo-footer",
+      "width": "200px"
     },
     "title": "Visa"
   },
   "rich-text#footer-title-1": {
     "props": {
-      "text": "SÍGUENOS",
+      "text": "SOCIAL",
       "blockClass": "footer-title"
     }
   },
@@ -58,13 +57,7 @@
         {
           "name": "Instagram",
           "url": "https://www.instagram.com/depiquegolf/"
-        }
-      ]
-    }
-  },
-  "social-networks#social-2": {
-    "props": {
-      "socialNetworks": [
+        },
         {
           "name": "Youtube",
           "url": "https://www.youtube.com/channel/UCt1x7vI2YhG7fd1zpxI4iiQ/videos"
@@ -73,18 +66,14 @@
           "name": "Linkedin",
           "url": "https://www.linkedin.com/company/depique/?originalSubdomain=es"
         }
-        /*
-        {
-          "name": "Pinterest",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-        */
       ]
     }
   },
-
   "flex-layout.col#footer-1-desktop-2": {
     "children": [
+      "rich-text#footer-title-1",
+      "social-networks#social-1",
+      // "social-networks#social-2",
       "rich-text#footer-title-2",
       "menu#footer-atencion"
     ],
@@ -110,15 +99,15 @@
   },
   "rich-text#footer-title-3": {
     "props": {
-      "text": "DEPIQUE.COM",
+      "text": "EMPRESA",
       "blockClass": "footer-title"
     }
   },
 
   "flex-layout.col#footer-1-desktop-4": {
     "children": [
-      "rich-text#footer-title-4",
-      "image#confianza-online",
+      // "rich-text#footer-title-4",
+      // "image#confianza-online",
       "rich-text#footer-title-5",
       //"accepted-payment-methods",
       "flex-layout.row#accepted-payment-methods",
@@ -151,10 +140,10 @@
   "flex-layout.row#accepted-payment-methods":{
     "children": [
       "image#visa",
-      "image#master-card",
-      //"image#american-express",
       "image#paypal",
-      "image#maestro"
+      "image#master-card"
+      //"image#american-express",
+      // "image#maestro"
     ],
     "props":{
       "preventHorizontalStretch": true,
@@ -206,8 +195,8 @@
   },
   "flex-layout.row#shipping":{
     "children": [
-      "image#dhl",
-      "image#seur"
+      "image#dhl2",
+      "image#seur2"
     ],
     "props":{
       "preventHorizontalStretch": true,
@@ -216,15 +205,15 @@
       "colGap": "3"
     }
   },
-  "image#dhl":{
+  "image#dhl2":{
     "props":{
-      "src": "assets/footer/dhl.png"
+      "src": "assets/footer/dhl2.png"
     },
     "title": "Dhl"
   },
-  "image#seur":{
+  "image#seur2":{
     "props":{
-      "src": "assets/footer/seur.png"
+      "src": "assets/footer/seur2.png"
     },
     "title": "Seur"
   },
@@ -295,7 +284,8 @@
         "noFollow": false,
         "tagTitle": "Protección de datos",
         "text": "Protección de datos"
-      }
+      },
+      "blockClass": "footer-legal-menu"
     }
   },
   "menu-item#condiciones": {
@@ -310,7 +300,8 @@
         "noFollow": false,
         "tagTitle": "Aviso Legal, Términos y Condiciones",
         "text": "Aviso Legal, Términos y Condiciones"
-      }
+      },
+      "blockClass": "footer-legal-menu"
     }
   },
 
@@ -334,11 +325,12 @@
   },
   "flex-layout.col#footer-1-mobile": {
     "children": [
+      "image#logo-footer",
       "menu#footer-mobile",
       "rich-text#footer-title-1",
       "social-networks#social-mobile",
-      "rich-text#footer-title-4",
-      "image#confianza-online",
+      // "rich-text#footer-title-4",
+      // "image#confianza-online",
       "rich-text#footer-title-5",
       //"accepted-payment-methods",
       "flex-layout.row#accepted-payment-methods",
