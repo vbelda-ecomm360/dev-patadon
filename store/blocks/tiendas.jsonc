@@ -44,8 +44,7 @@
     "flex-layout.row#tienda-1": {
       "children": [
         "flex-layout.col#imagen-tienda-1",
-        "flex-layout.col#info-tienda-1",
-        "flex-layout.col#horario-tienda-1"
+        "flex-layout.col#info-tienda-1"
       ],
       "props": {
         "blockClass": "tienda",
@@ -57,24 +56,26 @@
           "image#imagen-tienda-1"
         ],
         "props": {
-          "blockClass": "info-tinda"
+          "blockClass": "img-tienda"
         }
       },
       "image#imagen-tienda-1": {
         "props": {
-          "src": "assets/fitting/tienda.png",
+          "src": "assets/tiendas/img-tienda.png",
           "width": "100%",
-          "blockClass": "image-tinda"
+          "blockClass": "image-tienda"
         }
       },
       "flex-layout.col#info-tienda-1": {
         "children": [
           "rich-text#title-info-tienda-1",
           "rich-text#direccion-info-tienda-1",
+          "rich-text#horario-tienda-1",
           "link#link-info-tienda-1"
         ],
         "props": {
-          "blockClass": "info-tinda"
+          "blockClass": "info-tienda",
+          "preventVerticalStretch": true
         }
       },
       "rich-text#title-info-tienda-1": {
@@ -85,7 +86,7 @@
       },
       "rich-text#direccion-info-tienda-1": {
         "props": {
-          "text": "Carrer de Johann Sebastian Bach, 9\nLink Ubicación: [Maps](https://goo.gl/maps/CE8kubqY8ojSuU5F8) \nTelefóno: +34.93.201.29.31\nEmail: barcelona@depique.com",
+          "text": "- Carrer de Johann Sebastian Bach, 9\n- +34.93.201.29.31\n- barcelona@depique.com\n",
           "blockClass": "direccion-info-tienda"
         }
       },
@@ -93,28 +94,20 @@
         "props": {
           "href": "/tienda-barcelona",
           "label": "RESERVA FITTING",
-          "blockClass": "link-info-tienda"
-        }
-      },
-      "flex-layout.col#horario-tienda-1": {
-        "children": [
-          "rich-text#horario-tienda-1"
-        ],
-        "props": {
+          "blockClass": "cta-defecto"
         }
       },
       "rich-text#horario-tienda-1": {
         "props": {
-          "text": "Horario\nDe Lun a Vie 10:00 a 20:30\nSab 10:30 a 13:30\nDom Cerrado",
-          "blockClass": "direccion-info-tienda"
+          "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Vie | 10:00 a 20:30 |\n| Sab | 10:30 a 13:30 |\n| Dom | Cerrado |",
+          "blockClass": "horario-info-tienda"
         }
       },
   // Tienda 2
   "flex-layout.row#tienda-2": {
     "children": [
       "flex-layout.col#imagen-tienda-2",
-      "flex-layout.col#info-tienda-2",
-      "flex-layout.col#horario-tienda-2"
+      "flex-layout.col#info-tienda-2"
     ],
     "props": {
       "blockClass": "tienda",
@@ -126,24 +119,26 @@
         "image#imagen-tienda-2"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-2": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-2": {
       "children": [
         "rich-text#title-info-tienda-2",
         "rich-text#direccion-info-tienda-2",
+        "rich-text#horario-tienda-2",
         "link#link-info-tienda-2"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-2": {
@@ -154,7 +149,7 @@
     },
     "rich-text#direccion-info-tienda-2": {
       "props": {
-        "text": "Avinguda Regne de Valencia, 64, 46005, València\nLink Ubicación: [Maps](https://goo.gl/maps/11vVWqiGX5MaH3FJ9) \nTelefóno: +34 961 678 825\nEmail: depiquevlc@gmail.com",
+        "text": "- Avinguda Regne de Valencia, 64, 46005, València\n- +34 961 678 825\n- depiquevlc@gmail.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -162,28 +157,20 @@
       "props": {
         "href": "/tienda-valencia",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-2": {
-      "children": [
-        "rich-text#horario-tienda-2"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-2": {
       "props": {
-        "text": "Horario\nDe Lun a Vie 10:30 a 14:00 y 16:30 a 20:00\nSab 10:30 a 13:30\nDom Cerrado",
-        "blockClass": "direccion-info-tienda"
+          "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Vie | 10:00 a 14:00 y 16:30 a 20:00 |\n| Sab | 10:30 a 13:30 |\n| Dom | Cerrado |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // Tienda 3
   "flex-layout.row#tienda-3": {
     "children": [
       "flex-layout.col#imagen-tienda-3",
-      "flex-layout.col#info-tienda-3",
-      "flex-layout.col#horario-tienda-3"
+      "flex-layout.col#info-tienda-3"
     ],
     "props": {
       "blockClass": "tienda",
@@ -195,24 +182,26 @@
         "image#imagen-tienda-3"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-3": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-3": {
       "children": [
         "rich-text#title-info-tienda-3",
         "rich-text#direccion-info-tienda-3",
+        "rich-text#horario-tienda-3",
         "link#link-info-tienda-3"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-3": {
@@ -223,7 +212,7 @@
     },
     "rich-text#direccion-info-tienda-3": {
       "props": {
-        "text": "Polígon Son Bugadelles, Carrer d'Alcant, 1, 07183 Santa Ponça, Illes Balears\nLink Ubicación: [Maps](https://goo.gl/maps/wScAcHZZQcdqgKGc9) \nTelefóno: +34 971 69 19 84\nEmail: depique.calvia@gmail.com",
+        "text": "- Polígon Son Bugadelles, Carrer d'Alcant, 1, 07183 Santa Ponça, Illes Balears\n- +34 971 69 19 84\n- depique.calvia@gmail.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -231,28 +220,20 @@
       "props": {
         "href": "/tienda-mallorca",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-3": {
-      "children": [
-        "rich-text#horario-tienda-3"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-3": {
       "props": {
-        "text": "Horario\nDe Lun a Vie 10:00 a 18:00\nSab 10:30 a 13:30\nDom Cerrado",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Vie | 10:00 a 18:00 |\n| Sab | 10:30 a 13:30 |\n| Dom | Cerrado |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // Tienda 4
   "flex-layout.row#tienda-4": {
     "children": [
       "flex-layout.col#imagen-tienda-4",
-      "flex-layout.col#info-tienda-4",
-      "flex-layout.col#horario-tienda-4"
+      "flex-layout.col#info-tienda-4"
     ],
     "props": {
       "blockClass": "tienda",
@@ -264,24 +245,26 @@
         "image#imagen-tienda-4"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-4": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-4": {
       "children": [
         "rich-text#title-info-tienda-4",
         "rich-text#direccion-info-tienda-4",
+        "rich-text#horario-tienda-4",
         "link#link-info-tienda-4"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-4": {
@@ -292,7 +275,7 @@
     },
     "rich-text#direccion-info-tienda-4": {
       "props": {
-        "text": "Polígon Son Bugadelles, Carrer d'Alcant, 1, 07183, 07183 Santa Ponça, Illes Balears\nLink Ubicación: [Maps]() \nTeléfono: \nEmail:",
+        "text": "- Polígon Son Bugadelles, Carrer d'Alcant, 1, 07183, 07183 Santa Ponça, Illes Balears\n- \n- ",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -300,28 +283,20 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-4": {
-      "children": [
-        "rich-text#horario-tienda-4"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-4": {
       "props": {
-        "text": "Horario\nDe Lun a Vie 10:30 a 20:30 y 16:30 a 20:00\nSab 10:00 14:00\nDom Cerrado",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Vie | 10:00 a 14:00 y 16:30 a 20:00 |\n| Sab | 10:30 a 14:00 |\n| Dom | Cerrado |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // Tienda 5
   "flex-layout.row#tienda-5": {
     "children": [
       "flex-layout.col#imagen-tienda-5",
-      "flex-layout.col#info-tienda-5",
-      "flex-layout.col#horario-tienda-5"
+      "flex-layout.col#info-tienda-5"
     ],
     "props": {
       "blockClass": "tienda",
@@ -333,24 +308,26 @@
         "image#imagen-tienda-5"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-5": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-5": {
       "children": [
         "rich-text#title-info-tienda-5",
         "rich-text#direccion-info-tienda-5",
+        "rich-text#horario-tienda-5",
         "link#link-info-tienda-5"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-5": {
@@ -361,7 +338,7 @@
     },
     "rich-text#direccion-info-tienda-5": {
       "props": {
-        "text": "Club de Golf Olivar de la Hinojosa\nCampo De Las Naciones, Vía Dublín, 0 S N, 28001 Madrid\nLink Ubicación: [Maps](https://goo.gl/maps/uAsGmE3n5bsmMjz47) \nTeléfono: +34 914 117 925 \nEmail: madrid@depique.com",
+        "text": "- Club de Golf Olivar de la Hinojosa, Campo De Las Naciones, Vía Dublín, 0 S N, 28001 Madrid\n- +34 914 117 925\n- madrid@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -369,20 +346,13 @@
       "props": {
         "href": "/tienda-madrid",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-5": {
-      "children": [
-        "rich-text#horario-tienda-5"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-5": {
       "props": {
-        "text": "Horario\nDe Lun a Sab 9:00 a 17:00\nDom 9:00 a 14:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Sab | 9:00 a 17:00 |\n| Dom | 9:00 a 14:00 |",
+        "blockClass": "horario-info-tienda"
       }
     },
 
@@ -420,8 +390,7 @@
   "flex-layout.row#tienda-6": {
     "children": [
       "flex-layout.col#imagen-tienda-6",
-      "flex-layout.col#info-tienda-6",
-      "flex-layout.col#horario-tienda-6"
+      "flex-layout.col#info-tienda-6"
     ],
     "props": {
       "blockClass": "tienda",
@@ -433,24 +402,26 @@
         "image#imagen-tienda-6"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-6": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-6": {
       "children": [
         "rich-text#title-info-tienda-6",
-        "rich-text#direccion-info-tienda-6"
+        "rich-text#direccion-info-tienda-6",
+        "rich-text#horario-tienda-6"
         //"link#link-info-tienda-6"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-6": {
@@ -461,7 +432,7 @@
     },
     "rich-text#direccion-info-tienda-6": {
       "props": {
-        "text": "Plans de Bonvilar, 17, 08227 Terrassa, Barcelona\nTeléfono: 937 28 10 00 \nEmail: elprat@depique.com",
+        "text": "- Plans de Bonvilar, 17, 08227 Terrassa, Barcelona\n- 937 28 10 00\n- elprat@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -469,28 +440,20 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-6": {
-      "children": [
-        "rich-text#horario-tienda-6"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-6": {
       "props": {
-        "text": "Horario\nDe Lun a Sab 9:00 a 17:00\nDom 9:00 a 14:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Sab | 9:00 a 17:00 |\n| Dom | 9:00 a 14:00 |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // Tienda 7
   "flex-layout.row#tienda-7": {
     "children": [
       "flex-layout.col#imagen-tienda-7",
-      "flex-layout.col#info-tienda-7",
-      "flex-layout.col#horario-tienda-7"
+      "flex-layout.col#info-tienda-7"
     ],
     "props": {
       "blockClass": "tienda",
@@ -502,24 +465,26 @@
         "image#imagen-tienda-7"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-7": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-7": {
       "children": [
         "rich-text#title-info-tienda-7",
-        "rich-text#direccion-info-tienda-7"
+        "rich-text#direccion-info-tienda-7",
+        "rich-text#horario-tienda-7"
         //"link#link-info-tienda-7"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-7": {
@@ -530,7 +495,7 @@
     },
     "rich-text#direccion-info-tienda-7": {
       "props": {
-        "text": "Carretera del golf, s/n, 08870 Sitges, Barcelona\nTeléfono: 938 11 01 78 \nEmail: terramar@depique.com",
+        "text": "- Carretera del golf, s/n, 08870 Sitges, Barcelona\n- 938 11 01 78\n- terramar@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -538,28 +503,20 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-7": {
-      "children": [
-        "rich-text#horario-tienda-7"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-7": {
       "props": {
-        "text": "Horario\nDe Lun a Sab 9:00 a 17:00\nDom 9:00 a 14:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Sab | 9:00 a 17:00 |\n| Dom | 9:00 a 14:00 |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // Tienda 8
   "flex-layout.row#tienda-8": {
     "children": [
       "flex-layout.col#imagen-tienda-8",
-      "flex-layout.col#info-tienda-8",
-      "flex-layout.col#horario-tienda-8"
+      "flex-layout.col#info-tienda-8"
     ],
     "props": {
       "blockClass": "tienda",
@@ -571,24 +528,26 @@
         "image#imagen-tienda-8"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-8": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-8": {
       "children": [
         "rich-text#title-info-tienda-8",
-        "rich-text#direccion-info-tienda-8"
+        "rich-text#direccion-info-tienda-8",
+        "rich-text#horario-tienda-8"
         //"link#link-info-tienda-8"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-8": {
@@ -599,7 +558,7 @@
     },
     "rich-text#direccion-info-tienda-8": {
       "props": {
-        "text": "Camí Golf, 49, 51, 08392 Sant Andreu de Llavaneres\nLink Ubicaciones: \nTeléfono: 670 84 30 33 \nEmail: llavaneras@depique.com",
+        "text": "- Camí Golf, 49, 51, 08392 Sant Andreu de Llavaneres\n- 670 84 30 33\n- llavaneras@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -607,28 +566,20 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-8": {
-      "children": [
-        "rich-text#horario-tienda-8"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-8": {
       "props": {
-        "text": "Horario\nDe Lun a Sab 9:00 a 17:00\nDom 9:00 a 14:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Sab | 9:00 a 17:00 |\n| Dom | 9:00 a 14:00 |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // Tienda 9
   "flex-layout.row#tienda-9": {
     "children": [
       "flex-layout.col#imagen-tienda-9",
-      "flex-layout.col#info-tienda-9",
-      "flex-layout.col#horario-tienda-9"
+      "flex-layout.col#info-tienda-9"
     ],
     "props": {
       "blockClass": "tienda",
@@ -640,24 +591,26 @@
         "image#imagen-tienda-9"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-9": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-9": {
       "children": [
         "rich-text#title-info-tienda-9",
-        "rich-text#direccion-info-tienda-9"
+        "rich-text#direccion-info-tienda-9",
+        "rich-text#horario-tienda-9"
         //"link#link-info-tienda-9"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-9": {
@@ -668,7 +621,7 @@
     },
     "rich-text#direccion-info-tienda-9": {
       "props": {
-        "text": "Carrer Vinyes d'en Mandri, 82, 08394 Sant Vicenç de Montalt, Barcelona\nTelefóno:  937 91 51 11\nEmail: info@depique.com",
+        "text": "- Carrer Vinyes d'en Mandri, 82, 08394 Sant Vicenç de Montalt, Barcelona\n- 937 91 51 11\n- info@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -676,28 +629,20 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-9": {
-      "children": [
-        "rich-text#horario-tienda-9"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-9": {
       "props": {
-        "text": "Horario\nDe Lun a Dom 8:00 a 19:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Dom | 8:00 a 19:00 |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // Tienda 10
   "flex-layout.row#tienda-10": {
     "children": [
       "flex-layout.col#imagen-tienda-10",
-      "flex-layout.col#info-tienda-10",
-      "flex-layout.col#horario-tienda-10"
+      "flex-layout.col#info-tienda-10"
     ],
     "props": {
       "blockClass": "tienda",
@@ -709,24 +654,26 @@
         "image#imagen-tienda-10"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-10": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-10": {
       "children": [
         "rich-text#title-info-tienda-10",
-        "rich-text#direccion-info-tienda-10"
+        "rich-text#direccion-info-tienda-10",
+        "rich-text#horario-tienda-10"
         //"link#link-info-tienda-10"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-10": {
@@ -737,7 +684,7 @@
     },
     "rich-text#direccion-info-tienda-10": {
       "props": {
-        "text": "Plans de Bonvilar, 6, 08227 Terrassa, Barcelona, España\nLink Ubicación \nTelefóno:  937 25 99 98\nEmail: info@depique.com",
+        "text": "- Plans de Bonvilar, 6, 08227 Terrassa, Barcelona, España\n- 937 25 99 98\n- info@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -745,20 +692,13 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-10": {
-      "children": [
-        "rich-text#horario-tienda-10"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-10": {
       "props": {
-        "text": "Horario\nDe Lun a Dom 8:00 a 19:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Dom | 8:00 a 19:00 |",
+        "blockClass": "horario-info-tienda"
       }
     },
 
@@ -781,8 +721,7 @@
   "flex-layout.row#tienda-11": {
     "children": [
       "flex-layout.col#imagen-tienda-11",
-      "flex-layout.col#info-tienda-11",
-      "flex-layout.col#horario-tienda-11"
+      "flex-layout.col#info-tienda-11"
     ],
     "props": {
       "blockClass": "tienda",
@@ -794,24 +733,26 @@
         "image#imagen-tienda-11"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-11": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-11": {
       "children": [
         "rich-text#title-info-tienda-11",
-        "rich-text#direccion-info-tienda-11"
+        "rich-text#direccion-info-tienda-11",
+        "rich-text#horario-tienda-11"
         //"link#link-info-tienda-11"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-11": {
@@ -822,7 +763,7 @@
     },
     "rich-text#direccion-info-tienda-11": {
       "props": {
-        "text": "Real Club de Golf de Bendinat\nCarrer Campoamor, s/n, 07181 Bendinat, Illes Balears\nTeléfono: 971 40 52 00\nEmail: info@depique.com",
+        "text": "- Real Club de Golf de Bendinat\nCarrer Campoamor, s/n, 07181 Bendinat, Illes Balears\n- 971 40 52 00\n- info@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -830,20 +771,13 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-11": {
-      "children": [
-        "rich-text#horario-tienda-11"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-11": {
       "props": {
-        "text": "Horario\nDe Lun a Sab 10:00 a 17:00\nDom 9:00 a 14:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Sab | 10:00 a 17:00 |\n| Dom | 9:00 a 14:00 |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // Subtitulo 3
@@ -865,8 +799,7 @@
   "flex-layout.row#tienda-12": {
     "children": [
       "flex-layout.col#imagen-tienda-12",
-      "flex-layout.col#info-tienda-12",
-      "flex-layout.col#horario-tienda-12"
+      "flex-layout.col#info-tienda-12"
     ],
     "props": {
       "blockClass": "tienda",
@@ -878,24 +811,26 @@
         "image#imagen-tienda-12"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-12": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-12": {
       "children": [
         "rich-text#title-info-tienda-12",
-        "rich-text#direccion-info-tienda-12"
+        "rich-text#direccion-info-tienda-12",
+        "rich-text#horario-tienda-12"
         //"link#link-info-tienda-12"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-12": {
@@ -906,7 +841,7 @@
     },
     "rich-text#direccion-info-tienda-12": {
       "props": {
-        "text": "Av. Juan Pablo II, 21400, Huelva\nLink Ubicación \nTeléfono: 959 47 78 78\nEmail: info@depique.com",
+        "text": "- Av. Juan Pablo II, 21400, Huelva\n- 959 47 78 78\n- info@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -914,20 +849,13 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-12": {
-      "children": [
-        "rich-text#horario-tienda-12"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-12": {
       "props": {
-        "text": "Horario\nDe Lun a Dom 8:00 a 19:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Dom | 8:00 a 19:00 |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // Subtitulo 4
@@ -949,8 +877,7 @@
   "flex-layout.row#tienda-13": {
     "children": [
       "flex-layout.col#imagen-tienda-13",
-      "flex-layout.col#info-tienda-13",
-      "flex-layout.col#horario-tienda-13"
+      "flex-layout.col#info-tienda-13"
     ],
     "props": {
       "blockClass": "tienda",
@@ -962,24 +889,26 @@
         "image#imagen-tienda-13"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-13": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-13": {
       "children": [
         "rich-text#title-info-tienda-13",
-        "rich-text#direccion-info-tienda-13"
+        "rich-text#direccion-info-tienda-13",
+        "rich-text#horario-tienda-13"
         //"link#link-info-tienda-13"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-13": {
@@ -990,7 +919,7 @@
     },
     "rich-text#direccion-info-tienda-13": {
       "props": {
-        "text": "A-3 dirección Madrid salida 337, km. 4,1, 46370 Godelleta\nLink Ubicación \nTeléfono: 961 80 80 09\nEmail: info@depique.com",
+        "text": "- A-3 dirección Madrid salida 337, km. 4,1, 46370 Godelleta\n- 961 80 80 09\n- info@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -998,20 +927,13 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-13": {
-      "children": [
-        "rich-text#horario-tienda-13"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-13": {
       "props": {
-        "text": "Horario\nDe Lun a Dom 8:00 a 19:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Dom | 8:00 a 19:00 |",
+        "blockClass": "horario-info-tienda"
       }
     },
   // TITULO 3
@@ -1033,8 +955,7 @@
   "flex-layout.row#tienda-14": {
     "children": [
       "flex-layout.col#imagen-tienda-14",
-      "flex-layout.col#info-tienda-14",
-      "flex-layout.col#horario-tienda-14"
+      "flex-layout.col#info-tienda-14"
     ],
     "props": {
       "blockClass": "tienda",
@@ -1046,24 +967,26 @@
         "image#imagen-tienda-14"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "img-tienda"
       }
     },
     "image#imagen-tienda-14": {
       "props": {
-        "src": "assets/fitting/tienda.png",
+        "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
-        "blockClass": "image-tinda"
+        "blockClass": "image-tienda"
       }
     },
     "flex-layout.col#info-tienda-14": {
       "children": [
         "rich-text#title-info-tienda-14",
-        "rich-text#direccion-info-tienda-14"
+        "rich-text#direccion-info-tienda-14",
+        "rich-text#horario-tienda-14"
         //"link#link-info-tienda-14"
       ],
       "props": {
-        "blockClass": "info-tinda"
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
       }
     },
     "rich-text#title-info-tienda-14": {
@@ -1074,7 +997,7 @@
     },
     "rich-text#direccion-info-tienda-14": {
       "props": {
-        "text": "Travessera de Gràcia, 72 · 934 14 52 35\nLink Ubicación \nTeléfono: 934145235\nEmail: info@depique.com",
+        "text": "- Travessera de Gràcia, 72\n- 934 14 52 35\n- info@depique.com",
         "blockClass": "direccion-info-tienda"
       }
     },
@@ -1082,20 +1005,13 @@
       "props": {
         "href": "#",
         "label": "RESERVA FITTING",
-        "blockClass": "link-info-tienda"
-      }
-    },
-    "flex-layout.col#horario-tienda-14": {
-      "children": [
-        "rich-text#horario-tienda-14"
-      ],
-      "props": {
+        "blockClass": "cta-defecto"
       }
     },
     "rich-text#horario-tienda-14": {
       "props": {
-        "text": "Horario\nDe Lun a Dom 10:00 a 20:00",
-        "blockClass": "direccion-info-tienda"
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Dom | 10:00 a 20:00 |",
+        "blockClass": "horario-info-tienda"
       }
     }
 }

@@ -4,20 +4,22 @@
       //"flex-layout.row#banner",
       "image#banner",
       "flex-layout.row#fitting-spacer",
-      "flex-layout.row#video",
+      "flex-layout.row#video-1",
+      "flex-layout.row#video-2",
       "flex-layout.row#fitting-spacer",
+      "rich-text#nuestro-proceso",
       "flex-layout.row#nuestro-proceso",
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#info-fitting-1",
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#info-fitting-2",
       "flex-layout.row#fitting-spacer",
+      "flex-layout.row#testimonio-1",
+      "flex-layout.row#fitting-spacer",
       "flex-layout.row#more-info-1",
       "flex-layout.row#more-info-2",
-      "flex-layout.row#more-info-3",
-      "flex-layout.row#more-info-4",
-      "flex-layout.row#fitting-spacer",
-      "flex-layout.row#testimonio-1",
+      //"flex-layout.row#more-info-3",
+      //"flex-layout.row#more-info-4",
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#testimonio-2"
     ]
@@ -40,7 +42,7 @@
 
   "image#banner": {
     "props": {
-      "src": "assets/fitting/banner.jpg",
+      "src": "assets/fitting/banner1.png",
       "maxHeight": "",
       "maxWidth": "",
       "blockClass": "image-fitting"
@@ -48,38 +50,27 @@
   },
 
   // VIDEO
-  "flex-layout.row#video": {
-    "children": [
-      "flex-layout.col#video-1",
-      "flex-layout.col#video-2"
-    ],
-    "props": {
-      "blockClass": "fitting"
-    }
-  },
-  // col 1
-  "flex-layout.col#video-1": {
+  // row 1
+  "flex-layout.row#video-1": {
     "children": [
       "rich-text#trackman"
     ],
     "props": {
-      "blockClass": "fitting-video",
-      "width": "30%"
+      "blockClass": "fitting-video"
     }
   },
   "rich-text#trackman": {
     "props": {
-      "text": "#### Conoce como Trackman ayuda a mejorar tu golf y diseñar palos a medida\n**Trackman Pro**\nLa tecnología lider entre todos los profesionales de la PGA",
+      "text": "### Conoce como Trackman ayuda a mejorar tu golf y diseñar palos a medida\n**Trackman Pro**\nLa tecnología lider entre todos los profesionales de la PGA",
       "blockClass": "fitting-video"
     }
   },
-  // col 2
-  "flex-layout.col#video-2": {
+  // row 2
+  "flex-layout.row#video-2": {
     "children": [
       "iframe#trackman"
     ],
     "props": {
-      "width": "70%",
       "blockClass": "fitting-video"
     }
   },
@@ -92,6 +83,12 @@
     }
   },
 // NUESTRO PROCESO
+  "rich-text#nuestro-proceso": {
+    "props": {
+      "text": "### ¿Qué puedes esperar del proceso de fitting?",
+      "blockClass": "title-fitting"
+    }
+  },
   "flex-layout.row#nuestro-proceso": {
     "children": [
       "flex-layout.col#nuestro-proceso-1",
@@ -179,7 +176,7 @@
   // row 1
     "flex-layout.row#info-fitting-1": {
       "children": [
-        "flex-layout.col#info-fitting-1-1",
+        //"flex-layout.col#info-fitting-1-1",
         "flex-layout.col#info-fitting-1-2"
       ],
       "props": {
@@ -210,12 +207,12 @@
       ],
       "props": {
         "blockClass": "info-fitting",
-        "width": "40%"
+        "width": "100%"
       }
     },
     "image#info-fitting-img-1": {
       "props": {
-        "src": "assets/fitting/banner2.png",
+        "src": "assets/fitting/banner-equipo.png",
         "blockClass": "image-about"
       }
     },
@@ -237,13 +234,13 @@
     ],
     "props": {
       "blockClass": "info-fitting",
-      "width": "40%"
+      "width": "65%"
     }
   },
   "image#info-fitting-img-2": {
     "props": {
-      "src": "assets/fitting/banner3.png",
-      "blockClass": "image-fitting"
+      "src": "assets/fitting/img-tecnica.png",
+      "blockClass": "image-fitting-tecnologia"
     }
   },
   // col 2
@@ -253,13 +250,13 @@
     ],
     "props": {
       "blockClass": "info-fitting",
-      "width": "60%"
+      "width": "35%"
     }
   },
   "rich-text#info-fitting-text-2": {
     "props": {
-      "text": "**La mejor tecnología**\nTrabajamos tanto con Trackman como con FlightScope. Puedes saber con qué tecnología contamos en cada fitting center.\n\n[Conoce a nuestro equípo y tecnología](/venta-telefonica)",
-      "blockClass": "info-fitting"
+      "text": "**La mejor tecnología**\nDepique es la suma de muchos profesionales de golf. Un talento a tu disposición, con la misión de hacerte jugar mejor. Un equipo con más de 20 años de experiencia como filters y clubmakers, que se forma continuamente.\n\n[Conoce a nuestro equípo y tecnología](/venta-telefonica)",
+      "blockClass": "info-fitting-tecnologia"
     }
   },
 
@@ -276,12 +273,14 @@
   "rich-text#more-info-1": {
     "props": {
       "text": "### Un fitting para cada tipo de jugador\n",
-      "blockClass": "text-fitting"
+      "blockClass": "title-fitting"
     }
   },
   "flex-layout.row#more-info-2": {
     "children": [
-      "rich-text#more-info-2"
+      "rich-text#more-info-2", 
+      "rich-text#more-info-3",
+      "rich-text#more-info-4"
     ],
     "props": {
       "blockClass": "fitting",
@@ -349,7 +348,7 @@
   },
   "image#testimonio-img-1": {
     "props": {
-      "src": "assets/fitting/banner4.png",
+      "src": "assets/fitting/img-testimonio.png",
       "blockClass": "image-fitting"
     }
   },
@@ -365,7 +364,7 @@
   },
   "rich-text#testimonio-text-1": {
     "props": {
-      "text": "**Testimonio**\n\n\nTestimonio de ejemplo.",
+      "text": "**Ivó Giner**\n\n\n\"Un buen consejo si quieres mejorar tus resultados en el campo de golf es hacerte tus palos a medida. No solo ahorrarás golspes sino también dinero\"\n\nProfesional del golf",
       "blockClass": "testimonio-fitting" 
     }
   },
@@ -389,18 +388,18 @@
       "link#testimonio-button-1"
     ],
     "props": {
-      "blockClass": "testimonio-fitting"
+      "blockClass": "fitting-bottom-fitting"
     }
   },
   "image#testimonio-img-2": {
     "props": {
-      "src": "assets/fitting/banner5.png",
-      "blockClass": "image-fitting"
+      "src": "assets/fitting/euro.png",
+      "blockClass": "image-fitting-bottom"
     }
   },
   "rich-text#testimonio-text-2": {
     "props": {
-      "text": "**Precios**",
+      "text": "**¿Cuanto cuesta un fitting?**\nConsulta aquí el precio de los diferentes servicios.Lo que cobramos por cada fitting lo descontamos de tú compra.",
       "blockClass": "text-fitting"
     }
   },
@@ -419,18 +418,18 @@
       "link#testimonio-button-2"
     ],
     "props": {
-      "blockClass": "testimonio-fitting"
+      "blockClass": "fitting-bottom-fitting"
     }
   },
   "image#testimonio-img-3": {
     "props": {
-      "src": "assets/fitting/banner5.png",
-      "blockClass": "image-fitting"
+      "src": "assets/fitting/calendario.png",
+      "blockClass": "image-fitting-bottom"
     }
   },
   "rich-text#testimonio-text-3": {
     "props": {
-      "text": "**¿No tienes un centro cerca?**",
+      "text": "**Agenda tu fitting ahora**\nTienes centros de fitting Depique en varias ciudades. Madrid, Cataluña, Mallorca y Valencia.",
       "blockClass": "text-fitting"
     }
   },
@@ -449,18 +448,18 @@
       "link#testimonio-button-3"
     ],
     "props": {
-      "blockClass": "testimonio-fitting"
+      "blockClass": "fitting-bottom-fitting"
     }
   },
   "image#testimonio-img-4": {
     "props": {
-      "src": "assets/fitting/banner5.png",
-      "blockClass": "image-fitting"
+      "src": "assets/fitting/mapa.png",
+      "blockClass": "image-fitting-bottom"
     }
   },
   "rich-text#testimonio-text-4": {
-    "props": {      
-      "text": "**¿No tienes un centro cerca?**",
+    "props": {       
+      "text": "**¿No tienes un fitting center cerca?**\nPodemos ayudarte y aconsejarte por teléfono. Agenda desde aquí una llamada con nuestros profesionales.",
       "blockClass": "text-fitting"
     }
   },

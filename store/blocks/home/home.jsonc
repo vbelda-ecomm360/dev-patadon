@@ -44,7 +44,10 @@
         "fullWidth": true,
         "showNavigationArrows": "desktopOnly",
         "showPaginationDots": false,
-        "blockClass": "carousel"
+        "blockClass": "carousel",
+        "autoplay":{
+          "timeout": "4000"
+        }
       }
     },
   // SHELF TITLE

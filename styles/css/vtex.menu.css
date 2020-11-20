@@ -37,7 +37,7 @@
   width: 10px;
   height: 16px; 
   margin-left:10px;
-  background:transparent url(https://patadon.com/arquivos/iconos/arrow-down.png) center no-repeat !important;
+  background:transparent url(assets/iconos/arrow-down.png) center no-repeat !important;
 }
 .styledLinkContent--header-department-title::after{
   content:"";
@@ -45,7 +45,7 @@
   width: 10px; 
   height: 16px; 
   margin-left:10px;
-  background:transparent url(https://patadon.com/arquivos/iconos/arrow-down.png) center no-repeat !important;
+  background:transparent url(assets/iconos/arrow-down.png) center no-repeat !important;
 }
 */
 

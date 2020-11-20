@@ -13,40 +13,40 @@
         "props": {
           "images": [
             {
-              "image": "https://patadon.com/arquivos/categorias/descarga-1.png",
-              "mobileImage": "https://patadon.com/arquivos/categorias/descarga-1.png"
+              "image": "assets/categorias/descarga-1.png",
+              "mobileImage": "assets/categorias/descarga-1.png"
             },
             {
-              "image": "https://patadon.com/arquivos/categorias/descarga-2.png",
-              "mobileImage": "https://patadon.com/arquivos/categorias/descarga-2.png"
+              "image": "assets/categorias/descarga-2.png",
+              "mobileImage": "assets/categorias/descarga-2.png"
             },
             {
-              "image": "https://patadon.com/arquivos/categorias/descarga-3.png",
-              "mobileImage": "https://patadon.com/arquivos/categorias/descarga-3.png"
+              "image": "assets/categorias/descarga-3.png",
+              "mobileImage": "assets/categorias/descarga-3.png"
             },
             {
-              "image": "https://patadon.com/arquivos/categorias/descarga-4.png",
-              "mobileImage": "https://patadon.com/arquivos/categorias/descarga-4.png"
+              "image": "assets/categorias/descarga-4.png",
+              "mobileImage": "assets/categorias/descarga-4.png"
             },
             {
-              "image": "https://patadon.com/arquivos/categorias/descarga-5.png",
-              "mobileImage": "https://patadon.com/arquivos/categorias/descarga-5.png"
+              "image": "assets/categorias/descarga-5.png",
+              "mobileImage": "assets/categorias/descarga-5.png"
             },
             {
-              "image": "https://patadon.com/arquivos/categorias/descarga-6.png",
-              "mobileImage": "https://patadon.com/arquivos/categorias/descarga-6.png"
+              "image": "assets/categorias/descarga-6.png",
+              "mobileImage": "assets/categorias/descarga-6.png"
             },
             {
-              "image": "https://patadon.com/arquivos/categorias/descarga-7.png",
-              "mobileImage": "https://patadon.com/arquivos/categorias/descarga-7.png"
+              "image": "assets/categorias/descarga-7.png",
+              "mobileImage": "assets/categorias/descarga-7.png"
             },
             {
-              "image": "https://patadon.com/arquivos/categorias/descarga-1.png",
-              "mobileImage": "https://patadon.com/arquivos/categorias/descarga-1.png"
+              "image": "assets/categorias/descarga-1.png",
+              "mobileImage": "assets/categorias/descarga-1.png"
             },
             {
-              "image": "https://patadon.com/arquivos/categorias/descarga-2.png",
-              "mobileImage": "https://patadon.com/arquivos/categorias/descarga-2.png"
+              "image": "assets/categorias/descarga-2.png",
+              "mobileImage": "assets/categorias/descarga-2.png"
             }
           ]
         }

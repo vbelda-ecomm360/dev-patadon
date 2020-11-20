@@ -24,7 +24,7 @@
 }
 
 .productListItem .removeButton{
-    background-image: url('https://patadon.com/arquivos/iconos/delete.png');
+    background-image: url('assets/iconos/delete.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;

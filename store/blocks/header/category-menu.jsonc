@@ -969,7 +969,8 @@
       "menu-item#department-2-col-3-category-2",
       "menu-item#department-2-col-3-category-3",
       "menu-item#department-2-col-3-category-4",
-      "menu-item#department-2-col-3-category-5"
+      "menu-item#department-2-col-3-category-5",
+      "menu-item#department-2-col-3-category-6"
     ]
 },
 "menu-item#department-2-col-3-category-1": {
@@ -1046,6 +1047,22 @@
       "tagTitle": "Otras tecnologías",
       "text": "Otras tecnologías"
     }
+  }
+},
+"menu-item#department-2-col-3-category-6": {
+  "props": {
+    "id": "menu-item-department-2-col-3-category-6",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "/complementos-de-golf/gps-tecnologia",
+      "noFollow": true,
+      "tagTitle": "Ver todos GPS y Tecnología",
+      "text": "Ver todos GPS y Tecnología"
+    },
+    "blockClass":"header-department-category-show-all"
   }
 },
 "flex-layout.col#department-2-extra-col-4": {

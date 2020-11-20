@@ -404,29 +404,48 @@
 }
 
 .flexRowContent--testimonio-fitting {
-    background: #1B3F5B;
+    background: #d51637;
     color: #fff;
     text-align: center;
 }
 
 
+.flexColChild--testimonio-fitting{
+    font-size:0px;
+}
+
 /* TIENDAS */
-
-.flexCol--info-tinda {
-    text-align: center;
-}
-
-.flexCol--info-tinda :global(.vtex-rich-text-0-x-wrapper) {
-    width: 100%;
-    text-align: center;
-}
-
 .flexRow--tienda {
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
+} 
+.flexCol--info-tienda {
+    padding:15px 50px; 
 }
+
+.flexCol--info-tienda :global(.vtex-rich-text-0-x-wrapper) {
+    width: 100%;
+}
+
 
 @media screen and (max-width: 767px) and (min-width: 640px) {
     .flexCol--top-menu-bar {
         max-width: 375px;
     }
 }
+
+@media screen and (max-width: 50em) {
+    .flexCol--info-tienda {
+        padding:15px; 
+    }
+    .flexCol--img-tienda{
+        display:none;
+    }
+}
+
+.flexCol--fitting-bottom-fitting{
+    margin-bottom:50px;
+}
+.flexColChild--fitting-bottom-fitting{
+    text-align: center;
+}
+

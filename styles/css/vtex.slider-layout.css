@@ -41,7 +41,7 @@
 .sliderRightArrow{
   margin: 0px;
   height: 40px;
-  background:transparent url(https://patadon.com/arquivos/iconos/arrow-right.svg) no-repeat !important;
+  background:transparent url(assets/iconos/arrow-right.svg) no-repeat !important;
 }
 .sliderRightArrow .caretIcon{
   visibility:hidden;
@@ -49,7 +49,7 @@
 .sliderLeftArrow{
   margin: 0px;
   height: 40px;
-  background:transparent url(https://patadon.com/arquivos/iconos/arrow-left.svg) no-repeat !important;
+  background:transparent url(assets/iconos/arrow-left.svg) no-repeat !important;
 }
 .sliderLeftArrow .caretIcon{
   visibility:hidden;
@@ -57,10 +57,10 @@
 
 .sliderRightArrow--carousel{
   margin-right:80px;
-  background:transparent url(https://patadon.com/arquivos/iconos/arrow-right-w.svg) no-repeat !important;
+  background:transparent url(assets/iconos/arrow-right-w.svg) no-repeat !important;
 }
 .sliderLeftArrow--carousel{
   margin-left:80px;
-  background:transparent url(https://patadon.com/arquivos/iconos/arrow-left-w.svg) no-repeat !important;
+  background:transparent url(assets/iconos/arrow-left-w.svg) no-repeat !important;
 }
  

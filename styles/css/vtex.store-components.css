@@ -45,7 +45,7 @@
 }
  
 .newsletter {
-  background-image: url('https://patadon.com/arquivos/newsletter.jpg');
+  background-image: url('assets/newsletter.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -111,7 +111,7 @@
 
 .discountInsideContainer{
   background-color: transparent;
-  background-image: url('https://patadon.com/arquivos/iconos/descuento.png');
+  background-image: url('assets/iconos/descuento.png');
   background-repeat: no-repeat;
   height: 58px;
   width: 40px;
@@ -326,5 +326,19 @@
 .imageElement--stacked-category-image{
   width:100%;
 } 
+
+
+/* FITTING */
+.imageElement--image-fitting-tecnologia{
+  display:block;
+  max-width:500px;
+  margin:auto;
+}
+
+.imageElement--image-fitting-bottom{
+  display:block;
+  max-width:150px;
+  margin:auto;
+}
 
 

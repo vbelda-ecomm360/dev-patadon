@@ -91,16 +91,7 @@
     font-weight: 700;
 }
 
-.container--stacked-category-name {
-    height: 100%;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 2.13;
-    letter-spacing: 1.5px;
-    color: #ffffff;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .paragraph--main-header-text {
     margin: 0px;
@@ -192,7 +183,7 @@
     width: 14px;
     height: 14px;
     margin-right: 15px;
-    background: url('https://patadon.com/arquivos/iconos/filtro-icono.png') no-repeat;
+    background: url('assets/iconos/filtro-icono.png') no-repeat;
 }
 
 .paragraph--tab_title {
@@ -253,7 +244,17 @@
 
 
 /* FITTING */
-
+.wrapper--title-fitting {
+    width:100%;
+    text-align:center;
+}
+.headingLevel3--title-fitting{
+    font-size: 32px;
+    color: #C8102E;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:20px;
+}
 .container--fitting-video {
     display: table;
     width: 100%;
@@ -263,14 +264,24 @@
 .wrapper--fitting-video {
     display: table-cell;
     vertical-align: middle;
+    text-align:center;
 }
+.headingLevel3--fitting-video{
+    font-size: 32px;
+    color: #C8102E;
+    max-width:650px;
+    margin:auto;
+}
+.strong--fitting-video{
+    font-size: 22px;
+} 
 
 .container--info-fitting {
-    display: table;
+    display: table; 
     width: 100%;
     height: 100%;
 }
-
+ 
 .wrapper--info-fitting {
     display: table-cell;
     vertical-align: middle;
@@ -294,10 +305,31 @@
     height: 42px;
     margin: 0px 4px;
     padding-top: 5px;
-    background: url('https://patadon.com/arquivos/fitting/flag.png') no-repeat;
+    background: url('assets/fitting/flag.png') no-repeat;
     color: #ffffff;
     text-align: center;
 }
+.strong--text-proceso{
+    font-size:20px;
+}
+
+
+.wrapper--info-fitting-tecnologia{
+    max-width:400px;
+}
+.strong--info-fitting-tecnologia{
+    letter-spacing: 1px;
+    font-size:34px;
+}
+.link--info-fitting-tecnologia{
+    padding:15px 30px;
+    display:inline-block;
+    color:#fff;
+    border-radius:5px;
+    background:#134CD8;
+    text-decoration: none;
+}
+
 
 .container--testimonio-fitting {
     display: table;
@@ -307,20 +339,30 @@
 
 .wrapper--testimonio-fitting {
     display: table-cell;
-    text-align: center;
     vertical-align: middle;
+    padding-left:30px;
+    padding-right:30px;
 }
 
 .strong--testimonio-fitting {
     color: #fff;
     letter-spacing: 1px;
-    font-size: 24px;
+    font-size:34px;
 }
-
 .paragraph--testimonio-fitting {
     color: #fff;
     font-weight: 200;
-    letter-spacing: 1px;
+    letter-spacing: 1px; 
+}
+
+
+.paragraph--text-fitting {
+    text-align:center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.strong--text-fitting{
+    font-size:24px;
 }
 
 
@@ -340,13 +382,17 @@
     padding: 15px 30px;
     border: 1px solid #333;
 }
-
+ 
 .strong--table-precios {
     display: block;
 }
 
 
 /* TIENDAS */
+.wrapper--titulo-tiendas{
+    text-align: center;
+    width:100%;
+}
 
 .headingLevel2--titulo-tiendas {
     color: #C8102E;
@@ -363,15 +409,67 @@
     border-bottom: 1px solid #000;
 }
 
+.container--direccion-info-tienda{
+    margin-bottom:40px;
+    border-top:2px solid #ccc;
+    border-bottom:2px solid #ccc;
+}
+.list--direccion-info-tienda{
+    list-style:none;
 
-/* TOP BAR */
+}
+.listItem--direccion-info-tienda{
+    padding:10px 0px;
+    font-weight:bold;
+    position: relative;
+}
+.listItem--direccion-info-tienda::before{
+    position:absolute;
+    display:block;
+    content:"";
+    width:30px;
+    height:30px;
+    left:-35px;
+    top:4px;
+    background-size:30px;
+}
+.listItem--direccion-info-tienda:nth-child(n+1)::before{
+    background-image:url('assets/tiendas/pin.png');
+}
+.listItem--direccion-info-tienda:nth-child(n+2)::before{
+    background-image:url('assets/tiendas/tlf.png'); 
+}
+.listItem--direccion-info-tienda:nth-child(n+3)::before{
+    background-image:url('assets/tiendas/mail.png');
+}
+
+
+.container--horario-info-tienda {
+    margin-bottom:30px;
+}
+.strong--horario-info-tienda {
+    color:#C8102E;
+    display:block;
+    border-bottom:1px solid #eee;
+}
+.table--horario-info-tienda{
+    width:100%;
+    max-width:400px;     
+}
+.tableTd--horario-info-tienda:nth-child(2n-1){
+    font-weight:bold;
+}
+
+
+
+/* TOP BAR */ 
 
 .paragraph--top-bar-header-text {
     color: #ffffff;
     font-size: 14px;
     line-height: 32px;
     padding: 0px 15px;
-    margin: 15px 0;
+    margin: 15px 0; 
     text-align: left;
 }
 
