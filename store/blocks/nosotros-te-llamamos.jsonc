@@ -1,0 +1,24 @@
+{
+  "store.custom#nosotros-te-llamamos": {
+    "blocks": [
+      "info-card#nosotros-te-llamamos"
+    ]
+  },
+
+  // BANNER
+  "info-card#nosotros-te-llamamos": {
+    "props": {
+      "id": "info-card-nosotros-te-llamamos",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "textMode": "rich-text",
+      "imageUrl": "assets/fitting/banner6.png",
+      "headline": "### Nosotros te llamamos",
+      "subhead": "Para poder darte la mejor atención, hemos puesto en marcha un sistema de reservas para que puedas hablas con nuestros expertos durante 15 minutos.\n**SIN ESPERAS. SIN INTERRUPCIONES.**",
+      "callToActionText": "RESERVA TU LLAMADA",
+      "callToActionUrl": "/venta-telefonica",
+      "blockClass": "info-card-nosotros-te-llamamos",
+      "textAlignment": "center"
+    }
+  }
+}

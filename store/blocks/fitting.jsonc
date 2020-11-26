@@ -1,8 +1,8 @@
 {
   "store.custom#fitting": {
     "blocks": [
-      //"flex-layout.row#banner",
-      "image#banner",
+      "image#banner-fitting-img",
+      "flex-layout.row#banner-fitting",
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#video-1",
       "flex-layout.row#video-2",
@@ -10,7 +10,8 @@
       "rich-text#nuestro-proceso",
       "flex-layout.row#nuestro-proceso",
       "flex-layout.row#fitting-spacer",
-      "flex-layout.row#info-fitting-1",
+      "flex-layout.row#info-fitting-1-1",
+      "flex-layout.row#info-fitting-1-2",
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#info-fitting-2",
       "flex-layout.row#fitting-spacer",
@@ -18,8 +19,6 @@
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#more-info-1",
       "flex-layout.row#more-info-2",
-      //"flex-layout.row#more-info-3",
-      //"flex-layout.row#more-info-4",
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#testimonio-2"
     ]
@@ -31,21 +30,20 @@
     }
   },
   // BANNER
-  "flex-layout.row#banner": {
-    "children": [
-      "image#banner"
-    ],
-    "props": {
-      "blockClass": "fitting"
-    }
+  "flex-layout.row#banner-fitting": {
+    "children": ["rich-text#banner-fitting-text"]
   },
-
-  "image#banner": {
+  "image#banner-fitting-img": {
     "props": {
       "src": "assets/fitting/banner1.png",
-      "maxHeight": "",
-      "maxWidth": "",
-      "blockClass": "image-fitting"
+      "srcset": "assets/fitting/banner1-mobile.png",
+      "blockClass": "banner-fitting-image"
+    }
+  },
+  "rich-text#banner-fitting-text": {
+    "props": {
+      "text": "Trabajamos para que todos los golfistas disfruten de un equipo con más de 20 años de experiencia como fitters y clubmakers y lo radares más avanzados del mercado. Toda la tecnología profesional trabajando para mejorar los resultados de cualquier tipo de jugador: Principiante, habitual o profesional.",
+      "blockClass": "banner-fitting-text"
     }
   },
 
@@ -77,7 +75,7 @@
   "iframe#trackman": {
     "props": {
       "width": "100%",
-      "height": "500px",
+      "height": "100%",
       "src": "https://www.youtube.com/embed/c2eqEAdiKew",
       "blockClass": "videoTrackman"
     }
@@ -174,40 +172,20 @@
 
   // INFO FITTING
   // row 1
-    "flex-layout.row#info-fitting-1": {
-      "children": [
-        //"flex-layout.col#info-fitting-1-1",
-        "flex-layout.col#info-fitting-1-2"
-      ],
-      "props": {
-        "blockClass": "info-fitting",
-        "colGap": "8"
-      }
-    },
-    // col 1
-    "flex-layout.col#info-fitting-1-1": {
-      "children": [
-        "rich-text#info-fitting-text-1"
-      ],
-      "props": {
-        "blockClass": "info-fitting",
-        "width": "60%"
-      }
-    },
-    "rich-text#info-fitting-text-1": {
-      "props": {
-        "text": "**Equipo de Fitter y Clubmakers en Depique**\nDepique es la suma de muchos profesionales de golf. Un talento a tu disposición, con la misión de hacerte jugar mejor. Un equipo con más de 20 años de experiencia como filters y clubmakers, que se forma continuamente.",
-        "blockClass": "info-fitting"
-      }
-    },
-    // col 2
-    "flex-layout.col#info-fitting-1-2": {
+    "flex-layout.row#info-fitting-1-1": {
       "children": [
         "image#info-fitting-img-1"
       ],
       "props": {
-        "blockClass": "info-fitting",
-        "width": "100%"
+        "blockClass": "info-fitting"
+      }
+    },
+    "flex-layout.row#info-fitting-1-2": {
+      "children": [
+        "rich-text#info-fitting-text-1"
+      ],
+      "props": {
+        "blockClass": "info-fitting"
       }
     },
     "image#info-fitting-img-1": {
@@ -216,6 +194,13 @@
         "blockClass": "image-about"
       }
     },
+    "rich-text#info-fitting-text-1": {
+      "props": {
+        "text": "Depique es la suma de muchos profesionales de golf. Un talento a tu disposición, con la misión de hacerte jugar mejor. Un equipo con más de 20 años de experiencia como filters y clubmakers, que se forma continuamente.",
+        "blockClass": "info-fitting-equipo"
+      }
+    },
+
   // row 2
   "flex-layout.row#info-fitting-2": {
     "children": [
@@ -278,13 +263,30 @@
   },
   "flex-layout.row#more-info-2": {
     "children": [
-      "rich-text#more-info-2", 
-      "rich-text#more-info-3",
-      "rich-text#more-info-4"
+      "flex-layout.col#more-info-2",
+      "flex-layout.col#more-info-3",
+      "flex-layout.col#more-info-4"
     ],
     "props": {
       "blockClass": "fitting",
       "colGap": "8"
+    }
+  },
+  "flex-layout.col#more-info-2": {
+    "children": [
+      "image#more-info-2",
+      "rich-text#more-info-2"
+    ],
+    "props": {
+      "blockClass": "fitting",
+      "colGap": "8",
+      "preventVerticalStretch": true
+    }
+  },
+  "image#more-info-2": {
+    "props": {
+      "src": "assets/fitting/tipo1.png",
+      "blockClass": "image-more-info"
     }
   },
   "rich-text#more-info-2": {
@@ -293,13 +295,15 @@
       "blockClass": "text-fitting"
     }
   },
-  "flex-layout.row#more-info-3": {
+  "flex-layout.col#more-info-3": {
     "children": [
+      "image#more-info-3",
       "rich-text#more-info-3"
     ],
     "props": {
       "blockClass": "fitting",
-      "colGap": "8"
+      "colGap": "8",
+      "preventVerticalStretch": true
     }
   },
   "rich-text#more-info-3": {
@@ -308,19 +312,33 @@
       "blockClass": "text-fitting"
     }
   },
-  "flex-layout.row#more-info-4": {
+  "image#more-info-3": {
+    "props": {
+      "src": "assets/fitting/tipo2.png",
+      "blockClass": "image-more-info"
+    }
+  },
+  "flex-layout.col#more-info-4": {
     "children": [
+      "image#more-info-4",
       "rich-text#more-info-4"
     ],
     "props": {
       "blockClass": "fitting",
-      "colGap": "8"
+      "colGap": "8",
+      "preventVerticalStretch": true
     }
   },
   "rich-text#more-info-4": {
     "props": {
       "text": "**hcp bajo y profesionales**\nAquí el fitting no es una opción si quieres sacar todo tu potencial y conseguir buenas tarjetas. Sabemos lo complicado que es ganar un metro de distancia o de precisión cuando ya exprimes al máximo tu swing. En una vuelta de golf hay muchos factores que influyen en el resultado: Distancia, precisión, cansancio físico y mental al final de la vuelta, sensación del palo, plante de palo en el suelo, trayectoria de vuelo, spin, calidad de impacto… Todo ello se puede medir y buscar posibles mejoras.",
       "blockClass": "text-fitting"
+    }
+  },
+  "image#more-info-4": {
+    "props": {
+      "src": "assets/fitting/tipo3.png",
+      "blockClass": "image-more-info"
     }
   },
 

@@ -244,6 +244,17 @@
 
 
 /* FITTING */
+.wrapper--banner-fitting-text{
+    font-size:18px;
+    text-align: center; 
+}
+
+@media screen and (min-width: 50em) {
+    .container--banner-fitting-text{
+        display:none;
+    }
+}
+
 .wrapper--title-fitting {
     width:100%;
     text-align:center;
@@ -309,13 +320,44 @@
     color: #ffffff;
     text-align: center;
 }
+
+@media screen and (max-width: 50em) {
+    .container--text-proceso {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .headingLevel3--text-proceso {
+        display: inline-block;
+        position: static;
+        width: 40px;
+        height: 42px;
+        background: url('assets/fitting/flag.png') no-repeat;
+    }
+}
 .strong--text-proceso{
     font-size:20px;
 }
-
-
+@media screen and (min-width: 50em) {
+    .wrapper--info-fitting-equipo{
+        display:none;
+    }
+}
+@media screen and (max-width: 50em) {
+    .wrapper--info-fitting{
+        text-align:center;
+    }
+    .wrapper--info-fitting-equipo{
+        text-align:center;
+    }
+}
 .wrapper--info-fitting-tecnologia{
     max-width:400px;
+}
+
+@media screen and (max-width: 50em) {
+    .wrapper--info-fitting-tecnologia{
+        text-align:center;
+    }
 }
 .strong--info-fitting-tecnologia{
     letter-spacing: 1px;
@@ -329,6 +371,12 @@
     background:#134CD8;
     text-decoration: none;
 }
+@media screen and (max-width: 50em) {
+    .link--info-fitting-tecnologia{
+        font-size:12px;
+    }
+}
+
 
 
 .container--testimonio-fitting {
@@ -343,7 +391,11 @@
     padding-left:30px;
     padding-right:30px;
 }
-
+@media screen and (max-width: 50em) {
+    .wrapper--testimonio-fitting{
+        text-align: center;
+    }
+}
 .strong--testimonio-fitting {
     color: #fff;
     letter-spacing: 1px;
@@ -360,6 +412,11 @@
     text-align:center;
     padding-left: 30px;
     padding-right: 30px;
+}
+@media screen and (max-width: 50em) {
+    .paragraph--text-fitting {
+        padding:0px;
+    }
 }
 .strong--text-fitting{
     font-size:24px;
@@ -504,3 +561,5 @@
         text-transform: uppercase;
     }
 }
+
+

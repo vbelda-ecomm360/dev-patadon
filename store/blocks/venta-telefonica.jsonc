@@ -1,29 +1,11 @@
 {
   "store.custom#venta-telefonica": {
     "blocks": [
-      "image#nosotros-llamamos",
       "iframe#venta-telefonica"
     ]
   },
 
-  // BANNER
-  "flex-layout.row#nosotros-llamamos": {
-    "children": [
-      "image#nosotros-llamamos",
-      "iframe#venta-telefonica"
-    ],
-    "props": {
-      "blockClass": "about"
-    }
-  },
-
-  "image#nosotros-llamamos": {
-    "props": {
-      "src": "assets/fitting/banner6.png",
-      "width": "100%",
-      "blockClass": "image-about"
-    }
-  },
+  // IFRAME
   "iframe#venta-telefonica": {
     "props": {
       "src": "https://ivan-patadon.zohobookings.com/portal-embed#/customer/4079892000000044242",

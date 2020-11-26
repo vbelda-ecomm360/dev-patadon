@@ -26,6 +26,9 @@
   "store.custom#precios": { 
     "path": "/precios" 
   },
+  "store.custom#nosotros-te-llamamos": { 
+    "path": "/nosotros-te-llamamos" 
+  },
   "store.custom#venta-telefonica": { 
     "path": "/venta-telefonica" 
   },

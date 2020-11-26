@@ -335,10 +335,52 @@
   margin:auto;
 }
 
+.imageElement--image-more-info{
+  display:block;
+  max-width:80px;
+  margin:auto;
+}
+
 .imageElement--image-fitting-bottom{
   display:block;
   max-width:150px;
   margin:auto;
 }
 
+ 
+/* VENTA ONLINE */
+.infoCardCallActionContainer--info-card-nosotros-te-llamamos :global(.vtex-button){
+  padding:15px 30px;
+  display:inline-block;
+  color:#fff;
+  border-radius:5px;
+  background:#134CD8;
+  text-decoration: none;
+  border:0px;
+}
+.wrapper--info-card-nosotros-te-llamamos{
+  max-width:650px; 
+  margin:auto;
+  text-align:center;
+  font-size:18px;
+}
+.headingLevel3--info-card-nosotros-te-llamamos{
+  font-size:56px;
+}
 
+@media screen and (max-width: 50em) {
+  .infoCardContainer--info-card-nosotros-te-llamamos{
+    display:flex;
+    flex-direction: column-reverse !important;
+  }
+  .container--info-card-nosotros-te-llamamos{
+    padding:0px;
+  }
+  .wrapper--info-card-nosotros-te-llamamos{
+    max-width:100%; 
+    font-size:16px;
+  }
+  .headingLevel3--info-card-nosotros-te-llamamos{
+    font-size:26px;
+  }
+}
