@@ -67,15 +67,16 @@
     color: #727273;
     font-size: 16px;
 }
+.flexRowContent--main-header-menu :global(.vtex-menu-2-x-styledLink):hover {
+    color: #c8102e;
+}
 @media screen and (max-width: 1260px) {
     .flexRowContent--main-header-menu :global(.vtex-menu-2-x-styledLink) {
         font-size: 14px;
     }
 }
 
-.flexRowContent--main-header-menu :global(.vtex-menu-2-x-styledLink)::hover {
-    color: #c8102e;
-}
+
 @media screen and (max-width: 50em) {
     .flexCol--header-main-menu {
         position: relative;
