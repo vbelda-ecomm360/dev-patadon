@@ -4,7 +4,8 @@
             "menu-item#venta-tele",
             "menu-item#tiendas",
             "menu-item#contacto",
-            "menu-item#about-us"
+            "menu-item#about-us",
+            "menu-item#blog"
         ],
         "props": {
             "blockClass": "top-bar-menu-container"
@@ -69,6 +70,22 @@
                 "noFollow": false,
                 "tagTitle": "Sobre Depique",
                 "text": "Sobre Depique"
+            }
+        }
+    },
+    "menu-item#blog": {
+        "props": {
+            "blockClass": "top-bar-menu-blog",
+            "id": "menu-item-blog",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "external",
+                "href": "https://depiqueblog.com/",
+                "noFollow": false,
+                "tagTitle": "Blog",
+                "text": "Blog"
             }
         }
     }

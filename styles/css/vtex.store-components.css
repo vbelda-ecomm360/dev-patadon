@@ -82,6 +82,10 @@
   margin-right:10px;
   margin-left: 0px;
 }
+.skuSelectorItemImage{
+  width:80px;
+  height:80px;
+}
 .frameAround {
   bottom: -1px;
   top: -1px;
@@ -357,6 +361,28 @@
 
 
 /* FITTING */
+.imageElement--banner-fitting-image-mobile{
+  display:none;
+}
+.imageElement--image-equipo-mobile{
+  display:none;
+}
+@media screen and (max-width: 50em) {
+  .imageElement--banner-fitting-image{
+    display:none;
+  }
+  .imageElement--banner-fitting-image-mobile{
+    display:block;
+  }
+
+  .imageElement--image-equipo{
+    display:none;
+  }
+  .imageElement--image-equipo-mobile{
+    display:block;
+  }
+}
+
 .imageElement--image-fitting-tecnologia{
   display:block;
   max-width:500px;

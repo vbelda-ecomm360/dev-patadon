@@ -2,7 +2,7 @@
     "store.custom#contacto": {
     "blocks": [
         "flex-layout.row#header-contacto",
-        "flex-layout.row#contacto"
+        "form#contacto"
         ]
     },
         "flex-layout.row#header-contacto": {
@@ -31,55 +31,48 @@
                 "text": "En Depique Golf nos interesa tanto tu consulta como tu opinión. Si tienes cualquier duda, queja o sugerencia, puedes hacernos llegar tu mensaje rellenando el formulario de más abajo. "
              }
         },
-        "flex-layout.row#contacto": {
-            "children": [
-                "flex-layout.col#img-contacto",
-                "flex-layout.col#form-contacto"
-            ],
-            "props": {
-                "blockClass": "institutional"
-            }
-        },
-        "flex-layout.col#img-contacto": {
-            "children": [
-                "image#img-contacto"
-            ],
-            "props": {
-                "blockClass": "institutional-text"
-             }
-        },
-            "image#img-contacto": {
-                "props": {
-                "src": "assets/about-us/Imagen.jpg",
-                "maxHeight": "",
-                "maxWidth": "",
-                "blockClass": "image-about"
-                }
-            },
-        "flex-layout.col#form-contacto": {
-            "children": [
-                "form#contacto"
-            ],
-            "props": {
-                "blockClass": "institutional-text"
-             }
-        },
         "form#contacto": {
             "props": {
               "entity": "CO",
               "schema": "form"
             },
             "children": [
+              "flex-layout.row#contacto"
+            ],
+            "blocks": ["form-success"]
+        },
+          "flex-layout.row#contacto": {
+            "children": [
+                "flex-layout.col#form-contacto-1",
+                "flex-layout.col#form-contacto-2"
+            ],
+            "props": {
+                "blockClass": "institutional",
+                "colGap": "8"
+            }
+        },
+        "flex-layout.col#form-contacto-1": {
+            "children": [
               "form-input.text#name",
               "form-input.text#email",
               "form-input.text#phone",
-              "form-input.text#subject",
+              "form-input.text#subject"
+            ],
+            "props": {
+                "blockClass": "institutional-text"
+             }
+        },
+        "flex-layout.col#form-contacto-2": {
+            "children": [
+              //"form-input.dropdown#reason",
               "form-input.textarea#message",
               "form-input.checkbox#newsletter",
               "form-submit"
             ],
-            "blocks": ["form-success"]
-          },
+            "props": {
+                "blockClass": "institutional-text"
+             }
+        },
           "form-success": {
             "children": [
               "rich-text#successSubmit"
@@ -115,6 +108,11 @@
           "form-input.textarea#message": {
             "props": {
               "pointer": "#/properties/message"
+            }
+          },
+          "form-input.dropdown#reason": {
+            "props": {
+              "pointer": "#/properties/reason"
             }
           },
           "form-input.checkbox#newsletter": {

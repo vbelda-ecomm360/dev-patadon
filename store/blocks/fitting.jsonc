@@ -2,6 +2,7 @@
   "store.custom#fitting": {
     "blocks": [
       "image#banner-fitting-img",
+      "image#banner-fitting-img-mobile",
       "flex-layout.row#banner-fitting",
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#video-1",
@@ -30,15 +31,21 @@
     }
   },
   // BANNER
-  "flex-layout.row#banner-fitting": {
-    "children": ["rich-text#banner-fitting-text"]
-  },
   "image#banner-fitting-img": {
     "props": {
       "src": "assets/fitting/banner1.png",
       "srcset": "assets/fitting/banner1-mobile.png",
       "blockClass": "banner-fitting-image"
     }
+  },
+  "image#banner-fitting-img-mobile": {
+    "props": {
+      "src": "assets/fitting/banner1-mobile.png",
+      "blockClass": "banner-fitting-image-mobile"
+    }
+  },
+  "flex-layout.row#banner-fitting": {
+    "children": ["rich-text#banner-fitting-text"]
   },
   "rich-text#banner-fitting-text": {
     "props": {
@@ -174,7 +181,8 @@
   // row 1
     "flex-layout.row#info-fitting-1-1": {
       "children": [
-        "image#info-fitting-img-1"
+        "image#info-fitting-img-1",
+        "image#info-fitting-img-1-mobile"
       ],
       "props": {
         "blockClass": "info-fitting"
@@ -191,7 +199,13 @@
     "image#info-fitting-img-1": {
       "props": {
         "src": "assets/fitting/banner-equipo.png",
-        "blockClass": "image-about"
+        "blockClass": "image-equipo"
+      }
+    },
+    "image#info-fitting-img-1-mobile": {
+      "props": {
+        "src": "assets/fitting/banner-equipo-mobile.png",
+        "blockClass": "image-equipo-mobile"
       }
     },
     "rich-text#info-fitting-text-1": {

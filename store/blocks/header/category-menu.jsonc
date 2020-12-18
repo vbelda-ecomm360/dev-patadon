@@ -27,7 +27,7 @@
   "flex-layout.col#promos-menu": {
     "props": {
       "verticalAlign": "middle",
-      "width": "30%"
+      "width": "35%"
     },
     "children": ["vtex.menu@2.x:menu#promos-menu"],
     "title": "Promos Menu"
