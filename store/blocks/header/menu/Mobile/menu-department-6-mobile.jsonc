@@ -1,0 +1,19 @@
+{
+  // PRIMER MENÚ DESPLEGABLE
+  "menu-item#department-6-mobile": {
+    "props": {
+      "id": "menu-item-department-6-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas",
+        "noFollow": true,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      },
+      "blockClass": "header-promotions-title"
+    }
+  }
+}

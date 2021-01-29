@@ -1,0 +1,654 @@
+{
+  // PRIMER MENÚ DESPLEGABLE
+  "menu-item#department-4-mobile": {
+    "props": {
+      "id": "menu-item-department-4-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Accesorios",
+        "noFollow": true,
+        "tagTitle": "Bolas y Accesorios",
+        "text": "Bolas y Accesorios"
+      },
+      "blockClass": "header-department-title"
+    },
+    "blocks": [
+      "submenu.accordion#department-4"
+    ]
+  },
+  "submenu.accordion#department-4": {
+    "children": [
+        "menu#menu-department-4-mobile"
+    ]
+  },
+  //First Block Menu Mobile
+  "menu#menu-department-4-mobile": {
+    "props": {
+        "orientation": "vertical",
+        "experimentalOptimizeRendering": true
+    },
+    "children": [
+        "menu-item#menu-department-4-mobile-all",
+        //Transfor Columns in List
+        "menu-item#department-4-mobile-submenu-col-1",
+        "menu-item#department-4-mobile-submenu-col-2",
+        "menu-item#department-4-mobile-submenu-col-3",
+        "menu-item#department-4-mobile-submenu-col-4",
+        "menu-item#department-4-mobile-submenu-col-5"
+    ]
+  },
+  "menu-item#menu-department-4-mobile-all": {
+    "props": {
+        "id": "menu-department-4-all",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "/palos-de-golf",
+            "tagTitle": "See All",
+            "text": "See All"
+        }
+    }
+  },
+  "menu-item#department-4-mobile-submenu-col-1": {
+    "props": {
+        "id": "menu-item-department-4-mobile-submenu-col-1",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "external",
+            "href": "",
+            "noFollow": true,
+            "tagTitle": "Palos Standard",
+            "text": "Palos Standard"
+        }
+    },
+    "blocks": [
+        "submenu.accordion#department-4-mobile-submenu-col-1"
+    ]
+  },
+  "submenu.accordion#department-4-mobile-submenu-col-1": {
+      "children": [
+          "menu#department-4-mobile-submenu-col-1"
+      ]
+  },
+  "menu#department-4-mobile-submenu-col-1": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-4-mobile-col-1-category-2",
+      "menu-item#department-4-mobile-col-1-category-3",
+      "menu-item#department-4-mobile-col-1-category-4",
+      "menu-item#department-4-mobile-col-1-category-5",
+      "menu-item#department-4-mobile-col-1-category-6",
+      "menu-item#department-4-mobile-col-1-category-7",
+      "menu-item#department-4-mobile-col-1-category-8",
+      "menu-item#department-4-mobile-col-1-category-see-all"
+    ]
+  },
+  "menu-item#department-4-mobile-col-1-category-see-all": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-1-category-see-all",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/standard",
+        "noFollow": true,
+        "tagTitle": "Ver todos Palos Standard",
+        "text": "Ver todos Palos Standard"
+      },
+      "blockClass": "header-department-category-show-all"
+    }
+  },
+  "menu-item#department-4-mobile-col-1-category-2": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-1-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/standard/drivers",
+        "noFollow": true,
+        "tagTitle": "Drivers",
+        "text": "Drivers"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-1-category-3": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-1-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/standard/madera-de-calle",
+        "noFollow": true,
+        "tagTitle": "Maderas de calle",
+        "text": "Maderas de calle"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-1-category-4": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-1-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/standard/hibridos-utility-irons",
+        "noFollow": true,
+        "tagTitle": "Híbridos y utility Irons",
+        "text": "Híbridos y utility Irons"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-1-category-5": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-1-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/standard/sets-hierros",
+        "noFollow": true,
+        "tagTitle": "Sets de hierros",
+        "text": "Sets de hierros"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-1-category-6": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-1-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/standard/wedges-chippers",
+        "noFollow": true,
+        "tagTitle": "Wedges y chippers",
+        "text": "Wedges y chippers"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-1-category-7": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-1-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/standard/hierros-sueltos",
+        "noFollow": true,
+        "tagTitle": "Hierros Sueltos",
+        "text": "Hierros Sueltos"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-1-category-8": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-1-category-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/standard/putters",
+        "noFollow": true,
+        "tagTitle": "Putters",
+        "text": "Putters"
+      }
+    }
+  },
+  // New element By Columns to List.
+  // COLUMNA 2 DEL MENÚ 1
+  "menu-item#department-4-mobile-submenu-col-2": {
+    "props": {
+        "id": "menu-item-department-4-mobile-submenu-col-2",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "external",
+            "href": "",
+            "noFollow": true,
+            "tagTitle": "Packs Completos",
+            "text": "Packs Completos"
+        }
+    },
+    "blocks": [
+        "submenu.accordion#department-4-mobile-submenu-col-2"
+    ]
+  },
+  "submenu.accordion#department-4-mobile-submenu-col-2": {
+      "children": [
+          "menu#department-4-mobile-submenu-col-2"
+      ]
+  },
+  "menu#department-4-mobile-submenu-col-2": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-4-mobile-col-2-category-2",
+      "menu-item#department-4-mobile-col-2-category-3",
+      "menu-item#department-4-mobile-col-2-category-4",
+      "menu-item#department-4-mobile-col-2-category-5",
+      "menu-item#department-4-mobile-col-2-category-6",
+      "menu-item#department-4-mobile-col-2-category-7",
+      "menu-item#department-4-mobile-col-2-category-8"
+    ]
+  },
+  "menu-item#department-4-mobile-col-2-category-2": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/drivers",
+        "noFollow": true,
+        "tagTitle": "Drivers",
+        "text": "Drivers"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-2-category-3": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/madera-de-calle",
+        "noFollow": true,
+        "tagTitle": "Maderas de calle",
+        "text": "Maderas de calle"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-2-category-4": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/hibridos-utility-irons",
+        "noFollow": true,
+        "tagTitle": "Híbridos y utility Irons",
+        "text": "Híbridos y utility Irons"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-2-category-5": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/serts-hierros",
+        "noFollow": true,
+        "tagTitle": "Sets de hierros",
+        "text": "Sets de hierros"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-2-category-6": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/wedges-chippers",
+        "noFollow": true,
+        "tagTitle": "Wedges y chippers",
+        "text": "Wedges y chippers"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-2-category-7": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados/putters",
+        "noFollow": true,
+        "tagTitle": "Putters",
+        "text": "Putters"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-2-category-8": {
+    "props": {
+      "id": "menu-item-department-4-col-2-category-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados",
+        "noFollow": true,
+        "tagTitle": "Ver todos Palos Personalizados",
+        "text": "Ver todos Palos Personalizados"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  // COLUMNA 3 DEL MENÚ 1
+  "menu-item#department-4-mobile-submenu-col-3": {
+    "props": {
+        "id": "menu-item-department-4-mobile-submenu-col-3",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "external",
+            "href": "",
+            "noFollow": true,
+            "tagTitle": "Packs Completos",
+            "text": "Packs Completos"
+        }
+    },
+    "blocks": [
+        "submenu.accordion#department-4-mobile-submenu-col-3"
+    ]
+  },
+  "submenu.accordion#department-4-mobile-submenu-col-3": {
+      "children": [
+          "menu#department-4-mobile-submenu-col-3"
+      ]
+  },
+  "menu#department-4-mobile-submenu-col-3": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-4-mobile-col-3-category-2",
+      "menu-item#department-4-mobile-col-3-category-3",
+      "menu-item#department-4-mobile-col-3-category-4",
+      "menu-item#department-4-mobile-col-3-category-5"
+    ]
+  },
+  "menu-item#department-4-mobile-col-3-category-2": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-3-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/mujer",
+        "noFollow": true,
+        "tagTitle": "Pack de Iniciación Mujer",
+        "text": "Pack de Iniciación Mujer"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-3-category-3": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-3-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/mujer",
+        "noFollow": true,
+        "tagTitle": "Pack de Iniciación Mujer",
+        "text": "Pack de Iniciación Mujer"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-3-category-4": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-3-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/junior",
+        "noFollow": true,
+        "tagTitle": "Pack Junior",
+        "text": "Pack Junior"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-3-category-5": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-3-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack",
+        "noFollow": true,
+        "tagTitle": "Ver todos Pack",
+        "text": "Ver todos Pack"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  // COLUMNA 3 DEL MENÚ 1
+  "menu-item#department-4-mobile-submenu-col-4": {
+    "props": {
+        "id": "menu-item-department-4-mobile-submenu-col-4",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "external",
+            "href": "",
+            "noFollow": true,
+            "tagTitle": "Packs Completos",
+            "text": "Packs Completos"
+        }
+    },
+    "blocks": [
+        "submenu.accordion#department-4-mobile-submenu-col-4"
+    ]
+  },
+  "submenu.accordion#department-4-mobile-submenu-col-4": {
+      "children": [
+          "menu#department-4-mobile-submenu-col-4"
+      ]
+  },
+  "menu#department-4-mobile-submenu-col-4": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-4-mobile-col-4-category-2",
+      "menu-item#department-4-mobile-col-4-category-3",
+      "menu-item#department-4-mobile-col-4-category-4",
+      "menu-item#department-4-mobile-col-4-category-5"
+    ]
+  },
+  "menu-item#department-4-mobile-col-4-category-2": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-4-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/mujer",
+        "noFollow": true,
+        "tagTitle": "Pack de Iniciación Mujer",
+        "text": "Pack de Iniciación Mujer"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-4-category-3": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-4-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/mujer",
+        "noFollow": true,
+        "tagTitle": "Pack de Iniciación Mujer",
+        "text": "Pack de Iniciación Mujer"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-4-category-4": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-4-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/junior",
+        "noFollow": true,
+        "tagTitle": "Pack Junior",
+        "text": "Pack Junior"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-4-category-5": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-4-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack",
+        "noFollow": true,
+        "tagTitle": "Ver todos Pack",
+        "text": "Ver todos Pack"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  // COLUMNA 3 DEL MENÚ 1
+  "menu-item#department-4-mobile-submenu-col-5": {
+    "props": {
+        "id": "menu-item-department-4-mobile-submenu-col-5",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "external",
+            "href": "",
+            "noFollow": true,
+            "tagTitle": "Packs Completos",
+            "text": "Packs Completos"
+        }
+    },
+    "blocks": [
+        "submenu.accordion#department-4-mobile-submenu-col-5"
+    ]
+  },
+  "submenu.accordion#department-4-mobile-submenu-col-5": {
+      "children": [
+          "menu#department-4-mobile-submenu-col-5"
+      ]
+  },
+  "menu#department-4-mobile-submenu-col-5": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-4-mobile-col-5-category-2",
+      "menu-item#department-4-mobile-col-5-category-3",
+      "menu-item#department-4-mobile-col-5-category-4",
+      "menu-item#department-4-mobile-col-5-category-5"
+    ]
+  },
+  "menu-item#department-4-mobile-col-5-category-2": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-5-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/mujer",
+        "noFollow": true,
+        "tagTitle": "Pack de Iniciación Mujer",
+        "text": "Pack de Iniciación Mujer"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-5-category-3": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-5-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/mujer",
+        "noFollow": true,
+        "tagTitle": "Pack de Iniciación Mujer",
+        "text": "Pack de Iniciación Mujer"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-5-category-4": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-5-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack/junior",
+        "noFollow": true,
+        "tagTitle": "Pack Junior",
+        "text": "Pack Junior"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-5-category-5": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-5-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/pack",
+        "noFollow": true,
+        "tagTitle": "Ver todos Pack",
+        "text": "Ver todos Pack"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  }
+}

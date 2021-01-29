@@ -102,7 +102,7 @@
       "flex-layout.row#text-locale"
     ]
   },
-    "flex-layout.row#image-icon-locale": {    
+    "flex-layout.row#image-icon-locale": {
       "props": {
         "width": "100%"
       },
@@ -120,7 +120,7 @@
           "horizontalAlign": "center",
           "colSizing": "auto",
           "colGap": 0
-        },    
+        },
         "children": [
           "rich-text#desc-locale",
           "locale-switcher"
@@ -143,7 +143,7 @@
       "flex-layout.row#login"
     ]
   },
-  "flex-layout.row#image-icon-login": {    
+  "flex-layout.row#image-icon-login": {
     "props": {
       "width": "100%"
     },
@@ -157,7 +157,7 @@
         "maxWidth": "100%"
       }
     },
-  "flex-layout.row#login": {    
+  "flex-layout.row#login": {
     "props": {
       "blockClass": "login-header",
       "width": "100%"
@@ -214,7 +214,7 @@
       "url": "assets/logo.png",
       "width": "280px"
     }
-  }, 
+  },
   "search-bar#header": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
@@ -260,12 +260,13 @@
   },
   "menu#drawer": {
     "children": [
-      "menu-item#department-1",
-      "menu-item#department-2",
-      "menu-item#department-3",
-      "menu-item#department-4",
-      "menu-item#department-5",
-      "menu-item#department-6"
+      "menu-item#department-1-mobile",
+      "menu-item#department-2-mobile",
+      "menu-item#department-3-mobile",
+      "menu-item#department-4-mobile",
+      "menu-item#department-5-mobile",
+      "menu-item#department-6-mobile",
+      "menu-item#department-7-mobile"
     ],
     "props": {
       "orientation": "vertical"
