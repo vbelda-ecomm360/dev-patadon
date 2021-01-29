@@ -47,8 +47,8 @@
         "itemProps": {
             "type": "internal",
             "href": "/palos-de-golf",
-            "tagTitle": "See All",
-            "text": "See All"
+            "tagTitle": "Ver todo",
+            "text": "Ver todo"
         }
     }
   },
@@ -62,8 +62,8 @@
             "type": "external",
             "href": "",
             "noFollow": true,
-            "tagTitle": "Palos Standard",
-            "text": "Palos Standard"
+            "tagTitle": "Palos de Golf",
+            "text": "Palos de Golf"
         }
     },
     "blocks": [
@@ -99,7 +99,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/standard",
+        "href": "/palos-de-golf",
         "noFollow": true,
         "tagTitle": "Ver todos Palos Standard",
         "text": "Ver todos Palos Standard"
@@ -246,10 +246,7 @@
       "menu-item#department-1-mobile-col-2-category-2",
       "menu-item#department-1-mobile-col-2-category-3",
       "menu-item#department-1-mobile-col-2-category-4",
-      "menu-item#department-1-mobile-col-2-category-5",
-      "menu-item#department-1-mobile-col-2-category-6",
-      "menu-item#department-1-mobile-col-2-category-7",
-      "menu-item#department-1-mobile-col-2-category-8"
+      "menu-item#department-1-mobile-col-2-category-all"
     ]
   },
   "menu-item#department-1-mobile-col-2-category-2": {
@@ -260,10 +257,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/drivers",
+        "href": "/palos-de-golf/pack/hombre",
         "noFollow": true,
-        "tagTitle": "Drivers",
-        "text": "Drivers"
+        "tagTitle": "Pack de Iniciación Hombre",
+        "text": "Pack de Iniciación Hombre"
       }
     }
   },
@@ -275,10 +272,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/madera-de-calle",
+        "href": "/palos-de-golf/pack/mujer",
         "noFollow": true,
-        "tagTitle": "Maderas de calle",
-        "text": "Maderas de calle"
+        "tagTitle": "Pack de Iniciación Mujer",
+        "text": "Pack de Iniciación Mujer"
       }
     }
   },
@@ -290,70 +287,25 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/hibridos-utility-irons",
+        "href": "/palos-de-golf/pack/junior",
         "noFollow": true,
-        "tagTitle": "Híbridos y utility Irons",
-        "text": "Híbridos y utility Irons"
+        "tagTitle": "Pack Junior",
+        "text": "Pack Junior"
       }
     }
   },
-  "menu-item#department-1-mobile-col-2-category-5": {
+  "menu-item#department-1-mobile-col-2-category-all": {
     "props": {
-      "id": "menu-item-department-1-col-2-category-5",
+      "id": "menu-item-department-1-col-2-category-all",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/serts-hierros",
+        "type": "external",
+        "href": "https://www.depique.com/palos-de-golf?fuzzy=0&map=category-2,category-1&operator=and&query=/packs/palos-de-golf",
         "noFollow": true,
-        "tagTitle": "Sets de hierros",
-        "text": "Sets de hierros"
-      }
-    }
-  },
-  "menu-item#department-1-mobile-col-2-category-6": {
-    "props": {
-      "id": "menu-item-department-1-col-2-category-6",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/wedges-chippers",
-        "noFollow": true,
-        "tagTitle": "Wedges y chippers",
-        "text": "Wedges y chippers"
-      }
-    }
-  },
-  "menu-item#department-1-mobile-col-2-category-7": {
-    "props": {
-      "id": "menu-item-department-1-col-2-category-7",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/putters",
-        "noFollow": true,
-        "tagTitle": "Putters",
-        "text": "Putters"
-      }
-    }
-  },
-  "menu-item#department-1-mobile-col-2-category-8": {
-    "props": {
-      "id": "menu-item-department-1-col-2-category-8",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados",
-        "noFollow": true,
-        "tagTitle": "Ver todos Palos Personalizados",
-        "text": "Ver todos Palos Personalizados"
+        "tagTitle": "Ver todos Packs",
+        "text": "Ver todos Packs"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -369,8 +321,8 @@
             "type": "external",
             "href": "",
             "noFollow": true,
-            "tagTitle": "Packs Completos",
-            "text": "Packs Completos"
+            "tagTitle": "Otras categorías",
+            "text": "Otras categorías"
         }
     },
     "blocks": [
@@ -391,7 +343,9 @@
       "menu-item#department-1-mobile-col-3-category-2",
       "menu-item#department-1-mobile-col-3-category-3",
       "menu-item#department-1-mobile-col-3-category-4",
-      "menu-item#department-1-mobile-col-3-category-5"
+      "menu-item#department-1-mobile-col-3-category-5",
+      "menu-item#department-1-mobile-col-3-category-6",
+      "menu-item#department-1-mobile-col-3-category-all"
     ]
   },
   "menu-item#department-1-mobile-col-3-category-2": {
@@ -401,11 +355,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "type": "external",
+        "href": "https://www.depique.com/palos-de-golf?fuzzy=0&map=flexion,category-1&operator=and&query=/ladies/palos-de-golf",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Palos de Golf de Mujer",
+        "text": "Palos de Golf de Mujer"
       }
     }
   },
@@ -417,10 +371,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/palos-de-golf/otros/palos-junior",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Palos de Golf de Junior",
+        "text": "Palos de Golf de Junior"
       }
     }
   },
@@ -431,11 +385,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/pack/junior",
+        "type": "external",
+        "href": "https://www.depique.com/palos-de-golf?fuzzy=0&map=category-1,mano-de-juego&operator=and&query=/palos-de-golf/zurdo",
         "noFollow": true,
-        "tagTitle": "Pack Junior",
-        "text": "Pack Junior"
+        "tagTitle": "Palos de Zurdo",
+        "text": "Palos de Zurdo"
       }
     }
   },
@@ -447,10 +401,42 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack",
+        "href": "/palos-de-golf/otros/palos-segunda-mano",
         "noFollow": true,
-        "tagTitle": "Ver todos Pack",
-        "text": "Ver todos Pack"
+        "tagTitle": "Palos de 2ª mano",
+        "text": "Palos de 2ª mano"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  "menu-item#department-1-mobile-col-3-category-6": {
+    "props": {
+      "id": "menu-item-department-1-mobile-col-3-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/otros/palos-demo",
+        "noFollow": true,
+        "tagTitle": "Palos de Demo",
+        "text": "Palos de Demo"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  "menu-item#department-1-mobile-col-3-category-all": {
+    "props": {
+      "id": "menu-item-department-1-col-3-category-all",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/otros",
+        "noFollow": true,
+        "tagTitle": "Ver todos Otras categorías",
+        "text": "Ver todos Otras categorías"
       },
       "blockClass":"header-department-category-show-all"
     }
