@@ -405,8 +405,7 @@
         "noFollow": true,
         "tagTitle": "Palos de 2ª mano",
         "text": "Palos de 2ª mano"
-      },
-      "blockClass":"header-department-category-show-all"
+      }
     }
   },
   "menu-item#department-1-mobile-col-3-category-6": {
@@ -421,8 +420,7 @@
         "noFollow": true,
         "tagTitle": "Palos de Demo",
         "text": "Palos de Demo"
-      },
-      "blockClass":"header-department-category-show-all"
+      }
     }
   },
   "menu-item#department-1-mobile-col-3-category-all": {

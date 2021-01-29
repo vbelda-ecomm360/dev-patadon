@@ -46,9 +46,9 @@
         "highlight": false,
         "itemProps": {
             "type": "internal",
-            "href": "/palos-de-golf",
-            "tagTitle": "See All",
-            "text": "See All"
+            "href": "/bolsas-y-carros",
+            "tagTitle": "Ver todos",
+            "text": "Ver todos"
         }
     }
   },
@@ -62,8 +62,8 @@
             "type": "external",
             "href": "",
             "noFollow": true,
-            "tagTitle": "Palos Standard",
-            "text": "Palos Standard"
+            "tagTitle": "Carritos de golf",
+            "text": "Carritos de golf"
         }
     },
     "blocks": [
@@ -84,10 +84,6 @@
       "menu-item#department-3-mobile-col-1-category-2",
       "menu-item#department-3-mobile-col-1-category-3",
       "menu-item#department-3-mobile-col-1-category-4",
-      "menu-item#department-3-mobile-col-1-category-5",
-      "menu-item#department-3-mobile-col-1-category-6",
-      "menu-item#department-3-mobile-col-1-category-7",
-      "menu-item#department-3-mobile-col-1-category-8",
       "menu-item#department-3-mobile-col-1-category-see-all"
     ]
   },
@@ -99,10 +95,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/standard",
+        "href": "/bolsas-y-carros/carritos-de-golf",
         "noFollow": true,
-        "tagTitle": "Ver todos Palos Standard",
-        "text": "Ver todos Palos Standard"
+        "tagTitle": "Ver todos los carros de golf",
+        "text": "Ver todos los carros de golf"
       },
       "blockClass": "header-department-category-show-all"
     }
@@ -115,10 +111,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/standard/drivers",
+        "href": "/Bolsas-y-Carros/Carritos-de-Golf/Carros-electricos",
         "noFollow": true,
-        "tagTitle": "Drivers",
-        "text": "Drivers"
+        "tagTitle": "Carros eléctricos",
+        "text": "Carros eléctricos"
       }
     }
   },
@@ -130,10 +126,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/standard/madera-de-calle",
+        "href": "/Bolsas-y-Carros/Carritos-de-Golf/Carros-manuales",
         "noFollow": true,
-        "tagTitle": "Maderas de calle",
-        "text": "Maderas de calle"
+        "tagTitle": "Carros Manuales",
+        "text": "Carros Manuales"
       }
     }
   },
@@ -145,70 +141,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/standard/hibridos-utility-irons",
+        "href": "/Bolsas-y-Carros/Carritos-de-Golf/Accesorios-y-baterias",
         "noFollow": true,
-        "tagTitle": "Híbridos y utility Irons",
-        "text": "Híbridos y utility Irons"
-      }
-    }
-  },
-  "menu-item#department-3-mobile-col-1-category-5": {
-    "props": {
-      "id": "menu-item-department-3-mobile-col-1-category-5",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/sets-hierros",
-        "noFollow": true,
-        "tagTitle": "Sets de hierros",
-        "text": "Sets de hierros"
-      }
-    }
-  },
-  "menu-item#department-3-mobile-col-1-category-6": {
-    "props": {
-      "id": "menu-item-department-3-mobile-col-1-category-6",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/wedges-chippers",
-        "noFollow": true,
-        "tagTitle": "Wedges y chippers",
-        "text": "Wedges y chippers"
-      }
-    }
-  },
-  "menu-item#department-3-mobile-col-1-category-7": {
-    "props": {
-      "id": "menu-item-department-3-mobile-col-1-category-7",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/hierros-sueltos",
-        "noFollow": true,
-        "tagTitle": "Hierros Sueltos",
-        "text": "Hierros Sueltos"
-      }
-    }
-  },
-  "menu-item#department-3-mobile-col-1-category-8": {
-    "props": {
-      "id": "menu-item-department-3-mobile-col-1-category-8",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/putters",
-        "noFollow": true,
-        "tagTitle": "Putters",
-        "text": "Putters"
+        "tagTitle": "Accesorios y baterias",
+        "text": "Accesorios y baterias"
       }
     }
   },
@@ -224,8 +160,8 @@
             "type": "external",
             "href": "",
             "noFollow": true,
-            "tagTitle": "Packs Completos",
-            "text": "Packs Completos"
+            "tagTitle": "Bolsas de palos",
+            "text": "Bolsas de palos"
         }
     },
     "blocks": [
@@ -260,10 +196,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/drivers",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Bolsas-de-carro",
         "noFollow": true,
-        "tagTitle": "Drivers",
-        "text": "Drivers"
+        "tagTitle": "Bolsas de carros",
+        "text": "Bolsas de carros"
       }
     }
   },
@@ -275,10 +211,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/madera-de-calle",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Bolsas-de-tripode",
         "noFollow": true,
-        "tagTitle": "Maderas de calle",
-        "text": "Maderas de calle"
+        "tagTitle": "Bolsas de tripode",
+        "text": "Bolsas de tripode"
       }
     }
   },
@@ -290,10 +226,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/hibridos-utility-irons",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Bolsas-pencil",
         "noFollow": true,
-        "tagTitle": "Híbridos y utility Irons",
-        "text": "Híbridos y utility Irons"
+        "tagTitle": "Bolsas pencil",
+        "text": "Bolsas pencil"
       }
     }
   },
@@ -305,10 +241,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/serts-hierros",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Bolsas-de-viaje",
         "noFollow": true,
-        "tagTitle": "Sets de hierros",
-        "text": "Sets de hierros"
+        "tagTitle": "Bolsas de viaje",
+        "text": "Bolsas de viaje"
       }
     }
   },
@@ -320,10 +256,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/wedges-chippers",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Maletas-mochilas",
         "noFollow": true,
-        "tagTitle": "Wedges y chippers",
-        "text": "Wedges y chippers"
+        "tagTitle": "Maletas y mochilas",
+        "text": "Maletas y mochilas"
       }
     }
   },
@@ -335,10 +271,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/putters",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Accesorios-para-bolsas",
         "noFollow": true,
-        "tagTitle": "Putters",
-        "text": "Putters"
+        "tagTitle": "Accesorios para bolsas de golf",
+        "text": "Accesorios para bolsas de golf"
       }
     }
   },
@@ -352,8 +288,8 @@
         "type": "internal",
         "href": "/palos-de-golf/personalizados",
         "noFollow": true,
-        "tagTitle": "Ver todos Palos Personalizados",
-        "text": "Ver todos Palos Personalizados"
+        "tagTitle": "Ver todos Bolsas de Palos",
+        "text": "Ver todos Bolsas de Palos"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -369,8 +305,8 @@
             "type": "external",
             "href": "",
             "noFollow": true,
-            "tagTitle": "Packs Completos",
-            "text": "Packs Completos"
+            "tagTitle": "GPS y Tecnología",
+            "text": "GPS y Tecnología"
         }
     },
     "blocks": [
@@ -391,7 +327,8 @@
       "menu-item#department-3-mobile-col-3-category-2",
       "menu-item#department-3-mobile-col-3-category-3",
       "menu-item#department-3-mobile-col-3-category-4",
-      "menu-item#department-3-mobile-col-3-category-5"
+      "menu-item#department-3-mobile-col-3-category-5",
+      "menu-item#department-3-mobile-col-3-category-6"
     ]
   },
   "menu-item#department-3-mobile-col-3-category-2": {
@@ -402,10 +339,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/bolsas-y-carros/gps-tecnologia/medidores-laser",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Medidor Laser",
+        "text": "Medidor Laser"
       }
     }
   },
@@ -417,10 +354,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/Bolsas-y-carros?fuzzy=0&map=departamento,sub-categoria,categoria&operator=and&query=/bolsas-y-carros/gps-golf/gps-tecnologia",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "GPS",
+        "text": "GPS"
       }
     }
   },
@@ -432,10 +369,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/junior",
+        "href": "/Bolsas-y-Carros/GPS-Tecnologia/Accesorios-GPS-Golf",
         "noFollow": true,
-        "tagTitle": "Pack Junior",
-        "text": "Pack Junior"
+        "tagTitle": "Accesorios de GPS",
+        "text": "Accesorios de GPS"
       }
     }
   },
@@ -447,10 +384,25 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack",
+        "href": "/Bolsas-y-Carros/GPS-Tecnologia/Otras-tecnologias-golf",
         "noFollow": true,
-        "tagTitle": "Ver todos Pack",
-        "text": "Ver todos Pack"
+        "tagTitle": "Otras Tecnologías",
+        "text": "Otras Tecnologías"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-3-category-6": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-3-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-carros?fuzzy=0&map=departamento,categoria&operator=and&query=/bolsas-y-carros/gps-tecnologia",
+        "noFollow": true,
+        "tagTitle": "Ver todos GPS y Tecnología",
+        "text": "Ver todos GPS y Tecnología"
       },
       "blockClass":"header-department-category-show-all"
     }
