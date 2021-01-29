@@ -48,9 +48,9 @@
         "highlight": false,
         "itemProps": {
             "type": "internal",
-            "href": "/palos-de-golf",
-            "tagTitle": "See All",
-            "text": "See All"
+            "href": "/accesorios",
+            "tagTitle": "Ver todos",
+            "text": "Ver todos"
         }
     }
   },
@@ -61,11 +61,11 @@
         "iconId": null,
         "highlight": false,
         "itemProps": {
-            "type": "external",
-            "href": "",
+            "type": "internal",
+            "href": "/bolas",
             "noFollow": true,
-            "tagTitle": "Palos Standard",
-            "text": "Palos Standard"
+            "tagTitle": "Bolas",
+            "text": "Bolas"
         }
     },
     "blocks": [
@@ -86,10 +86,6 @@
       "menu-item#department-4-mobile-col-1-category-2",
       "menu-item#department-4-mobile-col-1-category-3",
       "menu-item#department-4-mobile-col-1-category-4",
-      "menu-item#department-4-mobile-col-1-category-5",
-      "menu-item#department-4-mobile-col-1-category-6",
-      "menu-item#department-4-mobile-col-1-category-7",
-      "menu-item#department-4-mobile-col-1-category-8",
       "menu-item#department-4-mobile-col-1-category-see-all"
     ]
   },
@@ -101,10 +97,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/standard",
+        "href": "/bolas",
         "noFollow": true,
-        "tagTitle": "Ver todos Palos Standard",
-        "text": "Ver todos Palos Standard"
+        "tagTitle": "Ver todos Bolas",
+        "text": "Ver todos Bolas"
       },
       "blockClass": "header-department-category-show-all"
     }
@@ -117,10 +113,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/standard/drivers",
+        "href": "accesorios/bolas/bolas-de-golf",
         "noFollow": true,
-        "tagTitle": "Drivers",
-        "text": "Drivers"
+        "tagTitle": "Bolas de Golf",
+        "text": "Bolas de Golf"
       }
     }
   },
@@ -132,10 +128,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/standard/madera-de-calle",
+        "href": "/accesorios/bolas/bolas-recuperadas",
         "noFollow": true,
-        "tagTitle": "Maderas de calle",
-        "text": "Maderas de calle"
+        "tagTitle": "Bolas recuperadas",
+        "text": "Bolas recuperadas"
       }
     }
   },
@@ -147,70 +143,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/standard/hibridos-utility-irons",
+        "href": "/accesorios/bolas/saco-de-bolas",
         "noFollow": true,
-        "tagTitle": "Híbridos y utility Irons",
-        "text": "Híbridos y utility Irons"
-      }
-    }
-  },
-  "menu-item#department-4-mobile-col-1-category-5": {
-    "props": {
-      "id": "menu-item-department-4-mobile-col-1-category-5",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/sets-hierros",
-        "noFollow": true,
-        "tagTitle": "Sets de hierros",
-        "text": "Sets de hierros"
-      }
-    }
-  },
-  "menu-item#department-4-mobile-col-1-category-6": {
-    "props": {
-      "id": "menu-item-department-4-mobile-col-1-category-6",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/wedges-chippers",
-        "noFollow": true,
-        "tagTitle": "Wedges y chippers",
-        "text": "Wedges y chippers"
-      }
-    }
-  },
-  "menu-item#department-4-mobile-col-1-category-7": {
-    "props": {
-      "id": "menu-item-department-4-mobile-col-1-category-7",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/hierros-sueltos",
-        "noFollow": true,
-        "tagTitle": "Hierros Sueltos",
-        "text": "Hierros Sueltos"
-      }
-    }
-  },
-  "menu-item#department-4-mobile-col-1-category-8": {
-    "props": {
-      "id": "menu-item-department-4-mobile-col-1-category-8",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/putters",
-        "noFollow": true,
-        "tagTitle": "Putters",
-        "text": "Putters"
+        "tagTitle": "Saco de bolas",
+        "text": "Saco de bolas"
       }
     }
   },
@@ -223,11 +159,11 @@
         "iconId": null,
         "highlight": false,
         "itemProps": {
-            "type": "external",
-            "href": "",
+            "type": "internal",
+            "href": "accesorios/guantes-de-golf",
             "noFollow": true,
-            "tagTitle": "Packs Completos",
-            "text": "Packs Completos"
+            "tagTitle": "Guantes de golf",
+            "text": "Guantes de golf"
         }
     },
     "blocks": [
@@ -248,10 +184,7 @@
       "menu-item#department-4-mobile-col-2-category-2",
       "menu-item#department-4-mobile-col-2-category-3",
       "menu-item#department-4-mobile-col-2-category-4",
-      "menu-item#department-4-mobile-col-2-category-5",
-      "menu-item#department-4-mobile-col-2-category-6",
-      "menu-item#department-4-mobile-col-2-category-7",
-      "menu-item#department-4-mobile-col-2-category-8"
+      "menu-item#department-4-mobile-col-2-category-see-all"
     ]
   },
   "menu-item#department-4-mobile-col-2-category-2": {
@@ -262,10 +195,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/drivers",
+        "href": "/accesorios/guantes-de-golf/guantes-de-golf-hombre",
         "noFollow": true,
-        "tagTitle": "Drivers",
-        "text": "Drivers"
+        "tagTitle": "Guantes de golf para hombre",
+        "text": "Guantes de golf para hombre"
       }
     }
   },
@@ -277,10 +210,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/madera-de-calle",
+        "href": "/accesorios/guantes-de-golf/guantes-de-golf-mujer",
         "noFollow": true,
-        "tagTitle": "Maderas de calle",
-        "text": "Maderas de calle"
+        "tagTitle": "Guantes de golf para mujer",
+        "text": "Guantes de golf para mujer"
       }
     }
   },
@@ -292,70 +225,25 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/hibridos-utility-irons",
+        "href": "/accesorios/guantes-de-golf/guantes-de-golf-junior",
         "noFollow": true,
-        "tagTitle": "Híbridos y utility Irons",
-        "text": "Híbridos y utility Irons"
+        "tagTitle": "Guantes de golf para junior",
+        "text": "Guantes de golf para junior"
       }
     }
   },
-  "menu-item#department-4-mobile-col-2-category-5": {
+  "menu-item#department-4-mobile-col-2-category-see-all": {
     "props": {
-      "id": "menu-item-department-4-col-2-category-5",
+      "id": "menu-item-department-4-col-2-category-see-all",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/personalizados/serts-hierros",
+        "href": "accesorios/guantes-de-golf",
         "noFollow": true,
-        "tagTitle": "Sets de hierros",
-        "text": "Sets de hierros"
-      }
-    }
-  },
-  "menu-item#department-4-mobile-col-2-category-6": {
-    "props": {
-      "id": "menu-item-department-4-col-2-category-6",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/wedges-chippers",
-        "noFollow": true,
-        "tagTitle": "Wedges y chippers",
-        "text": "Wedges y chippers"
-      }
-    }
-  },
-  "menu-item#department-4-mobile-col-2-category-7": {
-    "props": {
-      "id": "menu-item-department-4-col-2-category-7",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/putters",
-        "noFollow": true,
-        "tagTitle": "Putters",
-        "text": "Putters"
-      }
-    }
-  },
-  "menu-item#department-4-mobile-col-2-category-8": {
-    "props": {
-      "id": "menu-item-department-4-col-2-category-8",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados",
-        "noFollow": true,
-        "tagTitle": "Ver todos Palos Personalizados",
-        "text": "Ver todos Palos Personalizados"
+        "tagTitle": "Ver todos Guantes de golf",
+        "text": "Ver todos Guantes de golf"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -371,8 +259,8 @@
             "type": "external",
             "href": "",
             "noFollow": true,
-            "tagTitle": "Packs Completos",
-            "text": "Packs Completos"
+            "tagTitle": "Tees y accesorios",
+            "text": "Tees y accesorios"
         }
     },
     "blocks": [
@@ -393,7 +281,8 @@
       "menu-item#department-4-mobile-col-3-category-2",
       "menu-item#department-4-mobile-col-3-category-3",
       "menu-item#department-4-mobile-col-3-category-4",
-      "menu-item#department-4-mobile-col-3-category-5"
+      "menu-item#department-4-mobile-col-3-category-5",
+      "menu-item#department-4-mobile-col-3-category-see-all"
     ]
   },
   "menu-item#department-4-mobile-col-3-category-2": {
@@ -404,10 +293,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/accesorios/tees-y-accesorios/tees",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Tees",
+        "text": "Tees"
       }
     }
   },
@@ -419,10 +308,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/accesorios/tees-y-accesorios/paraguas",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Paraguas",
+        "text": "Paraguas"
       }
     }
   },
@@ -434,10 +323,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/junior",
+        "href": "/accesorios/tees-y-accesorios/recogebolas",
         "noFollow": true,
-        "tagTitle": "Pack Junior",
-        "text": "Pack Junior"
+        "tagTitle": "Recogebolas",
+        "text": "Recogebolas"
       }
     }
   },
@@ -449,15 +338,30 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack",
+        "href": "/accesorios/tees-y-accesorios/mas-accesorios",
         "noFollow": true,
-        "tagTitle": "Ver todos Pack",
-        "text": "Ver todos Pack"
+        "tagTitle": "Mas accesorios",
+        "text": "Mas accesorios"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-3-category-see-all": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-3-category-see-all",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/tees-y-accesorios",
+        "noFollow": true,
+        "tagTitle": "Ver todos Tees y accesorios",
+        "text": "Ver todos Tees y accesorios"
       },
       "blockClass":"header-department-category-show-all"
     }
   },
-  // COLUMNA 3 DEL MENÚ 1
+  // COLUMNA 4 DEL MENÚ 1
   "menu-item#department-4-mobile-submenu-col-4": {
     "props": {
         "id": "menu-item-department-4-mobile-submenu-col-4",
@@ -468,8 +372,8 @@
             "type": "external",
             "href": "",
             "noFollow": true,
-            "tagTitle": "Packs Completos",
-            "text": "Packs Completos"
+            "tagTitle": "Entrenamiento",
+            "text": "Entrenamiento"
         }
     },
     "blocks": [
@@ -501,10 +405,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/accesorios/entrenamiento/alfombras-y-redes",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Alfombras y redes",
+        "text": "Alfombras y redes"
       }
     }
   },
@@ -516,10 +420,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/accesorios/entrenamiento/material-de-entreno",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Material de entrenamiento",
+        "text": "Material de entrenamiento"
       }
     }
   },
@@ -531,30 +435,30 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/junior",
+        "href": "/accesorios/entrenamiento/libros-dvd",
         "noFollow": true,
-        "tagTitle": "Pack Junior",
-        "text": "Pack Junior"
+        "tagTitle": "Libros y DVD",
+        "text": "Libros y DVD"
       }
     }
   },
-  "menu-item#department-4-mobile-col-4-category-5": {
+  "menu-item#department-4-mobile-col-4-category-see-all": {
     "props": {
-      "id": "menu-item-department-4-mobile-col-4-category-5",
+      "id": "menu-item-department-4-mobile-col-4-category-see-all",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack",
+        "href": "/accesorios/entrenamiento",
         "noFollow": true,
-        "tagTitle": "Ver todos Pack",
-        "text": "Ver todos Pack"
+        "tagTitle": "Ver todos Entrenamiento",
+        "text": "Ver todos Entrenamiento"
       },
       "blockClass":"header-department-category-show-all"
     }
   },
-  // COLUMNA 3 DEL MENÚ 1
+  // COLUMNA 5 DEL MENÚ 1
   "menu-item#department-4-mobile-submenu-col-5": {
     "props": {
         "id": "menu-item-department-4-mobile-submenu-col-5",
@@ -565,8 +469,8 @@
             "type": "external",
             "href": "",
             "noFollow": true,
-            "tagTitle": "Packs Completos",
-            "text": "Packs Completos"
+            "tagTitle": "Mantenimiento",
+            "text": "Mantenimiento"
         }
     },
     "blocks": [
@@ -598,10 +502,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/accesorios/mantenimiento/toallas",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Toallas",
+        "text": "Toallas"
       }
     }
   },
@@ -613,10 +517,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/accesorios/mantenimiento/fundas-de-palos",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Fundas de palos",
+        "text": "Fundas de palos"
       }
     }
   },
@@ -628,10 +532,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/junior",
+        "href": "/accesorios/mantenimiento/productos-de-limpieza",
         "noFollow": true,
-        "tagTitle": "Pack Junior",
-        "text": "Pack Junior"
+        "tagTitle": "Productos de limpieza",
+        "text": "Productos de limpieza"
       }
     }
   },
@@ -643,10 +547,25 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack",
+        "href": "/accesorios/mantenimiento/arreglapiques",
         "noFollow": true,
-        "tagTitle": "Ver todos Pack",
-        "text": "Ver todos Pack"
+        "tagTitle": "Arreglapiques",
+        "text": "Arreglapiques"
+      }
+    }
+  },
+  "menu-item#department-4-mobile-col-5-category-see-all": {
+    "props": {
+      "id": "menu-item-department-4-mobile-col-5-category-see-all",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesorios/mantenimiento",
+        "noFollow": true,
+        "tagTitle": "Ver todos Mantenimiento",
+        "text": "Ver todos Mantenimiento"
       },
       "blockClass":"header-department-category-show-all"
     }
