@@ -46,9 +46,9 @@
         "highlight": false,
         "itemProps": {
             "type": "internal",
-            "href": "/palos-de-golf",
-            "tagTitle": "See All",
-            "text": "See All"
+            "href": "/ropa-y-calzado",
+            "tagTitle": "Ver todos",
+            "text": "Ver todos"
         }
     }
   },
@@ -60,10 +60,10 @@
         "highlight": false,
         "itemProps": {
             "type": "external",
-            "href": "",
+            "href": "https://www.depique.com/Ropa-y-Calzado?fuzzy=0&map=genero,departamento&operator=and&query=/hombre/ropa-y-calzado",
             "noFollow": true,
-            "tagTitle": "Palos Standard",
-            "text": "Palos Standard"
+            "tagTitle": "Ropa de golf para hombre",
+            "text": "Ropa de golf para hombre"
         }
     },
     "blocks": [
@@ -85,9 +85,6 @@
       "menu-item#department-2-mobile-col-1-category-3",
       "menu-item#department-2-mobile-col-1-category-4",
       "menu-item#department-2-mobile-col-1-category-5",
-      "menu-item#department-2-mobile-col-1-category-6",
-      "menu-item#department-2-mobile-col-1-category-7",
-      "menu-item#department-2-mobile-col-1-category-8",
       "menu-item#department-2-mobile-col-1-category-see-all"
     ]
   },
@@ -98,11 +95,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=genero,departamento&operator=and&query=/hombre/ropa-y-calzado",
         "noFollow": true,
-        "tagTitle": "Ver todos Palos Standard",
-        "text": "Ver todos Palos Standard"
+        "tagTitle": "Ver todos Ropa de Hombre",
+        "text": "Ver todos Ropa de Hombre"
       },
       "blockClass": "header-department-category-show-all"
     }
@@ -114,11 +111,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/drivers",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=sub-categoria,genero,sub-categoria,categoria&operator=and&query=/con-tacos/hombre/sin-tacos/zapatos-de-golf",
         "noFollow": true,
-        "tagTitle": "Drivers",
-        "text": "Drivers"
+        "tagTitle": "Zapatos",
+        "text": "Zapatos"
       }
     }
   },
@@ -129,11 +126,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/madera-de-calle",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=sub-categoria,genero,sub-categoria,departamento,sub-categoria&operator=and&query=/chaquetas/hombre/polos/ropa-y-calzado/sweaters",
         "noFollow": true,
-        "tagTitle": "Maderas de calle",
-        "text": "Maderas de calle"
+        "tagTitle": "Tops",
+        "text": "Tops"
       }
     }
   },
@@ -144,11 +141,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/hibridos-utility-irons",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=genero,categoria,departamento&operator=and&query=/hombre/pantalones-de-golf/ropa-y-calzado",
         "noFollow": true,
-        "tagTitle": "Híbridos y utility Irons",
-        "text": "Híbridos y utility Irons"
+        "tagTitle": "Pantalones",
+        "text": "Pantalones"
       }
     }
   },
@@ -159,56 +156,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/sets-hierros",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=sub-categoria,sub-categoria,sub-categoria,sub-categoria,genero,sub-categoria,departamento&operator=and&query=/calcetines/cinturones/gorras-sombreros-viseras/gorros-de-invierno/hombre/portazapatos-accesorios/ropa-y-calzado",
         "noFollow": true,
-        "tagTitle": "Sets de hierros",
-        "text": "Sets de hierros"
-      }
-    }
-  },
-  "menu-item#department-2-mobile-col-1-category-6": {
-    "props": {
-      "id": "menu-item-department-2-mobile-col-1-category-6",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/wedges-chippers",
-        "noFollow": true,
-        "tagTitle": "Wedges y chippers",
-        "text": "Wedges y chippers"
-      }
-    }
-  },
-  "menu-item#department-2-mobile-col-1-category-7": {
-    "props": {
-      "id": "menu-item-department-2-mobile-col-1-category-7",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/hierros-sueltos",
-        "noFollow": true,
-        "tagTitle": "Hierros Sueltos",
-        "text": "Hierros Sueltos"
-      }
-    }
-  },
-  "menu-item#department-2-mobile-col-1-category-8": {
-    "props": {
-      "id": "menu-item-department-2-mobile-col-1-category-8",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/standard/putters",
-        "noFollow": true,
-        "tagTitle": "Putters",
-        "text": "Putters"
+        "tagTitle": "Complementos de hombre",
+        "text": "Complementos de hombre"
       }
     }
   },
@@ -222,10 +174,10 @@
         "highlight": false,
         "itemProps": {
             "type": "external",
-            "href": "",
+            "href": "https://www.depique.com/Ropa-y-Calzado?fuzzy=0&map=genero,departamento&operator=and&query=/mujer/ropa-y-calzado",
             "noFollow": true,
-            "tagTitle": "Packs Completos",
-            "text": "Packs Completos"
+            "tagTitle": "Ropa de golf para mujer",
+            "text": "Ropa de golf para mujer"
         }
     },
     "blocks": [
@@ -247,9 +199,7 @@
       "menu-item#department-2-mobile-col-2-category-3",
       "menu-item#department-2-mobile-col-2-category-4",
       "menu-item#department-2-mobile-col-2-category-5",
-      "menu-item#department-2-mobile-col-2-category-6",
-      "menu-item#department-2-mobile-col-2-category-7",
-      "menu-item#department-2-mobile-col-2-category-8"
+      "menu-item#department-2-mobile-col-2-category-see-all"
     ]
   },
   "menu-item#department-2-mobile-col-2-category-2": {
@@ -259,11 +209,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/drivers",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=sub-categoria,genero,departamento,sub-categoria&operator=and&query=/con-tacos/mujer/ropa-y-calzado/sin-tacos",
         "noFollow": true,
-        "tagTitle": "Drivers",
-        "text": "Drivers"
+        "tagTitle": "Zapatos",
+        "text": "Zapatos"
       }
     }
   },
@@ -274,11 +224,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/madera-de-calle",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=genero,sub-categoria,categoria,sub-categoria&operator=and&query=/mujer/polos/ropa-de-golf/sweaters",
         "noFollow": true,
-        "tagTitle": "Maderas de calle",
-        "text": "Maderas de calle"
+        "tagTitle": "Tops",
+        "text": "Tops"
       }
     }
   },
@@ -289,11 +239,11 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/hibridos-utility-irons",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=genero,categoria&operator=and&query=/mujer/pantalones-de-golf",
         "noFollow": true,
-        "tagTitle": "Híbridos y utility Irons",
-        "text": "Híbridos y utility Irons"
+        "tagTitle": "Pantalones",
+        "text": "Pantalones"
       }
     }
   },
@@ -304,56 +254,26 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/serts-hierros",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=categoria,genero&operator=and&query=/complementos-de-golf/mujer",
         "noFollow": true,
-        "tagTitle": "Sets de hierros",
-        "text": "Sets de hierros"
+        "tagTitle": "Complementos de mujer",
+        "text": "Complementos de mujer"
       }
     }
   },
-  "menu-item#department-2-mobile-col-2-category-6": {
+  "menu-item#department-2-mobile-col-2-category-see-all": {
     "props": {
-      "id": "menu-item-department-2-col-2-category-6",
+      "id": "menu-item-department-2-col-2-category-see-all",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/wedges-chippers",
+        "type": "external",
+        "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=genero,departamento&operator=and&query=/mujer/ropa-y-calzado",
         "noFollow": true,
-        "tagTitle": "Wedges y chippers",
-        "text": "Wedges y chippers"
-      }
-    }
-  },
-  "menu-item#department-2-mobile-col-2-category-7": {
-    "props": {
-      "id": "menu-item-department-2-col-2-category-7",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados/putters",
-        "noFollow": true,
-        "tagTitle": "Putters",
-        "text": "Putters"
-      }
-    }
-  },
-  "menu-item#department-2-mobile-col-2-category-8": {
-    "props": {
-      "id": "menu-item-department-2-col-2-category-8",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/palos-de-golf/personalizados",
-        "noFollow": true,
-        "tagTitle": "Ver todos Palos Personalizados",
-        "text": "Ver todos Palos Personalizados"
+        "tagTitle": "Ver todos Ropa de golf de Mujer",
+        "text": "Ver todos Ropa de golf de Mujer"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -366,11 +286,11 @@
         "iconId": null,
         "highlight": false,
         "itemProps": {
-            "type": "external",
-            "href": "",
+            "type": "internal",
+            "href": "/junior",
             "noFollow": true,
-            "tagTitle": "Packs Completos",
-            "text": "Packs Completos"
+            "tagTitle": "Ropa de golf Junior",
+            "text": "Ropa de golf Junior"
         }
     },
     "blocks": [
@@ -391,7 +311,8 @@
       "menu-item#department-2-mobile-col-3-category-2",
       "menu-item#department-2-mobile-col-3-category-3",
       "menu-item#department-2-mobile-col-3-category-4",
-      "menu-item#department-2-mobile-col-3-category-5"
+      "menu-item#department-2-mobile-col-3-category-5",
+      "menu-item#department-2-mobile-col-3-category-see-all"
     ]
   },
   "menu-item#department-2-mobile-col-3-category-2": {
@@ -402,10 +323,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/ropa-calzado/junior/zapatos",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Zapatos",
+        "text": "Zapatos"
       }
     }
   },
@@ -417,10 +338,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/mujer",
+        "href": "/junior/ropa-junior",
         "noFollow": true,
-        "tagTitle": "Pack de Iniciación Mujer",
-        "text": "Pack de Iniciación Mujer"
+        "tagTitle": "Ropa Junior",
+        "text": "Ropa Junior"
       }
     }
   },
@@ -432,10 +353,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack/junior",
+        "href": "/junior/gorras",
         "noFollow": true,
-        "tagTitle": "Pack Junior",
-        "text": "Pack Junior"
+        "tagTitle": "Gorras",
+        "text": "Gorras"
       }
     }
   },
@@ -447,10 +368,25 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/palos-de-golf/pack",
+        "href": "/junior/viseras",
         "noFollow": true,
-        "tagTitle": "Ver todos Pack",
-        "text": "Ver todos Pack"
+        "tagTitle": "Viseras",
+        "text": "Viseras"
+      }
+    }
+  },
+  "menu-item#department-2-mobile-col-3-category-see-all": {
+    "props": {
+      "id": "menu-item-department-2-mobile-col-3-category-see-all",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/junior",
+        "noFollow": true,
+        "tagTitle": "Ver todos Ropa de golf Junior",
+        "text": "Ver todos Ropa de golf Junior"
       },
       "blockClass":"header-department-category-show-all"
     }
