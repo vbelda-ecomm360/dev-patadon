@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ## [3.35.0] - 2020-04-13
+### Fixed
+- Solve all the mobile menu problems using the new feature accordion
+
+## [3.35.0] - 2020-04-13
 ### Added
 - `aspectRatio` and `maxHeight` on `product-summary-image#shelf`.
 
