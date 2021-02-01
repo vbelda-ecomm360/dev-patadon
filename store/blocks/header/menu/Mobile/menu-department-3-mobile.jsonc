@@ -1,0 +1,410 @@
+{
+  // PRIMER MENÚ DESPLEGABLE
+  "menu-item#department-3-mobile": {
+    "props": {
+      "id": "menu-item-department-3-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-y-carros",
+        "noFollow": true,
+        "tagTitle": "Bolsas, Carros y GPS",
+        "text": "Bolsas, Carros y GPS"
+      },
+      "blockClass": "header-department-title"
+    },
+    "blocks": [
+      "submenu.accordion#department-3"
+    ]
+  },
+  "submenu.accordion#department-3": {
+    "children": [
+        "menu#menu-department-3-mobile"
+    ]
+  },
+  //First Block Menu Mobile
+  "menu#menu-department-3-mobile": {
+    "props": {
+        "orientation": "vertical",
+        "experimentalOptimizeRendering": true
+    },
+    "children": [
+        "menu-item#menu-department-3-mobile-all",
+        //Transfor Columns in List
+        "menu-item#department-3-mobile-submenu-col-1",
+        "menu-item#department-3-mobile-submenu-col-2",
+        "menu-item#department-3-mobile-submenu-col-3"
+    ]
+  },
+  "menu-item#menu-department-3-mobile-all": {
+    "props": {
+        "id": "menu-department-3-all",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "/bolsas-y-carros",
+            "tagTitle": "Ver todos",
+            "text": "Ver todos"
+        }
+    }
+  },
+  "menu-item#department-3-mobile-submenu-col-1": {
+    "props": {
+        "id": "menu-item-department-3-mobile-submenu-col-1",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "external",
+            "href": "",
+            "noFollow": true,
+            "tagTitle": "Carritos de golf",
+            "text": "Carritos de golf"
+        }
+    },
+    "blocks": [
+        "submenu.accordion#department-3-mobile-submenu-col-1"
+    ]
+  },
+  "submenu.accordion#department-3-mobile-submenu-col-1": {
+      "children": [
+          "menu#department-3-mobile-submenu-col-1"
+      ]
+  },
+  "menu#department-3-mobile-submenu-col-1": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-3-mobile-col-1-category-2",
+      "menu-item#department-3-mobile-col-1-category-3",
+      "menu-item#department-3-mobile-col-1-category-4",
+      "menu-item#department-3-mobile-col-1-category-see-all"
+    ]
+  },
+  "menu-item#department-3-mobile-col-1-category-see-all": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-1-category-see-all",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-y-carros/carritos-de-golf",
+        "noFollow": true,
+        "tagTitle": "Ver todos los carros de golf",
+        "text": "Ver todos los carros de golf"
+      },
+      "blockClass": "header-department-category-show-all"
+    }
+  },
+  "menu-item#department-3-mobile-col-1-category-2": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-1-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/Carritos-de-Golf/Carros-electricos",
+        "noFollow": true,
+        "tagTitle": "Carros eléctricos",
+        "text": "Carros eléctricos"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-1-category-3": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-1-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/Carritos-de-Golf/Carros-manuales",
+        "noFollow": true,
+        "tagTitle": "Carros Manuales",
+        "text": "Carros Manuales"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-1-category-4": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-1-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/Carritos-de-Golf/Accesorios-y-baterias",
+        "noFollow": true,
+        "tagTitle": "Accesorios y baterias",
+        "text": "Accesorios y baterias"
+      }
+    }
+  },
+  // New element By Columns to List.
+  // COLUMNA 2 DEL MENÚ 1
+  "menu-item#department-3-mobile-submenu-col-2": {
+    "props": {
+        "id": "menu-item-department-3-mobile-submenu-col-2",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "external",
+            "href": "",
+            "noFollow": true,
+            "tagTitle": "Bolsas de palos",
+            "text": "Bolsas de palos"
+        }
+    },
+    "blocks": [
+        "submenu.accordion#department-3-mobile-submenu-col-2"
+    ]
+  },
+  "submenu.accordion#department-3-mobile-submenu-col-2": {
+      "children": [
+          "menu#department-3-mobile-submenu-col-2"
+      ]
+  },
+  "menu#department-3-mobile-submenu-col-2": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-3-mobile-col-2-category-2",
+      "menu-item#department-3-mobile-col-2-category-3",
+      "menu-item#department-3-mobile-col-2-category-4",
+      "menu-item#department-3-mobile-col-2-category-5",
+      "menu-item#department-3-mobile-col-2-category-6",
+      "menu-item#department-3-mobile-col-2-category-7",
+      "menu-item#department-3-mobile-col-2-category-8"
+    ]
+  },
+  "menu-item#department-3-mobile-col-2-category-2": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Bolsas-de-carro",
+        "noFollow": true,
+        "tagTitle": "Bolsas de carros",
+        "text": "Bolsas de carros"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-2-category-3": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Bolsas-de-tripode",
+        "noFollow": true,
+        "tagTitle": "Bolsas de tripode",
+        "text": "Bolsas de tripode"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-2-category-4": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Bolsas-pencil",
+        "noFollow": true,
+        "tagTitle": "Bolsas pencil",
+        "text": "Bolsas pencil"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-2-category-5": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Bolsas-de-viaje",
+        "noFollow": true,
+        "tagTitle": "Bolsas de viaje",
+        "text": "Bolsas de viaje"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-2-category-6": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Maletas-mochilas",
+        "noFollow": true,
+        "tagTitle": "Maletas y mochilas",
+        "text": "Maletas y mochilas"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-2-category-7": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/Bolsas-de-Palos/Accesorios-para-bolsas",
+        "noFollow": true,
+        "tagTitle": "Accesorios para bolsas de golf",
+        "text": "Accesorios para bolsas de golf"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-2-category-8": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palos-de-golf/personalizados",
+        "noFollow": true,
+        "tagTitle": "Ver todos Bolsas de Palos",
+        "text": "Ver todos Bolsas de Palos"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  },
+  // COLUMNA 3 DEL MENÚ 1
+  "menu-item#department-3-mobile-submenu-col-3": {
+    "props": {
+        "id": "menu-item-department-3-mobile-submenu-col-3",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "external",
+            "href": "",
+            "noFollow": true,
+            "tagTitle": "GPS y Tecnología",
+            "text": "GPS y Tecnología"
+        }
+    },
+    "blocks": [
+        "submenu.accordion#department-3-mobile-submenu-col-3"
+    ]
+  },
+  "submenu.accordion#department-3-mobile-submenu-col-3": {
+      "children": [
+          "menu#department-3-mobile-submenu-col-3"
+      ]
+  },
+  "menu#department-3-mobile-submenu-col-3": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu"
+    },
+    "children": [
+      "menu-item#department-3-mobile-col-3-category-2",
+      "menu-item#department-3-mobile-col-3-category-3",
+      "menu-item#department-3-mobile-col-3-category-4",
+      "menu-item#department-3-mobile-col-3-category-5",
+      "menu-item#department-3-mobile-col-3-category-6"
+    ]
+  },
+  "menu-item#department-3-mobile-col-3-category-2": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-3-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsas-y-carros/gps-tecnologia/medidores-laser",
+        "noFollow": true,
+        "tagTitle": "Medidor Laser",
+        "text": "Medidor Laser"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-3-category-3": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-3-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-carros?fuzzy=0&map=departamento,sub-categoria,categoria&operator=and&query=/bolsas-y-carros/gps-golf/gps-tecnologia",
+        "noFollow": true,
+        "tagTitle": "GPS",
+        "text": "GPS"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-3-category-4": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-3-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/GPS-Tecnologia/Accesorios-GPS-Golf",
+        "noFollow": true,
+        "tagTitle": "Accesorios de GPS",
+        "text": "Accesorios de GPS"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-3-category-5": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-3-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-Carros/GPS-Tecnologia/Otras-tecnologias-golf",
+        "noFollow": true,
+        "tagTitle": "Otras Tecnologías",
+        "text": "Otras Tecnologías"
+      }
+    }
+  },
+  "menu-item#department-3-mobile-col-3-category-6": {
+    "props": {
+      "id": "menu-item-department-3-mobile-col-3-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bolsas-y-carros?fuzzy=0&map=departamento,categoria&operator=and&query=/bolsas-y-carros/gps-tecnologia",
+        "noFollow": true,
+        "tagTitle": "Ver todos GPS y Tecnología",
+        "text": "Ver todos GPS y Tecnología"
+      },
+      "blockClass":"header-department-category-show-all"
+    }
+  }
+}
