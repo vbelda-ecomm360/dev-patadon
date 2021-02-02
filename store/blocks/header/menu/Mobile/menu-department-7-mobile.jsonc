@@ -1,0 +1,19 @@
+{
+  // PRIMER MENÚ DESPLEGABLE
+  "menu-item#department-7-mobile": {
+    "props": {
+      "id": "menu-item-department-7-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/marcas-de-golf",
+        "noFollow": true,
+        "tagTitle": "Marcas",
+        "text": "Marcas"
+      },
+      "blockClass": "header-promotions-title"
+    }
+  }
+}

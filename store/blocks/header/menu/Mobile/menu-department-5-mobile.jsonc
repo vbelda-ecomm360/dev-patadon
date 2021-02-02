@@ -1,0 +1,19 @@
+{
+  // PRIMER MENÚ DESPLEGABLE
+  "menu-item#department-5-mobile": {
+    "props": {
+      "id": "menu-item-department-5-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/depique-tarjeta-regalo--/p",
+        "noFollow": true,
+        "tagTitle": "Tarjetas Regalo",
+        "text": "Tarjetas regalo"
+      },
+      "blockClass": "header-promotions-title"
+    }
+  }
+}
