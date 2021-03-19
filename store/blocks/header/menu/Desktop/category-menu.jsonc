@@ -79,12 +79,13 @@
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-1-submenu": {
     "children": [
-      "flex-layout.col#department-1",
-      "flex-layout.col#department-1-extra-col-5"
+      "flex-layout.col#department-1-extra-col-5",
+      "flex-layout.col#department-1"
     ],
     "props":{
       "colGap": 6,
       "horizontalAlign": "center",
+      "blockClass": "header-submenus-category",
       "fullWidth": true
     }
   },
@@ -93,7 +94,7 @@
       "flex-layout.row#department-1-categories"
     ],
     "props":{
-      "width": "70%"
+      "width": "80%"      
     }
   },
   "flex-layout.row#department-1-categories": {
@@ -102,7 +103,10 @@
       //"flex-layout.col#department-1-submenu-col-2",
       "flex-layout.col#department-1-submenu-col-3",
       "flex-layout.col#department-1-submenu-col-4"
-    ]
+    ],
+    "props":{
+      "blockClass": "submenu-col-items"
+    }
   },
 
   "flex-layout.col#department-1-submenu-col-1": {
@@ -129,7 +133,9 @@
   "menu#department-1-submenu-col-1": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
+
     },
     "children": [
       "menu-item#department-1-col-1-category-1",
@@ -274,8 +280,8 @@
         "type": "internal",
         "href": "/palos-de-golf/standard",
         "noFollow": true,
-        "tagTitle": "Ver todos Palos Standard",
-        "text": "Ver todos Palos Standard"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -284,7 +290,8 @@
   "menu#department-1-submenu-col-2": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-1-col-2-category-1",
@@ -413,8 +420,8 @@
         "type": "internal",
         "href": "/palos-de-golf/personalizados",
         "noFollow": true,
-        "tagTitle": "Ver todos Palos Personalizados",
-        "text": "Ver todos Palos Personalizados"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -423,7 +430,8 @@
   "menu#department-1-submenu-col-3": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-1-col-3-category-1",
@@ -504,8 +512,8 @@
         "type": "internal",
         "href": "/palos-de-golf/pack",
         "noFollow": true,
-        "tagTitle": "Ver todos Pack",
-        "text": "Ver todos Pack"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -514,7 +522,8 @@
   "menu#department-1-submenu-col-4": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-1-col-4-category-1",
@@ -627,8 +636,8 @@
         "type": "internal",
         "href": "/palos-de-golf/otros",
         "noFollow": true,
-        "tagTitle": "Ver todos Otras categorías",
-        "text": "Ver todos Otras categorías"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -636,7 +645,7 @@
   // EXTRA MENU 1
   "flex-layout.col#department-1-extra-col-5": {
     "props":{
-      "width": "30%"
+      "width": "20%"
     },
     "children": [
       "image#department-1-extra-col-5"
@@ -684,8 +693,8 @@
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-2-submenu": {
     "children": [
-      "flex-layout.col#department-2",
-      "flex-layout.col#department-2-extra-col-4"
+      "flex-layout.col#department-2-extra-col-4",
+      "flex-layout.col#department-2"      
     ],
     "props":{
       "colGap": 6,
@@ -698,7 +707,7 @@
       "flex-layout.row#department-2-categories"
     ],
     "props":{
-      "width": "70%"
+      "width": "80%"
     }
   },
   "flex-layout.row#department-2-categories": {
@@ -706,7 +715,10 @@
       "flex-layout.col#department-2-submenu-col-1",
       "flex-layout.col#department-2-submenu-col-2",
       "flex-layout.col#department-2-submenu-col-3"
-    ]
+    ],
+    "props":{
+      "blockClass": "submenu-col-items"
+    }
   },
   "flex-layout.col#department-2-submenu-col-1": {
     "children": [
@@ -728,7 +740,8 @@
   "menu#department-2-submenu-col-1": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-2-col-1-category-1",
@@ -809,8 +822,8 @@
         "type": "internal",
         "href": "/complementos-de-golf/carritos-de-golf",
         "noFollow": true,
-        "tagTitle": "Ver todos los carros",
-        "text": "Ver todos los carros"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -821,7 +834,7 @@
         "orientation": "vertical",
         "experimentalOptimizeRendering": true,
         "tagTitle": "Submenu",
-        "blockClass": "header-department-submenu-col"
+        "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-2-col-2-category-1",
@@ -950,8 +963,8 @@
       "type": "internal",
       "href": "/complementos-de-golf/bolsas-de-palos",
       "noFollow": true,
-      "tagTitle": "Ver todas las bolsas",
-      "text": "Ver todas las bolsas"
+      "tagTitle": "Ver más",
+      "text": "Ver más"
     },
     "blockClass":"header-department-category-show-all"
   }
@@ -962,7 +975,7 @@
         "orientation": "vertical",
         "experimentalOptimizeRendering": true,
         "tagTitle": "Submenu",
-        "blockClass": "header-department-submenu-col"
+        "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-2-col-3-category-1",
@@ -1059,15 +1072,15 @@
       "type": "internal",
       "href": "/complementos-de-golf/gps-tecnologia",
       "noFollow": true,
-      "tagTitle": "Ver todos GPS y Tecnología",
-      "text": "Ver todos GPS y Tecnología"
+      "tagTitle": "Ver más",
+        "text": "Ver más"
     },
     "blockClass":"header-department-category-show-all"
   }
 },
 "flex-layout.col#department-2-extra-col-4": {
   "props":{
-    "width": "30%"
+    "width": "20%"
   },
   "children": [
     "image#department-2-extra-col-4"
@@ -1116,8 +1129,8 @@
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-3-submenu": {
     "children": [
-      "flex-layout.col#department-3",
-      "flex-layout.col#department-3-extra-col-4"
+      "flex-layout.col#department-3-extra-col-4",
+      "flex-layout.col#department-3"      
     ],
     "props":{
       "colGap": 6,
@@ -1130,7 +1143,7 @@
       "flex-layout.row#department-3-categories"
     ],
     "props":{
-      "width": "70%"
+      "width": "80%"
     }
   },
   "flex-layout.row#department-3-categories": {
@@ -1138,7 +1151,10 @@
       "flex-layout.col#department-3-submenu-col-1",
       "flex-layout.col#department-3-submenu-col-2",
       "flex-layout.col#department-3-submenu-col-3"
-    ]
+    ],
+    "props":{
+      "blockClass": "submenu-col-items"
+    } 
   },
   "flex-layout.col#department-3-submenu-col-1": {
     "children": [
@@ -1150,6 +1166,7 @@
       "menu#department-3-submenu-col-2"
     ]
   },
+
   "flex-layout.col#department-3-submenu-col-3": {
     "children": [
       "menu#department-3-submenu-col-3"
@@ -1159,7 +1176,8 @@
   "menu#department-3-submenu-col-1": {
       "props": {
         "orientation": "vertical",
-        "tagTitle": "Submenu"
+        "tagTitle": "Submenu",
+        "blockClass": "header-submenus-category-items"
       },
       "children": [
         "menu-item#department-3-col-1-category-1",
@@ -1256,8 +1274,8 @@
           "type": "internal",
           "href": "/ropa-calzado/genero_hombre",
           "noFollow": true,
-          "tagTitle": "Ver todos Ropa de golf para hombre",
-          "text": "Ver todos Ropa de golf para hombre"
+          "tagTitle": "Ver más",
+          "text": "Ver más"
         },
         "blockClass":"header-department-category-show-all"
       }
@@ -1266,7 +1284,8 @@
     "menu#department-3-submenu-col-2": {
       "props": {
         "orientation": "vertical",
-        "tagTitle": "Submenu"
+        "tagTitle": "Submenu",
+        "blockClass": "header-submenus-category-items"
       },
       "children": [
         "menu-item#department-3-col-2-category-1",
@@ -1363,8 +1382,8 @@
           "type": "internal",
           "href": "/ropa-calzado/genero_mujer",
           "noFollow": true,
-          "tagTitle": "Ver todos Ropa de golf para mujer",
-          "text": "Ver todos Ropa de golf para mujer"
+          "tagTitle": "Ver más",
+          "text": "Ver más"
         },
         "blockClass":"header-department-category-show-all"
       }
@@ -1373,7 +1392,8 @@
     "menu#department-3-submenu-col-3": {
       "props": {
         "orientation": "vertical",
-        "tagTitle": "Submenu"
+        "tagTitle": "Submenu",
+        "blockClass": "header-submenus-category-items"
       },
       "children": [
         "menu-item#department-3-col-3-category-1",
@@ -1470,15 +1490,15 @@
           "type": "internal",
           "href": "/ropa-calzado/junior",
           "noFollow": true,
-          "tagTitle": "Ver todos Ropa de golf Junior",
-          "text": "Ver todos Ropa de golf Junior"
+          "tagTitle": "Ver más",
+          "text": "Ver más"
         },
         "blockClass":"header-department-category-show-all"
       }
     },
   "flex-layout.col#department-3-extra-col-4": {
     "props":{
-      "width": "30%"
+      "width": "20%"
     },
     "children": [
       "image#department-3-extra-col-4"
@@ -1526,8 +1546,8 @@
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-4-submenu": {
     "children": [
-      "flex-layout.col#department-4",
-      "flex-layout.col#department-4-extra-col-6"
+      "flex-layout.col#department-4-extra-col-6",
+      "flex-layout.col#department-4"      
     ],
     "props":{
       "colGap": 6,
@@ -1540,7 +1560,7 @@
       "flex-layout.row#department-4-categories"
     ],
     "props":{
-      "width": "70%"
+      "width": "80%"
     }
   },
   "flex-layout.row#department-4-categories": {
@@ -1550,7 +1570,10 @@
       "flex-layout.col#department-4-submenu-col-3",
       "flex-layout.col#department-4-submenu-col-4",
       "flex-layout.col#department-4-submenu-col-5"
-    ]
+    ],
+    "props":{
+      "blockClass": "submenu-col-items"
+    }
   },
   "flex-layout.col#department-4-submenu-col-1": {
     "children": [
@@ -1581,7 +1604,8 @@
   "menu#department-4-submenu-col-1": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-4-col-1-category-1",
@@ -1662,8 +1686,8 @@
         "type": "internal",
         "href": "/bolas",
         "noFollow": true,
-        "tagTitle": "Ver todos Bolas",
-        "text": "Ver todos Bolas"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -1672,7 +1696,8 @@
   "menu#department-4-submenu-col-2": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-4-col-2-category-1",
@@ -1753,8 +1778,8 @@
         "type": "internal",
         "href": "/guantes-de-golf",
         "noFollow": true,
-        "tagTitle": "Ver todos Guantes de golf",
-        "text": "Ver todos Guantes de golf"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -1763,7 +1788,8 @@
   "menu#department-4-submenu-col-3": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-4-col-3-category-1",
@@ -1860,8 +1886,8 @@
         "type": "internal",
         "href": "/tees-accesorios",
         "noFollow": true,
-        "tagTitle": "Ver todos Tees y Accesorios",
-        "text": "Ver todos Tees y Accesorios"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -1870,7 +1896,8 @@
   "menu#department-4-submenu-col-4": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-4-col-4-category-1",
@@ -1951,8 +1978,8 @@
         "type": "internal",
         "href": "/entrenamiento/",
         "noFollow": true,
-        "tagTitle": "Ver todos Entreno",
-        "text": "Ver todos Entreno"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -1961,7 +1988,8 @@
   "menu#department-4-submenu-col-5": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-4-col-5-category-1",
@@ -2058,15 +2086,15 @@
         "type": "internal",
         "href": "/mantenimiento",
         "noFollow": true,
-        "tagTitle": "Ver todos Mantenimiento",
-        "text": "Ver todos Mantenimiento"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
   },
   "flex-layout.col#department-4-extra-col-6": {
     "props":{
-      "width": "30%"
+      "width": "20%"
     },
     "children": [
       "image#department-4-extra-col-6"
@@ -2135,7 +2163,8 @@
   "submenu#department-6": {
     "props": {
       "orientation": "vertical",
-      "tagTitle": "Submenu"
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-6-category-1",

@@ -47,8 +47,8 @@
         "itemProps": {
             "type": "internal",
             "href": "/bolsas-y-carros",
-            "tagTitle": "Ver todos",
-            "text": "Ver todos"
+            "tagTitle": "Ver más",
+            "text": "Ver más"
         }
     }
   },
@@ -97,8 +97,8 @@
         "type": "internal",
         "href": "/bolsas-y-carros/carritos-de-golf",
         "noFollow": true,
-        "tagTitle": "Ver todos los carros de golf",
-        "text": "Ver todos los carros de golf"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass": "header-department-category-show-all"
     }
@@ -288,8 +288,8 @@
         "type": "internal",
         "href": "/palos-de-golf/personalizados",
         "noFollow": true,
-        "tagTitle": "Ver todos Bolsas de Palos",
-        "text": "Ver todos Bolsas de Palos"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -401,8 +401,8 @@
         "type": "internal",
         "href": "/Bolsas-y-carros?fuzzy=0&map=departamento,categoria&operator=and&query=/bolsas-y-carros/gps-tecnologia",
         "noFollow": true,
-        "tagTitle": "Ver todos GPS y Tecnología",
-        "text": "Ver todos GPS y Tecnología"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
