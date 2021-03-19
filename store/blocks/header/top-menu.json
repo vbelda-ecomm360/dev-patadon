@@ -5,7 +5,8 @@
             "menu-item#tiendas",
             "menu-item#contacto",
             "menu-item#about-us",
-            "menu-item#blog"
+            "menu-item#blog",
+            "link#whatsapp"
         ],
         "props": {
             "blockClass": "top-bar-menu-container"
@@ -87,6 +88,14 @@
                 "tagTitle": "Blog",
                 "text": "Blog"
             }
+        }
+    },
+    "link#whatsapp": {
+        "props": {
+            "href": "https://api.whatsapp.com/send?phone=tel:+66645500705",
+            "target":"_blank",
+            "blockClass": "phonecall",  
+            "label": "whatsapp"
         }
     }
 }

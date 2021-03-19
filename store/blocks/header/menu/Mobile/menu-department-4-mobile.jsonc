@@ -49,8 +49,8 @@
         "itemProps": {
             "type": "internal",
             "href": "/accesorios",
-            "tagTitle": "Ver todos",
-            "text": "Ver todos"
+            "tagTitle": "Ver más",
+            "text": "Ver más"
         }
     }
   },
@@ -99,8 +99,8 @@
         "type": "internal",
         "href": "/bolas",
         "noFollow": true,
-        "tagTitle": "Ver todos Bolas",
-        "text": "Ver todos Bolas"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass": "header-department-category-show-all"
     }
@@ -242,8 +242,8 @@
         "type": "internal",
         "href": "accesorios/guantes-de-golf",
         "noFollow": true,
-        "tagTitle": "Ver todos Guantes de golf",
-        "text": "Ver todos Guantes de golf"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -355,8 +355,8 @@
         "type": "internal",
         "href": "/accesorios/tees-y-accesorios",
         "noFollow": true,
-        "tagTitle": "Ver todos Tees y accesorios",
-        "text": "Ver todos Tees y accesorios"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -452,8 +452,8 @@
         "type": "internal",
         "href": "/accesorios/entrenamiento",
         "noFollow": true,
-        "tagTitle": "Ver todos Entrenamiento",
-        "text": "Ver todos Entrenamiento"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -564,8 +564,8 @@
         "type": "internal",
         "href": "/accesorios/mantenimiento",
         "noFollow": true,
-        "tagTitle": "Ver todos Mantenimiento",
-        "text": "Ver todos Mantenimiento"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }

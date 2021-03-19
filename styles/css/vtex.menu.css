@@ -73,7 +73,8 @@
 
 .submenuWrapper {
     background-color: #ffffff;
-    border: solid 1px #f3f3f3;
+    border: solid 0;
+    padding: 20px;
 }
 
 .submenuWrapper--header-last-item {
@@ -85,8 +86,8 @@
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #000000;
 }
 
@@ -197,3 +198,25 @@
         border-right: 1px solid #fff;
     }
 }
+
+.menuContainerNav--header-submenus-category-items .menuItem .styledLinkContainer{
+    padding: 0;
+    margin: 0 0 10px 0;
+    line-height: 20px;
+    float: left;
+    width: 100%;
+}
+.menuContainerNav--header-submenus-category-items .menuItem .styledLinkContainer .styledLink {
+    float: left;
+    width: 100%;
+    line-height: 20px;
+}
+.menuContainerNav--header-submenus-category-items .menuItem .styledLinkContainer .styledLinkContent {
+    white-space: normal;
+}
+.menuContainerNav--header-submenus-category-items .menuItem .styledLinkContainer .styledLinkContent--header-department-category-show-all {
+    font-weight: 700;
+    color: #134cd8;
+    text-decoration: none
+}
+

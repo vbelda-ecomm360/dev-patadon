@@ -65,7 +65,7 @@
 
 .flexRowContent--main-header-menu :global(.vtex-menu-2-x-styledLink) {
     color: #727273;
-    font-size: 16px;
+    font-size: 16px;    
 }
 .flexRowContent--main-header-menu :global(.vtex-menu-2-x-styledLink):hover {
     color: #c8102e;
@@ -477,9 +477,21 @@
 }
 
 .flexCol--fitting-bottom-fitting{
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 .flexColChild--fitting-bottom-fitting{
     text-align: center;
 }
 
+.flexRow--submenu-col-items .flexRowContent--submenu-col-items {
+    flex-wrap: wrap;
+}
+.flexRow--submenu-col-items .flexRowContent--submenu-col-items .stretchChildrenWidth {
+    width: 30% !important;
+    margin-right: 3% !important;
+    margin-bottom: 20px;
+    border-right: 1px solid #eee;
+}
+.flexRow--submenu-col-items .flexRowContent--submenu-col-items .stretchChildrenWidth:last-child {
+    border-right: 0;
+}

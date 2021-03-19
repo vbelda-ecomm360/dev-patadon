@@ -45,4 +45,19 @@
 
 }
 
-
+.link--phonecall {
+  position: fixed;
+  right: 14px;
+  bottom: 100px;
+  z-index: 9;
+}
+.label--phonecall {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: center;
+    background-image: url(/arquivos/icon-phoneCall.png);
+}
