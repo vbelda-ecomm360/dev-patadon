@@ -244,14 +244,12 @@
       }]
     }
   },
-
   "rich-text#MarcaPingValidarSugerencia": {
     "props": {
       "text": "Al cerrar este anuncio confirma que ha recibido las recomendaciones",
       "blockClass": "MarcaPingValidarSugerencia"
     }
   },
-
   "image#MarcaPingValidarSugerencia": {
     "props": {
       "src": "assets/PingPalos.png",
