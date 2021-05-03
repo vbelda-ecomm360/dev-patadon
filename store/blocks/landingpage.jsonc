@@ -1,0 +1,23 @@
+{
+  "store.custom#landingpage": { 
+    "blocks": ["search-result-layout.customQuery"]
+  },
+  "search-result-layout.customQuery": {
+    "props": {
+      "querySchema": {
+        "__unstableProductOriginVtex": true,
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "facetsBehavior": "dynamic",
+        "skusFilter": "ALL",
+        "maxItemsPerPage": 30,        
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}

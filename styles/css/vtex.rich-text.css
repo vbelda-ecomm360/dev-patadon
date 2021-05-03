@@ -566,3 +566,12 @@
         text-transform: uppercase;
     }
 }
+.container--MarcaPingValidarSugerencia .wrapper--MarcaPingValidarSugerencia {
+        width: 100%;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

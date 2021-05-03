@@ -11,12 +11,13 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-name",
       "flex-layout.row#brand-rating",
-      "flex-layout.row#product-main",
+      "flex-layout.row#product-main",      
       "tab-layout#product_tabs",
       "shelf.relatedProducts",
       "flex-layout.row#deals"
     ]
-  },
+  },  
+
   "responsive-layout.tablet": {
     "children": [
       "flex-layout.row#product-breadcrumb",
@@ -128,8 +129,10 @@
     },
     "children": [
       "sku-selector",
-      "flex-layout.row#product_prices",
+      "flex-layout.row#product_prices",      
+      "modal-trigger#MarcaPingValidarSugerencia",
       "flex-layout.row#buy-button",
+      "product-specification-badges#aprobacion_de_compra",        
       "shipping-simulator",
       //"product-rating-summary",
       //"flex-layout.row#list-price-savings",
@@ -190,6 +193,73 @@
       "showSavings": true
     }
   },
+
+  "product-specification-badges#aprobacion_de_compra": {    
+    "title": "productAtributoBrand",    
+    "props": {
+      "specificationGroupName": "allSpecifications",
+      "blockClass": "badges_aprobacion_de_compra",
+      "orientation": "horizontal",
+      "specificationsOptions": [{
+        "displayValue": "SPECIFICATION_NAME",
+        "specificationName": false
+      },
+      {
+        "displayValue": "SPECIFICATION_VALUE",
+        "specificationName": "aprobacion_de_compra"
+      }]
+    }
+  },
+
+  "modal-trigger#MarcaPingValidarSugerencia": {
+    "title": "validar sugerencia previo a la comprar",
+    "children": [                      
+      "product-specification-badges#MarcaPingValidarSugerencia",       
+      "modal-layout#MarcaPingValidarSugerencia"
+    ],
+    "props": {
+      "blockClass": "MarcaPingValidarSugerencia",              
+      "trigger": "click"
+    }
+  },  
+  "modal-layout#MarcaPingValidarSugerencia": {
+      "children": [                                 
+        "image#MarcaPingValidarSugerencia",        
+        "rich-text#MarcaPingValidarSugerencia"
+      ]      
+  },
+   "product-specification-badges#MarcaPingValidarSugerencia": {
+    "title": "productAtributoMarcaPingValidarSugerencia",
+    "props": {
+      "specificationGroupName": "allSpecifications",
+      "blockClass": "MarcaPingValidarSugerencia",
+      "orientation": "horizontal",
+      "specificationsOptions": [{
+        "displayValue": "SPECIFICATION_NAME",
+        "specificationName": false
+      },
+      {
+        "displayValue": "SPECIFICATION_VALUE",
+        "specificationName": "MarcaPingValidarSugerencia"
+      }]
+    }
+  },
+
+  "rich-text#MarcaPingValidarSugerencia": {
+    "props": {
+      "text": "Al cerrar este anuncio confirma que ha recibido las recomendaciones",
+      "blockClass": "MarcaPingValidarSugerencia"
+    }
+  },
+
+  "image#MarcaPingValidarSugerencia": {
+    "props": {
+      "src": "assets/PingPalos.png",
+      "maxHeight": "",
+      "width": "700px",
+      "blockClass": "MarcaPingValidarSugerencia-image"
+    }
+  }, 
 
   "flex-layout.row#buy-button": {
     "props": {

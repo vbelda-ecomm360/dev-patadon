@@ -6,3 +6,36 @@
 .badgeContainer--2x1 .badgeText {
   z-index: -1;
 }
+
+
+.groupContainer--badges_aprobacion_de_compra, 
+.groupContainer--MarcaPingValidarSugerencia {
+	width: 100%;
+	margin: 0;
+}
+.groupContainer--badges_aprobacion_de_compra .badgeContainer--badges_aprobacion_de_compra {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.groupContainer--badges_aprobacion_de_compra .badgeContainer--badges_aprobacion_de_compra .badgeText {
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0;
+	background: #c7102e;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.groupContainer--MarcaPingValidarSugerencia .badgeContainer--MarcaPingValidarSugerencia {
+	width: 100%;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.groupContainer--MarcaPingValidarSugerencia .badgeContainer--MarcaPingValidarSugerencia .badgeText {
+	margin: 0;
+	width: 100%;
+	color: #000;
+	font-size: 14px;
+}
