@@ -6,7 +6,8 @@
             "menu-item#contacto",
             "menu-item#about-us",
             "menu-item#blog",
-            "link#whatsapp"
+            "link#whatsapp",
+            "flex-layout.row#wrapper-tel"
         ],
         "props": {
             "blockClass": "top-bar-menu-container"
@@ -96,6 +97,38 @@
             "target":"_blank",
             "blockClass": "phonecall",  
             "label": "whatsapp"
+        }
+    },
+    "flex-layout.row#wrapper-tel": {
+        "children": [
+          "flex-layout.col#telefonofijo"
+        ],
+        "props": {
+            "blockClass": "wrapperTelFijo"
+        }
+    },
+    "flex-layout.col#telefonofijo": {
+        "children": [
+            "image#telefono",
+            "rich-text#contacto"
+        ],
+        "props": {
+          "blockClass": "textColumn",
+          "preventVerticalStretch": true
+        }
+    },
+    "image#telefono": {
+        "props": {
+            "src": "/arquivos/tel.png",
+            "maxHeight": 50,
+            "maxWidth": 50
+        }
+    },
+    "rich-text#contacto": {
+        "props": {
+        "text":
+        "93 414 52 35",
+        "blockClass": "telefonoFijo"
         }
     }
 }

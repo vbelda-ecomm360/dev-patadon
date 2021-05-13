@@ -1,3 +1,11 @@
+.flexRow--wrapperTelFijo {
+    position: fixed;
+    bottom: 140px;
+    z-index: 9;
+    right: 3px;
+    text-align: center;
+}
+
 .flexRow--top-bar {
     background-color: #000000;
     color: #ffffff !important;
