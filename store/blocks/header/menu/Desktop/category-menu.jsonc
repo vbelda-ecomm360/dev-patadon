@@ -40,7 +40,8 @@
     "children": [
       "menu-item#department-7",
       "menu-item#department-6",
-      "menu-item#department-5"
+      //"menu-item#department-5",
+      "menu-item#department-8"
     ],
     "title": "Promos Mega Menu"
   },
@@ -2266,8 +2267,6 @@
     }
   },
 
-
-
   "menu-item#department-7": {
     "props": {
       "id": "menu-item-deparment-7",
@@ -2309,5 +2308,98 @@
         "text": "Consejos de profesionales"
       }
     }
+  },
+
+  //Fitting
+  "menu-item#department-8": {
+    "props": {
+      "id": "menu-item-deparment-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/fitting",
+        "noFollow": true,
+        "tagTitle": "Fitting",
+        "text": "Fitting"
+      },
+      "blockClass":["header-promotions-title", "menu-promotion-last"]
+    },
+    "blocks": [
+      "submenu#department-8"
+    ]
+  },
+  "submenu#department-8": {
+    "props": {
+      "blockClass":"header-last-item"
+    },
+    "children": [
+      "menu-item#department-8-category-1",
+      "menu-item#department-8-category-2",
+      "menu-item#department-8-category-3",
+      "menu-item#department-8-category-4"
+    ]
+  },
+  "menu-item#department-8-category-1": {
+    "props": {
+      "id": "menu-item-department-8-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tienda-barcelona",
+        "noFollow": true,
+        "tagTitle": "Barcelona",
+        "text": "Barcelona"
+      }
+    }
+  },
+  "menu-item#department-8-category-2": {
+    "props": {
+      "id": "menu-item-department-8-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tienda-madrid",
+        "noFollow": true,
+        "tagTitle": "Madrid",
+        "text": "Madrid"
+      }
+    }
+  },
+  "menu-item#department-8-category-3": {
+    "props": {
+      "id": "menu-item-department-8-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tienda-valencia",
+        "noFollow": true,
+        "tagTitle": "Valencia",
+        "text": "Valencia"
+      }
+    }
+  },
+  "menu-item#department-8-category-4": {
+    "props": {
+      "id": "menu-item-department-8-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tienda-mallorca",
+        "noFollow": true,
+        "tagTitle": "Mallorca",
+        "text": "Mallorca"
+      }
+    }
   }
 }
+

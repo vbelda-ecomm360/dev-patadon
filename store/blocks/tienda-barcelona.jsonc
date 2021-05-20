@@ -1,7 +1,8 @@
 {
     "store.custom#tienda-barcelona": {
       "blocks": [
-        "iframe#tienda-barcelona"
+        "iframe#tienda-barcelona",
+        "flex-layout.row#address-barcelona"
         ]
     },
     "iframe#tienda-barcelona": {
@@ -9,6 +10,28 @@
         "src": "https://ivan-patadon.zohobookings.com/portal-embed#/customer/depiquebarcelona",
         "width":"100%",
         "height":"750"
+        }
+    },
+    "flex-layout.row#address-barcelona": {
+        "children": [
+          "flex-layout.col#addressWrapper-barcelona"
+        ],
+        "props": {
+          "blockClass": "address"
+        }
+    },
+    "flex-layout.col#addressWrapper-barcelona": {
+        "children": [
+          "rich-text#address__text-barcelona"
+        ],
+        "props": {
+          "blockClass": ""
+        }
+    },
+    "rich-text#address__text-barcelona": {
+        "props": {
+          "text": "**Dirección:** Carrer de Johann Sebastian Bach, 9\n **Teléfono:** +34.93.201.29.31\n **E-mail:** barcelona@depique.com\n",
+          "blockClass": "address__text"
         }
     }
 }

@@ -367,6 +367,10 @@
 .imageElement--image-equipo-mobile{
   display:none;
 }
+.imageElement--image-fitting {
+  width: 100%;
+}
+
 @media screen and (max-width: 50em) {
   .imageElement--banner-fitting-image{
     display:none;

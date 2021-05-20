@@ -1,3 +1,8 @@
+/*Tiendas Inidviduales*/
+.container--address__text {
+    padding: 25px 100px;
+}
+
 .paragraph--telefonoFijo {
     margin: 0;
     background-color: #C5102E;
@@ -28,11 +33,18 @@
 }
 
 @media screen and (max-width: 50em) {
+
     .container--shelfTitle .heading {
         font-size: 18px;
         font-weight: 600;
         line-height: 1;
     }
+
+    /*Tiendas Inidviduales*/
+    .container--address__text {
+        padding: 25px;
+    }
+
 }
 
 .container--priceRecomendado {
@@ -99,8 +111,6 @@
     font-size: 28px;
     font-weight: 700;
 }
-
-
 
 .paragraph--main-header-text {
     margin: 0px;
@@ -204,27 +214,31 @@
 }
 
 @media only screen and (min-width: 640px) {
+
     .container--question .strong {
         font-size: 40px;
         line-height: 3rem;
     }
+
     .container--about {
         max-width: 85%;
     }
+
     .container--title {
         color: #03034E;
         font-size: 40px;
         font-weight: 700;
         max-width: 60%;
     }
+
     .container--title .paragraph {
         line-height: 1.3em;
     }
+
 }
 
 
 /* ABOUT US */
-
 .wrapper--title-about {
     font-size: 22px !important;
     font-weight: 300;
@@ -237,9 +251,7 @@
     font-weight: 600;
 }
 
-
 /* INSTITUCIONAL */
-
 .headingLevel3--institutional-text {
     font-weight: normal;
     font-size: 20px;
@@ -251,7 +263,6 @@
     margin-bottom: 30px;
 }
 
-
 /* FITTING */
 .wrapper--banner-fitting-text{
     font-size:18px;
@@ -259,15 +270,18 @@
 }
 
 @media screen and (min-width: 50em) {
+
     .container--banner-fitting-text{
         display:none;
     }
+
 }
 
 .wrapper--title-fitting {
     width:100%;
     text-align:center;
 }
+
 .headingLevel3--title-fitting{
     font-size: 32px;
     color: #C8102E;
@@ -275,6 +289,7 @@
     margin:auto;
     margin-bottom:20px;
 }
+
 .container--fitting-video {
     display: table;
     width: 100%;
@@ -286,12 +301,13 @@
     vertical-align: middle;
     text-align:center;
 }
+
 .headingLevel3--fitting-video{
     font-size: 32px;
     color: #C8102E;
-    max-width:650px;
-    margin:auto;
+    text-align: center;
 }
+
 .strong--fitting-video{
     font-size: 22px;
 } 
@@ -309,11 +325,12 @@
 
 .container--text-proceso {
     position: relative;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 
 .paragraph--text-proceso {
     margin: 0px;
+    text-align: justify;
 }
 
 .headingLevel3--text-proceso {
@@ -331,10 +348,12 @@
 }
 
 @media screen and (max-width: 50em) {
+
     .container--text-proceso {
         padding-left: 0px;
         text-align: center;
     }
+
     .headingLevel3--text-proceso {
         display: inline-block;
         position: static;
@@ -342,51 +361,75 @@
         height: 42px;
         background: url('assets/fitting/flag.png') no-repeat;
     }
+
 }
+
 .strong--text-proceso{
     font-size:20px;
 }
+
 @media screen and (min-width: 50em) {
+
     .wrapper--info-fitting-equipo{
         display:none;
     }
-}
-@media screen and (max-width: 50em) {
-    .wrapper--info-fitting{
-        text-align:center;
-    }
-    .wrapper--info-fitting-equipo{
-        text-align:center;
-    }
-}
-.wrapper--info-fitting-tecnologia{
-    max-width:400px;
+
 }
 
 @media screen and (max-width: 50em) {
-    .wrapper--info-fitting-tecnologia{
+
+    .wrapper--info-fitting{
         text-align:center;
     }
+
+    .wrapper--info-fitting-equipo{
+        text-align:justify;
+    }
+
 }
+
+.wrapper--info-fitting-tecnologia{
+    max-width:500px;
+    text-align: justify;
+}
+
 .strong--info-fitting-tecnologia{
     letter-spacing: 1px;
     font-size:34px;
 }
+
 .link--info-fitting-tecnologia{
-    padding:15px 30px;
+    padding:15px 25px;
     display:inline-block;
     color:#fff;
     border-radius:5px;
     background:#134CD8;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .15s ease all;
+    text-align: center;
 }
+
+.link--info-fitting-tecnologia:hover{
+    opacity: .8;
+}
+
 @media screen and (max-width: 50em) {
+
     .link--info-fitting-tecnologia{
         font-size:12px;
     }
+
+    .paragraph--info-fitting-tecnologia-button {
+        text-align: center;
+    }
+
+    .wrapper--info-fitting-tecnologia-button {
+        width: 100%;
+    }
+
 }
-
-
 
 .container--testimonio-fitting {
     display: table;
@@ -397,14 +440,23 @@
 .wrapper--testimonio-fitting {
     display: table-cell;
     vertical-align: middle;
-    padding-left:30px;
+    padding-left:60px;
     padding-right:30px;
 }
+
 @media screen and (max-width: 50em) {
+
     .wrapper--testimonio-fitting{
         text-align: center;
+        padding: 20px;
     }
+
+    .paragraph--banner-fitting-text {
+        text-align: justify;
+    }
+
 }
+
 .strong--testimonio-fitting {
     color: #fff;
     letter-spacing: 1px;
@@ -414,21 +466,59 @@
     color: #fff;
     font-weight: 200;
     letter-spacing: 1px; 
+    text-align: justify;
 }
 
-
 .paragraph--text-fitting {
-    text-align:center;
+    text-align:justify;
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.strong--text-fitting-testimonio {
+    text-align: center;
+    display: block;
+    font-size: 21px;
+}
+
+.paragraph--text-fitting-testimonio {
+    text-align:justify;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.paragraph--text-fitting-testimonio:first-child {
+    text-align: center;
+    height: auto;
+}
+
 @media screen and (max-width: 50em) {
+
     .paragraph--text-fitting {
         padding:0px;
     }
+
+    .strong--info-fitting-tecnologia {
+        text-align: center;
+        display: block;
+    }
+
+    .heading--text-proceso {
+        margin-bottom: 10px;
+    }
+
+    .list--text-proceso {
+        text-align: left;
+        padding-left: 20px;
+    }
+
 }
+
 .strong--text-fitting{
     font-size:24px;
+    text-align: center;
+    display: block;
 }
 
 
@@ -438,7 +528,6 @@
 }
 
 /* PRECIOS */
-
 .wrapper--table-precios {
     width: 100%;
     max-width: 1000px;
@@ -485,15 +574,17 @@
     border-top:2px solid #ccc;
     border-bottom:2px solid #ccc;
 }
+
 .list--direccion-info-tienda{
     list-style:none;
-
 }
+
 .listItem--direccion-info-tienda{
     padding:10px 0px;
     font-weight:bold;
     position: relative;
 }
+
 .listItem--direccion-info-tienda::before{
     position:absolute;
     display:block;
@@ -504,29 +595,34 @@
     top:4px;
     background-size:30px;
 }
+
 .listItem--direccion-info-tienda:nth-child(n+1)::before{
     background-image:url('assets/tiendas/pin.png');
 }
+
 .listItem--direccion-info-tienda:nth-child(n+2)::before{
     background-image:url('assets/tiendas/tlf.png'); 
 }
+
 .listItem--direccion-info-tienda:nth-child(n+3)::before{
     background-image:url('assets/tiendas/mail.png');
 }
 
-
 .container--horario-info-tienda {
     margin-bottom:30px;
 }
+
 .strong--horario-info-tienda {
     color:#C8102E;
     display:block;
     border-bottom:1px solid #eee;
 }
+
 .table--horario-info-tienda{
     width:100%;
     max-width:400px;     
 }
+
 .tableTd--horario-info-tienda:nth-child(2n-1){
     font-weight:bold;
 }
@@ -564,6 +660,7 @@
 }
 
 @media screen and (max-width: 639px) {
+
     .paragraph--top-bar-header-text {
         padding: 10px 15px;
         background: #134cd7;
@@ -571,9 +668,11 @@
         text-align: center;
         text-transform: uppercase;
     }
+
 }
+
 .container--MarcaPingValidarSugerencia .wrapper--MarcaPingValidarSugerencia {
-        width: 100%;
+    width: 100%;
     text-align: center;
     background: #000;
     color: #fff;

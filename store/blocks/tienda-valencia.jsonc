@@ -1,7 +1,8 @@
 {
     "store.custom#tienda-valencia": {
       "blocks": [
-        "iframe#tienda-valencia"
+        "iframe#tienda-valencia",
+        "flex-layout.row#address-valencia"
         ]
     },
     "iframe#tienda-valencia": {
@@ -9,6 +10,28 @@
         "src": "https://ivan-patadon.zohobookings.com/portal-embed#/customer/depiquevalencia",
         "width":"100%",
         "height":"750"
+        }
+    },
+    "flex-layout.row#address-valencia": {
+        "children": [
+          "flex-layout.col#addressWrapper-valencia"
+        ],
+        "props": {
+          "blockClass": "address"
+        }
+    },
+    "flex-layout.col#addressWrapper-valencia": {
+        "children": [
+          "rich-text#address__text-valencia"
+        ],
+        "props": {
+          "blockClass": ""
+        }
+    },
+    "rich-text#address__text-valencia": {
+        "props": {
+          "text": "**Direccion:** Avinguda Regne de Valencia, 64, 46005, València\n **Telefono:** +34 961 678 825\n **Mail:** depiquevlc@gmail.com\n",
+          "blockClass": "address__text"
         }
     }
 }

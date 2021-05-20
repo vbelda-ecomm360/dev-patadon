@@ -1,7 +1,8 @@
 {
     "store.custom#tienda-madrid": {
       "blocks": [
-        "iframe#tienda-madrid"
+        "iframe#tienda-madrid",
+        "flex-layout.row#address-madrid"
         ]
     },
     "iframe#tienda-madrid": {
@@ -9,6 +10,28 @@
         "src": "https://ivan-patadon.zohobookings.com/portal-embed#/customer/depiquemadrid",
         "width":"100%",
         "height":"750"
+        }
+    },
+    "flex-layout.row#address-madrid": {
+        "children": [
+          "flex-layout.col#addressWrapper-madrid"
+        ],
+        "props": {
+          "blockClass": "address"
+        }
+    },
+    "flex-layout.col#addressWrapper-madrid": {
+        "children": [
+          "rich-text#address__text-madrid"
+        ],
+        "props": {
+          "blockClass": ""
+        }
+    },
+    "rich-text#address__text-madrid": {
+        "props": {
+          "text": "**Dirección:** Club de Golf Olivar de la Hinojosa, Campo De Las Naciones, Vía Dublín, 0 S N, 28001 Madrid\n **Teléfono:** +34 914 117 925\n **E-mail:** madrid@depique.com\n",
+          "blockClass": "address__text"
         }
     }
 }

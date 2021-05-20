@@ -3,6 +3,7 @@
         "children": [
             "menu-item#venta-tele",
             "menu-item#tiendas",
+            "menu-item#marcas",
             "menu-item#contacto",
             "menu-item#about-us",
             "menu-item#blog",
@@ -13,6 +14,34 @@
             "blockClass": "top-bar-menu-container"
         }
     },
+    "menu-item#marcas": {
+        "props": {
+          "id": "menu-item-marcas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/marcas-de-golf",
+            "noFollow": true,
+            "tagTitle": "Marcas",
+            "text": "Marcas"
+          }
+        },
+        "blocks": [
+          "vtex.menu@2.x:submenu#marcas"
+        ]
+      },
+      "vtex.menu@2.x:submenu#marcas": {
+        "props": {
+          "width": "100%",
+          "blockClass": "header-submenus"
+          
+        },
+        "children": [      
+          "flex-layout.row#home-brands"
+        ]
+      },
     "menu-item#venta-tele": {
         "props": {
             "id": "menu-item-venta-tele",
