@@ -154,7 +154,8 @@
     "image#icon-login": {
       "props": {
         "src": "assets/header/user.svg",
-        "maxWidth": "100%"
+        "maxWidth": "100%",
+        "blockClass": "header-main-menu-imageLogin"
       }
     },
   "flex-layout.row#login": {

@@ -40,16 +40,23 @@
 }
 
 @media screen and (min-width: 80rem) {
+
     .flexRowContent--menu-link,
     .flexRowContent--main-header,
     .flexRowContent--main-header-menu {
         padding: 0 0.25rem;
     }
+
+    .flexCol--colPingsForm {
+        max-width: 600px;
+    }
+
 }
 
 .flexRowContent--menu-link {
     background-color: #03044e;
     color: #fff;
+
 }
 
 .flexRowContent--main-header {
@@ -128,7 +135,7 @@
 .flexRow--categories-home {
     padding-top: 20px;
     padding-bottom: 60px;
-    margin-right: -1rem;
+    margin-right: 0;
 }
 
 .flexCol--stacked-category-last {
@@ -136,20 +143,29 @@
 }
 
 @media screen and (max-width: 50em) {
+
+    .flexRow--fitting-video {
+        margin-top: 50px;
+    }
+
     .flexRow--categories-home {
         margin: auto;
     }
+    
     .flexRowContent--categories-home {
         flex-wrap: wrap;
     }
+
     .flexRowContent--categories-home .stretchChildrenWidth {
         width: 50% !important;
         padding: 5px;
     }
+
     .flexCol--stacked-category,
     .flexCol--stacked-category-last {
         padding: 0px;
     }
+
 }
 
 .flexRow--deals .flexCol {
@@ -324,6 +340,36 @@
     border-radius: 0;
 }
 
+.flexColChild--customProduct {
+    text-align: right;
+    margin-top: 40px;
+    background-color: #E1E7F5;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.flexColChild--customProduct :global(.vtex-button) {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    color: #fff;
+    border-radius: 0px;
+    background: #134CD8;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 50em) {
+
+
+}
+
 .flexRow--product-product-name :global(.vtex-store-components-3-x-productBrand) {
     font-size: 35px;
     font-weight: 300;
@@ -440,6 +486,7 @@
 }
 
 /* FITTING */
+
 .flexRowContent--fitting {
     justify-content: space-between;
     padding: 0 30px;
@@ -461,6 +508,9 @@
 
 .flexColChild--proceso {
     padding: 40px 0px;
+    height: 150px;
+    min-height: 150px;
+    overflow: hidden;
 }
 
 .flexColChild--info-fitting :global(.vtex-store-components-3-x-imageElement) {

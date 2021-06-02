@@ -14,6 +14,23 @@
   margin-bottom: .5rem;
 }
 
+.paginationDot--isActive {
+  background-color: #134CD8;
+}
+
+.sliderLayoutContainer--slider-home .sliderLeftArrow--carousel,
+.sliderLayoutContainer--slider-home .sliderRightArrow--carousel {
+  background-color: #134CD8!important;
+  padding: 30px 15px;
+  border-radius: 50%;
+  background-position: center center!important;
+  transition: .15s ease all;
+}
+
+.sliderLayoutContainer--slider-home .sliderLeftArrow--carousel:hover,
+.sliderLayoutContainer--slider-home .sliderRightArrow--carousel:hover {
+  opacity: .8;
+}
 
 .layoutContainer--shelf {
   margin-top: 20px;

@@ -1,5 +1,4 @@
 {
-
   // CATEGORY MENU
   "flex-layout.col#category-menu": {
     "props": {
@@ -46,8 +45,6 @@
     "title": "Promos Mega Menu"
   },
 
-
-
   // PRIMER MENÚ DESPLEGABLE
   "menu-item#department-1": {
     "props": {
@@ -62,20 +59,16 @@
         "tagTitle": "Palos de golf",
         "text": "Palos de golf"
       },
-      "blockClass":"header-department-title"
+      "blockClass": "header-department-title"
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#department-1"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#department-1"]
   },
   "vtex.menu@2.x:submenu#department-1": {
     "props": {
       "width": "100%",
       "blockClass": "header-submenus"
     },
-    "children": [
-      "flex-layout.row#department-1-submenu"
-    ]
+    "children": ["flex-layout.row#department-1-submenu"]
   },
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-1-submenu": {
@@ -83,7 +76,7 @@
       "flex-layout.col#department-1-extra-col-5",
       "flex-layout.col#department-1"
     ],
-    "props":{
+    "props": {
       "colGap": 6,
       "horizontalAlign": "center",
       "blockClass": "header-submenus-category",
@@ -91,11 +84,9 @@
     }
   },
   "flex-layout.col#department-1": {
-    "children": [
-      "flex-layout.row#department-1-categories"
-    ],
-    "props":{
-      "width": "80%"      
+    "children": ["flex-layout.row#department-1-categories"],
+    "props": {
+      "width": "80%"
     }
   },
   "flex-layout.row#department-1-categories": {
@@ -105,30 +96,22 @@
       "flex-layout.col#department-1-submenu-col-3",
       "flex-layout.col#department-1-submenu-col-4"
     ],
-    "props":{
+    "props": {
       "blockClass": "submenu-col-items"
     }
   },
 
   "flex-layout.col#department-1-submenu-col-1": {
-    "children": [
-      "menu#department-1-submenu-col-1"
-    ]
+    "children": ["menu#department-1-submenu-col-1"]
   },
   "flex-layout.col#department-1-submenu-col-2": {
-    "children": [
-      "menu#department-1-submenu-col-2"
-    ]
+    "children": ["menu#department-1-submenu-col-2"]
   },
   "flex-layout.col#department-1-submenu-col-3": {
-    "children": [
-      "menu#department-1-submenu-col-3"
-    ]
+    "children": ["menu#department-1-submenu-col-3"]
   },
   "flex-layout.col#department-1-submenu-col-4": {
-    "children": [
-      "menu#department-1-submenu-col-4"
-    ]
+    "children": ["menu#department-1-submenu-col-4"]
   },
   // COLUMNA 1 DEL MENÚ 1
   "menu#department-1-submenu-col-1": {
@@ -136,14 +119,13 @@
       "orientation": "vertical",
       "tagTitle": "Submenu",
       "blockClass": "header-submenus-category-items"
-
     },
     "children": [
       "menu-item#department-1-col-1-category-1",
       "menu-item#department-1-col-1-category-2",
       "menu-item#department-1-col-1-category-3",
       "menu-item#department-1-col-1-category-4",
-      "menu-item#department-1-col-1-category-5",      
+      "menu-item#department-1-col-1-category-5",
       "menu-item#department-1-col-1-category-6",
       "menu-item#department-1-col-1-category-7",
       "menu-item#department-1-col-1-category-8",
@@ -163,7 +145,7 @@
         "tagTitle": "Palos Standard",
         "text": "Palos Standard"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-1-col-1-category-2": {
@@ -284,7 +266,7 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
   },
   // COLUMNA 2 DEL MENÚ 1
@@ -299,7 +281,7 @@
       "menu-item#department-1-col-2-category-2",
       "menu-item#department-1-col-2-category-3",
       "menu-item#department-1-col-2-category-4",
-      "menu-item#department-1-col-2-category-5",      
+      "menu-item#department-1-col-2-category-5",
       "menu-item#department-1-col-2-category-6",
       "menu-item#department-1-col-2-category-7",
       "menu-item#department-1-col-2-category-8"
@@ -318,7 +300,7 @@
         "tagTitle": "Palos Personalizados",
         "text": "Palos Personalizados"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-1-col-2-category-2": {
@@ -424,7 +406,7 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
   },
   // COLUMNA 3 DEL MENÚ 1
@@ -455,7 +437,7 @@
         "tagTitle": "Pack",
         "text": "Pack"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-1-col-3-category-2": {
@@ -516,7 +498,7 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
   },
   // COLUMNA 4 DEL MENÚ 1
@@ -531,7 +513,7 @@
       "menu-item#department-1-col-4-category-2",
       "menu-item#department-1-col-4-category-3",
       "menu-item#department-1-col-4-category-4",
-      "menu-item#department-1-col-4-category-5",      
+      "menu-item#department-1-col-4-category-5",
       "menu-item#department-1-col-4-category-6",
       "menu-item#department-1-col-4-category-7"
     ]
@@ -549,7 +531,7 @@
         "tagTitle": "Otras categorías",
         "text": "Otras categorías"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-1-col-4-category-2": {
@@ -640,21 +622,19 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
   },
   // EXTRA MENU 1
   "flex-layout.col#department-1-extra-col-5": {
-    "props":{
+    "props": {
       "width": "20%"
     },
-    "children": [
-      "image#department-1-extra-col-5"
-    ],
+    "children": ["image#department-1-extra-col-5"],
     "title": "Extra menu banner"
   },
-  "image#department-1-extra-col-5":{
-    "props":{
+  "image#department-1-extra-col-5": {
+    "props": {
       "src": "assets/header/banner_menu.jpg",
       "maxHeight": 200
     },
@@ -675,39 +655,32 @@
         "tagTitle": "Bolsas y carros",
         "text": "Bolsas y carros"
       },
-      "blockClass":"header-department-title"
+      "blockClass": "header-department-title"
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#department-2"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#department-2"]
   },
   "vtex.menu@2.x:submenu#department-2": {
     "props": {
       "width": "100%",
       "blockClass": "header-submenus"
-      
     },
-    "children": [
-      "flex-layout.row#department-2-submenu"
-    ]
+    "children": ["flex-layout.row#department-2-submenu"]
   },
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-2-submenu": {
     "children": [
       "flex-layout.col#department-2-extra-col-4",
-      "flex-layout.col#department-2"      
+      "flex-layout.col#department-2"
     ],
-    "props":{
+    "props": {
       "colGap": 6,
       "horizontalAlign": "center",
       "fullWidth": true
     }
   },
   "flex-layout.col#department-2": {
-    "children": [
-      "flex-layout.row#department-2-categories"
-    ],
-    "props":{
+    "children": ["flex-layout.row#department-2-categories"],
+    "props": {
       "width": "80%"
     }
   },
@@ -717,24 +690,18 @@
       "flex-layout.col#department-2-submenu-col-2",
       "flex-layout.col#department-2-submenu-col-3"
     ],
-    "props":{
+    "props": {
       "blockClass": "submenu-col-items"
     }
   },
   "flex-layout.col#department-2-submenu-col-1": {
-    "children": [
-      "menu#department-2-submenu-col-1"
-    ]
+    "children": ["menu#department-2-submenu-col-1"]
   },
   "flex-layout.col#department-2-submenu-col-2": {
-    "children": [
-      "menu#department-2-submenu-col-2"
-    ]
+    "children": ["menu#department-2-submenu-col-2"]
   },
   "flex-layout.col#department-2-submenu-col-3": {
-    "children": [
-      "menu#department-2-submenu-col-3"
-    ]
+    "children": ["menu#department-2-submenu-col-3"]
   },
 
   // COLUMNA 1 DEL MENÚ 2
@@ -765,7 +732,7 @@
         "tagTitle": "Carritos de golf",
         "text": "Carritos de golf"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-2-col-1-category-2": {
@@ -826,16 +793,16 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
   },
   // COLUMNA 2 DEL MENÚ 2
   "menu#department-2-submenu-col-2": {
     "props": {
-        "orientation": "vertical",
-        "experimentalOptimizeRendering": true,
-        "tagTitle": "Submenu",
-        "blockClass": "header-submenus-category-items"
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true,
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-2-col-2-category-1",
@@ -847,136 +814,136 @@
       "menu-item#department-2-col-2-category-7",
       "menu-item#department-2-col-2-category-8"
     ]
-},
-"menu-item#department-2-col-2-category-1": {
-  "props": {
-    "id": "menu-item-department-2-col-2-category-1",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/bolsas-de-palos",
-      "noFollow": true,
-      "tagTitle": "Bolsas de Palos",
-      "text": "Bolsas de Palos"
-    },
-    "blockClass":"header-department-category-title"
-  }
-},
-"menu-item#department-2-col-2-category-2": {
-  "props": {
-    "id": "menu-item-department-2-col-2-category-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/bolsas-de-palos/bolsas-de-carro",
-      "noFollow": true,
-      "tagTitle": "Bolsas de carro",
-      "text": "Bolsas de carro"
+  },
+  "menu-item#department-2-col-2-category-1": {
+    "props": {
+      "id": "menu-item-department-2-col-2-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/bolsas-de-palos",
+        "noFollow": true,
+        "tagTitle": "Bolsas de Palos",
+        "text": "Bolsas de Palos"
+      },
+      "blockClass": "header-department-category-title"
     }
-  }
-},
-"menu-item#department-2-col-2-category-3": {
-  "props": {
-    "id": "menu-item-department-2-col-2-category-3",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/bolsas-de-palos/bolsas-de-tripode",
-      "noFollow": true,
-      "tagTitle": "Bolsas de trípode",
-      "text": "Bolsas de trípode"
+  },
+  "menu-item#department-2-col-2-category-2": {
+    "props": {
+      "id": "menu-item-department-2-col-2-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/bolsas-de-palos/bolsas-de-carro",
+        "noFollow": true,
+        "tagTitle": "Bolsas de carro",
+        "text": "Bolsas de carro"
+      }
     }
-  }
-},
-"menu-item#department-2-col-2-category-4": {
-  "props": {
-    "id": "menu-item-department-2-col-2-category-4",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/bolsas-de-palos/bolsas-pencil",
-      "noFollow": true,
-      "tagTitle": "Bolsas pencil",
-      "text": "Bolsas pencil"
+  },
+  "menu-item#department-2-col-2-category-3": {
+    "props": {
+      "id": "menu-item-department-2-col-2-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/bolsas-de-palos/bolsas-de-tripode",
+        "noFollow": true,
+        "tagTitle": "Bolsas de trípode",
+        "text": "Bolsas de trípode"
+      }
     }
-  }
-},
-"menu-item#department-2-col-2-category-5": {
-  "props": {
-    "id": "menu-item-department-2-col-2-category-5",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/bolsas-de-palos/bolsas-de-viaje",
-      "noFollow": true,
-      "tagTitle": "Bolsas de viaje",
-      "text": "Bolsa de viaje"
+  },
+  "menu-item#department-2-col-2-category-4": {
+    "props": {
+      "id": "menu-item-department-2-col-2-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/bolsas-de-palos/bolsas-pencil",
+        "noFollow": true,
+        "tagTitle": "Bolsas pencil",
+        "text": "Bolsas pencil"
+      }
     }
-  }
-},
-"menu-item#department-2-col-2-category-6": {
-  "props": {
-    "id": "menu-item-department-2-col-2-category-6",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/bolsas-de-palos/maletas-mochilas",
-      "noFollow": true,
-      "tagTitle": "Maletas y mochilas",
-      "text": "Maletas y mochilas"
+  },
+  "menu-item#department-2-col-2-category-5": {
+    "props": {
+      "id": "menu-item-department-2-col-2-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/bolsas-de-palos/bolsas-de-viaje",
+        "noFollow": true,
+        "tagTitle": "Bolsas de viaje",
+        "text": "Bolsa de viaje"
+      }
     }
-  }
-},
-"menu-item#department-2-col-2-category-7": {
-  "props": {
-    "id": "menu-item-department-2-col-2-category-7",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/bolsas-de-palos/accesorios-para-bolsas",
-      "noFollow": true,
-      "tagTitle": "Accesorios para bolsas",
-      "text": "Accesorios para bolsas"
+  },
+  "menu-item#department-2-col-2-category-6": {
+    "props": {
+      "id": "menu-item-department-2-col-2-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/bolsas-de-palos/maletas-mochilas",
+        "noFollow": true,
+        "tagTitle": "Maletas y mochilas",
+        "text": "Maletas y mochilas"
+      }
     }
-  }
-},
-"menu-item#department-2-col-2-category-8": {
-  "props": {
-    "id": "menu-item-department-2-col-2-category-8",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/bolsas-de-palos",
-      "noFollow": true,
-      "tagTitle": "Ver más",
-      "text": "Ver más"
-    },
-    "blockClass":"header-department-category-show-all"
-  }
-},
-// COLUMNA 3 DEL MENÚ 2
+  },
+  "menu-item#department-2-col-2-category-7": {
+    "props": {
+      "id": "menu-item-department-2-col-2-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/bolsas-de-palos/accesorios-para-bolsas",
+        "noFollow": true,
+        "tagTitle": "Accesorios para bolsas",
+        "text": "Accesorios para bolsas"
+      }
+    }
+  },
+  "menu-item#department-2-col-2-category-8": {
+    "props": {
+      "id": "menu-item-department-2-col-2-category-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/bolsas-de-palos",
+        "noFollow": true,
+        "tagTitle": "Ver más",
+        "text": "Ver más"
+      },
+      "blockClass": "header-department-category-show-all"
+    }
+  },
+  // COLUMNA 3 DEL MENÚ 2
   "menu#department-2-submenu-col-3": {
     "props": {
-        "orientation": "vertical",
-        "experimentalOptimizeRendering": true,
-        "tagTitle": "Submenu",
-        "blockClass": "header-submenus-category-items"
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true,
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
       "menu-item#department-2-col-3-category-1",
@@ -986,116 +953,113 @@
       "menu-item#department-2-col-3-category-5",
       "menu-item#department-2-col-3-category-6"
     ]
-},
-"menu-item#department-2-col-3-category-1": {
-  "props": {
-    "id": "menu-item-department-2-col-3-category-1",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/gps-tecnologia",
-      "noFollow": true,
-      "tagTitle": "GPS y Tecnología",
-      "text": "GPS y Tecnología"
-    },
-    "blockClass":"header-department-category-title"
-  }
-},
-"menu-item#department-2-col-3-category-2": {
-  "props": {
-    "id": "menu-item-department-2-col-3-category-2",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/gps-tecnologia/medidores-laser",
-      "noFollow": true,
-      "tagTitle": "Medidores Laser",
-      "text": "Medidores Laser"
+  },
+  "menu-item#department-2-col-3-category-1": {
+    "props": {
+      "id": "menu-item-department-2-col-3-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/gps-tecnologia",
+        "noFollow": true,
+        "tagTitle": "GPS y Tecnología",
+        "text": "GPS y Tecnología"
+      },
+      "blockClass": "header-department-category-title"
     }
-  }
-},
-"menu-item#department-2-col-3-category-3": {
-  "props": {
-    "id": "menu-item-department-2-col-3-category-3",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/gps-tecnologia/gps-golf",
-      "noFollow": true,
-      "tagTitle": "GPS",
-      "text": "GPS"
+  },
+  "menu-item#department-2-col-3-category-2": {
+    "props": {
+      "id": "menu-item-department-2-col-3-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/gps-tecnologia/medidores-laser",
+        "noFollow": true,
+        "tagTitle": "Medidores Laser",
+        "text": "Medidores Laser"
+      }
     }
-  }
-},
-"menu-item#department-2-col-3-category-4": {
-  "props": {
-    "id": "menu-item-department-2-col-3-category-4",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/gps-tecnologia/accesorios-gps-golf",
-      "noFollow": true,
-      "tagTitle": "Accesorios de GPS",
-      "text": "Accesorios de GPS"
+  },
+  "menu-item#department-2-col-3-category-3": {
+    "props": {
+      "id": "menu-item-department-2-col-3-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/gps-tecnologia/gps-golf",
+        "noFollow": true,
+        "tagTitle": "GPS",
+        "text": "GPS"
+      }
     }
-  }
-},
-"menu-item#department-2-col-3-category-5": {
-  "props": {
-    "id": "menu-item-department-2-col-3-category-5",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/gps-tecnologia/otras-tecnologias-golf",
-      "noFollow": true,
-      "tagTitle": "Otras tecnologías",
-      "text": "Otras tecnologías"
+  },
+  "menu-item#department-2-col-3-category-4": {
+    "props": {
+      "id": "menu-item-department-2-col-3-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/gps-tecnologia/accesorios-gps-golf",
+        "noFollow": true,
+        "tagTitle": "Accesorios de GPS",
+        "text": "Accesorios de GPS"
+      }
     }
-  }
-},
-"menu-item#department-2-col-3-category-6": {
-  "props": {
-    "id": "menu-item-department-2-col-3-category-6",
-    "type": "custom",
-    "iconId": null,
-    "highlight": false,
-    "itemProps": {
-      "type": "internal",
-      "href": "/complementos-de-golf/gps-tecnologia",
-      "noFollow": true,
-      "tagTitle": "Ver más",
+  },
+  "menu-item#department-2-col-3-category-5": {
+    "props": {
+      "id": "menu-item-department-2-col-3-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/gps-tecnologia/otras-tecnologias-golf",
+        "noFollow": true,
+        "tagTitle": "Otras tecnologías",
+        "text": "Otras tecnologías"
+      }
+    }
+  },
+  "menu-item#department-2-col-3-category-6": {
+    "props": {
+      "id": "menu-item-department-2-col-3-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos-de-golf/gps-tecnologia",
+        "noFollow": true,
+        "tagTitle": "Ver más",
         "text": "Ver más"
+      },
+      "blockClass": "header-department-category-show-all"
+    }
+  },
+  "flex-layout.col#department-2-extra-col-4": {
+    "props": {
+      "width": "20%"
     },
-    "blockClass":"header-department-category-show-all"
-  }
-},
-"flex-layout.col#department-2-extra-col-4": {
-  "props":{
-    "width": "20%"
+    "children": ["image#department-2-extra-col-4"],
+    "title": "Extra menu banner"
   },
-  "children": [
-    "image#department-2-extra-col-4"
-  ],
-  "title": "Extra menu banner"
-},
-"image#department-2-extra-col-4":{
-  "props":{
-    "src": "assets/header/banner_menu.jpg",
-    "maxHeight": 200
+  "image#department-2-extra-col-4": {
+    "props": {
+      "src": "assets/header/banner_menu.jpg",
+      "maxHeight": 200
+    },
+    "title": "Menu banner"
   },
-  "title": "Menu banner"
-},
-
 
   // TERCER MENÚ DESPLEGABLE
   "menu-item#department-3": {
@@ -1111,39 +1075,32 @@
         "tagTitle": "Ropa y Calzado",
         "text": "Ropa y Calzado"
       },
-      "blockClass":"header-department-title"
+      "blockClass": "header-department-title"
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#department-3"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#department-3"]
   },
   "vtex.menu@2.x:submenu#department-3": {
     "props": {
       "width": "100%",
       "blockClass": "header-submenus"
-      
     },
-    "children": [
-      "flex-layout.row#department-3-submenu"
-    ]
+    "children": ["flex-layout.row#department-3-submenu"]
   },
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-3-submenu": {
     "children": [
       "flex-layout.col#department-3-extra-col-4",
-      "flex-layout.col#department-3"      
+      "flex-layout.col#department-3"
     ],
-    "props":{
+    "props": {
       "colGap": 6,
       "horizontalAlign": "center",
       "fullWidth": true
     }
   },
   "flex-layout.col#department-3": {
-    "children": [
-      "flex-layout.row#department-3-categories"
-    ],
-    "props":{
+    "children": ["flex-layout.row#department-3-categories"],
+    "props": {
       "width": "80%"
     }
   },
@@ -1153,361 +1110,385 @@
       "flex-layout.col#department-3-submenu-col-2",
       "flex-layout.col#department-3-submenu-col-3"
     ],
-    "props":{
+    "props": {
       "blockClass": "submenu-col-items"
-    } 
+    }
   },
   "flex-layout.col#department-3-submenu-col-1": {
-    "children": [
-      "menu#department-3-submenu-col-1"
-    ]
+    "children": ["menu#department-3-submenu-col-1"]
   },
   "flex-layout.col#department-3-submenu-col-2": {
-    "children": [
-      "menu#department-3-submenu-col-2"
-    ]
+    "children": ["menu#department-3-submenu-col-2"]
   },
 
   "flex-layout.col#department-3-submenu-col-3": {
-    "children": [
-      "menu#department-3-submenu-col-3"
-    ]
+    "children": ["menu#department-3-submenu-col-3"]
   },
   // COLUMNA 1 DEL MENÚ 3
   "menu#department-3-submenu-col-1": {
-      "props": {
-        "orientation": "vertical",
-        "tagTitle": "Submenu",
-        "blockClass": "header-submenus-category-items"
-      },
-      "children": [
-        "menu-item#department-3-col-1-category-1",
-        "menu-item#department-3-col-1-category-2",
-        "menu-item#department-3-col-1-category-3",
-        "menu-item#department-3-col-1-category-4",
-        "menu-item#department-3-col-1-category-5",      
-        "menu-item#department-3-col-1-category-6"
-      ]
-    },
-    "menu-item#department-3-col-1-category-1": {
-      "props": {
-        "id": "menu-item-department-3-col-1-category-1",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/genero_hombre",
-          "noFollow": true,
-          "tagTitle": "Ropa de golf para hombre",
-          "text": "Ropa de golf para hombre"
-        },
-        "blockClass":"header-department-category-title"
-      }
-    },
-    "menu-item#department-3-col-1-category-2": {
-      "props": {
-        "id": "menu-item-department-3-col-1-category-2",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/zapatos-de-golf/genero_hombre",
-          "noFollow": true,
-          "tagTitle": "Zapatos",
-          "text": "Zapatos"
-        }
-      }
-    },
-    "menu-item#department-3-col-1-category-3": {
-      "props": {
-        "id": "menu-item-department-3-col-1-category-3",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/ropa-de-golf/genero_hombre",
-          "noFollow": true,
-          "tagTitle": "Textil",
-          "text": "Textil"
-        }
-      }
-    },
-    "menu-item#department-3-col-1-category-4": {
-      "props": {
-        "id": "menu-item-department-3-col-1-category-4",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/pantalones-de-golf/genero_hombre",
-          "noFollow": true,
-          "tagTitle": "Pantalones",
-          "text": "Pantalones"
-        }
-      }
-    },
-    "menu-item#department-3-col-1-category-5": {
-      "props": {
-        "id": "menu-item-department-3-col-1-category-5",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/complementos-golf/genero_hombre",
-          "noFollow": true,
-          "tagTitle": "Complementos de hombre",
-          "text": "Complementos de hombre"
-        }
-      }
-    },
-    "menu-item#department-3-col-1-category-6": {
-      "props": {
-        "id": "menu-item-department-3-col-1-category-6",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/genero_hombre",
-          "noFollow": true,
-          "tagTitle": "Ver más",
-          "text": "Ver más"
-        },
-        "blockClass":"header-department-category-show-all"
-      }
-    },
-    // COLUMNA 2 DEL MENÚ 3
-    "menu#department-3-submenu-col-2": {
-      "props": {
-        "orientation": "vertical",
-        "tagTitle": "Submenu",
-        "blockClass": "header-submenus-category-items"
-      },
-      "children": [
-        "menu-item#department-3-col-2-category-1",
-        "menu-item#department-3-col-2-category-2",
-        "menu-item#department-3-col-2-category-3",
-        "menu-item#department-3-col-2-category-4",
-        "menu-item#department-3-col-2-category-5",      
-        "menu-item#department-3-col-2-category-6"
-      ]
-    },
-    "menu-item#department-3-col-2-category-1": {
-      "props": {
-        "id": "menu-item-department-3-col-2-category-1",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/genero_mujer",
-          "noFollow": true,
-          "tagTitle": "Ropa de golf para mujer",
-          "text": "Ropa de golf para mujer"
-        },
-        "blockClass":"header-department-category-title"
-      }
-    },
-    "menu-item#department-3-col-2-category-2": {
-      "props": {
-        "id": "menu-item-department-3-col-2-category-2",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/zapatos/genero_mujer",
-          "noFollow": true,
-          "tagTitle": "Zapatos",
-          "text": "Zapatos"
-        }
-      }
-    },
-    "menu-item#department-3-col-2-category-3": {
-      "props": {
-        "id": "menu-item-department-3-col-2-category-3",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/ropa/genero_mujer",
-          "noFollow": true,
-          "tagTitle": "Textil",
-          "text": "Textil"
-        }
-      }
-    },
-    "menu-item#department-3-col-2-category-4": {
-      "props": {
-        "id": "menu-item-department-3-col-2-category-4",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/pantalones-de-golf/genero_mujer",
-          "noFollow": true,
-          "tagTitle": "Pantalones",
-          "text": "Pantalones"
-        }
-      }
-    },
-    "menu-item#department-3-col-2-category-5": {
-      "props": {
-        "id": "menu-item-department-3-col-2-category-5",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/complementos-golf/genero_mujer",
-          "noFollow": true,
-          "tagTitle": "Complementos de mujer",
-          "text": "Complementos de mujer"
-        }
-      }
-    },
-    "menu-item#department-3-col-2-category-6": {
-      "props": {
-        "id": "menu-item-department-3-col-2-category-6",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/genero_mujer",
-          "noFollow": true,
-          "tagTitle": "Ver más",
-          "text": "Ver más"
-        },
-        "blockClass":"header-department-category-show-all"
-      }
-    },
-    // COLUMNA 3 DEL MENÚ 3
-    "menu#department-3-submenu-col-3": {
-      "props": {
-        "orientation": "vertical",
-        "tagTitle": "Submenu",
-        "blockClass": "header-submenus-category-items"
-      },
-      "children": [
-        "menu-item#department-3-col-3-category-1",
-        "menu-item#department-3-col-3-category-2",
-        "menu-item#department-3-col-3-category-3",
-        "menu-item#department-3-col-3-category-4",
-        "menu-item#department-3-col-3-category-5",      
-        "menu-item#department-3-col-3-category-6"
-      ]
-    },
-    "menu-item#department-3-col-3-category-1": {
-      "props": {
-        "id": "menu-item-department-3-col-3-category-1",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/junior",
-          "noFollow": true,
-          "tagTitle": "Ropa de golf Junior",
-          "text": "Ropa de golf Junior"
-        },
-        "blockClass":"header-department-category-title"
-      }
-    },
-    "menu-item#department-3-col-3-category-2": {
-      "props": {
-        "id": "menu-item-department-3-col-3-category-2",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/junior/zapatos",
-          "noFollow": true,
-          "tagTitle": "Zapatos",
-          "text": "Zapatos"
-        }
-      }
-    },
-    "menu-item#department-3-col-3-category-3": {
-      "props": {
-        "id": "menu-item-department-3-col-3-category-3",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/junior/ropa-junior",
-          "noFollow": true,
-          "tagTitle": "Ropa Junior",
-          "text": "Ropa Junior"
-        }
-      }
-    },
-    "menu-item#department-3-col-3-category-4": {
-      "props": {
-        "id": "menu-item-department-3-col-3-category-4",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/junior/gorras",
-          "noFollow": true,
-          "tagTitle": "Gorras",
-          "text": "Gorras"
-        }
-      }
-    },
-    "menu-item#department-3-col-3-category-5": {
-      "props": {
-        "id": "menu-item-department-3-col-3-category-5",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/junior/viseras",
-          "noFollow": true,
-          "tagTitle": "Viseras",
-          "text": "Viseras"
-        }
-      }
-    },
-    "menu-item#department-3-col-3-category-6": {
-      "props": {
-        "id": "menu-item-department-3-col-3-category-6",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "itemProps": {
-          "type": "internal",
-          "href": "/ropa-calzado/junior",
-          "noFollow": true,
-          "tagTitle": "Ver más",
-          "text": "Ver más"
-        },
-        "blockClass":"header-department-category-show-all"
-      }
-    },
-  "flex-layout.col#department-3-extra-col-4": {
-    "props":{
-      "width": "20%"
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
     },
     "children": [
-      "image#department-3-extra-col-4"
-    ],
+      "menu-item#department-3-col-1-category-1",
+      "menu-item#department-3-col-1-category-2",
+      "menu-item#department-3-col-1-category-3",
+      "menu-item#department-3-col-1-category-4",
+      "menu-item#department-3-col-1-category-5",
+      "menu-item#department-3-col-1-category-7",
+      "menu-item#department-3-col-1-category-6"
+    ]
+  },
+  "menu-item#department-3-col-1-category-1": {
+    "props": {
+      "id": "menu-item-department-3-col-1-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/genero_hombre",
+        "noFollow": true,
+        "tagTitle": "Ropa de golf para hombre",
+        "text": "Ropa de golf para hombre"
+      },
+      "blockClass": "header-department-category-title"
+    }
+  },
+  "menu-item#department-3-col-1-category-2": {
+    "props": {
+      "id": "menu-item-department-3-col-1-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/zapatos-de-golf/genero_hombre",
+        "noFollow": true,
+        "tagTitle": "Zapatos",
+        "text": "Zapatos"
+      }
+    }
+  },
+  "menu-item#department-3-col-1-category-3": {
+    "props": {
+      "id": "menu-item-department-3-col-1-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/ropa-de-golf/genero_hombre",
+        "noFollow": true,
+        "tagTitle": "Textil",
+        "text": "Textil"
+      }
+    }
+  },
+  "menu-item#department-3-col-1-category-4": {
+    "props": {
+      "id": "menu-item-department-3-col-1-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/pantalones-de-golf/genero_hombre",
+        "noFollow": true,
+        "tagTitle": "Pantalones",
+        "text": "Pantalones"
+      }
+    }
+  },
+  "menu-item#department-3-col-1-category-5": {
+    "props": {
+      "id": "menu-item-department-3-col-1-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/complementos-golf/genero_hombre",
+        "noFollow": true,
+        "tagTitle": "Complementos de hombre",
+        "text": "Complementos de hombre"
+      }
+    }
+  },
+  "menu-item#department-3-col-1-category-7": {
+    "props": {
+      "id": "menu-item-department-3-col-1-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/complementos-golf/genero_hombre",
+        "noFollow": true,
+        "tagTitle": "Gorras y viseras",
+        "text": "Gorras y viseras"
+      }
+    }
+  },
+  "menu-item#department-3-col-1-category-6": {
+    "props": {
+      "id": "menu-item-department-3-col-1-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/genero_hombre",
+        "noFollow": true,
+        "tagTitle": "Ver más",
+        "text": "Ver más"
+      },
+      "blockClass": "header-department-category-show-all"
+    }
+  },
+  // COLUMNA 2 DEL MENÚ 3
+  "menu#department-3-submenu-col-2": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
+    },
+    "children": [
+      "menu-item#department-3-col-2-category-1",
+      "menu-item#department-3-col-2-category-2",
+      "menu-item#department-3-col-2-category-3",
+      "menu-item#department-3-col-2-category-4",
+      "menu-item#department-3-col-2-category-5",
+      "menu-item#department-3-col-2-category-7",
+      "menu-item#department-3-col-2-category-6"
+    ]
+  },
+  "menu-item#department-3-col-2-category-1": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/genero_mujer",
+        "noFollow": true,
+        "tagTitle": "Ropa de golf para mujer",
+        "text": "Ropa de golf para mujer"
+      },
+      "blockClass": "header-department-category-title"
+    }
+  },
+  "menu-item#department-3-col-2-category-2": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/zapatos/genero_mujer",
+        "noFollow": true,
+        "tagTitle": "Zapatos",
+        "text": "Zapatos"
+      }
+    }
+  },
+  "menu-item#department-3-col-2-category-3": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/ropa/genero_mujer",
+        "noFollow": true,
+        "tagTitle": "Textil",
+        "text": "Textil"
+      }
+    }
+  },
+  "menu-item#department-3-col-2-category-4": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/pantalones-de-golf/genero_mujer",
+        "noFollow": true,
+        "tagTitle": "Pantalones",
+        "text": "Pantalones"
+      }
+    }
+  },
+  "menu-item#department-3-col-2-category-5": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/complementos-golf/genero_mujer",
+        "noFollow": true,
+        "tagTitle": "Complementos de mujer",
+        "text": "Complementos de mujer"
+      }
+    }
+  },
+  "menu-item#department-3-col-2-category-7": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/complementos-golf/genero_mujer",
+        "noFollow": true,
+        "tagTitle": "Gorras y viseras",
+        "text": "Gorras y viseras"
+      }
+    }
+  },
+  "menu-item#department-3-col-2-category-6": {
+    "props": {
+      "id": "menu-item-department-3-col-2-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/genero_mujer",
+        "noFollow": true,
+        "tagTitle": "Ver más",
+        "text": "Ver más"
+      },
+      "blockClass": "header-department-category-show-all"
+    }
+  },
+  // COLUMNA 3 DEL MENÚ 3
+  "menu#department-3-submenu-col-3": {
+    "props": {
+      "orientation": "vertical",
+      "tagTitle": "Submenu",
+      "blockClass": "header-submenus-category-items"
+    },
+    "children": [
+      "menu-item#department-3-col-3-category-1",
+      "menu-item#department-3-col-3-category-2",
+      "menu-item#department-3-col-3-category-3",
+      "menu-item#department-3-col-3-category-4",
+      "menu-item#department-3-col-3-category-5",
+      "menu-item#department-3-col-3-category-6"
+    ]
+  },
+  "menu-item#department-3-col-3-category-1": {
+    "props": {
+      "id": "menu-item-department-3-col-3-category-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/junior",
+        "noFollow": true,
+        "tagTitle": "Ropa de golf Junior",
+        "text": "Ropa de golf Junior"
+      },
+      "blockClass": "header-department-category-title"
+    }
+  },
+  "menu-item#department-3-col-3-category-2": {
+    "props": {
+      "id": "menu-item-department-3-col-3-category-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/junior/zapatos",
+        "noFollow": true,
+        "tagTitle": "Zapatos",
+        "text": "Zapatos"
+      }
+    }
+  },
+  "menu-item#department-3-col-3-category-3": {
+    "props": {
+      "id": "menu-item-department-3-col-3-category-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/junior/ropa-junior",
+        "noFollow": true,
+        "tagTitle": "Ropa Junior",
+        "text": "Ropa Junior"
+      }
+    }
+  },
+  "menu-item#department-3-col-3-category-4": {
+    "props": {
+      "id": "menu-item-department-3-col-3-category-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/junior/gorras",
+        "noFollow": true,
+        "tagTitle": "Gorras",
+        "text": "Gorras"
+      }
+    }
+  },
+  "menu-item#department-3-col-3-category-5": {
+    "props": {
+      "id": "menu-item-department-3-col-3-category-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/junior/viseras",
+        "noFollow": true,
+        "tagTitle": "Viseras",
+        "text": "Viseras"
+      }
+    }
+  },
+  "menu-item#department-3-col-3-category-6": {
+    "props": {
+      "id": "menu-item-department-3-col-3-category-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ropa-calzado/junior",
+        "noFollow": true,
+        "tagTitle": "Ver más",
+        "text": "Ver más"
+      },
+      "blockClass": "header-department-category-show-all"
+    }
+  },
+  "flex-layout.col#department-3-extra-col-4": {
+    "props": {
+      "width": "20%"
+    },
+    "children": ["image#department-3-extra-col-4"],
     "title": "Extra menu banner"
   },
-  "image#department-3-extra-col-4":{
-    "props":{
+  "image#department-3-extra-col-4": {
+    "props": {
       "src": "assets/header/banner_menu.jpg",
       "maxHeight": 200
     },
@@ -1528,39 +1509,32 @@
         "tagTitle": "Accesorios",
         "text": "Accesorios"
       },
-      "blockClass":"header-department-title"
+      "blockClass": "header-department-title"
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#department-4"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#department-4"]
   },
   "vtex.menu@2.x:submenu#department-4": {
     "props": {
       "width": "100%",
       "blockClass": "header-submenus"
-      
     },
-    "children": [
-      "flex-layout.row#department-4-submenu"
-    ]
+    "children": ["flex-layout.row#department-4-submenu"]
   },
   // COLUMNAS DEL MENÚ
   "flex-layout.row#department-4-submenu": {
     "children": [
       "flex-layout.col#department-4-extra-col-6",
-      "flex-layout.col#department-4"      
+      "flex-layout.col#department-4"
     ],
-    "props":{
+    "props": {
       "colGap": 6,
       "horizontalAlign": "center",
       "fullWidth": true
     }
   },
   "flex-layout.col#department-4": {
-    "children": [
-      "flex-layout.row#department-4-categories"
-    ],
-    "props":{
+    "children": ["flex-layout.row#department-4-categories"],
+    "props": {
       "width": "80%"
     }
   },
@@ -1572,34 +1546,24 @@
       "flex-layout.col#department-4-submenu-col-4",
       "flex-layout.col#department-4-submenu-col-5"
     ],
-    "props":{
+    "props": {
       "blockClass": "submenu-col-items"
     }
   },
   "flex-layout.col#department-4-submenu-col-1": {
-    "children": [
-      "menu#department-4-submenu-col-1"
-    ]
+    "children": ["menu#department-4-submenu-col-1"]
   },
   "flex-layout.col#department-4-submenu-col-2": {
-    "children": [
-      "menu#department-4-submenu-col-2"
-    ]
+    "children": ["menu#department-4-submenu-col-2"]
   },
   "flex-layout.col#department-4-submenu-col-3": {
-    "children": [
-      "menu#department-4-submenu-col-3"
-    ]
+    "children": ["menu#department-4-submenu-col-3"]
   },
   "flex-layout.col#department-4-submenu-col-4": {
-    "children": [
-      "menu#department-4-submenu-col-4"
-    ]
+    "children": ["menu#department-4-submenu-col-4"]
   },
   "flex-layout.col#department-4-submenu-col-5": {
-    "children": [
-      "menu#department-4-submenu-col-5"
-    ]
+    "children": ["menu#department-4-submenu-col-5"]
   },
   // COLUMNA 1 DEL MENÚ 4
   "menu#department-4-submenu-col-1": {
@@ -1629,7 +1593,7 @@
         "tagTitle": "Bolas",
         "text": "Bolas"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-4-col-1-category-2": {
@@ -1690,7 +1654,7 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
   },
   // COLUMNA 2 DEL MENÚ 4
@@ -1721,7 +1685,7 @@
         "tagTitle": "Guantes de golf",
         "text": "Guantes de golf"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-4-col-2-category-2": {
@@ -1782,7 +1746,7 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
   },
   // COLUMNA 3 DEL MENÚ 4
@@ -1797,7 +1761,7 @@
       "menu-item#department-4-col-3-category-2",
       "menu-item#department-4-col-3-category-3",
       "menu-item#department-4-col-3-category-4",
-      "menu-item#department-4-col-3-category-5",      
+      "menu-item#department-4-col-3-category-5",
       "menu-item#department-4-col-3-category-6"
     ]
   },
@@ -1814,7 +1778,7 @@
         "tagTitle": "Tees y Accesorios",
         "text": "Tees y Accesorios"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-4-col-3-category-2": {
@@ -1890,7 +1854,7 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
   },
   // COLUMNA 4 DEL MENÚ 4
@@ -1921,7 +1885,7 @@
         "tagTitle": "Entreno",
         "text": "Entreno"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-4-col-4-category-2": {
@@ -1982,9 +1946,9 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
-  },  
+  },
   // COLUMNA 5 DEL MENÚ 4
   "menu#department-4-submenu-col-5": {
     "props": {
@@ -1997,7 +1961,7 @@
       "menu-item#department-4-col-5-category-2",
       "menu-item#department-4-col-5-category-3",
       "menu-item#department-4-col-5-category-4",
-      "menu-item#department-4-col-5-category-5",      
+      "menu-item#department-4-col-5-category-5",
       "menu-item#department-4-col-5-category-6"
     ]
   },
@@ -2014,7 +1978,7 @@
         "tagTitle": "Mantenimiento",
         "text": "Mantenimiento"
       },
-      "blockClass":"header-department-category-title"
+      "blockClass": "header-department-category-title"
     }
   },
   "menu-item#department-4-col-5-category-2": {
@@ -2090,26 +2054,23 @@
         "tagTitle": "Ver más",
         "text": "Ver más"
       },
-      "blockClass":"header-department-category-show-all"
+      "blockClass": "header-department-category-show-all"
     }
   },
   "flex-layout.col#department-4-extra-col-6": {
-    "props":{
+    "props": {
       "width": "20%"
     },
-    "children": [
-      "image#department-4-extra-col-6"
-    ],
+    "children": ["image#department-4-extra-col-6"],
     "title": "Extra menu banner"
   },
-  "image#department-4-extra-col-6":{
-    "props":{
+  "image#department-4-extra-col-6": {
+    "props": {
       "src": "assets/header/banner_menu.jpg",
       "maxHeight": 200
     },
     "title": "Menu banner"
   },
-
 
   "menu-item#department-5": {
     "props": {
@@ -2124,23 +2085,17 @@
         "tagTitle": "Marcas",
         "text": "Marcas"
       },
-      "blockClass":"header-promotions-title"
+      "blockClass": "header-promotions-title"
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#department-5"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#department-5"]
   },
   "vtex.menu@2.x:submenu#department-5": {
     "props": {
       "width": "100%",
       "blockClass": "header-submenus"
-      
     },
-    "children": [      
-      "flex-layout.row#home-brands"
-    ]
+    "children": ["flex-layout.row#home-brands"]
   },
-
 
   "menu-item#department-6": {
     "props": {
@@ -2155,7 +2110,7 @@
         "tagTitle": "Ofertas / descuentos",
         "text": "Ofertas / descuentos"
       },
-      "blockClass":"header-promotions-title"
+      "blockClass": "header-promotions-title"
     },
     "blocks": [
       //"submenu#department-6"
@@ -2172,7 +2127,7 @@
       "menu-item#department-6-category-2",
       "menu-item#department-6-category-3",
       "menu-item#department-6-category-4",
-      "menu-item#department-6-category-5",      
+      "menu-item#department-6-category-5",
       "menu-item#department-6-category-6"
     ]
   },
@@ -2280,7 +2235,7 @@
         "tagTitle": "Noticias",
         "text": "Noticias"
       },
-      "blockClass":"header-promotions-title"
+      "blockClass": "header-promotions-title"
     },
     "blocks": [
       //"submenu#department-7"
@@ -2288,11 +2243,9 @@
   },
   "submenu#department-7": {
     "props": {
-      "blockClass":"header-last-item"
+      "blockClass": "header-last-item"
     },
-    "children": [
-      "menu-item#department-7-category-1"
-    ]
+    "children": ["menu-item#department-7-category-1"]
   },
   "menu-item#department-7-category-1": {
     "props": {
@@ -2324,15 +2277,13 @@
         "tagTitle": "Fitting",
         "text": "Fitting"
       },
-      "blockClass":["header-promotions-title", "menu-promotion-last"]
+      "blockClass": ["header-promotions-title", "menu-promotion-last"]
     },
-    "blocks": [
-      "submenu#department-8"
-    ]
+    "blocks": ["submenu#department-8"]
   },
   "submenu#department-8": {
     "props": {
-      "blockClass":"header-last-item"
+      "blockClass": "header-last-item"
     },
     "children": [
       "menu-item#department-8-category-1",
@@ -2402,4 +2353,3 @@
     }
   }
 }
-

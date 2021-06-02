@@ -3,7 +3,6 @@
   padding-right:20px;
 }
 
-
 .label {
   color: #fff;
   font-size: 26px;
@@ -38,12 +37,16 @@
   line-height: 1.59;
   letter-spacing: -1px;
 }
+
 @media screen and (max-width: 50em) {
+
   .discountInsideContainer{
     right: 0px;
     top: 0px;
   }
+
 }
+
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   color: #fff;
   font-size: 16px;
@@ -71,6 +74,7 @@
 .skuSelectorOptionsList {
   margin:0px;
 }
+
 .skuSelectorName{
   font-size: 12px;
   font-weight: 300;
@@ -78,6 +82,7 @@
   letter-spacing: 1.2px;
   color: #282726;
 }
+
 .skuSelectorItem{
   margin-right:10px;
   margin-left: 0px;
@@ -108,8 +113,6 @@
   color: #282726;
   padding:0px 30px;
 }
-
-
 
 .notificationBarContainer {  
   background-color: #C8102E;
@@ -299,9 +302,11 @@
 .carouselGaleryThumbs {
   margin: 30px -15px;
 }
+
 .productImagesGallerySwiperContainer {
   background:#ffffff;
 }
+
 .productImagesThumb {
   margin: 0px 15px;
   padding: 15px 0px;
@@ -310,26 +315,36 @@
   height:auto !important;
   max-height: none !important;
 }
+
 .productImagesThumbActive .carouselThumbBorder {
   border:2px solid #c8102e !important;
 }
+
 .productImagesThumbCaret {
   padding:0px 10px;
 }
 
+.shippingContainer {
+  margin-bottom: 20px!important;
+}
 
 .shippingContainer :global(.vtex-address-form__postalCode){
   width:50%;
   float:left;
+  color: #000!important;
+  text-transform: uppercase;
 }
+
 .shippingContainer :global(.vtex-input__label){
   display:none;
 }
+
 .shippingContainer :global(.vtex-input-prefix__group){
   border-width: 0px;
   border-radius:0px;
   height:auto;
 }
+
 .shippingContainer :global(.vtex-address-form-4-x-input){
   border: solid 1px #d9d9d9;
   background-color: #ffffff;
@@ -441,4 +456,18 @@
   .headingLevel3--info-card-nosotros-te-llamamos{
     font-size:26px;
   }
+}
+
+@media screen and (min-width: 50em) {
+
+  .imageElement--image-tienda {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+  .imageElement--header-main-menu-imageLogin {
+    padding-top: 5px;
+  }
+
 }

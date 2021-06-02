@@ -54,9 +54,9 @@
       "slider-layout#brand-images": {
         "props": {
           "itemsPerPage": {
-            "desktop": 8,
-            "tablet": 6,
-            "phone": 3
+            "desktop": 6,
+            "tablet": 3,
+            "phone": 1
           },
           "infinite": true,
           "showNavigationArrows": "desktopOnly",

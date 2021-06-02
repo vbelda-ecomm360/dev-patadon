@@ -1,0 +1,38 @@
+.productAssemblyGroupNameRow {
+    margin-bottom: 20px;
+}
+
+.productAssemblyGroupNameRow :global(.vtex-button) {
+    font-size: 0;
+    padding: 0;
+}
+
+.productAssemblyGroupNameRow :global(.vtex-button)::before {
+    content: "Ajuste Standard";
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    color: #fff;
+    border-radius: 0px;
+    background: #134CD8;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.productAssemblyGroupName {
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.optionsInputValueDropdown--custom-assembly {
+    text-align: left;
+}
+
+.optionsInputValueDropdown--custom-assembly :global(.vtex-dropdown__label) {
+    font-weight: bold;
+}

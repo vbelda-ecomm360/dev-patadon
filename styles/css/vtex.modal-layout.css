@@ -16,7 +16,6 @@
   }
 }
 
-
 @media screen and (min-width: 75em) {
   .paper--quickview {
     width: calc(100% - 4rem);
@@ -28,6 +27,25 @@
   .actionsContainer--quickview {
     padding: 0 2.5rem 2.5rem 2.5rem;
   }
+}
+
+@media screen and (max-width: 50em) {
+
+  .closeButton--pingButtonClose {
+    padding: 20px 0;
+    display: inline-block;
+    padding-right: 0!important;
+
+  }
+
+  .closeButtonLabel--pingButtonClose {
+    padding: 0px 0px;
+  }
+
+}
+
+.headerContent--modalPing-Header {
+  padding: 40px;
 }
 
 .paper--quickview {

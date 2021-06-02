@@ -13,7 +13,9 @@
   },
   "assembly-option-input-values": {
     "props": {
-      "optionsDisplay": "box"
+      "initiallyOpened": "always",
+      "optionsDisplay": "select",
+      "blockClass": "custom-assembly"
     }
   },
   "flex-layout.row#product-assembly-options": {
@@ -92,7 +94,7 @@
   },
   "flex-layout.col#item-customize-quantity": {
     "props": {
-      "horizontalAlign": "right",
+      "horizontalAlign": "left",
       "verticalAlign": "middle"
     },
     "children": [
