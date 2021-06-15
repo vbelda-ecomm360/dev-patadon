@@ -606,3 +606,13 @@
 .flexRow--submenu-col-items .flexRowContent--submenu-col-items .stretchChildrenWidth:last-child {
     border-right: 0;
 }
+
+.flexRowContent--club-template {
+    flex-direction: column;
+}
+.flexCol--menu-micrositios {
+    flex-direction: revert;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}

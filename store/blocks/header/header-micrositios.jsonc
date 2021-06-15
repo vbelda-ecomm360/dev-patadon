@@ -1,0 +1,45 @@
+{
+  "flex-layout.col#menu": {    
+    "children": [
+      "link#menu1",                
+      "link#menu2",                
+      "link#menu3",                
+      "logo#desktop"              
+    ],
+    "props": {
+      "width": "100%",
+      "title": "menu micrositios",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",  
+      "blockClass": "menu-micrositios",      
+      "preventVerticalStretch": true    
+    }
+  },
+  "link#menu1": {
+    "props": {      
+      "title": "menu1",
+      "href": "",
+      "target":"_blank",
+      "blockClass": "menu",
+      "label": "Próximos Fitting Days y Eventos"
+    }
+  },
+  "link#menu2": {
+    "props": {      
+      "title": "menu2",
+      "href": "",
+      "target":"_blank",
+      "blockClass": "menu",
+      "label": "Contacta con nosotros"
+    }
+  },
+  "link#menu3": {
+    "props": {      
+      "title": "menu3",
+      "href": "",
+      "target":"_blank",
+      "blockClass": "menu",
+      "label": "Promociones"
+    }
+  }
+}

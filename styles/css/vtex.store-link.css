@@ -75,3 +75,18 @@
     background-position: center;
     background-image: url(/arquivos/icon-phoneCall.png);
 }
+
+/*menu micrositios.*/
+.link--menu {
+    text-decoration: none;
+}
+.link--menu .label--menu {
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #000000;
+    margin: 5px 15px;
+}
