@@ -124,7 +124,7 @@
       "modal-trigger#MarcaPingValidarSugerencia",
       "flex-layout.row#buy-button",
       "product-specification-badges#aprobacion_de_compra",
-      "shipping-simulator",
+      "shipping-simulator",    
       //"product-rating-summary",
       //"flex-layout.row#list-price-savings",
       //"flex-layout.row#selling-price",
