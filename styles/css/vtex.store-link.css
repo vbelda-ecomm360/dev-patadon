@@ -88,5 +88,26 @@
     line-height: 1;
     letter-spacing: 1px;
     color: #000000;
-    margin: 5px 15px;
+    margin: 0;
+    float: left;
+    line-height: 32px;
+    text-transform: uppercase;
 }
+.link--botongrillaproductos {
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+    background: GREEN;
+    font-size: 12PX;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+} 
+

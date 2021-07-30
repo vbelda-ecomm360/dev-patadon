@@ -61,6 +61,8 @@
     "vtex.responsive-layout": "0.x",
     "vtex.store-form": "0.x",
     "vtex.store-video": "1.x",
+    "vtex.challenge-tp-condition": "0.x",
+    "vtex.auth-challenge": "1.x",
     "vtex.iframe": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

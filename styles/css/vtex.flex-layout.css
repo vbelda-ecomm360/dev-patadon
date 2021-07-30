@@ -607,12 +607,31 @@
     border-right: 0;
 }
 
-.flexRowContent--club-template {
-    flex-direction: column;
+.flexRow--header-micrositios {
+    border-top: 10px solid #000;
+    background: #fff;
 }
+
 .flexCol--menu-micrositios {
     flex-direction: revert;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0;
+    padding: 15px 0;
+}
+
+
+.flexRowContent--grillaclubes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexRowContent--grillaclubes .stretchChildrenWidth {
+    width: 20% !important;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.flexRowContent--header-micrositios-links .stretchChildrenWidth {
+    width: auto !important;
+    margin-right: 50px;
 }

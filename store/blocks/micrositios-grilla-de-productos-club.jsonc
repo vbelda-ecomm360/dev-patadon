@@ -1,0 +1,119 @@
+{
+  "store.custom#micrositios-grilla-de-productos-club": { 
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    },
+    "blocks": [
+      "flex-layout.row#header-micrositios",  
+      "image#bannerTopClub",    
+      "challenge-block#search-result-layout.customQuery"          
+    ]
+  },
+
+  "header#empty": {
+    "blocks": [
+      "header-layout.desktop#empty",
+      "header-layout.mobile#empty"
+    ]      
+  },
+  "header-layout.desktop#empty": {
+    "children": []   
+  },
+  "header-layout.mobile#empty": {
+    "children": []            
+  },
+  "footer#empty": {
+    "blocks": [
+      "footer-layout.desktop#empty",
+      "footer-layout.mobile#empty"
+    ]
+  },
+  "footer-layout.desktop#empty": {
+    "children": []
+  },
+  "footer-layout.mobile#empty": {
+    "children": []
+  },
+
+  "flex-layout.row#header-micrositios": {
+    "props": {
+      "width": "100%",
+      "title": "club",      
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",        
+      "blockClass": "header-micrositios",  
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#menu"       
+    ]
+  }, 
+
+  //Agrego bloques de Challenge para bloquear contenido si no estas logueado o aprobado
+  //Bloque Challenge
+  "challenge-block#search-result-layout.customQuery": {
+    "blocks": [
+      "challenge-content#search-result-layout.customQuery",
+      "challenge-fallback#search-result-layout.customQuery"
+    ]
+  },
+  //Bloque Challenge
+  "challenge-content#search-result-layout.customQuery": {
+    "children": [
+      "search-result-layout.customQuery"
+    ]
+  },
+  //Bloque Challenge
+  "challenge-fallback#search-result-layout.customQuery": {
+    "children": [
+      "rich-text#challenge-text",
+      "login-content#newUser"
+    ],
+    "props": {
+      "blockClass": "textLoginBlock"
+    }
+  },
+
+  "login-content#newUser": {
+      "props": {
+        "blockClass": "login-club",
+        //"accessCodeTitle": "fsdgbngdfvs",
+        "isInitialScreenOptionOnly": false,
+        "defaultOption": 1,
+        "showPasswordVerificationIntoTooltip": true
+      }
+    },
+
+  //Bloque Challenge
+  "rich-text#challenge-text": {
+    "props": {
+      "width": "70%",
+      "title": "club ",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,
+      "text": "Para poder ver ofertas asociadas a tu club, primero suscribete al sitio Depique y luego completa el formulario para ser aceptado!",
+      "blockClass": "challengeTopMenu"
+    }
+  },
+
+  "search-result-layout.customQuery": {
+    "props": {
+      "querySchema": {
+        "__unstableProductOriginVtex": true,
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "facetsBehavior": "dynamic",
+        "skusFilter": "ALL",
+        "maxItemsPerPage": 30,        
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}

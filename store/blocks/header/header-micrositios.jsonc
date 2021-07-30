@@ -1,10 +1,8 @@
 {
   "flex-layout.col#menu": {    
     "children": [
-      "link#menu1",                
-      "link#menu2",                
-      "link#menu3",                
-      "logo#desktop"              
+      "flex-layout.row#header-micrositios-links",            
+      "logo#depiqueMicroSitios"              
     ],
     "props": {
       "width": "100%",
@@ -15,31 +13,163 @@
       "preventVerticalStretch": true    
     }
   },
-  "link#menu1": {
+
+  "flex-layout.row#header-micrositios-links": {
     "props": {      
-      "title": "menu1",
-      "href": "",
-      "target":"_blank",
-      "blockClass": "menu",
-      "label": "Próximos Fitting Days y Eventos"
-    }
+      "blockClass": "header-micrositios-links",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "link#menu1",                
+      "link#menu2",                        
+      "challenge-block#suscripcionAltaClub"
+    ]
   },
+
+  "link#menu1": {
+    "props": {          
+      "title": "menu1",
+      "href": "/micrositios",
+      "blockClass": "menu",
+      "label": "Clubes"
+    }    
+  },
+
   "link#menu2": {
     "props": {      
       "title": "menu2",
       "href": "",
-      "target":"_blank",
       "blockClass": "menu",
-      "label": "Contacta con nosotros"
+      "label": "Próximos Fitting Days y Eventos"
     }
   },
+
+  "logo#depiqueMicroSitios": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo.png",
+      "width": "150px"
+    }
+  },
+
+  //Agrego bloques de Challenge para bloquear contenido si no estas logueado o aprobado
+  //Bloque Challenge
+  "challenge-block#suscripcionAltaClub": {
+    "blocks": [
+      "challenge-content#modal-trigger#suscripcionAltaClub",
+      "challenge-fallback#suscripcionAltaClub"
+    ]
+  },
+
+  //Bloque Challenge
+  "challenge-content#modal-trigger#suscripcionAltaClub": {
+    "children": [
+      "modal-trigger#suscripcionAltaClub"
+    ]
+  },
+
+  //Bloque Challenge
+  "challenge-fallback#suscripcionAltaClub": {
+    "children": [
+      "flex-layout.col#micrositiosLogin"
+    ],
+    "props": {
+      "blockClass": "textLoginBlock"
+    }
+  },
+
+
+  // LOGIN
+  "flex-layout.col#micrositiosLogin": {
+    "props": {
+      "blockClass": "micrositiosLogin",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "flex-layout.row#micrositiosLogin"
+    ]
+  },
+
+  "flex-layout.row#micrositiosLogin": {
+    "props": {
+      "blockClass": "micrositiosLogin",
+      "width": "100%"
+    },
+    "children": [
+        "login"
+    ]
+  },
+
+
+  //Modal Ping
+  "modal-trigger#suscripcionAltaClub": {
+    "title": "Validar sugerencia previo a la compra",
+    "children": [
+      "link#menu3", 
+      "modal-layout#pingLayout"
+    ],
+    "props": {
+      "blockClass": "MarcaPingValidarSugerencia",
+      "trigger": "click"
+    }
+  },
+  
   "link#menu3": {
     "props": {      
       "title": "menu3",
       "href": "",
-      "target":"_blank",
       "blockClass": "menu",
-      "label": "Promociones"
+      "label": "Solicitud de alta"
     }
+  },
+
+  "modal-layout#pingLayout": {
+    "children": [
+      "modal-content#pingContent",
+      "modal-actions.close#pingAceptar"
+    ],
+    "props": {
+      "disableEscapeKeyDown": true
+    }
+  },
+
+  "modal-content#pingContent": {
+    "children": ["form#altaclub"],
+    "props": {
+      "blockClass": "modalPing-Content"
+    }
+  },
+
+  "form#altaclub": {
+    "props":{
+      "blockClass": "formaltaclub",
+      "entity": "SC",  
+      "schema": "altaclub"
+    },
+    "children": [      
+      "form-input.text#contactoNombreApellido",
+      "form-input.text#contactoEmail",
+      "form-input.text#contactoClub",
+      "form-submit"
+    ]
+  },
+  "form-input.text#contactoNombreApellido": {  
+    "props": {  
+      "blockClass": "formaltaclub",      
+      "pointer": "#/properties/firstName"  
+    }  
+  },    
+  "form-input.text#contactoEmail": {  
+    "props": {  
+      "blockClass": "formaltaclub",      
+      "pointer": "#/properties/email"  
+    }  
+  },
+  "form-input.text#contactoClub": {  
+    "props": {  
+      "blockClass": "formaltaclub",      
+      "pointer": "#/properties/club"  
+    }  
   }
 }

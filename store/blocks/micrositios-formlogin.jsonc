@@ -1,0 +1,105 @@
+{
+  "store.custom#micrositios-login": {
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    },
+    "blocks": [
+      "flex-layout.row#header-micrositios",
+      "flex-layout.row#contactoRow"      
+    ]
+  },
+
+  "header#empty": {
+    "blocks": [
+      "header-layout.desktop#empty",
+      "header-layout.mobile#empty"
+    ]      
+  },
+  "header-layout.desktop#empty": {
+    "children": []   
+  },
+  "header-layout.mobile#empty": {
+    "children": []            
+  },
+  "footer#empty": {
+    "blocks": [
+      "footer-layout.desktop#empty",
+      "footer-layout.mobile#empty"
+    ]
+  },
+  "footer-layout.desktop#empty": {
+    "children": []
+  },
+  "footer-layout.mobile#empty": {
+    "children": []
+  },
+
+  // FORM LOGIN MICROSITIOS
+  "flex-layout.row#contactoRow": {
+      "children": [
+        "flex-layout.col#col-contacto"
+      ],
+      "props":{
+          "marginBottom": "10"
+      }
+    },
+    "flex-layout.col#col-contacto": {
+      "children": [
+        "rich-text#cto-titulo",
+        "flex-layout.row#cto-form"        
+      ],
+      "props": { 
+        "blockClass": "rowRegister",
+        "preventVerticalStretch": true
+      }
+    },
+   "rich-text#cto-titulo": {
+      "props": {
+        "text": "### Registrarse",
+        "blockClass": "",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+    "flex-layout.row#cto-form": {
+      "props":{
+        "blockClass": "labelColContacto"
+      },
+      "children": [
+        "form#contact"      
+      ]
+    },
+    "form#contact": {
+      "props":{
+        "blockClass": "labelColContacto",
+        "entity": "CL",  
+        "schema": "registro"
+      },
+      "children": [
+        "form-input.text#contactoNombre",
+        "form-input.text#contactoApellido",
+        "form-input.text#contactoEmail",
+        "form-submit"
+      ]
+    },
+    "form-input.text#contactoNombre": {  
+      "props": {  
+        "blockClass": "labelColContacto",      
+        "pointer": "#/properties/firstName"  
+      }  
+    },   
+    "form-input.text#contactoApellido": {  
+      "props": {  
+        "blockClass": "labelColContacto",      
+        "pointer": "#/properties/lastName"  
+      }  
+    },   
+    "form-input.text#contactoEmail": {  
+      "props": {  
+        "blockClass": "labelColContacto",      
+        "pointer": "#/properties/email"  
+      }  
+    }
+}
