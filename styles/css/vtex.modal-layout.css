@@ -105,3 +105,13 @@
 .paper--product-gifts {
   padding: 1.5rem;
 }
+
+
+.modal--suscripcionAltaClubRow .paper--suscripcionAltaClubRow {
+
+  width: 500px;
+  margin: 0;
+}
+.modal--suscripcionAltaClubRow .paper--suscripcionAltaClubRow .closeButton--suscripcionButtonClose {
+  padding: 0;
+}
