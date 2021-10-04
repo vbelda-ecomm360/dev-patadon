@@ -687,11 +687,42 @@
     margin: 0 auto;
 }
 .container--challengeTopMenu .wrapper--challengeTopMenu .paragraph--challengeTopMenu {
-    font-size: 2rem;
+    font-size: 20px;
     text-align: center;
     width: 100%;
-    padding: 100px 0 50px 0;
+    padding:50px 0;
     margin: 0;
     font-weight: 200;
-    text-transform: uppercase;
+}
+.container--mensajeDeAviso .wrapper--mensajeDeAviso {
+    width: 80%;
+    margin: 0 auto;
+}
+.container--mensajeDeAviso .wrapper--mensajeDeAviso .paragraph {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    padding:50px 0;
+    margin: 0;
+    font-weight: 200;
+}
+
+.wrapper--titletext .paragraph {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 10px 0;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+    .container--challengeTopMenu .wrapper--challengeTopMenu {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .container--challengeTopMenu .wrapper--challengeTopMenu .paragraph--challengeTopMenu {
+        font-size: 16px;
+        padding:25px 0;
+        
+    }   
 }

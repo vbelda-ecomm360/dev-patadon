@@ -54,12 +54,12 @@
 
   "image#club-uno": {
     "props": {
-      "src": "assets/logos/logogolfsancugat.jpg",
+      "src": "",
       "maxHeight": "",
       "maxWidth": "",
       "blockClass": "image-club",
       "link": {
-        "url": "/micrositios/home-santcugat-es"
+        "url": ""
       } 
     }    
   }

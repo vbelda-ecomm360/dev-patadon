@@ -80,14 +80,15 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "colSizing": "auto",
-      "colGap": 8
+      "colGap": 6
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "search-bar#header",
-      //"flex-layout.col#locale-switcher",
+      //"flex-layout.col#locale-switcher",      
       "flex-layout.col#login",
-      "flex-layout.col#minicart"
+      "flex-layout.col#minicart",
+      "menu-item#comunidad"
     ]
   },
   // IDIOMA
@@ -132,6 +133,22 @@
         "blockClass": "main-header-text"
       }
     },
+  "menu-item#comunidad": {
+      "props": {
+          "blockClass": "comunidad-header-text",
+          "id": "menu-item-Comunidad",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+              "type": "internal",
+              "href": "/micrositios-depique",
+              "noFollow": false,
+              "tagTitle": "Blog",
+              "text": "Acceso Socios"
+          }
+      }
+  },
   // LOGIN
   "flex-layout.col#login": {
     "props": {

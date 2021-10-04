@@ -98,3 +98,72 @@
     transition: none;
   }
 }
+
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-login-2-x-contentAlwaysWithOptions)
+  :global(.vtex-login-2-x-loginOptionsContainer) {
+  display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-flex-layout-0-x-flexColChild--user-form)
+:global(.vtex-login-2-x-container),
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-flex-layout-0-x-flexColChild--user-form-depique)
+:global(.vtex-login-2-x-container) {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  background: #c7102e;
+  border-radius: 4px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-flex-layout-0-x-flexColChild--user-form)
+:global(.vtex-login-2-x-container)
+:global(.vtex-button),
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-flex-layout-0-x-flexColChild--user-form-depique)
+:global(.vtex-login-2-x-container)
+:global(.vtex-button) {
+  border: 0;
+  line-height: 22px;
+  width: 250px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-flex-layout-0-x-flexColChild--user-form)
+:global(.vtex-login-2-x-container)
+:global(.vtex-login-2-x-label),
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-flex-layout-0-x-flexColChild--user-form-depique)
+:global(.vtex-login-2-x-container)
+:global(.vtex-login-2-x-label) {
+  color: #fff;
+  position: relative;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-login-2-x-contentAlwaysWithOptions)
+  :global(.vtex-login-2-x-formTitle) {
+  display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-login-2-x-contentAlwaysWithOptions)
+  :global(.vtex-login-2-x-contentFormVisible) {
+  width: 100%;
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--form-login-block)
+:global(.vtex-login-2-x-contentAlwaysWithOptions) {
+  flex-direction: column;
+  background: transparent;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+

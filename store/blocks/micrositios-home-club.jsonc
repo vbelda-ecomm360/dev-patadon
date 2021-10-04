@@ -6,10 +6,8 @@
     },
     "blocks": [
       "flex-layout.row#header-micrositios",
-      "image#bannerTopClub" ,    
-      "link#botongrillaproductos",
-      "flex-layout.row#bloqueuno",
-      "flex-layout.row#bloquedos"
+      "image#bannerTopClub",
+      "challenge-block#search-result-layout-club.customQuery"            
     ]
   },
 
@@ -40,6 +38,20 @@
 
   // COMPAÑIA DE GOLF
 
+  "flex-layout.row#header-micrositios": {
+    "props": {
+      "width": "100%",
+      "title": "club",      
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",        
+      "blockClass": "header-micrositios",  
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#menu"       
+    ]
+  }, 
+
   "image#bannerTopClub": {
     "props": {  
       "fullWidth": false,    
@@ -47,93 +59,240 @@
       "blockClass": "club-image",  
       "verticalAlign": "left",
       "horizontalAlign": "left",
-      "src": "assets/golfsantcugat.jpg" 
+      "src": "" 
+    }
+  },
+  //Agrego bloques de Challenge para bloquear contenido si no estas logueado o aprobado
+  //Bloque Challenge
+  "challenge-block#search-result-layout-club.customQuery": {
+    "blocks": [
+      "challenge-content#search-result-layout-club.customQuery",
+      "challenge-fallback#search-result-layout-club.customQuery"
+    ]
+  },
+  //Bloque Challenge
+  "challenge-content#search-result-layout-club.customQuery": {
+    "children": [
+      "search-result-layout.customQuery"
+    ]
+  },
+  //Bloque Challenge
+  "challenge-fallback#search-result-layout-club.customQuery": {
+    "children": [
+      "rich-text#challenge-text-club",      
+      "flex-layout.row#form-login-block-club"
+    ],
+    "props": {
+      "blockClass": "textLoginBlock"
     }
   },
 
-  "link#botongrillaproductos": {
-    "props": {      
-      "title": "menu1",
-      "href": "/micrositios/home-santcugat-es/productos",
-      "blockClass": "botongrillaproductos",
-      "label": "Ver productos"
-    }    
-  },
-
-  "flex-layout.row#bloqueuno": {
-    "children": ["image#bloqueuno", "flex-layout.col#text-bloqueuno"],
+  "flex-layout.row#form-login-block-club": {
+    "children": [      
+      "flex-layout.col#text-form-club",
+      //"image#bannerExplicativo-club",
+      "flex-layout.col#newUser"      
+    ],
     "props": {
-      "blockClass": "about"
+      "blockClass": "form-login-block",
+      //"horizontalAlign": "left",
+      "verticalAlign": "top"      
     }
   },  
 
-  "flex-layout.col#text-bloqueuno": {
-    "children": ["rich-text#title-bloqueuno", "rich-text#bloqueuno"],
-    "props": {
-      "blockClass": "textColumn",
-      "preventVerticalStretch": true
+  "image#bannerExplicativo-club": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "bannerExplicativo",
+      "blockClass": "bannerExplicativo",  
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "src": "assets/category4.png"
     }
   },
 
-  "rich-text#title-bloqueuno": {
+  "flex-layout.col#newUser": {
+    "children": [
+      "image#paso-dos",
+      "rich-text#titletextlogin-club",
+      "login#newUser"
+      //"login-content#newUser"
+      
+    ],
     "props": {
-      "text": "# Las viñas de Can Mora, una vieja masía del siglo XIV, son el origen de los terrenos del Club.",
-      "blockClass": "title-about"
+      "blockClass": "user-form",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    }
+  },  
+
+  "login#newUser": {
+    "props": {
+      "blockClass": "login-club",
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": false      
     }
   },
 
-  "image#bloqueuno": {
-    "props": {
-      "src": "assets/about-us/Imagen-3.jpg",
-      "maxHeight": "",
-      "maxWidth": "",
-      "blockClass": "image-about"
+  "image#paso-dos": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "bannerExplicativo",
+      "blockClass": "imgpasos",  
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "src": "assets/paso2.png"
     }
   },
 
-  "rich-text#bloqueuno": {
+  "rich-text#titletextlogin-club": {
     "props": {
-      "text": "Todo empezó con la llegada del canadiense Frederick Stark Pearson y su proyecto de electrificar Cataluña y abrir una vía de expansión de Barcelona hacia el Vallés. Entre las fincas que Pearson compró en 1912 en Sant Cugat -a través de la Catalonia Land Company, según la inscripción del Registro de la Propiedad de Sabadell- para llevar hasta allí el tren que debía comunicar Barcelona con Terrassa y Sabadell, Can Mora, una vieja masía del siglo XIV, era el lugar ideal donde construir un campo de golf. Contrató el mejor diseñador de la época, el inglés H.S.Colt (arquitecto también de campos tan emblemáticos como Pine Valley o Muirfield), quién en poco tiempo trazó las calles del nuevo recorrido sobre lo que habían sido unas viñas.",
-      "blockClass": "text-about"
+      "title": "titletext",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,
+      "text": "**ACCESOS SOCIOS?**\nIngresa con tus datos personales y disfrutá nuestros precios especiales",
+      "blockClass": "titletext"
+    }
+  },
+  "login-content#newUser": {
+    "props": {
+      "blockClass": "login-club",
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": false
+    }
+  },  
+
+  "flex-layout.col#text-form-club": {
+    "children": [
+      "image#paso-uno",
+      "rich-text#titletext",
+      "form#altaclub"
+    ],
+    "props": {
+      "blockClass": "text-form",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"      
+    }
+  },  
+
+  "image#paso-uno": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "bannerExplicativo",
+      "blockClass": "imgpasos",  
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "src": "assets/paso1.png"
+    }
+  },
+  "rich-text#titletext": {
+    "props": {
+      "title": "titletext",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,
+      "text": "**TE INTERESA?**\nEl acceso al club es por invitación. Puedes dejar tus datos y nos pondremos en contacto",
+      "blockClass": "titletext"
+    }
+  },
+  "form#altaclub": {
+    "props":{
+      "blockClass": "formaltaclub",
+      "entity": "SC",  
+      "schema": "altaclub"
+    },
+    "children": [      
+      "form-input.dropdown#contactoGenero",
+      "form-input.text#contactoNombreApellido",
+      "form-input.text#contactoEmail",
+      "form-input.text#contactoClub",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Formulario completado con exito!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.dropdown#contactoGenero": {  
+    "props": {  
+      "blockClass": "formaltaclub",  
+      "placeholder": "Género *",         
+      "pointer": "#/properties/genero"  
+    }  
+  },  
+  "form-input.text#contactoNombreApellido": {  
+    "props": {  
+      "blockClass": "formaltaclub",  
+      "placeholder": "Nombre y Apellido *", 
+      "label": "",   
+      "pointer": "#/properties/firstName"  
+    }  
+  },    
+  "form-input.text#contactoEmail": {  
+    "props": {  
+      "blockClass": "formaltaclub",  
+      "placeholder": "E-mail *",    
+      "label": "",
+      "pointer": "#/properties/email"  
+    }  
+  },
+  "form-input.text#contactoClub": {  
+    "props": {  
+      "blockClass": "formaltaclub",  
+      "label": "",
+      "placeholder": "Club de golf habitual *",        
+      "pointer": "#/properties/club"  
+    }  
+  },
+  "modal-actions.close#suscripcionAceptar": {
+    "props": {
+      "label": "Cerrar",
+      "blockClass": "suscripcionButtonClose"
+    }
+  }, 
+
+  //Bloque Challenge
+  "rich-text#challenge-text-club": {
+    "props": {
+      "width": "100%",
+      "title": "club ",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,      
+      "text": "**¡BIENVENIDO!**\nGracias a nuestra tienda online ahora puedes comprar cualquier material de golf.\nPara tener acceso a la tienda, solo tienes que rellenar una vez el formulario número 1 que se muestra a continuación y registrarte para obtener tus datos de acceso en el paso número 2 (En el link que dice: Regístrese). Una vez que hayamos validado todos los datos, recibirás un mail confirmando que tu usuario ya tiene acceso a la tienda con los precios especiales de socios.\nSi ya eres un usuario registrado, te invitamos a iniciar sesión y disfrutar de las ventajas de nuestra tienda online.",
+
+      "blockClass": "challengeTopMenu"
     }
   },
 
-  // BLOQUE DOS
-  "flex-layout.row#bloquedos": {
-    "children": ["flex-layout.col#text-bloquedos", "image#bloquedos"],
+  "search-result-layout.customQuery": {
     "props": {
-      "blockClass": "about-white"
-    }
-  },
-
-  "flex-layout.col#text-bloquedos": {
-    "children": ["rich-text#title-bloquedos", "rich-text#bloquedos"],
-    "props": {
-      "blockClass": "textColumn",
-      "preventVerticalStretch": true
-    }
-  },
-
-  "rich-text#title-bloquedos": {
-    "props": {
-      "text": "# En 1912 el canadiense Frederick Stark Pearson compró la finca para construir un campo de golf.",
-      "blockClass": "title-about"
-    }
-  },
-
-  "image#bloquedos": {
-    "props": {
-      "src": "assets/about-us/Imagen-2.jpg",
-      "maxHeight": "",
-      "maxWidth": "",
-      "blockClass": "image-about"
-    }
-  },
-
-  "rich-text#bloquedos": {
-    "props": {
-      "text": "Pearson no pudo ver acabada su obra porque murió en 1915 en el Lusitania, camino de Inglaterra, cuando iba a buscar financiación por todo el proyecto, que había quedado paralizado a causa de la Primera Guerra Mundial. El New Barcelona Golf Club se inscribió en el registro de sociedades deportivas en 1919 y, con una masa social básicamente extranjera, fue conocido en Sant Cugat como el “Club de los Ingleses”.\nEn 1937, por la Guerra Civil, el presidente Lluís Companys instaló el primer campo de instrucción premilitar de Cataluña. La vida del club se vió alterada con el estallido de la Guerra Civil. En enero de 1937, la Generalitat requisó el campo e instaló el primer campo de instrucción premilitar de Cataluña en Pins del Vallès –nombre de la población en aquella época-, que fue inaugurado por el presidente Lluís Companys el 21 de marzo de 1937. El paso de más de 8.000 soldados dejó el campo arrasado. Sólo el trabajo y la voluntad de los socios que volvieron al final de la guerra hicieron posible su recuperación. De unos greens de arena, unas calles llenas de piedras y un paisaje desolador, con los años el Golf Sant Cugat se ha convertido en un bello recorrido que cuenta incluso con un árbol –un roble- catalogado como el de mayor copa de su especie en Cataluña. En 1934 el club cambió su denominación por la de Sant Cugat Golf Club y, finalmente, en 1941 adquirió el actual de Club de Golf Sant Cugat.\nA lo largo del tiempo el club ha sido sede de importantes pruebas tanto de ámbito catalán como estatal, incluidas dos ediciones del Open de España (1942 y 1967).",
-      "blockClass": "text-about"
-    }
+      "querySchema": {
+        "__unstableProductOriginVtex": true,
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "facetsBehavior": "dynamic",
+        "skusFilter": "ALL",
+        "maxItemsPerPage": 30,        
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
   }
 }

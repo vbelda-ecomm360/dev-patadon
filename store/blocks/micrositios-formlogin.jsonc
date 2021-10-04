@@ -70,7 +70,8 @@
       "children": [
         "form#contact"      
       ]
-    },
+    },   
+
     "form#contact": {
       "props":{
         "blockClass": "labelColContacto",

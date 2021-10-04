@@ -33,6 +33,7 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#stack-mobile",
       "flex-layout.row#product-name",
+      "product-rating-summary",
       "flex-layout.row#brand-rating",
       "flex-layout.row#right-col-mobile",
       "menu#product_tabs_mobile",
@@ -119,13 +120,12 @@
       "rowGap": 0
     },
     "children": [
-      "sku-selector",
+      "sku-selector",            
       "flex-layout.row#product_prices",
       "modal-trigger#MarcaPingValidarSugerencia",
       "flex-layout.row#buy-button",
       "product-specification-badges#aprobacion_de_compra",
-      "shipping-simulator",    
-      //"product-rating-summary",
+      "shipping-simulator",          
       //"flex-layout.row#list-price-savings",
       //"flex-layout.row#selling-price",
       //"product-installments",

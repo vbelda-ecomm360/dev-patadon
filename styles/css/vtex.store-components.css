@@ -476,3 +476,19 @@
   width: 100%;
   height: auto;
 }
+.imageElement--tarjetabaneficiosimage {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+} 
+.imageElement--bannerExplicativo {
+  width: 100%;
+  height: auto;
+}
+
+.imageElement--imgpasos {
+  max-width: 100px;
+  margin: 0 auto;  
+  display: block;
+  margin-bottom: 30px;
+}

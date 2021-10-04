@@ -1,7 +1,7 @@
 {
   "flex-layout.col#menu": {    
     "children": [
-      "flex-layout.row#header-micrositios-links",            
+      "flex-layout.row#header-micrositios-links",              
       "logo#depiqueMicroSitios"              
     ],
     "props": {
@@ -20,9 +20,9 @@
       "verticalAlign": "middle"
     },
     "children": [
-      "link#menu1",                
-      "link#menu2",                        
-      "challenge-block#suscripcionAltaClub"
+      //"link#menu1",                
+      //"link#menu2",                        
+      //"challenge-block#suscripcionAltaClub"
     ]
   },
 
@@ -135,61 +135,11 @@
     }
   },
 
+
   "modal-content#suscripcionAltaClubContent": {
     "children": ["form#altaclub"],
     "props": {
       "blockClass": "suscripcionAltaClubContent"
-    }
-  },
-
-  "form#altaclub": {
-    "props":{
-      "blockClass": "formaltaclub",
-      "entity": "SC",  
-      "schema": "altaclub"
-    },
-    "children": [      
-      "form-input.text#contactoNombreApellido",
-      "form-input.text#contactoEmail",
-      "form-input.text#contactoClub",
-      "form-submit"
-    ],
-    "blocks": ["form-success"]
-  },
-  "form-success": {
-    "children": [
-      "rich-text#successSubmit"
-    ]
-  },
-  "rich-text#successSubmit": {
-    "props": {
-      "text": "Formulario completado con exito!",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-  "form-input.text#contactoNombreApellido": {  
-    "props": {  
-      "blockClass": "formaltaclub",      
-      "pointer": "#/properties/firstName"  
-    }  
-  },    
-  "form-input.text#contactoEmail": {  
-    "props": {  
-      "blockClass": "formaltaclub",      
-      "pointer": "#/properties/email"  
-    }  
-  },
-  "form-input.text#contactoClub": {  
-    "props": {  
-      "blockClass": "formaltaclub",      
-      "pointer": "#/properties/club"  
-    }  
-  },
-  "modal-actions.close#suscripcionAceptar": {
-    "props": {
-      "label": "Cerrar",
-      "blockClass": "suscripcionButtonClose"
     }
   }
 }

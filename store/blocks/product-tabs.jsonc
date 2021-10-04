@@ -88,7 +88,7 @@
     },
     "tab-content.item#prod3": {
         "children": [
-            "rich-text#prod3",
+            //"rich-text#prod3",
             "product-reviews",
             "product-questions-and-answers"
         ],
