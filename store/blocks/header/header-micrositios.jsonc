@@ -1,8 +1,7 @@
 {
   "flex-layout.col#menu": {    
     "children": [
-      "flex-layout.row#header-micrositios-links",   
-      "flex-layout.col#category-menu",           
+      "flex-layout.row#header-micrositios-links",         
       "logo#depiqueMicroSitios"              
     ],
     "props": { 
@@ -21,8 +20,10 @@
       "verticalAlign": "middle"
     },
     "children": [
-      //"link#menu1",                
-      //"link#menu2",                        
+      "link#menu1",                
+      "link#menu2",
+      "link#menu3-micrositios",                
+      "link#menu4"                     
       //"challenge-block#suscripcionAltaClub"
     ]
   },
@@ -30,18 +31,36 @@
   "link#menu1": {
     "props": {          
       "title": "menu1",
-      "href": "/micrositios",
+      "href": "/palos-de-golf",
       "blockClass": "menu",
-      "label": "Clubes"
+      "label": "Palos de golf"
     }    
   },
 
   "link#menu2": {
     "props": {      
       "title": "menu2",
-      "href": "",
+      "href": "/Ropa-y-Calzado",
       "blockClass": "menu",
-      "label": "Próximos Fitting Days y Eventos"
+      "label": "Ropa y Calzado"
+    }
+  },
+
+  "link#menu3-micrositios": {
+    "props": {          
+      "title": "menu3",
+      "href": "/Bolsas-y-carros",
+      "blockClass": "menu",
+      "label": "Bolsas, Carros y GPS"
+    }    
+  },
+
+  "link#menu4": {
+    "props": {      
+      "title": "menu4",
+      "href": "/Accsesorios",
+      "blockClass": "menu",
+      "label": "Bolas y Accesorios"
     }
   },
 
@@ -50,7 +69,8 @@
       "title": "Logo",
       "href": "/",
       "url": "assets/logo.png",
-      "width": "150px"
+      "width": "150px",
+      "blockClass": "logo-micrositios"
     }
   },
 

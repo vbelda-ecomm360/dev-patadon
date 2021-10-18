@@ -62,7 +62,6 @@
   //Bloque Challenge
   "challenge-content#search-result-layout-club.customQuery": {
     "children": [
-      "list-context.image-list#homeClub",
       "search-result-layout.customQuery"
     ]
   },
@@ -76,11 +75,45 @@
     "props": {
       "blockClass": "textLoginBlock"
     }
-  }, 
+  },
+
+  // SLIDER
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/home/banner.jpg",
+          "mobileImage": "assets/home/banner.jpg"
+        },
+        {
+          "image": "assets/home/banner.jpg",
+          "mobileImage": "assets/home/banner.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": ["carousel", "slider-home"],
+      "autoplay":{
+        "timeout": "4000"
+      }
+    }
+  },
 
   "image#bannerTopClub": {
-    "props": { 
-      "title": "bannerTopClub",
+    "props": {  
       "fullWidth": false,    
       "title": "club Image",
       "blockClass": "club-image",  
@@ -93,6 +126,7 @@
   "flex-layout.row#form-login-block-club": {
     "children": [      
       "flex-layout.col#text-form-club",
+      //"image#bannerExplicativo-club",
       "flex-layout.col#newUser"      
     ],
     "props": {
@@ -102,11 +136,23 @@
     }
   },  
 
+  "image#bannerExplicativo-club": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "bannerExplicativo",
+      "blockClass": "bannerExplicativo",  
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "src": "assets/category4.png"
+    }
+  },
+
   "flex-layout.col#newUser": {
     "children": [
       "image#paso-dos",
       "rich-text#titletextlogin-club",
       "login#newUser"
+      //"login-content#newUser"
       
     ],
     "props": {
@@ -145,7 +191,15 @@
       "text": "**ACCESO SOCIOS**\n Ingresa con tu mail y disfruta de ventajas especiales para ti.",
       "blockClass": "titletext"
     }
-  }, 
+  },
+  "login-content#newUser": {
+    "props": {
+      "blockClass": "login-club",
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": false
+    }
+  },  
 
   "flex-layout.col#text-form-club": {
     "children": [
@@ -259,40 +313,6 @@
     }
   },
 
-  // SLIDER
-  "list-context.image-list#homeClub": {
-    "children": ["slider-layout#homeClub"],
-    "props": {
-      "height": 720,
-      "images": [
-        {
-          "image": "",
-          "mobileImage": ""
-        },
-        {
-          "image": "",
-          "mobileImage": ""
-        }
-      ]
-    }
-  },
-  "slider-layout#homeClub": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "always",
-      "blockClass": ["carousel", "slider-landing"],
-      "autoplay":{
-        "timeout": "4000"
-      }
-    }
-  },
   "search-result-layout.customQuery": {
     "props": {
       "querySchema": {
@@ -305,7 +325,8 @@
         "simulationBehavior": "skip"
       }
     },
-    "blocks": [      
+    "blocks": [
+      "list-context.image-list#demo",
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"

@@ -619,6 +619,14 @@
     padding: 15px 0;
 }
 
+.flexColChild--menu-micrositios{
+    width: 100%;
+}
+
+.flexColChild--menu-micrositios:last-child{
+    width: auto;
+}
+
 
 .flexRowContent--grillaclubes {
     display: flex;
