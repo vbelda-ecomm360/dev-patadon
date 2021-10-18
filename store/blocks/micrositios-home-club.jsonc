@@ -62,6 +62,7 @@
   //Bloque Challenge
   "challenge-content#search-result-layout-club.customQuery": {
     "children": [
+      "list-context.image-list#demo2",
       "search-result-layout.customQuery"
     ]
   },
@@ -78,7 +79,7 @@
   },
 
   // SLIDER
-  "list-context.image-list#demo": {
+  "list-context.image-list#demo2": {
     "children": ["slider-layout#demo-images"],
     "props": {
       "height": 720,
@@ -325,8 +326,7 @@
         "simulationBehavior": "skip"
       }
     },
-    "blocks": [
-      "list-context.image-list#demo",
+    "blocks": [      
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
