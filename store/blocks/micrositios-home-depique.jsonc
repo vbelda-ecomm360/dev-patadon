@@ -62,6 +62,7 @@
   //Bloque Challenge
   "challenge-content#search-result-layout.customQuery": {
     "children": [
+      "list-context.image-list#homeDepique",
       "search-result-layout.customQuery"
     ]
   },
@@ -208,6 +209,40 @@
     }
   },  
 
+  // SLIDER
+  "list-context.image-list#homeDepique": {
+    "children": ["slider-layout#homeDepique"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "",
+          "mobileImage": ""
+        },
+        {
+          "image": "",
+          "mobileImage": ""
+        }
+      ]
+    }
+  },
+  "slider-layout#homeDepique": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": ["carousel", "slider-home"],
+      "autoplay":{
+        "timeout": "4000"
+      }
+    }
+  },
   "search-result-layout.customQuery": {
     "props": {
       "querySchema": {
