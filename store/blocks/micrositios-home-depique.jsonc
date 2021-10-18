@@ -6,7 +6,6 @@
     },
     "blocks": [
       "flex-layout.row#header-micrositios",
-      "image#bannerTopDepique",
       "challenge-block#search-result-layout.customQuery"            
     ]
   },
@@ -52,17 +51,6 @@
     ]
   }, 
 
-  "image#bannerTopDepique": {
-    "props": {  
-      "fullWidth": false,    
-      "title": "club Image",
-      "blockClass": "club-image",  
-      "verticalAlign": "left",
-      "horizontalAlign": "left",
-      "src": "" 
-    }
-  },
-
   //Agrego bloques de Challenge para bloquear contenido si no estas logueado o aprobado
   //Bloque Challenge
   "challenge-block#search-result-layout.customQuery": {
@@ -80,11 +68,23 @@
   //Bloque Challenge
   "challenge-fallback#search-result-layout.customQuery": {
     "children": [
+      "image#bannerTopDepique",
       "rich-text#challenge-text-depique",      
       "flex-layout.row#login-block"    
     ],
     "props": {
       "blockClass": "textLoginBlock"
+    }
+  },
+
+  "image#bannerTopDepique": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "club Image",
+      "blockClass": "club-image",  
+      "verticalAlign": "left",
+      "horizontalAlign": "left",
+      "src": "" 
     }
   },
 
@@ -157,7 +157,7 @@
       "verticalAlign": "center",
       "horizontalAlign": "center",  
       "preventVerticalStretch": true,
-      "text": "**ACCESOS SOCIOS?**\nIngresa con tus datos personales y disfrutá nuestros precios especiales",
+      "text": "**ACCESO SOCIOS**\n Ingresa con tu mail y disfruta de ventajas especiales para ti.",
       "blockClass": "titletext"
     }
   },

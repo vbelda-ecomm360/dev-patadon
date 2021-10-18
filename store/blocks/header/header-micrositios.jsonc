@@ -1,10 +1,11 @@
 {
   "flex-layout.col#menu": {    
     "children": [
-      "flex-layout.row#header-micrositios-links",              
+      "flex-layout.row#header-micrositios-links",   
+      "flex-layout.col#category-menu",           
       "logo#depiqueMicroSitios"              
     ],
-    "props": {
+    "props": { 
       "width": "100%",
       "title": "menu micrositios",
       "horizontalAlign": "center",

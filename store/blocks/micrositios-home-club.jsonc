@@ -6,7 +6,6 @@
     },
     "blocks": [
       "flex-layout.row#header-micrositios",
-      "image#bannerTopClub",
       "challenge-block#search-result-layout-club.customQuery"            
     ]
   },
@@ -52,16 +51,6 @@
     ]
   }, 
 
-  "image#bannerTopClub": {
-    "props": {  
-      "fullWidth": false,    
-      "title": "club Image",
-      "blockClass": "club-image",  
-      "verticalAlign": "left",
-      "horizontalAlign": "left",
-      "src": "" 
-    }
-  },
   //Agrego bloques de Challenge para bloquear contenido si no estas logueado o aprobado
   //Bloque Challenge
   "challenge-block#search-result-layout-club.customQuery": {
@@ -79,11 +68,58 @@
   //Bloque Challenge
   "challenge-fallback#search-result-layout-club.customQuery": {
     "children": [
+      "image#bannerTopClub",
       "rich-text#challenge-text-club",      
       "flex-layout.row#form-login-block-club"
     ],
     "props": {
       "blockClass": "textLoginBlock"
+    }
+  },
+
+  // SLIDER
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/home/banner.jpg",
+          "mobileImage": "assets/home/banner.jpg"
+        },
+        {
+          "image": "assets/home/banner.jpg",
+          "mobileImage": "assets/home/banner.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": ["carousel", "slider-home"],
+      "autoplay":{
+        "timeout": "4000"
+      }
+    }
+  },
+
+  "image#bannerTopClub": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "club Image",
+      "blockClass": "club-image",  
+      "verticalAlign": "left",
+      "horizontalAlign": "left",
+      "src": "" 
     }
   },
 
@@ -152,7 +188,7 @@
       "verticalAlign": "center",
       "horizontalAlign": "center",  
       "preventVerticalStretch": true,
-      "text": "**ACCESOS SOCIOS?**\nIngresa con tus datos personales y disfrutá nuestros precios especiales",
+      "text": "**ACCESO SOCIOS**\n Ingresa con tu mail y disfruta de ventajas especiales para ti.",
       "blockClass": "titletext"
     }
   },
@@ -290,6 +326,7 @@
       }
     },
     "blocks": [
+      "list-context.image-list#demo",
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
