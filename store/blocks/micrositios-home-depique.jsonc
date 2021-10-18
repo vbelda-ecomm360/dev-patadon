@@ -237,7 +237,7 @@
       "fullWidth": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "always",
-      "blockClass": ["carousel", "slider-home"],
+      "blockClass": ["carousel", "slider-landing"],
       "autoplay":{
         "timeout": "4000"
       }
