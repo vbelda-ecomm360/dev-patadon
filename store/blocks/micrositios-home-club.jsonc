@@ -62,7 +62,7 @@
   //Bloque Challenge
   "challenge-content#search-result-layout-club.customQuery": {
     "children": [
-      "list-context.image-list#homeDepique",
+      "list-context.image-list#homeClub",
       "search-result-layout.customQuery"
     ]
   },
@@ -79,8 +79,8 @@
   },
 
   // SLIDER
-  "list-context.image-list#homeDepique": {
-    "children": ["slider-layout#homeDepique"],
+  "list-context.image-list#homeClub": {
+    "children": ["slider-layout#homeClub"],
     "props": {
       "height": 720,
       "images": [
@@ -95,7 +95,7 @@
       ]
     }
   },
-  "slider-layout#homeDepique": {
+  "slider-layout#homeClub": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
