@@ -140,6 +140,7 @@
 :global(.vtex-login-2-x-label) {
   color: #fff;
   position: relative;
+  display: block;
 }
 
 

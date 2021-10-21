@@ -81,7 +81,7 @@
     text-decoration: none;
 }
 .link--menu .label--menu {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -90,8 +90,9 @@
     color: #000000;
     margin: 0;
     float: left;
-    line-height: 32px;
-    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    line-height: 32px;    
 }
 .link--botongrillaproductos {
     margin: 0 auto;
