@@ -39,3 +39,34 @@
 	color: #000;
 	font-size: 14px;
 }
+
+.badgeText--badgesshortDescription {
+	margin: 0;
+}
+
+.groupContainer--badgesshortDescription {
+	margin: 0;
+}
+
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+	width: 50%;
+	float: left;
+}
+
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer--color) {
+	width: 100%;
+}
+
+:global(.vtex-store-components-3-x-skuSelectorSelectContainer) {
+	width: 100%;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-container) {
+    max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-graphContent) {
+	display: none;
+}
