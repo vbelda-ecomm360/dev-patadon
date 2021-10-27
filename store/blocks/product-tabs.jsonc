@@ -89,8 +89,8 @@
     "tab-content.item#prod3": {
         "children": [
             //"rich-text#prod3",
-            "product-reviews",
-            "product-questions-and-answers"
+            "product-reviews"
+            //"product-questions-and-answers"
         ],
         "props": {
             "tabId": "prod3"

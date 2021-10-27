@@ -42,7 +42,7 @@
   "rich-text#footer-title-1": {
     "props": {
       "text": "SOCIAL",
-      "blockClass": "footer-title"
+      "blockClass": "footer-title-social"
     }
   },
   "social-networks#social-1": {
@@ -386,3 +386,4 @@
     }
   }
 }
+

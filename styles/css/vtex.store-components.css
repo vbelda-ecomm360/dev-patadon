@@ -492,3 +492,11 @@
   display: block;
   margin-bottom: 30px;
 }
+.logoLink--logo-micrositios .logoContainer--logo-micrositios {
+  max-width: 100px;
+  max-height: none;
+  min-width: 100px;
+  width: 150px;
+  float: left;
+  padding: 0;
+}

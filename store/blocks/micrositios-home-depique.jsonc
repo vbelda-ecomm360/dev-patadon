@@ -2,7 +2,7 @@
   "store.custom#micrositios-home-depique": {
     "parent": {
       "header": "header#empty",
-      "footer": "footer#empty"
+      "footer": "footer#micrositios"
     },
     "blocks": [
       "flex-layout.row#header-micrositios",
@@ -21,18 +21,6 @@
   },
   "header-layout.mobile#empty": {
     "children": []            
-  },
-  "footer#empty": {
-    "blocks": [
-      "footer-layout.desktop#empty",
-      "footer-layout.mobile#empty"
-    ]
-  },
-  "footer-layout.desktop#empty": {
-    "children": []
-  },
-  "footer-layout.mobile#empty": {
-    "children": []
   },
 
   // COMPAÑIA DE GOLF

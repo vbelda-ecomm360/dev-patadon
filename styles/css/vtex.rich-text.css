@@ -123,16 +123,19 @@
     line-height: 1.15;
 }
 
-.wrapper--footer-title {
+.wrapper--footer-title,
+.wrapper--footer-title-social{
     width: 75%;
 }
 
-.paragraph--footer-title {
+.paragraph--footer-title,
+.paragraph--footer-title-social {
     font-size: 14px;
     color: #000000;
     font-weight: bold;
     border-bottom: 1px solid #000;
 }
+
 
 .container--category-title {
     margin-top: 30px;
@@ -725,4 +728,13 @@
         padding:25px 0;
         
     }   
+}
+
+.wrapper--footer-copy-text-micrositios {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
 }

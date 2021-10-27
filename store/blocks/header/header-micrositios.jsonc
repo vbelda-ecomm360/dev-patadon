@@ -67,7 +67,7 @@
   "logo#depiqueMicroSitios": {
     "props": {
       "title": "Logo",
-      "href": "/",
+      "href": "",
       "url": "assets/logo.png",
       "width": "150px",
       "blockClass": "logo-micrositios"
