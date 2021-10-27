@@ -178,7 +178,7 @@
     "submenu.accordion#product_prod3": {
         "children": [
             "rich-text#prod3",
-            "product-reviews",
+            "product-reviews", 
             "product-questions-and-answers"
         ]
     }
