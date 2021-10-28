@@ -70,3 +70,40 @@
 :global(.vtex-reviews-and-ratings-2-x-graphContent) {
 	display: none;
 }
+
+:global(.vtex-reviews-and-ratings-2-x-star) {
+	color: #FFB100;
+  }
+  
+:global(.vtex-reviews-and-ratings-2-x-star--filled) {
+	color: #FFB100;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-writeReviewButton) {
+	color: #0c0cee;
+}
+
+:global(.vtex__icon-caret-up), :global(.vtex__icon-caret-down) {
+	color: #000;
+}
+
+:global(.vtex-store-components-3-x-productDescriptionTitle) {
+	font-weight: 700;
+    font-size: 1.75rem;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+@media (max-width: 768px) {
+	.badgeContainer--badgesshortDescription {
+		padding-top: 20px;
+	}
+
+	.badgeText--badgesshortDescription {
+		text-align: left;
+	}
+	
+	.stretchChildrenWidth--container-img-product{
+		width: 100%;
+	}
+}
