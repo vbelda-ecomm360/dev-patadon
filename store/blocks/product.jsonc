@@ -69,6 +69,7 @@
 
   "flex-layout.row#description": {
     "props": {
+      "blockClass": "largeDescription",
       "marginBottom": 7
     },
     "children": ["product-description"]

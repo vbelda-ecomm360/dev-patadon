@@ -76,11 +76,11 @@
 }
 
 .skuSelectorName{
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2.5;  
   color: #282726;
+  text-transform: uppercase;
 }
 
 .skuSelectorItem{
@@ -499,4 +499,16 @@
   width: 150px;
   float: left;
   padding: 0;
+}
+
+.productDescriptionContainer .productDescriptionText {
+  line-height: 25px;
+  font-size: 16px;
+}
+.logoLink .sizeDesktop {
+    max-width: 230px;
+    max-height: 75px;
+    min-width: 120px;
+    float: left;
+    padding: 0;
 }

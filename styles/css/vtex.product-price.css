@@ -125,6 +125,10 @@
   margin:10px 0px;
   word-spacing: 100vw;
   border-right: 1px solid #999;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .listPriceValue--product_price {
@@ -143,6 +147,10 @@
   text-transform: uppercase;
   line-height: 1.25;
   word-spacing: 100vw;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 

@@ -261,9 +261,13 @@
     border-bottom: 1px solid #999;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.flexCol--product_price .flexColChild--product_price {
+    width: 50%;
 }
 
 .flexColChild--product_price:empty {
@@ -369,12 +373,13 @@
 
 
 }
-
 .flexRow--product-product-name :global(.vtex-store-components-3-x-productBrand) {
     font-size: 35px;
-    font-weight: 300;
-    line-height: 0.71;
-    letter-spacing: 0.88px;
+    font-weight: 700;
+    line-height: 0.71;    
+}
+.flexRowContent--product-product-name {
+    margin: 0 0 20px;
 }
 
 .flexRow--brand-rating :global(.vtex-store-components-3-x-container) {
@@ -705,4 +710,10 @@
     .flexRowContent--form-login-block .flexCol--user-form {
         padding: 0;
     }
+}
+
+.flexRow--reviews-container {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+    margin: 50px 0;
 }
