@@ -248,7 +248,8 @@
   "sticky-layout#1-mobile": {
     "children": [
       "flex-layout.row#2-desktop",
-      "flex-layout.row#1-mobile"
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#search-mobile"
     ]
   },
   "flex-layout.row#1-mobile": {
@@ -290,6 +291,13 @@
     "props": {
       "orientation": "vertical"
     }
+  },
+  "flex-layout.row#search-mobile": {
+    "props": {
+      "blockClass": "search-mobile",
+      "width": "100%"
+    },
+    "children": ["search-bar#header"]
   },
   // LOGO MOBILE
   "flex-layout.col#logo-mobile": {
