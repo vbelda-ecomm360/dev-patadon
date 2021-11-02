@@ -9,10 +9,9 @@
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
-    letter-spacing: 1px;
+    line-height: 20px;    
     color: #000000;
-    margin: 5px 15px;
+    margin: 0px 15px;
 }
 
 .menuContainer--header-promotions-holder {
@@ -29,8 +28,14 @@
 .styledLinkContainer--header-department-title {
     display: block;
     margin: 0px !important;
-    margin-right: 30px !important;
+    margin-right: 0px !important;
     padding: 0px;
+}
+
+@media screen and (max-width: 1025px) {
+    .styledLinkContainer--header-department-title {        
+        padding: 10px 0px;
+    }
 }
 
 @media screen and (max-width: 1260px) {
@@ -183,10 +188,19 @@
 
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1025px) {
 
     .menuContainerNav--top-bar-menu-container {
-        margin: 22px 0;
+        margin: 15px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuContainer--top-bar-menu-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
     }
 
     .menuContainer--top-bar-menu-container .menuItem {
@@ -204,6 +218,8 @@
         text-transform: uppercase;
         justify-content: center;
         height: 100%;
+        white-space: break-spaces;
+        padding: 0 5px;
     }
 
     .menuItem--top-bar-menu-aboutus {
@@ -212,52 +228,24 @@
 
     .menuItem--top-bar-menu-blog {
         display: none;
-    }
-    .menuItem--top-bar-menu-contacto {
-        display: none;
-    }
+    }    
     
-}
-
-@media screen and (max-width: 767px) {
-
-    .menuContainer--top-bar-menu-container .styledLinkContent {
-        white-space: break-spaces;
-        padding: 0 10px;
-    }
-
-    .menuItem--top-bar-menu-contacto .styledLinkContent {
-        border: 0;
-    }
-
-    .menuContainer--top-bar-menu-container .styledLinkContainer {
-        margin: 0;
-        height: 100%;
-    }
-
-
 }
 
 @media screen and (max-width: 639px) {
 
-    .menuContainerNav--top-bar-menu-container {
-        margin: 12px 0;
-    }
-
     .menuContainer--top-bar-menu-container .styledLinkContent {
-        padding: 10px;
-        border-right: 1px solid #fff;
         height: 100%;
     }
-
     .submenuContainer--header-submenus {
         display: none;
     }
-
+    .menuItem--top-bar-menu-contacto {
+        display: none;
+    }
     .styledLinkContent--top-bar-menu-contacto {
         border-right: none!important;
     }
-
 }
 
 .menuContainerNav--header-submenus-category-items .menuItem .styledLinkContainer{

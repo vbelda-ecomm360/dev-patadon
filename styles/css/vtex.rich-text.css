@@ -127,7 +127,12 @@
 .wrapper--footer-title-social{
     width: 75%;
 }
-
+@media screen and (max-width: 1025px) {
+    .wrapper--footer-title,
+    .wrapper--footer-title-social{
+        width: 100%;
+    }
+}
 .paragraph--footer-title,
 .paragraph--footer-title-social {
     font-size: 14px;
@@ -634,44 +639,26 @@
 .paragraph--top-bar-header-text {
     color: #ffffff;
     font-size: 14px;
-    line-height: 32px;
     padding: 0px 15px;
     margin: 15px 0; 
+    line-height: 20px; 
     text-align: left;
-}
-
-@media screen and (max-width: 767px) and (min-width: 640px) {
-    .paragraph--top-bar-header-text {
-        margin: 24px 0;
-    }
 }
 
 .link--top-bar-header-text {
     color: #ffffff;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 1025px) {
     .wrapper--top-bar-header-text {
         width: 100%;
     }
     .paragraph--top-bar-header-text {
-        /* width: 100%;
-        font-size: 10px;
-        text-align: center;
-        line-height: 20px; */
-    }
-}
-
-@media screen and (max-width: 639px) {
-
-    .paragraph--top-bar-header-text {
-        padding: 10px 15px;
+        padding: 10px;
         background: #134cd7;
         margin: 0;
         text-align: center;
-        text-transform: uppercase;
-    }
-
+    }    
 }
 
 .container--MarcaPingValidarSugerencia .wrapper--MarcaPingValidarSugerencia {

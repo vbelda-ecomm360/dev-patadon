@@ -11,6 +11,15 @@
     padding:0px;
     color:#000000;
     font-weight: 400;
+
+}
+@media screen and (max-width: 1025px) {
+    .label{
+        display: block;
+        width: 50px;
+        padding: 0;
+        opacity: 0;
+    }
 }
 .dontHaveAccount {
     color: #1b1baf;

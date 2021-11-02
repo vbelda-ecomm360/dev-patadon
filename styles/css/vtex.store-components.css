@@ -126,8 +126,14 @@
 .searchBarContainer{
   max-width:none;
   padding-left:20px;
-  padding-right:20px;
+  padding-right:20px;  
 }
+@media screen and (max-width: 1025px) {
+  .searchBarContainer{
+    padding: 0 0 10px 0;
+  }
+}
+
 .searchBarContainer :global(.vtex-input-prefix__group) {
   border: 1px solid #000;
   border-radius: 0;
@@ -510,4 +516,12 @@
     min-width: 120px;
     float: left;
     padding: 0;
+}
+
+.logoLink .sizeMobile {
+    max-width: 150px;
+    max-height: 40px;
+    min-width: 72px;
+    padding: 0;
+    float: left;
 }
