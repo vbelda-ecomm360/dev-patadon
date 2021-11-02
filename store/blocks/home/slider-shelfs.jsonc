@@ -23,6 +23,7 @@
         "tablet": 3,
         "phone": 1
         },
+        "navigationStep": 1,
         "infinite": true,
         "fullWidth": false,
         "showPaginationDots": false,
@@ -54,6 +55,7 @@
             "tablet": 3,
             "phone": 1
         },
+        "navigationStep": 1,
         "infinite": true,
         "fullWidth": false,
         "showPaginationDots": false,

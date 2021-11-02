@@ -1,3 +1,11 @@
+.flexRow--wrapperTelFijo {
+    position: fixed;
+    bottom: 140px;
+    z-index: 9;
+    right: 3px;
+    text-align: center;
+}
+
 .flexRow--top-bar {
     background-color: #000000;
     color: #ffffff !important;
@@ -6,11 +14,20 @@
     line-height: 2.2;
     letter-spacing: 0.5px;
 }
+@media screen and (max-width: 1025px) {
+    .flexRowContent--top-bar {
+        flex-direction: column;
+    }
+}
 
 .flexRow--main-header-menu {
     background-color: #ffffff;
     border-top: solid 1px #f3f3f3;
     border-bottom: solid 1px #f3f3f3;
+}
+
+.flexRow--search-mobile {
+    
 }
 
 .flexRowContent--menu-link,
@@ -32,16 +49,23 @@
 }
 
 @media screen and (min-width: 80rem) {
+
     .flexRowContent--menu-link,
     .flexRowContent--main-header,
     .flexRowContent--main-header-menu {
         padding: 0 0.25rem;
     }
+
+    .flexCol--colPingsForm {
+        max-width: 600px;
+    }
+
 }
 
 .flexRowContent--menu-link {
     background-color: #03044e;
     color: #fff;
+
 }
 
 .flexRowContent--main-header {
@@ -55,7 +79,7 @@
 .flexRowContent--main-header-mobile {
     align-items: center;
     padding: 0.625rem 0.5rem;
-    background-color: #f0f0f0;
+    justify-content: space-between;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -65,7 +89,7 @@
 
 .flexRowContent--main-header-menu :global(.vtex-menu-2-x-styledLink) {
     color: #727273;
-    font-size: 16px;
+    font-size: 16px;    
 }
 .flexRowContent--main-header-menu :global(.vtex-menu-2-x-styledLink):hover {
     color: #c8102e;
@@ -120,7 +144,7 @@
 .flexRow--categories-home {
     padding-top: 20px;
     padding-bottom: 60px;
-    margin-right: -1rem;
+    margin-right: 0;
 }
 
 .flexCol--stacked-category-last {
@@ -128,20 +152,29 @@
 }
 
 @media screen and (max-width: 50em) {
+
+    .flexRow--fitting-video {
+        margin-top: 50px;
+    }
+
     .flexRow--categories-home {
         margin: auto;
     }
+
     .flexRowContent--categories-home {
         flex-wrap: wrap;
     }
+
     .flexRowContent--categories-home .stretchChildrenWidth {
         width: 50% !important;
         padding: 5px;
     }
+
     .flexCol--stacked-category,
     .flexCol--stacked-category-last {
         padding: 0px;
     }
+
 }
 
 .flexRow--deals .flexCol {
@@ -237,9 +270,13 @@
     border-bottom: 1px solid #999;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.flexCol--product_price .flexColChild--product_price {
+    width: 50%;
 }
 
 .flexColChild--product_price:empty {
@@ -290,11 +327,22 @@
 }
 
 @media screen and (min-width: 50em) {
+
     .flexCol--filterCol {
         max-width: 500px;
         min-width: 230px;
         padding: 20px;
     }
+
+    .flexRowContent--info-fitting {
+        justify-content: space-between;
+    }
+
+    .flexRowContent--info-fitting-row2 {
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
 }
 
 .flexCol--searchContent {
@@ -305,11 +353,42 @@
     border-radius: 0;
 }
 
+.flexColChild--customProduct {
+    text-align: right;
+    margin-top: 40px;
+    background-color: #E1E7F5;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.flexColChild--customProduct :global(.vtex-button) {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    color: #fff;
+    border-radius: 0px;
+    background: #134CD8;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 50em) {
+
+
+}
 .flexRow--product-product-name :global(.vtex-store-components-3-x-productBrand) {
     font-size: 35px;
-    font-weight: 300;
-    line-height: 0.71;
-    letter-spacing: 0.88px;
+    font-weight: 700;
+    line-height: 0.71;    
+}
+.flexRowContent--product-product-name {
+    margin: 0 0 20px;
 }
 
 .flexRow--brand-rating :global(.vtex-store-components-3-x-container) {
@@ -385,7 +464,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-  /*   display: flex;
+    /*   display: flex;
     align-items: center; */
     line-height:100%;
     height:100%;
@@ -420,10 +499,22 @@
     margin: 80px auto;
 }
 
-
 /* FITTING */
 
-.flexRowContent--fitting {}
+.flexRowContent--fitting {
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.flexRowContent--tiendas-fitting {
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.flexRowContent--fitting-tecnologia {
+    align-items: center;
+    justify-content: space-between;
+}
 
 .flexRowContent--fitting-spacer {
     padding-top: 50px;
@@ -431,6 +522,9 @@
 
 .flexColChild--proceso {
     padding: 40px 0px;
+    height: 150px;
+    min-height: 150px;
+    overflow: hidden;
 }
 
 .flexColChild--info-fitting :global(.vtex-store-components-3-x-imageElement) {
@@ -460,6 +554,9 @@
     width: 100%;
 }
 
+.flexCol--info-fitting-mobile {
+    display: none;
+}
 
 @media screen and (max-width: 767px) and (min-width: 640px) {
     .flexCol--top-menu-bar {
@@ -468,18 +565,169 @@
 }
 
 @media screen and (max-width: 50em) {
+
+    .flexRowContent--tiendas-fitting {
+        margin-bottom: 0;
+    }
+
+    .flexCol--col-tiendaFitting {
+        margin-bottom: 40px;
+    }
+
     .flexCol--info-tienda {
         padding:15px; 
     }
     .flexCol--img-tienda{
-        display:none;
+        display:block;
     }
+
+    .flexRow--info-fitting-desktop {
+        display: none;
+    }
+
+    .flexRow--info-fitting-mobile {
+        display: block;
+    }
+
+    .flexCol--info-fitting-mobile {
+        display: block;
+    }
+
+    .flexRowContent--fitting {
+        justify-content: center;
+        padding: 0 20px;
+    }
+
 }
 
 .flexCol--fitting-bottom-fitting{
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
+
 .flexColChild--fitting-bottom-fitting{
     text-align: center;
 }
 
+.flexRow--submenu-col-items .flexRowContent--submenu-col-items {
+    flex-wrap: wrap;
+}
+.flexRow--submenu-col-items .flexRowContent--submenu-col-items .stretchChildrenWidth {
+    width: 30% !important;
+    margin-right: 3% !important;
+    margin-bottom: 20px;
+    border-right: 1px solid #eee;
+}
+.flexRow--submenu-col-items .flexRowContent--submenu-col-items .stretchChildrenWidth:last-child {
+    border-right: 0;
+}
+
+.flexRow--header-micrositios {
+    border-top: 10px solid #000;
+    background: #fff;
+}
+
+.flexCol--menu-micrositios {
+    flex-direction: revert;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 0;
+}
+@media screen and (max-width: 991px) {
+    .flexCol--menu-micrositios {
+        flex-direction: column-reverse;
+    } 
+}
+
+.flexColChild--menu-micrositios{
+    width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .flexColChild--menu-micrositios .flexRow--header-micrositios-links {
+        display: none;
+    }
+}
+
+.flexColChild--menu-micrositios:last-child{
+    width: auto;
+}
+
+
+.flexRowContent--grillaclubes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexRowContent--grillaclubes .stretchChildrenWidth {
+    width: 20% !important;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.flexRow--tarjetabaneficios {
+
+}
+
+.flexRow--form-login-block {
+    background: #fff;
+    padding: 30px 0 150px;
+}
+
+.flexCol--login-minicart-mobile {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexRow--form-login-block  .flexRowContent--form-login-block {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 900px;   
+}
+.flexRowContent--form-login-block .flexCol--text-form,
+.flexRowContent--form-login-block .flexCol--user-form {
+    padding: .75rem;
+    position: relative;
+}
+@media screen and (min-width: 992px) {
+    .flexRowContent--form-login-block .flexCol--text-form::before {
+        content: "";
+        background: #c7102e;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 2px;
+    }
+}
+.flexRowContent--form-login-block .flexCol--text-form {
+    padding-right: 75px;
+}
+.flexRowContent--form-login-block .flexCol--user-form {
+    padding-left: 75px;   
+}
+.flexRow--tarjetabaneficios .flexRowContent--tarjetabaneficios {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 991px) {
+
+    .flexRow--form-login-block  .flexRowContent--form-login-block {
+        flex-direction: column;
+        width: 100%;
+    }
+    .flexRow--form-login-block  .flexRowContent--form-login-block .stretchChildrenWidth {
+        width: 100% !important;
+        margin-bottom: 50px;
+    }
+    .flexRowContent--form-login-block .flexCol--text-form,
+    .flexRowContent--form-login-block .flexCol--user-form {
+        padding: 0;
+    }
+}
+
+.flexRow--reviews-container {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+    margin: 50px 0;
+}

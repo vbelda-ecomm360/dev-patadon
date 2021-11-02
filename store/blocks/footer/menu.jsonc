@@ -131,7 +131,8 @@
     },
     "children": [
       "menu-item#quienes-somos",
-      "menu-item#contacta"
+      "menu-item#contacta",
+      "menu-item#fitting"
       /*"menu-item#ventajas",
       "menu-item#club",
       "menu-item#prensa",      
@@ -141,6 +142,22 @@
     ]
   },
 
+  "menu-item#fitting": {
+    "props": {
+      "id": "menu-item-fitting",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/fitting",
+        "noFollow": true,
+        "tagTitle": "Fitting",
+        "text": "Fitting"
+      },
+      "blockClass": "footer-menu-item"
+    }
+  },
   "menu-item#quienes-somos": {
     "props": {
       "id": "menu-item-quienes-somos",

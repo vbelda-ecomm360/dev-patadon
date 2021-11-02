@@ -10,10 +10,72 @@
 .label{
     padding:0px;
     color:#000000;
-}
+    font-weight: 400;
 
+}
+@media screen and (max-width: 1025px) {
+    .label{
+        display: block;
+        width: 50px;
+        padding: 0;
+        opacity: 0;
+    }
+}
+.dontHaveAccount {
+    color: #1b1baf;
+    font-weight: 600;
+    font-size: 16px;
+}
 @media screen and (max-width: 50em) {
     .container{
 
     }
 }
+
+
+.portalContainer--login-club-depique .portalWrapper--login-club-depique .box,
+.portalContainer--login-club .portalWrapper--login-club .box {
+    right: 0;
+    left: -50px;
+    min-width: 350px;
+}
+.portalContainer--login-club-depique .portalWrapper--login-club-depique .box .arrowUp,
+.portalContainer--login-club .portalWrapper--login-club .box .arrowUp {
+    display: none;
+}
+.portalContainer--login-club-depique .portalWrapper--login-club-depique .box .contentContainer,
+.portalContainer--login-club .portalWrapper--login-club .box .contentContainer {
+    margin-top: 2px;
+    box-shadow: none;
+}
+.portalContainer--login-club-depique .portalWrapper--login-club-depique .box .contentContainer .content--loginOptions,
+.portalContainer--login-club .portalWrapper--login-club .box .contentContainer .content--loginOptions {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.portalContainer--login-club-depique .contentAlwaysWithOptions,   
+.portalContainer--login-club .contentAlwaysWithOptions {    
+    background: #fff;
+    flex-direction: column;
+}
+
+.portalContainer--login-club-depique .contentAlwaysWithOptions .loginOptionsContainer,
+.portalContainer--login-club .contentAlwaysWithOptions .loginOptionsContainer {
+    width: 100%;
+}
+.portalContainer--login-club-depique .portalWrapper--login-club-depique .box .contentContainer .contentAlwaysWithOptions .formTitle,
+.portalContainer--login-club .portalWrapper--login-club .box .contentContainer .contentAlwaysWithOptions .formTitle{
+    display: none;
+}
+.portalContainer--login-club-depique .contentAlwaysWithOptions .loginOptionsContainer .optionsListItem .accessCodeOptionBtn,
+.portalContainer--login-club .contentAlwaysWithOptions .loginOptionsContainer .optionsListItem .accessCodeOptionBtn {
+    display: none;
+}
+.portalContainer--login-club-depique .contentAlwaysWithOptions .contentForm,
+.portalContainer--login-club .contentAlwaysWithOptions .contentForm {
+    padding: 0;
+    width: 100%;
+}
+

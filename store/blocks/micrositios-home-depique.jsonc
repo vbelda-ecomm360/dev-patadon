@@ -1,0 +1,252 @@
+{
+  "store.custom#micrositios-home-depique": {
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#micrositios"
+    },
+    "blocks": [
+      "flex-layout.row#header-micrositios",
+      "challenge-block#search-result-layout.customQuery"            
+    ]
+  },
+
+  "header#empty": {
+    "blocks": [
+      "header-layout.desktop#empty",
+      "header-layout.mobile#empty"
+    ]      
+  },
+  "header-layout.desktop#empty": {
+    "children": []   
+  },
+  "header-layout.mobile#empty": {
+    "children": []            
+  },
+
+  // COMPAÑIA DE GOLF
+
+  "flex-layout.row#header-micrositios": {
+    "props": {
+      "width": "100%",
+      "title": "club",      
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",        
+      "blockClass": "header-micrositios",  
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#menu"       
+    ]
+  }, 
+
+  //Agrego bloques de Challenge para bloquear contenido si no estas logueado o aprobado
+  //Bloque Challenge
+  "challenge-block#search-result-layout.customQuery": {
+    "blocks": [
+      "challenge-content#search-result-layout.customQuery",
+      "challenge-fallback#search-result-layout.customQuery"
+    ]
+  },
+  //Bloque Challenge
+  "challenge-content#search-result-layout.customQuery": {
+    "children": [
+      "list-context.image-list#homeDepique",
+      "search-result-layout.customQuery"
+    ]
+  },
+  //Bloque Challenge
+  "challenge-fallback#search-result-layout.customQuery": {
+    "children": [
+      "image#bannerTopDepique",
+      "rich-text#challenge-text-depique",      
+      "flex-layout.row#login-block"    
+    ],
+    "props": {
+      "blockClass": "textLoginBlock"
+    }
+  },
+
+  "image#bannerTopDepique": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "club Image",
+      "blockClass": "club-image",  
+      "verticalAlign": "left",
+      "horizontalAlign": "left",
+      "src": "" 
+    }
+  },
+
+  "flex-layout.row#login-block": {
+    "children": [      
+      "flex-layout.row#tarjetabaneficios",
+      "flex-layout.col#newUserDepique",  
+      "rich-text#mensajeDeAviso"    
+    ],
+    "props": {
+      "blockClass": "form-login-block",
+      //"horizontalAlign": "center",
+      "verticalAlign": "top"
+    }
+  },  
+
+  "flex-layout.row#tarjetabaneficios": {
+    "children": [
+      "rich-text#titleImage",
+      "image#tarjetabaneficios"      
+      ],
+    "props": {
+      "width": "60%",
+      "blockClass": "tarjetabaneficios"
+    }
+  }, 
+  "image#tarjetabaneficios": {
+    "props": {  
+      "width": "grow",
+      "fullWidth": false,        
+      "title": "tarjetabaneficiosimage",
+      "blockClass": "tarjetabaneficiosimage",  
+      "verticalAlign": "center",
+      "horizontalAlign": "center",      
+      "src": "assets/tarjetabaneficios.png",
+      "link": {
+        "url": "/suscripcion-anual/p"
+      } 
+    }
+  },
+  "rich-text#titleImage": {
+    "props": {
+      "width": "grow",
+      "title": "titletext",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,
+      "text": "### HAZTE SOCIO AHORA",
+      "blockClass": "titletext"
+    }
+  },
+
+  "flex-layout.col#newUserDepique": {
+    "children": [
+      "rich-text#titletextlogin",
+      "login#newUserDepique"
+      //"login-content#newUserDepique"
+    ],
+    "props": {
+      "width": "30%",
+      "blockClass": "user-form-depique",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    }
+  },  
+
+  "rich-text#titletextlogin": {
+    "props": {
+      "title": "titletext",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,
+      "text": "**ACCESO SOCIOS**\n Ingresa con tu mail y disfruta de ventajas especiales para ti.",
+      "blockClass": "titletext"
+    }
+  },
+
+  "login#newUserDepique": {
+    "props": {
+      "width": "grow",
+      "blockClass": "login-club-depique",
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": false
+    }
+  },
+
+  "login-content#newUserDepique": {
+    "props": {
+      "width": "grow",
+      "blockClass": "login-club",
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },  
+
+  "rich-text#mensajeDeAviso": {
+    "props": {
+      "width": "grow",
+      "title": "club ",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,
+      "text": "El acceso al club no es inmediato y puede tardar hasta 24 horas en estar activo.\nHaremos lo posible por activarlo cuanto antes. Recibirás un mail con la confirmación en breve.",
+      "blockClass": "mensajeDeAviso"
+    }
+  },
+
+
+  //Bloque Challenge
+  "rich-text#challenge-text-depique": {
+    "props": {
+      "width": "100%",
+      "title": "club ",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,
+      "text": "**¡BIENVENIDO!**\nSi aún no eres socio del club Depique, puedes comprar en el enlace la tarjeta que te dará acceso a un año de ventajas y disfrutarás de precios especiales y promociones exclusivas.\nSi ya eres socio puedes iniciar sesión y seguir disfruntando de las ventajas en precio y promociones del club Depique.",
+      "blockClass": "challengeTopMenu"
+    }
+  },  
+
+  // SLIDER
+  "list-context.image-list#homeDepique": {
+    "children": ["slider-layout#homeDepique"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "",
+          "mobileImage": ""
+        },
+        {
+          "image": "",
+          "mobileImage": ""
+        }
+      ]
+    }
+  },
+  "slider-layout#homeDepique": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["carousel", "slider-landing"],
+      "autoplay":{
+        "timeout": "4000"
+      }
+    }
+  },
+  "search-result-layout.customQuery": {
+    "props": {
+      "querySchema": {
+        "__unstableProductOriginVtex": true,
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "facetsBehavior": "dynamic",
+        "skusFilter": "ALL",
+        "maxItemsPerPage": 30,        
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}

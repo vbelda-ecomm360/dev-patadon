@@ -1,0 +1,134 @@
+{
+  "footer#micrositios": {
+    "blocks": ["footer-layout.desktop#micrositios", "footer-layout.mobile#micrositios"]
+  },
+  "footer-layout.desktop#micrositios": {
+    "children": [
+      "flex-layout.row#footer-1-desktop-micrositios",
+      "flex-layout.row#footer-2-desktop-micrositios"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop-micrositios": {
+    "children": [
+      "flex-layout.col#footer-1-desktop-1-micrositios",
+      "flex-layout.col#footer-1-desktop-2-micrositios",
+      "flex-layout.col#footer-1-desktop-3-micrositios",
+      "flex-layout.col#footer-1-desktop-4-micrositios"
+    ],
+    "props": {
+      "blockClass": "main-footer"
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop-1-micrositios": {
+    "children": [
+      "image#logo-footer-micrositios"     
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },  
+
+  "image#logo-footer-micrositios":{
+    "props":{
+      "src": "assets/logo.png",
+      "blockClass": "logo-footer",
+      "width": "150px"
+    },
+    "title": "Visa"
+  },
+
+  "flex-layout.col#footer-1-desktop-2-micrositios": {
+    "children": [
+      "rich-text#footer-title-2",
+      "menu#footer-atencion"      
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop-3-micrositios": {
+    "children": [
+      "rich-text#footer-title-3",
+      "menu#footer-patadon" 
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop-4-micrositios": {
+    "children": [
+      "rich-text#footer-title-5",
+      "flex-layout.row#accepted-payment-methods",
+      "rich-text#footer-title-6",
+      "flex-layout.row#shipping"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+
+  
+
+
+  "flex-layout.row#footer-2-desktop-micrositios": {
+    "children": [
+      "flex-layout.col#footer-2-desktop-1-micrositios"      
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "flex-layout.col#footer-2-desktop-1-micrositios": {
+    "children": [
+      "rich-text#footer-micrositios"
+    ]
+  },
+  "rich-text#footer-micrositios": {
+    "props": {
+      "text": "Tecnología facilitada por Depique.",
+      "blockClass": "footer-copy-text-micrositios"
+    }
+  },
+
+
+  /* MOBILE */
+  "footer-layout.mobile#micrositios": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "image#logo-footer",
+      "menu#footer-mobile",      
+      "rich-text#footer-title-5",
+      "flex-layout.row#accepted-payment-methods",
+      "rich-text#footer-title-6",
+      "flex-layout.row#shipping"
+    ],
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": [
+      "flex-layout.col#footer-2-desktop-1-micrositios"
+    ],
+    "props": {
+      "blockClass": "credits"
+    }
+  }
+}

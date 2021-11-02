@@ -27,6 +27,13 @@
     border-radius:5px;
     background:#134CD8;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .15s ease all;
+}
+
+.link--cta-defecto:hover{
+    opacity: .8;
 }
 
 
@@ -39,10 +46,69 @@
     background:#134CD8;
     text-decoration: none;
     border:0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .15s ease all;
+}
+
+.link--testiomnios-link:hover{
+    opacity: .8;
 }
 
 .label--testiomnios-link{
 
 }
 
+.link--phonecall {
+  position: fixed;
+  right: 14px;
+  bottom: 100px;
+  z-index: 9;
+}
+.label--phonecall {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: center;
+    background-image: url(/arquivos/icon-phoneCall.png);
+}
+
+/*menu micrositios.*/
+.link--menu {
+    text-decoration: none;
+}
+.link--menu .label--menu {
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #000000;
+    margin: 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+    line-height: 32px;    
+}
+.link--botongrillaproductos {
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+    background: GREEN;
+    font-size: 12PX;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+} 
 

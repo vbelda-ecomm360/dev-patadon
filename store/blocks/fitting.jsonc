@@ -5,6 +5,9 @@
       "image#banner-fitting-img-mobile",
       "flex-layout.row#banner-fitting",
       "flex-layout.row#fitting-spacer",
+      "flex-layout.row#titulo-1",
+      "flex-layout.row#fila-1-tiendas",
+      "flex-layout.row#fila-2-tiendas",
       "flex-layout.row#video-1",
       "flex-layout.row#video-2",
       "flex-layout.row#fitting-spacer",
@@ -12,6 +15,7 @@
       "flex-layout.row#nuestro-proceso",
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#info-fitting-1-1",
+      "flex-layout.row#info-fitting-1-1-mobile",
       "flex-layout.row#info-fitting-1-2",
       "flex-layout.row#fitting-spacer",
       "flex-layout.row#info-fitting-2",
@@ -24,12 +28,93 @@
       "flex-layout.row#testimonio-2"
     ]
   },
+
+  //Tiendas Fitting
+  
+  "flex-layout.row#fila-1-tiendas": {
+    "children": [
+      "flex-layout.col#tienda-barsa",
+      "flex-layout.col#tienda-madrid"
+    ],
+    "props": {
+      "blockClass": "tiendas-fitting"
+    }
+  },
+
+  "flex-layout.col#tienda-barsa": {
+    "children": [
+      "image#imagen-tienda-1",
+      "rich-text#title-info-tienda-1",
+      "rich-text#direccion-info-tienda-1",
+      "rich-text#horario-tienda-1",
+      "link#link-info-tienda-1"
+    ],
+    "props": {
+      "blockClass": "col-tiendaFitting",
+      "width": "45%"
+    }
+  },
+
+  "flex-layout.col#tienda-madrid": {
+    "children": [
+      "image#imagen-tienda-2",
+      "rich-text#title-info-tienda-2",
+      "rich-text#direccion-info-tienda-2",
+      "rich-text#horario-tienda-2",
+      "link#link-info-tienda-2"
+    ],
+    "props": {
+      "blockClass": "col-tiendaFitting",
+      "width": "45%"
+    }
+  },
+  
+  "flex-layout.row#fila-2-tiendas": {
+    "children": [
+      "flex-layout.col#tienda-valencia",
+      "flex-layout.col#tienda-mallorca"
+    ],
+    "props": {
+      "blockClass": "tiendas-fitting"
+    }
+  },
+
+  "flex-layout.col#tienda-valencia": {
+    "children": [
+      "image#imagen-tienda-3",
+      "rich-text#title-info-tienda-3",
+      "rich-text#direccion-info-tienda-3",
+      "rich-text#horario-tienda-3",
+      "link#link-info-tienda-3"
+    ],
+    "props": {
+      "blockClass": "col-tiendaFitting",
+      "width": "45%"
+    }
+  },
+
+  "flex-layout.col#tienda-mallorca": {
+    "children": [
+      "image#imagen-tienda-5",
+      "rich-text#title-info-tienda-5",
+      "rich-text#direccion-info-tienda-5",
+      "rich-text#horario-tienda-5",
+      "link#link-info-tienda-5"
+    ],
+    "props": {
+      "blockClass": "",
+      "width": "45%"
+    }
+  },
+
+  //Spacer
   "flex-layout.row#fitting-spacer": {
     "children": [],
     "props": {
       "blockClass": "fitting-spacer"
     }
   },
+
   // BANNER
   "image#banner-fitting-img": {
     "props": {
@@ -101,7 +186,7 @@
     ],
     "props": {
       "blockClass": "fitting",
-      "colGap": "10"
+      "colGap": "0"
     }
   },
   // col 1
@@ -113,7 +198,8 @@
       "rich-text#nuestro-proceso-col1text4"
     ],
     "props": {
-      "blockClass": "proceso"
+      "blockClass": "proceso",
+      "width": "48%"
     }
   },
   "rich-text#nuestro-proceso-col1text1": {
@@ -149,7 +235,8 @@
       "rich-text#nuestro-proceso-col2text4"
     ],
     "props": {
-      "blockClass": "proceso"
+      "blockClass": "proceso",
+      "width": "48%"
     }
   },
   "rich-text#nuestro-proceso-col2text1": {
@@ -181,19 +268,23 @@
   // row 1
     "flex-layout.row#info-fitting-1-1": {
       "children": [
-        "image#info-fitting-img-1",
-        "image#info-fitting-img-1-mobile"
+        //"image#info-fitting-img-1",
+        "flex-layout.col#info-fitting-img-1"
+        //"image#info-fitting-img-1-mobile"
+        //"flex-layout.col#info-fitting-img-1-mobile"
       ],
       "props": {
-        "blockClass": "info-fitting"
+        "blockClass": "info-fitting",
+        "width":"100%"
       }
     },
-    "flex-layout.row#info-fitting-1-2": {
+    "flex-layout.col#info-fitting-img-1": {
       "children": [
-        "rich-text#info-fitting-text-1"
+        "image#info-fitting-img-1"
       ],
       "props": {
-        "blockClass": "info-fitting"
+        "blockClass": "info-fitting-desktop",
+        "width":"100%"
       }
     },
     "image#info-fitting-img-1": {
@@ -202,10 +293,39 @@
         "blockClass": "image-equipo"
       }
     },
+    "flex-layout.row#info-fitting-1-1-mobile": {
+      "children": [
+        //"image#info-fitting-img-1",
+        //"flex-layout.col#info-fitting-img-1",
+        //"image#info-fitting-img-1-mobile"
+        "flex-layout.col#info-fitting-img-1-mobile"
+      ],
+      "props": {
+        "blockClass": "info-fitting-mobile",
+        "width":"100%"
+      }
+    },
+    "flex-layout.col#info-fitting-img-1-mobile": {
+      "children": [
+        "image#info-fitting-img-1-mobile"
+      ],
+      "props": {
+        "blockClass": "info-fitting-mobile",
+        "width":"100%"
+      }
+    },
     "image#info-fitting-img-1-mobile": {
       "props": {
         "src": "assets/fitting/banner-equipo-mobile.png",
         "blockClass": "image-equipo-mobile"
+      }
+    },
+    "flex-layout.row#info-fitting-1-2": {
+      "children": [
+        "rich-text#info-fitting-text-1"
+      ],
+      "props": {
+        "blockClass": "info-fitting"
       }
     },
     "rich-text#info-fitting-text-1": {
@@ -222,8 +342,8 @@
       "flex-layout.col#info-fitting-2-2"
     ],
     "props": {
-      "blockClass": "fitting",
-      "colGap": "8"
+      "blockClass": "fitting-tecnologia",
+      "colGap": ""
     }
   },
   // col 1
@@ -233,7 +353,7 @@
     ],
     "props": {
       "blockClass": "info-fitting",
-      "width": "65%"
+      "width": "60%"
     }
   },
   "image#info-fitting-img-2": {
@@ -245,17 +365,24 @@
   // col 2
   "flex-layout.col#info-fitting-2-2": {
     "children": [
-      "rich-text#info-fitting-text-2"
+      "rich-text#info-fitting-text-2",
+      "rich-text#info-fitting-text-3"
     ],
     "props": {
       "blockClass": "info-fitting",
-      "width": "35%"
+      "width": "40%"
     }
   },
   "rich-text#info-fitting-text-2": {
     "props": {
-      "text": "**La mejor tecnología**\nDepique es la suma de muchos profesionales de golf. Un talento a tu disposición, con la misión de hacerte jugar mejor. Un equipo con más de 20 años de experiencia como filters y clubmakers, que se forma continuamente.\n\n[Conoce a nuestro equípo y tecnología](/venta-telefonica)",
+      "text": "**La mejor tecnología**\nDepique es la suma de muchos profesionales de golf. Un talento a tu disposición, con la misión de hacerte jugar mejor. Un equipo con más de 20 años de experiencia como filters y clubmakers, que se forma continuamente.",
       "blockClass": "info-fitting-tecnologia"
+    }
+  },
+  "rich-text#info-fitting-text-3": {
+    "props": {
+      "text": "[Conoce a nuestro equípo y tecnología](/venta-telefonica)",
+      "blockClass": ["info-fitting-tecnologia", "info-fitting-tecnologia-button"]
     }
   },
 
@@ -283,7 +410,7 @@
     ],
     "props": {
       "blockClass": "fitting",
-      "colGap": "8"
+      "colGap": ""
     }
   },
   "flex-layout.col#more-info-2": {
@@ -293,7 +420,7 @@
     ],
     "props": {
       "blockClass": "fitting",
-      "colGap": "8",
+      "colGap": "",
       "preventVerticalStretch": true
     }
   },
@@ -316,7 +443,7 @@
     ],
     "props": {
       "blockClass": "fitting",
-      "colGap": "8",
+      "colGap": "",
       "preventVerticalStretch": true
     }
   },
@@ -339,7 +466,7 @@
     ],
     "props": {
       "blockClass": "fitting",
-      "colGap": "8",
+      "colGap": "",
       "preventVerticalStretch": true
     }
   },
@@ -365,7 +492,7 @@
     ],
     "props": {
       "blockClass": "testimonio-fitting",
-      "colGap": "8"
+      "colGap": ""
     }
   },
   // col 1
@@ -391,7 +518,7 @@
     ],
     "props": {
       "blockClass": "info-fitting",
-      "width": "40%"
+      "width": "45%"
     }
   },
   "rich-text#testimonio-text-1": {
@@ -408,8 +535,8 @@
       "flex-layout.col#testimonio-2-3"
     ],
     "props": {
-      "blockClass": "info-fitting",
-      "colGap": "5"
+      "blockClass": "info-fitting-row2",
+      "colGap": ""
     }
   },
   // col 1
@@ -432,7 +559,7 @@
   "rich-text#testimonio-text-2": {
     "props": {
       "text": "**¿Cuanto cuesta un fitting?**\nConsulta aquí el precio de los diferentes servicios.Lo que cobramos por cada fitting lo descontamos de tú compra.",
-      "blockClass": "text-fitting"
+      "blockClass": "text-fitting-testimonio"
     }
   },
   "link#testimonio-button-1": {
@@ -462,7 +589,7 @@
   "rich-text#testimonio-text-3": {
     "props": {
       "text": "**Agenda tu fitting ahora**\nTienes centros de fitting Depique en varias ciudades. Madrid, Cataluña, Mallorca y Valencia.",
-      "blockClass": "text-fitting"
+      "blockClass": "text-fitting-testimonio"
     }
   },
   "link#testimonio-button-2": {
@@ -492,7 +619,7 @@
   "rich-text#testimonio-text-4": {
     "props": {       
       "text": "**¿No tienes un fitting center cerca?**\nPodemos ayudarte y aconsejarte por teléfono. Agenda desde aquí una llamada con nuestros profesionales.",
-      "blockClass": "text-fitting"
+      "blockClass": "text-fitting-testimonio"
     }
   },
   "link#testimonio-button-3": {

@@ -1,0 +1,323 @@
+{
+  "store.custom#micrositios-home-clubes": {
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#micrositios"
+    },
+    "blocks": [
+      "flex-layout.row#header-micrositios",
+      "challenge-block#search-result-layout-club.customQuery"            
+    ]
+  },
+
+  "header#empty": {
+    "blocks": [
+      "header-layout.desktop#empty",
+      "header-layout.mobile#empty"
+    ]      
+  },
+  "header-layout.desktop#empty": {
+    "children": []   
+  },
+  "header-layout.mobile#empty": {
+    "children": []            
+  },
+
+  // COMPAÑIA DE GOLF
+
+  "flex-layout.row#header-micrositios": {
+    "props": {
+      "width": "100%",
+      "title": "club",      
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",        
+      "blockClass": "header-micrositios",  
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#menu"       
+    ]
+  }, 
+
+  //Agrego bloques de Challenge para bloquear contenido si no estas logueado o aprobado
+  //Bloque Challenge
+  "challenge-block#search-result-layout-club.customQuery": {
+    "blocks": [
+      "challenge-content#search-result-layout-club.customQuery",
+      "challenge-fallback#search-result-layout-club.customQuery"
+    ]
+  },
+  //Bloque Challenge
+  "challenge-content#search-result-layout-club.customQuery": {
+    "children": [
+      "list-context.image-list#homeClub",
+      "search-result-layout.customQuery"
+    ]
+  },
+  //Bloque Challenge
+  "challenge-fallback#search-result-layout-club.customQuery": {
+    "children": [
+      "image#bannerTopClub",
+      "rich-text#challenge-text-club",      
+      "flex-layout.row#form-login-block-club"
+    ],
+    "props": {
+      "blockClass": "textLoginBlock"
+    }
+  },
+
+  // SLIDER
+  "list-context.image-list#homeClub": {
+    "children": ["slider-layout#homeClub"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "",
+          "mobileImage": ""
+        },
+        {
+          "image": "",
+          "mobileImage": ""
+        }
+      ]
+    }
+  },
+  "slider-layout#homeClub": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["carousel", "slider-landing"],
+      "autoplay":{
+        "timeout": "4000"
+      }
+    }
+  },
+
+  "image#bannerTopClub": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "club Image",
+      "blockClass": "club-image",  
+      "verticalAlign": "left",
+      "horizontalAlign": "left",
+      "src": "" 
+    }
+  },
+
+  "flex-layout.row#form-login-block-club": {
+    "children": [      
+      "flex-layout.col#text-form-club",
+      //"image#bannerExplicativo-club",
+      "flex-layout.col#newUser"      
+    ],
+    "props": {
+      "blockClass": "form-login-block",
+      //"horizontalAlign": "left",
+      "verticalAlign": "top"      
+    }
+  },  
+
+  "image#bannerExplicativo-club": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "bannerExplicativo",
+      "blockClass": "bannerExplicativo",  
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "src": "assets/category4.png"
+    }
+  },
+
+  "flex-layout.col#newUser": {
+    "children": [
+      "image#paso-dos",
+      "rich-text#titletextlogin-club",
+      "login#newUser"
+      //"login-content#newUser"
+      
+    ],
+    "props": {
+      "blockClass": "user-form",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    }
+  },  
+
+  "login#newUser": {
+    "props": {
+      "blockClass": "login-club",
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": false      
+    }
+  },
+
+  "image#paso-dos": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "bannerExplicativo",
+      "blockClass": "imgpasos",  
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "src": "assets/paso2.png"
+    }
+  },
+
+  "rich-text#titletextlogin-club": {
+    "props": {
+      "title": "titletext",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,
+      "text": "**ACCESO SOCIOS**\n Ingresa con tu mail y disfruta de ventajas especiales para ti.",
+      "blockClass": "titletext"
+    }
+  },
+  "login-content#newUser": {
+    "props": {
+      "blockClass": "login-club",
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": false
+    }
+  },  
+
+  "flex-layout.col#text-form-club": {
+    "children": [
+      "image#paso-uno",
+      "rich-text#titletext",
+      "form#altaclub"
+    ],
+    "props": {
+      "blockClass": "text-form",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"      
+    }
+  },  
+
+  "image#paso-uno": {
+    "props": {  
+      "fullWidth": false,    
+      "title": "bannerExplicativo",
+      "blockClass": "imgpasos",  
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "src": "assets/paso1.png"
+    }
+  },
+  "rich-text#titletext": {
+    "props": {
+      "title": "titletext",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,
+      "text": "**TE INTERESA?**\nEl acceso al club es por invitación. Puedes dejar tus datos y nos pondremos en contacto",
+      "blockClass": "titletext"
+    }
+  },
+  "form#altaclub": {
+    "props":{
+      "blockClass": "formaltaclub",
+      "entity": "SC",  
+      "schema": "altaclub"
+    },
+    "children": [      
+      "form-input.dropdown#contactoGenero",
+      "form-input.text#contactoNombreApellido",
+      "form-input.text#contactoEmail",
+      "form-input.text#contactoClub",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Formulario completado con exito!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.dropdown#contactoGenero": {  
+    "props": {  
+      "blockClass": "formaltaclub",  
+      "placeholder": "Género *",         
+      "pointer": "#/properties/genero"  
+    }  
+  },  
+  "form-input.text#contactoNombreApellido": {  
+    "props": {  
+      "blockClass": "formaltaclub",  
+      "placeholder": "Nombre y Apellido *", 
+      "label": "",   
+      "pointer": "#/properties/firstName"  
+    }  
+  },    
+  "form-input.text#contactoEmail": {  
+    "props": {  
+      "blockClass": "formaltaclub",  
+      "placeholder": "E-mail *",    
+      "label": "",
+      "pointer": "#/properties/email"  
+    }  
+  },
+  "form-input.text#contactoClub": {  
+    "props": {  
+      "blockClass": "formaltaclub",  
+      "label": "",
+      "placeholder": "Club de golf habitual *",        
+      "pointer": "#/properties/club"  
+    }  
+  },
+  "modal-actions.close#suscripcionAceptar": {
+    "props": {
+      "label": "Cerrar",
+      "blockClass": "suscripcionButtonClose"
+    }
+  }, 
+
+  //Bloque Challenge
+  "rich-text#challenge-text-club": {
+    "props": {
+      "width": "100%",
+      "title": "club ",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",  
+      "preventVerticalStretch": true,      
+      "text": "**¡BIENVENIDO!**\nGracias a nuestra tienda online ahora puedes comprar cualquier material de golf.\nPara tener acceso a la tienda, solo tienes que rellenar una vez el formulario número 1 que se muestra a continuación y registrarte para obtener tus datos de acceso en el paso número 2 (En el link que dice: Regístrese). Una vez que hayamos validado todos los datos, recibirás un mail confirmando que tu usuario ya tiene acceso a la tienda con los precios especiales de socios.\nSi ya eres un usuario registrado, te invitamos a iniciar sesión y disfrutar de las ventajas de nuestra tienda online.",
+
+      "blockClass": "challengeTopMenu"
+    }
+  },
+
+  "search-result-layout.customQuery": {
+    "props": {
+      "querySchema": {
+        "__unstableProductOriginVtex": true,
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "facetsBehavior": "dynamic",
+        "skusFilter": "ALL",
+        "maxItemsPerPage": 30,        
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}

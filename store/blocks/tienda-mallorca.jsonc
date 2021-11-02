@@ -1,7 +1,8 @@
 {
     "store.custom#tienda-mallorca": {
       "blocks": [
-        "iframe#tienda-mallorca"
+        "iframe#tienda-mallorca",
+        "flex-layout.row#address-mallorca"
         ]
     },
     "iframe#tienda-mallorca": {
@@ -9,6 +10,28 @@
         "src": "https://ivan-patadon.zohobookings.com/portal-embed#/customer/depiquepalma",
         "width":"100%",
         "height":"750"
+        }
+    },
+    "flex-layout.row#address-mallorca": {
+        "children": [
+          "flex-layout.col#addressWrapper-mallorca"
+        ],
+        "props": {
+          "blockClass": "address"
+        }
+    },
+    "flex-layout.col#addressWrapper-mallorca": {
+        "children": [
+          "rich-text#address__text-mallorca"
+        ],
+        "props": {
+          "blockClass": ""
+        }
+    },
+    "rich-text#address__text-mallorca": {
+        "props": {
+          "text": "**Dirección:** Polígon Son Bugadelles, Carrer d'Alcant, 1, 07183 Santa Ponça, Illes Balears\n **Teléfono:** +34 971 69 19 84\n **E-mail:** depique.calvia@gmail.com\n",
+          "blockClass": "address__text"
         }
     }
 }

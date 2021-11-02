@@ -9,19 +9,23 @@
       "flex-layout.row#tienda-5",
       "flex-layout.row#titulo-2",
       "flex-layout.row#subtitulo-1",
+      "flex-layout.row#tienda-8",
       "flex-layout.row#tienda-6",
       "flex-layout.row#tienda-7",
-      "flex-layout.row#tienda-8",
-      "flex-layout.row#tienda-9",
+      "flex-layout.row#vallromanes",
       "flex-layout.row#tienda-10",
+      "flex-layout.row#tienda-9",
       "flex-layout.row#subtitulo-2",
       "flex-layout.row#tienda-11",
-      "flex-layout.row#subtitulo-3",
-      "flex-layout.row#tienda-12",
       "flex-layout.row#subtitulo-4",
       "flex-layout.row#tienda-13",
       "flex-layout.row#titulo-3",
-      "flex-layout.row#tienda-14"
+      "flex-layout.row#tienda-14",
+      "flex-layout.row#titulo-franquicia",
+      "flex-layout.row#subtitulo-1",
+      "flex-layout.row#tienda-santcugat",
+      "flex-layout.row#subtitulo-3",
+      "flex-layout.row#tienda-12"
     ]
   },
 
@@ -166,6 +170,7 @@
         "blockClass": "horario-info-tienda"
       }
     },
+
   // Tienda 3
   "flex-layout.row#tienda-3": {
     "children": [
@@ -229,6 +234,7 @@
         "blockClass": "horario-info-tienda"
       }
     },
+
   // Tienda 4
   "flex-layout.row#tienda-4": {
     "children": [
@@ -509,6 +515,70 @@
     "rich-text#horario-tienda-7": {
       "props": {
         "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Sab | 9:00 a 17:00 |\n| Dom | 9:00 a 14:00 |",
+        "blockClass": "horario-info-tienda"
+      }
+    },
+
+  // Tienda Vallromanes
+  "flex-layout.row#vallromanes": {
+    "children": [
+      "flex-layout.col#imagen-vallromanes",
+      "flex-layout.col#info-vallromanes"
+    ],
+    "props": {
+      "blockClass": "tienda",
+      "colGap": "6"
+    }
+  },
+    "flex-layout.col#imagen-vallromanes": {
+      "children": [
+        "image#imagen-vallromanes"
+      ],
+      "props": {
+        "blockClass": "img-tienda"
+      }
+    },
+    "image#imagen-vallromanes": {
+      "props": {
+        "src": "assets/tiendas/img-tienda.png",
+        "width": "100%",
+        "blockClass": "image-tienda"
+      }
+    },
+    "flex-layout.col#info-vallromanes": {
+      "children": [
+        "rich-text#title-info-vallromanes",
+        "rich-text#direccion-info-vallromanes",
+        "rich-text#horario-vallromanes"
+        //"link#link-info-tienda-7"
+      ],
+      "props": {
+        "blockClass": "info-tienda",
+        "preventVerticalStretch": true
+      }
+    },
+    "rich-text#title-info-vallromanes": {
+      "props": {
+        "text": "**CLUB DE GOLF VALLROMANES**",
+        "blockClass": "title-info-tienda"
+      }
+    },
+    "rich-text#direccion-info-vallromanes": {
+      "props": {
+        "text": "- Passeigde la Torre Tavernera, s/n, 08188 Vallromanes, Barcelona\n- 935 72 90 64\n- depiquevlc@gmail.com",
+        "blockClass": "direccion-info-tienda"
+      }
+    },
+    "link#link-info-vallromanes": {
+      "props": {
+        "href": "#",
+        "label": "RESERVA FITTING",
+        "blockClass": "cta-defecto"
+      }
+    },
+    "rich-text#horario-vallromanes": {
+      "props": {
+        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| Todos los dias | 9:00 a 17:00 |\n| Martes | Cerrado |\n|",
         "blockClass": "horario-info-tienda"
       }
     },
@@ -835,7 +905,7 @@
     },
     "rich-text#title-info-tienda-12": {
       "props": {
-        "text": "**CLUB VALLE GUADIANA**",
+        "text": "**CLUB DE GOLF ISLA CANELA**",
         "blockClass": "title-info-tienda"
       }
     },
@@ -962,56 +1032,129 @@
       "colGap": "6"
     }
   },
-    "flex-layout.col#imagen-tienda-14": {
+  "flex-layout.col#imagen-tienda-14": {
+    "children": [
+      "image#imagen-tienda-14"
+    ],
+    "props": {
+      "blockClass": "img-tienda"
+    }
+  },
+  "image#imagen-tienda-14": {
+    "props": {
+      "src": "assets/tiendas/img-tienda.png",
+      "width": "100%",
+      "blockClass": "image-tienda"
+    }
+  },
+  "flex-layout.col#info-tienda-14": {
+    "children": [
+      "rich-text#title-info-tienda-14",
+      "rich-text#direccion-info-tienda-14",
+      "rich-text#horario-tienda-14"
+      //"link#link-info-tienda-14"
+    ],
+    "props": {
+      "blockClass": "info-tienda",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title-info-tienda-14": {
+    "props": {
+      "text": "**DEPIQUE GOLF ACADEMY GRÀCIA**",
+      "blockClass": "title-info-tienda"
+    }
+  },
+  "rich-text#direccion-info-tienda-14": {
+    "props": {
+      "text": "- Travessera de Gràcia, 72\n- 934 14 52 35\n- info@depique.com",
+      "blockClass": "direccion-info-tienda"
+    }
+  },
+  "link#link-info-tienda-14": {
+    "props": {
+      "href": "#",
+      "label": "RESERVA FITTING",
+      "blockClass": "cta-defecto"
+    }
+  },
+  "rich-text#horario-tienda-14": {
+    "props": {
+      "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Dom | 10:00 a 20:00 |",
+      "blockClass": "horario-info-tienda"
+    }
+  },
+
+  // TITULO - Franquicia
+  "flex-layout.row#titulo-franquicia": {
+    "children": [
+      "rich-text#titulo-franquicia"
+    ],
+    "props": {
+      "blockClass": "titulo-tiendas"
+    }
+  },
+  "rich-text#titulo-franquicia": {
+    "props": {
+      "text": "## FRANQUICIAS",
+      "blockClass": "titulo-tiendas"
+    }
+  },
+
+  // Tienda-SANT CUGAT
+  "flex-layout.row#tienda-santcugat": {
+    "children": [
+      "flex-layout.col#imagen-santcugat",
+      "flex-layout.col#info-santcugat"
+    ],
+    "props": {
+      "blockClass": "tienda",
+      "colGap": "6"
+    }
+  },
+    "flex-layout.col#imagen-santcugat": {
       "children": [
-        "image#imagen-tienda-14"
+        "image#imagen-santcugat"
       ],
       "props": {
         "blockClass": "img-tienda"
       }
     },
-    "image#imagen-tienda-14": {
+    "image#imagen-santcugat": {
       "props": {
         "src": "assets/tiendas/img-tienda.png",
         "width": "100%",
         "blockClass": "image-tienda"
       }
     },
-    "flex-layout.col#info-tienda-14": {
+    "flex-layout.col#info-santcugat": {
       "children": [
-        "rich-text#title-info-tienda-14",
-        "rich-text#direccion-info-tienda-14",
-        "rich-text#horario-tienda-14"
-        //"link#link-info-tienda-14"
+        "rich-text#title-info-santcugat",
+        "rich-text#direccion-info-santcugat",
+        "rich-text#horario-santcugat"
       ],
       "props": {
         "blockClass": "info-tienda",
         "preventVerticalStretch": true
       }
     },
-    "rich-text#title-info-tienda-14": {
+    "rich-text#title-info-santcugat": {
       "props": {
-        "text": "**DEPIQUE GOLF ACADEMY GRÀCIA**",
+        "text": "**CLUB DE GOLF SANT CUGAT**",
         "blockClass": "title-info-tienda"
       }
     },
-    "rich-text#direccion-info-tienda-14": {
+    "rich-text#direccion-info-santcugat": {
       "props": {
-        "text": "- Travessera de Gràcia, 72\n- 934 14 52 35\n- info@depique.com",
+        "text": "- Club de Golf SantCugat, c / Villà79, 08173 SantCugatdel Vallès, Barcelona\n- 93 674 39 08\n- recepcion@golfsantcugat.com",
         "blockClass": "direccion-info-tienda"
       }
     },
-    "link#link-info-tienda-14": {
+    "rich-text#horario-santcugat": {
       "props": {
-        "href": "#",
-        "label": "RESERVA FITTING",
-        "blockClass": "cta-defecto"
-      }
-    },
-    "rich-text#horario-tienda-14": {
-      "props": {
-        "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| De Lun a Dom | 10:00 a 20:00 |",
+          "text": "**HORARIO**\n\n|  |  |\n| --- | --- |\n| Todos los días | 07:00 a 19:00 |\n| Martes | Cerrado |\n|",
         "blockClass": "horario-info-tienda"
       }
     }
+  
 }

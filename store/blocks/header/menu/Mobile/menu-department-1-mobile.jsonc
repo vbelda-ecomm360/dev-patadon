@@ -47,8 +47,8 @@
         "itemProps": {
             "type": "internal",
             "href": "/palos-de-golf",
-            "tagTitle": "Ver todo",
-            "text": "Ver todo"
+            "tagTitle": "Ver más",
+            "text": "Ver más"
         }
     }
   },
@@ -101,8 +101,8 @@
         "type": "internal",
         "href": "/palos-de-golf",
         "noFollow": true,
-        "tagTitle": "Ver todos Palos Standard",
-        "text": "Ver todos Palos Standard"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass": "header-department-category-show-all"
     }
@@ -304,8 +304,8 @@
         "type": "external",
         "href": "https://www.depique.com/palos-de-golf?fuzzy=0&map=category-2,category-1&operator=and&query=/packs/palos-de-golf",
         "noFollow": true,
-        "tagTitle": "Ver todos Packs",
-        "text": "Ver todos Packs"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -433,8 +433,8 @@
         "type": "internal",
         "href": "/palos-de-golf/otros",
         "noFollow": true,
-        "tagTitle": "Ver todos Otras categorías",
-        "text": "Ver todos Otras categorías"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }

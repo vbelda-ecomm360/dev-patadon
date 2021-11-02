@@ -1,0 +1,166 @@
+{
+  "flex-layout.col#menu": {    
+    "children": [
+      "flex-layout.row#header-micrositios-links",         
+      "logo#depiqueMicroSitios"              
+    ],
+    "props": { 
+      "width": "100%",
+      "title": "menu micrositios",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",  
+      "blockClass": "menu-micrositios",      
+      "preventVerticalStretch": true    
+    }
+  },
+
+  "flex-layout.row#header-micrositios-links": {
+    "props": {      
+      "blockClass": "header-micrositios-links",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "link#menu1",                
+      "link#menu2",
+      "link#menu3-micrositios",                
+      "link#menu4"                     
+      //"challenge-block#suscripcionAltaClub"
+    ]
+  },
+
+  "link#menu1": {
+    "props": {          
+      "title": "menu1",
+      "href": "/palos-de-golf",
+      "blockClass": "menu",
+      "label": "Palos de golf"
+    }    
+  },
+
+  "link#menu2": {
+    "props": {      
+      "title": "menu2",
+      "href": "/Ropa-y-Calzado",
+      "blockClass": "menu",
+      "label": "Ropa y Calzado"
+    }
+  },
+
+  "link#menu3-micrositios": {
+    "props": {          
+      "title": "menu3",
+      "href": "/Bolsas-y-carros",
+      "blockClass": "menu",
+      "label": "Bolsas, Carros y GPS"
+    }    
+  },
+
+  "link#menu4": {
+    "props": {      
+      "title": "menu4",
+      "href": "/Accsesorios",
+      "blockClass": "menu",
+      "label": "Bolas y Accesorios"
+    }
+  },
+
+  "logo#depiqueMicroSitios": {
+    "props": {
+      "title": "Logo",
+      "href": "",
+      "url": "assets/logo.png",
+      "width": "150px",
+      "blockClass": "logo-micrositios"
+    }
+  },
+
+  //Agrego bloques de Challenge para bloquear contenido si no estas logueado o aprobado
+  //Bloque Challenge
+  "challenge-block#suscripcionAltaClub": {
+    "blocks": [
+      "challenge-content#modal-trigger#suscripcionAltaClub",
+      "challenge-fallback#suscripcionAltaClub"
+    ]
+  },
+
+  //Bloque Challenge
+  "challenge-content#modal-trigger#suscripcionAltaClub": {
+    "children": [
+      "modal-trigger#suscripcionAltaClub"
+    ]
+  },
+
+  //Bloque Challenge
+  "challenge-fallback#suscripcionAltaClub": {
+    "children": [
+      "flex-layout.col#micrositiosLogin"
+    ],
+    "props": {
+      "blockClass": "textLoginBlock"
+    }
+  },
+
+
+  // LOGIN
+  "flex-layout.col#micrositiosLogin": {
+    "props": {
+      "blockClass": "micrositiosLogin",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "flex-layout.row#micrositiosLogin"
+    ]
+  },
+
+  "flex-layout.row#micrositiosLogin": {
+    "props": {
+      "blockClass": "micrositiosLogin",
+      "width": "100%"
+    },
+    "children": [
+        "login"
+    ]
+  },
+
+
+  //Modal Ping
+  "modal-trigger#suscripcionAltaClub": {
+    "title": "Validar sugerencia previo a la compra",
+    "children": [
+      "link#menu3", 
+      "modal-layout#suscripcionAltaClub"
+    ],
+    "props": {
+      "blockClass": "MarcaPingValidarSugerencia",
+      "trigger": "click"
+    }
+  },
+  
+  "link#menu3": {
+    "props": {      
+      "title": "menu3",
+      "href": "",
+      "blockClass": "menu",
+      "label": "Solicitud de alta"
+    }
+  },
+
+  "modal-layout#suscripcionAltaClub": {
+    "children": [
+      "modal-content#suscripcionAltaClubContent",
+      "modal-actions.close#suscripcionAceptar"
+    ],
+    "props": {
+      "blockClass": "suscripcionAltaClubRow",
+      "disableEscapeKeyDown": true
+    }
+  },
+
+
+  "modal-content#suscripcionAltaClubContent": {
+    "children": ["form#altaclub"],
+    "props": {
+      "blockClass": "suscripcionAltaClubContent"
+    }
+  }
+}

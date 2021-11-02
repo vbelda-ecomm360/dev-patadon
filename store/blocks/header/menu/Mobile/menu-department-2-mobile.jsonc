@@ -47,8 +47,8 @@
         "itemProps": {
             "type": "internal",
             "href": "/ropa-y-calzado",
-            "tagTitle": "Ver todos",
-            "text": "Ver todos"
+            "tagTitle": "Ver más",
+            "text": "Ver más"
         }
     }
   },
@@ -98,8 +98,8 @@
         "type": "external",
         "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=genero,departamento&operator=and&query=/hombre/ropa-y-calzado",
         "noFollow": true,
-        "tagTitle": "Ver todos Ropa de Hombre",
-        "text": "Ver todos Ropa de Hombre"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass": "header-department-category-show-all"
     }
@@ -272,8 +272,8 @@
         "type": "external",
         "href": "https://www.depique.com/Ropa-y-Calzado/Ropa-de-golf?fuzzy=0&map=genero,departamento&operator=and&query=/mujer/ropa-y-calzado",
         "noFollow": true,
-        "tagTitle": "Ver todos Ropa de golf de Mujer",
-        "text": "Ver todos Ropa de golf de Mujer"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }
@@ -385,8 +385,8 @@
         "type": "internal",
         "href": "/junior",
         "noFollow": true,
-        "tagTitle": "Ver todos Ropa de golf Junior",
-        "text": "Ver todos Ropa de golf Junior"
+        "tagTitle": "Ver más",
+        "text": "Ver más"
       },
       "blockClass":"header-department-category-show-all"
     }

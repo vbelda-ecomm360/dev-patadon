@@ -6,3 +6,108 @@
 .badgeContainer--2x1 .badgeText {
   z-index: -1;
 }
+
+
+.groupContainer--badges_aprobacion_de_compra, 
+.groupContainer--MarcaPingValidarSugerencia {
+	width: 100%;
+	margin: 0;
+}
+.groupContainer--badges_aprobacion_de_compra .badgeContainer--badges_aprobacion_de_compra {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.groupContainer--badges_aprobacion_de_compra .badgeContainer--badges_aprobacion_de_compra .badgeText {
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0;
+	background: #c7102e;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.groupContainer--MarcaPingValidarSugerencia .badgeContainer--MarcaPingValidarSugerencia {
+	width: 100%;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.groupContainer--MarcaPingValidarSugerencia .badgeContainer--MarcaPingValidarSugerencia .badgeText {
+	margin: 0;
+	width: 100%;
+	color: #000;
+	font-size: 14px;
+}
+
+.badgeText--badgesshortDescription {
+	margin: 0;
+}
+
+.groupContainer--badgesshortDescription {
+	margin: 0;
+}
+
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+	width: 50%;
+	float: left;
+}
+
+:global(.vtex-store-components-3-x-skuSelectorSubcontainer--color) {
+	width: 100%;
+}
+
+:global(.vtex-store-components-3-x-skuSelectorSelectContainer) {
+	width: 100%;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-container) {
+    max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-graphContent) {
+	display: none;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-star) {
+	color: #FFB100;
+  }
+  
+:global(.vtex-reviews-and-ratings-2-x-star--filled) {
+	color: #FFB100;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-writeReviewButton) {
+	color: #0c0cee;
+}
+
+:global(.vtex__icon-caret-up), :global(.vtex__icon-caret-down) {
+	color: #000;
+}
+
+:global(.vtex-store-components-3-x-productDescriptionTitle) {
+	font-weight: 700;
+    font-size: 1.75rem;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+@media (max-width: 768px) {
+	.badgeContainer--badgesshortDescription {
+		padding-top: 20px;
+	}
+
+	.badgeText--badgesshortDescription {
+		text-align: left;
+	}
+	
+	.stretchChildrenWidth--container-img-product{
+		width: 100%;
+	}
+}
+.groupContainer--badgesshortDescription {
+	margin: 0 0 20px;
+	width: 100%;
+}

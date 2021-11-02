@@ -10,20 +10,14 @@
 
   // COMPAÑIA DE GOLF
   "flex-layout.row#somos": {
-    "children": [
-      "image#somos",
-      "flex-layout.col#text-somos"
-    ],
+    "children": ["image#somos", "flex-layout.col#text-somos"],
     "props": {
       "blockClass": "about"
     }
   },
 
   "flex-layout.col#text-somos": {
-    "children": [
-      "rich-text#title-somos",
-      "rich-text#somos"
-    ],
+    "children": ["rich-text#title-somos", "rich-text#somos"],
     "props": {
       "blockClass": "textColumn",
       "preventVerticalStretch": true
@@ -32,8 +26,7 @@
 
   "rich-text#title-somos": {
     "props": {
-      "text":
-      "# **UNA COMPAÑÍA DE GOLF**\ny una experiencia 360",
+      "text": "# **UNA COMPAÑÍA DE GOLF**\ny una experiencia 360",
       "blockClass": "title-about"
     }
   },
@@ -56,20 +49,14 @@
 
   // LO MEJOR PARA TI
   "flex-layout.row#mejor": {
-    "children": [
-      "flex-layout.col#text-mejor",
-      "image#mejor"
-    ],
+    "children": ["flex-layout.col#text-mejor", "image#mejor"],
     "props": {
       "blockClass": "about-white"
     }
   },
 
   "flex-layout.col#text-mejor": {
-    "children": [
-      "rich-text#title-mejor",
-      "rich-text#mejor"
-    ],
+    "children": ["rich-text#title-mejor", "rich-text#mejor"],
     "props": {
       "blockClass": "textColumn",
       "preventVerticalStretch": true
@@ -78,8 +65,7 @@
 
   "rich-text#title-mejor": {
     "props": {
-      "text":
-      "# **TENEMOS LO MEJOR PARA TI**\nasesoramiento y expertos a tu disposición",
+      "text": "# **TENEMOS LO MEJOR PARA TI**\nasesoramiento y expertos a tu disposición",
       "blockClass": "title-about"
     }
   },
@@ -102,20 +88,14 @@
 
   // PIONEROS
   "flex-layout.row#pioneros": {
-    "children": [
-      "image#pioneros",
-      "flex-layout.col#text-pioneros"
-    ],
+    "children": ["image#pioneros", "flex-layout.col#text-pioneros"],
     "props": {
       "blockClass": "about"
     }
   },
 
   "flex-layout.col#text-pioneros": {
-    "children": [
-      "rich-text#title-pioneros",
-      "rich-text#pioneros"
-    ],
+    "children": ["rich-text#title-pioneros", "rich-text#pioneros"],
     "props": {
       "blockClass": "textColumn",
       "preventVerticalStretch": true
@@ -124,8 +104,7 @@
 
   "rich-text#title-pioneros": {
     "props": {
-      "text":
-      "# **Tres pioneros del clubmaking**\n¿Quién hay detrás de Depique?",
+      "text": "# **Tres pioneros del clubmaking**\n¿Quién hay detrás de Depique?",
       "blockClass": "title-about"
     }
   },
@@ -145,6 +124,4 @@
       "blockClass": "text-about"
     }
   }
-
-
 }

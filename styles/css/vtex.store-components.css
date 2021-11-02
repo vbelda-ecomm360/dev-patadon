@@ -3,7 +3,6 @@
   padding-right:20px;
 }
 
-
 .label {
   color: #fff;
   font-size: 26px;
@@ -38,12 +37,16 @@
   line-height: 1.59;
   letter-spacing: -1px;
 }
+
 @media screen and (max-width: 50em) {
+
   .discountInsideContainer{
     right: 0px;
     top: 0px;
   }
+
 }
+
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   color: #fff;
   font-size: 16px;
@@ -71,13 +74,15 @@
 .skuSelectorOptionsList {
   margin:0px;
 }
+
 .skuSelectorName{
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2.5;  
   color: #282726;
+  text-transform: uppercase;
 }
+
 .skuSelectorItem{
   margin-right:10px;
   margin-left: 0px;
@@ -109,8 +114,6 @@
   padding:0px 30px;
 }
 
-
-
 .notificationBarContainer {  
   background-color: #C8102E;
   color: #ffffff;
@@ -123,8 +126,14 @@
 .searchBarContainer{
   max-width:none;
   padding-left:20px;
-  padding-right:20px;
+  padding-right:20px;  
 }
+@media screen and (max-width: 1025px) {
+  .searchBarContainer{
+    padding: 0 0 10px 0;
+  }
+}
+
 .searchBarContainer :global(.vtex-input-prefix__group) {
   border: 1px solid #000;
   border-radius: 0;
@@ -136,7 +145,6 @@
   color:#000;
   letter-spacing: 1px;
 }
-
 
 
 
@@ -299,9 +307,11 @@
 .carouselGaleryThumbs {
   margin: 30px -15px;
 }
+
 .productImagesGallerySwiperContainer {
   background:#ffffff;
 }
+
 .productImagesThumb {
   margin: 0px 15px;
   padding: 15px 0px;
@@ -310,26 +320,36 @@
   height:auto !important;
   max-height: none !important;
 }
+
 .productImagesThumbActive .carouselThumbBorder {
   border:2px solid #c8102e !important;
 }
+
 .productImagesThumbCaret {
   padding:0px 10px;
 }
 
+.shippingContainer {
+  margin-bottom: 20px!important;
+}
 
 .shippingContainer :global(.vtex-address-form__postalCode){
   width:50%;
   float:left;
+  color: #000!important;
+  text-transform: uppercase;
 }
+
 .shippingContainer :global(.vtex-input__label){
   display:none;
 }
+
 .shippingContainer :global(.vtex-input-prefix__group){
   border-width: 0px;
   border-radius:0px;
   height:auto;
 }
+
 .shippingContainer :global(.vtex-address-form-4-x-input){
   border: solid 1px #d9d9d9;
   background-color: #ffffff;
@@ -367,6 +387,10 @@
 .imageElement--image-equipo-mobile{
   display:none;
 }
+.imageElement--image-fitting {
+  width: 100%;
+}
+
 @media screen and (max-width: 50em) {
   .imageElement--banner-fitting-image{
     display:none;
@@ -437,4 +461,67 @@
   .headingLevel3--info-card-nosotros-te-llamamos{
     font-size:26px;
   }
+}
+
+@media screen and (min-width: 50em) {
+
+  .imageElement--image-tienda {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+  .imageElement--header-main-menu-imageLogin {
+    padding-top: 5px;
+  }
+
+}
+
+.imageElement--image-club {
+  width: 100%;
+  height: auto;
+}
+.imageElement--tarjetabaneficiosimage {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+} 
+.imageElement--bannerExplicativo {
+  width: 100%;
+  height: auto;
+}
+
+.imageElement--imgpasos {
+  max-width: 100px;
+  margin: 0 auto;  
+  display: block;
+  margin-bottom: 30px;
+}
+.logoLink--logo-micrositios .logoContainer--logo-micrositios {
+  max-width: 100px;
+  max-height: none;
+  min-width: 100px;
+  width: 150px;
+  float: left;
+  padding: 0;
+}
+
+.productDescriptionContainer .productDescriptionText {
+  line-height: 25px;
+  font-size: 16px;
+}
+.logoLink .sizeDesktop {
+    max-width: 230px;
+    max-height: 75px;
+    min-width: 120px;
+    float: left;
+    padding: 0;
+}
+
+.logoLink .sizeMobile {
+    max-width: 150px;
+    max-height: 40px;
+    min-width: 72px;
+    padding: 0;
+    float: left;
 }

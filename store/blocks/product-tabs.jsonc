@@ -88,9 +88,9 @@
     },
     "tab-content.item#prod3": {
         "children": [
-            "rich-text#prod3",
-            "product-reviews",
-            "product-questions-and-answers"
+            //"rich-text#prod3",
+            "product-reviews"
+            //"product-questions-and-answers"
         ],
         "props": {
             "tabId": "prod3"
@@ -178,7 +178,7 @@
     "submenu.accordion#product_prod3": {
         "children": [
             "rich-text#prod3",
-            "product-reviews",
+            "product-reviews", 
             "product-questions-and-answers"
         ]
     }

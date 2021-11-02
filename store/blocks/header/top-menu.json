@@ -3,14 +3,45 @@
         "children": [
             "menu-item#venta-tele",
             "menu-item#tiendas",
+            "menu-item#marcas",
             "menu-item#contacto",
             "menu-item#about-us",
-            "menu-item#blog"
+            "menu-item#blog",
+            "link#whatsapp",
+            "flex-layout.row#wrapper-tel"
         ],
         "props": {
             "blockClass": "top-bar-menu-container"
         }
     },
+    "menu-item#marcas": {
+        "props": {
+          "id": "menu-item-marcas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/marcas-de-golf",
+            "noFollow": true,
+            "tagTitle": "Marcas",
+            "text": "Marcas"
+          }
+        },
+        "blocks": [
+          "vtex.menu@2.x:submenu#marcas"
+        ]
+      },
+      "vtex.menu@2.x:submenu#marcas": {
+        "props": {
+          "width": "100%",
+          "blockClass": "header-submenus"
+          
+        },
+        "children": [      
+          "flex-layout.row#home-brands"
+        ]
+      },
     "menu-item#venta-tele": {
         "props": {
             "id": "menu-item-venta-tele",
@@ -87,6 +118,46 @@
                 "tagTitle": "Blog",
                 "text": "Blog"
             }
+        }
+    },
+    "link#whatsapp": {
+        "props": {
+            "href": "https://api.whatsapp.com/send?phone=tel:+66645500705",
+            "target":"_blank",
+            "blockClass": "phonecall",  
+            "label": "whatsapp"
+        }
+    },
+    "flex-layout.row#wrapper-tel": {
+        "children": [
+          "flex-layout.col#telefonofijo"
+        ],
+        "props": {
+            "blockClass": "wrapperTelFijo"
+        }
+    },
+    "flex-layout.col#telefonofijo": {
+        "children": [
+            "image#telefono",
+            "rich-text#contacto"
+        ],
+        "props": {
+          "blockClass": "textColumn",
+          "preventVerticalStretch": true
+        }
+    },
+    "image#telefono": {
+        "props": {
+            "src": "/arquivos/tel.png",
+            "maxHeight": 50,
+            "maxWidth": 50
+        }
+    },
+    "rich-text#contacto": {
+        "props": {
+        "text":
+        "93 414 52 35",
+        "blockClass": "telefonoFijo"
         }
     }
 }

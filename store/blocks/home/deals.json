@@ -107,7 +107,7 @@
         },
         "rich-text#deal2-2": {
           "props": {
-            "text": "Tus datoc con cifrado SSL.",
+            "text": "Tus datos con cifrado SSL.",
             "blockClass": "deals"
           }
         },

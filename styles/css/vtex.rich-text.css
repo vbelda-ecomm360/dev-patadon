@@ -1,3 +1,17 @@
+/*Tiendas Inidviduales*/
+.container--address__text {
+    padding: 25px 100px;
+}
+
+.paragraph--telefonoFijo {
+    margin: 0;
+    background-color: #C5102E;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: white;
+    font-size: 13px;
+}
+
 .container--deals {
     color: #ffffff;
     text-align: left;
@@ -19,11 +33,18 @@
 }
 
 @media screen and (max-width: 50em) {
+
     .container--shelfTitle .heading {
         font-size: 18px;
         font-weight: 600;
         line-height: 1;
     }
+
+    /*Tiendas Inidviduales*/
+    .container--address__text {
+        padding: 25px;
+    }
+
 }
 
 .container--priceRecomendado {
@@ -91,8 +112,6 @@
     font-weight: 700;
 }
 
-
-
 .paragraph--main-header-text {
     margin: 0px;
     font-size: 14px;
@@ -104,16 +123,24 @@
     line-height: 1.15;
 }
 
-.wrapper--footer-title {
+.wrapper--footer-title,
+.wrapper--footer-title-social{
     width: 75%;
 }
-
-.paragraph--footer-title {
+@media screen and (max-width: 1025px) {
+    .wrapper--footer-title,
+    .wrapper--footer-title-social{
+        width: 100%;
+    }
+}
+.paragraph--footer-title,
+.paragraph--footer-title-social {
     font-size: 14px;
     color: #000000;
     font-weight: bold;
     border-bottom: 1px solid #000;
 }
+
 
 .container--category-title {
     margin-top: 30px;
@@ -195,27 +222,31 @@
 }
 
 @media only screen and (min-width: 640px) {
+
     .container--question .strong {
         font-size: 40px;
         line-height: 3rem;
     }
+
     .container--about {
         max-width: 85%;
     }
+
     .container--title {
         color: #03034E;
         font-size: 40px;
         font-weight: 700;
         max-width: 60%;
     }
+
     .container--title .paragraph {
         line-height: 1.3em;
     }
+
 }
 
 
 /* ABOUT US */
-
 .wrapper--title-about {
     font-size: 22px !important;
     font-weight: 300;
@@ -228,9 +259,7 @@
     font-weight: 600;
 }
 
-
 /* INSTITUCIONAL */
-
 .headingLevel3--institutional-text {
     font-weight: normal;
     font-size: 20px;
@@ -242,7 +271,6 @@
     margin-bottom: 30px;
 }
 
-
 /* FITTING */
 .wrapper--banner-fitting-text{
     font-size:18px;
@@ -250,15 +278,18 @@
 }
 
 @media screen and (min-width: 50em) {
+
     .container--banner-fitting-text{
         display:none;
     }
+
 }
 
 .wrapper--title-fitting {
     width:100%;
     text-align:center;
 }
+
 .headingLevel3--title-fitting{
     font-size: 32px;
     color: #C8102E;
@@ -266,6 +297,7 @@
     margin:auto;
     margin-bottom:20px;
 }
+
 .container--fitting-video {
     display: table;
     width: 100%;
@@ -277,12 +309,13 @@
     vertical-align: middle;
     text-align:center;
 }
+
 .headingLevel3--fitting-video{
     font-size: 32px;
     color: #C8102E;
-    max-width:650px;
-    margin:auto;
+    text-align: center;
 }
+
 .strong--fitting-video{
     font-size: 22px;
 } 
@@ -300,11 +333,12 @@
 
 .container--text-proceso {
     position: relative;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 
 .paragraph--text-proceso {
     margin: 0px;
+    text-align: justify;
 }
 
 .headingLevel3--text-proceso {
@@ -322,10 +356,12 @@
 }
 
 @media screen and (max-width: 50em) {
+
     .container--text-proceso {
         padding-left: 0px;
         text-align: center;
     }
+
     .headingLevel3--text-proceso {
         display: inline-block;
         position: static;
@@ -333,51 +369,75 @@
         height: 42px;
         background: url('assets/fitting/flag.png') no-repeat;
     }
+
 }
+
 .strong--text-proceso{
     font-size:20px;
 }
+
 @media screen and (min-width: 50em) {
+
     .wrapper--info-fitting-equipo{
         display:none;
     }
-}
-@media screen and (max-width: 50em) {
-    .wrapper--info-fitting{
-        text-align:center;
-    }
-    .wrapper--info-fitting-equipo{
-        text-align:center;
-    }
-}
-.wrapper--info-fitting-tecnologia{
-    max-width:400px;
+
 }
 
 @media screen and (max-width: 50em) {
-    .wrapper--info-fitting-tecnologia{
+
+    .wrapper--info-fitting{
         text-align:center;
     }
+
+    .wrapper--info-fitting-equipo{
+        text-align:justify;
+    }
+
 }
+
+.wrapper--info-fitting-tecnologia{
+    max-width:500px;
+    text-align: justify;
+}
+
 .strong--info-fitting-tecnologia{
     letter-spacing: 1px;
     font-size:34px;
 }
+
 .link--info-fitting-tecnologia{
-    padding:15px 30px;
+    padding:15px 25px;
     display:inline-block;
     color:#fff;
     border-radius:5px;
     background:#134CD8;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .15s ease all;
+    text-align: center;
 }
+
+.link--info-fitting-tecnologia:hover{
+    opacity: .8;
+}
+
 @media screen and (max-width: 50em) {
+
     .link--info-fitting-tecnologia{
         font-size:12px;
     }
+
+    .paragraph--info-fitting-tecnologia-button {
+        text-align: center;
+    }
+
+    .wrapper--info-fitting-tecnologia-button {
+        width: 100%;
+    }
+
 }
-
-
 
 .container--testimonio-fitting {
     display: table;
@@ -388,14 +448,23 @@
 .wrapper--testimonio-fitting {
     display: table-cell;
     vertical-align: middle;
-    padding-left:30px;
+    padding-left:60px;
     padding-right:30px;
 }
+
 @media screen and (max-width: 50em) {
+
     .wrapper--testimonio-fitting{
         text-align: center;
+        padding: 20px;
     }
+
+    .paragraph--banner-fitting-text {
+        text-align: justify;
+    }
+
 }
+
 .strong--testimonio-fitting {
     color: #fff;
     letter-spacing: 1px;
@@ -405,21 +474,59 @@
     color: #fff;
     font-weight: 200;
     letter-spacing: 1px; 
+    text-align: justify;
 }
 
-
 .paragraph--text-fitting {
-    text-align:center;
+    text-align:justify;
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.strong--text-fitting-testimonio {
+    text-align: center;
+    display: block;
+    font-size: 21px;
+}
+
+.paragraph--text-fitting-testimonio {
+    text-align:justify;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.paragraph--text-fitting-testimonio:first-child {
+    text-align: center;
+    height: auto;
+}
+
 @media screen and (max-width: 50em) {
+
     .paragraph--text-fitting {
         padding:0px;
     }
+
+    .strong--info-fitting-tecnologia {
+        text-align: center;
+        display: block;
+    }
+
+    .heading--text-proceso {
+        margin-bottom: 10px;
+    }
+
+    .list--text-proceso {
+        text-align: left;
+        padding-left: 20px;
+    }
+
 }
+
 .strong--text-fitting{
     font-size:24px;
+    text-align: center;
+    display: block;
 }
 
 
@@ -429,7 +536,6 @@
 }
 
 /* PRECIOS */
-
 .wrapper--table-precios {
     width: 100%;
     max-width: 1000px;
@@ -476,15 +582,17 @@
     border-top:2px solid #ccc;
     border-bottom:2px solid #ccc;
 }
+
 .list--direccion-info-tienda{
     list-style:none;
-
 }
+
 .listItem--direccion-info-tienda{
     padding:10px 0px;
     font-weight:bold;
     position: relative;
 }
+
 .listItem--direccion-info-tienda::before{
     position:absolute;
     display:block;
@@ -495,76 +603,125 @@
     top:4px;
     background-size:30px;
 }
+
 .listItem--direccion-info-tienda:nth-child(n+1)::before{
     background-image:url('assets/tiendas/pin.png');
 }
+
 .listItem--direccion-info-tienda:nth-child(n+2)::before{
     background-image:url('assets/tiendas/tlf.png'); 
 }
+
 .listItem--direccion-info-tienda:nth-child(n+3)::before{
     background-image:url('assets/tiendas/mail.png');
 }
 
-
 .container--horario-info-tienda {
     margin-bottom:30px;
 }
+
 .strong--horario-info-tienda {
     color:#C8102E;
     display:block;
     border-bottom:1px solid #eee;
 }
+
 .table--horario-info-tienda{
     width:100%;
     max-width:400px;     
 }
+
 .tableTd--horario-info-tienda:nth-child(2n-1){
     font-weight:bold;
 }
 
-
-
 /* TOP BAR */ 
-
 .paragraph--top-bar-header-text {
     color: #ffffff;
     font-size: 14px;
-    line-height: 32px;
     padding: 0px 15px;
     margin: 15px 0; 
+    line-height: 20px; 
     text-align: left;
-}
-
-@media screen and (max-width: 767px) and (min-width: 640px) {
-    .paragraph--top-bar-header-text {
-        margin: 24px 0;
-    }
 }
 
 .link--top-bar-header-text {
     color: #ffffff;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 1025px) {
     .wrapper--top-bar-header-text {
         width: 100%;
     }
     .paragraph--top-bar-header-text {
-        /* width: 100%;
-        font-size: 10px;
-        text-align: center;
-        line-height: 20px; */
-    }
-}
-
-@media screen and (max-width: 639px) {
-    .paragraph--top-bar-header-text {
-        padding: 10px 15px;
+        padding: 10px;
         background: #134cd7;
         margin: 0;
         text-align: center;
-        text-transform: uppercase;
-    }
+    }    
 }
 
+.container--MarcaPingValidarSugerencia .wrapper--MarcaPingValidarSugerencia {
+    width: 100%;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
+/*LANDING CLUB*/
+.container--challengeTopMenu .wrapper--challengeTopMenu {
+    width: 80%;
+    margin: 0 auto;
+}
+.container--challengeTopMenu .wrapper--challengeTopMenu .paragraph--challengeTopMenu {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    padding:50px 0;
+    margin: 0;
+    font-weight: 200;
+}
+.container--mensajeDeAviso .wrapper--mensajeDeAviso {
+    width: 80%;
+    margin: 0 auto;
+}
+.container--mensajeDeAviso .wrapper--mensajeDeAviso .paragraph {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    padding:50px 0;
+    margin: 0;
+    font-weight: 200;
+}
+
+.wrapper--titletext .paragraph {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 10px 0;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+    .container--challengeTopMenu .wrapper--challengeTopMenu {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .container--challengeTopMenu .wrapper--challengeTopMenu .paragraph--challengeTopMenu {
+        font-size: 16px;
+        padding:25px 0;
+        
+    }   
+}
+
+.wrapper--footer-copy-text-micrositios {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}

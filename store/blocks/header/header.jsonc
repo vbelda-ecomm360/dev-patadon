@@ -9,6 +9,7 @@
     "children": [
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
+      "flex-layout.row#4-desktop",
       "sticky-layout#4-desktop"
     ]
   },
@@ -70,7 +71,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop", "flex-layout.row#5-desktop"]
+    "children": ["flex-layout.row#5-desktop"]
   },
   "flex-layout.row#4-desktop": {
     "props": {
@@ -80,14 +81,15 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "colSizing": "auto",
-      "colGap": 8
+      "colGap": 6
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "search-bar#header",
-      //"flex-layout.col#locale-switcher",
+      //"flex-layout.col#locale-switcher",      
       "flex-layout.col#login",
-      "flex-layout.col#minicart"
+      "flex-layout.col#minicart",
+      "menu-item#comunidad"
     ]
   },
   // IDIOMA
@@ -132,6 +134,22 @@
         "blockClass": "main-header-text"
       }
     },
+  "menu-item#comunidad": {
+      "props": {
+          "blockClass": "comunidad-header-text",
+          "id": "menu-item-Comunidad",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+              "type": "internal",
+              "href": "/micrositios-depique",
+              "noFollow": false,
+              "tagTitle": "Blog",
+              "text": "Acceso Socios"
+          }
+      }
+  },
   // LOGIN
   "flex-layout.col#login": {
     "props": {
@@ -154,7 +172,8 @@
     "image#icon-login": {
       "props": {
         "src": "assets/header/user.svg",
-        "maxWidth": "100%"
+        "maxWidth": "100%",
+        "blockClass": "header-main-menu-imageLogin"
       }
     },
   "flex-layout.row#login": {
@@ -224,22 +243,21 @@
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
-  },
-  "sticky-layout#1-mobile": {
     "children": [
       "flex-layout.row#2-desktop",
-      "flex-layout.row#1-mobile"
-    ]
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#search-mobile"
+    ],
+    "props": {
+      "blockClass": "header-mobile"      
+    }
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "flex-layout.col#drawer",
       "flex-layout.col#logo-mobile",
-      "flex-layout.col#spacer",
       //"search-bar#header",
-      "flex-layout.col#login-mobile",
-      "flex-layout.col#minicart-mobile"
+      "flex-layout.col#login-minicart-mobile"      
     ],
     "props": {
       "blockClass": "main-header-mobile",
@@ -251,7 +269,7 @@
   "flex-layout.col#drawer": {
     "props": {
       "verticalAlign": "middle",
-      "width": "10%"
+      "width": "20%"
     },
     "children": ["drawer"]
   },
@@ -272,11 +290,18 @@
       "orientation": "vertical"
     }
   },
+  "flex-layout.row#search-mobile": {
+    "props": {
+      "blockClass": "search-mobile",
+      "width": "100%"
+    },
+    "children": ["search-bar#header"]
+  },
   // LOGO MOBILE
   "flex-layout.col#logo-mobile": {
     "props": {
       "verticalAlign": "middle",
-      "width": "40%"
+      "width": "30%"      
     },
     "children": ["logo#mobile"]
   },
@@ -288,12 +313,25 @@
       "width": "100%"
     }
   },
+  // LOGIN MINICART MOBILE
+  "flex-layout.col#login-minicart-mobile": {
+    "props": {
+      "blockClass": "login-minicart-mobile",
+      "verticalAlign": "middle",
+      "width": "20%"
+    },
+    "children": [
+      "flex-layout.col#login-mobile",
+      //"menu-item#comunidad",
+      "flex-layout.col#minicart-mobile"      
+    ]
+  },
   // LOGIN MOBILE
   "flex-layout.col#login-mobile": {
     "props": {
       "blockClass": "header-main-menu",
       "verticalAlign": "middle",
-      "width": "15%"
+      "width": "50%"
     },
     "children": [
       "flex-layout.row#image-icon-login",
@@ -305,7 +343,7 @@
     "props": {
       "blockClass": "header-main-menu",
       "verticalAlign": "middle",
-      "width": "15%"
+      "width": "50%"
     },
     "children": [
       "minicart.v2"

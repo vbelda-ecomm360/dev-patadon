@@ -43,8 +43,8 @@
         "infinite": true,
         "fullWidth": true,
         "showNavigationArrows": "desktopOnly",
-        "showPaginationDots": false,
-        "blockClass": "carousel",
+        "showPaginationDots": "always",
+        "blockClass": ["carousel", "slider-home"],
         "autoplay":{
           "timeout": "4000"
         }

@@ -22,13 +22,15 @@
 
   "flex-layout.col#footer-1-desktop-1": {
     "children": [
-      "image#logo-footer",
+      "image#logo-footer",      
       "flex-layout.col#footer-1-desktop-3"
     ],
     "props": {
       "preventVerticalStretch": true
     }
-  },
+  },  
+
+
   "image#logo-footer":{
     "props":{
       "src": "assets/logo.png",
@@ -40,7 +42,7 @@
   "rich-text#footer-title-1": {
     "props": {
       "text": "SOCIAL",
-      "blockClass": "footer-title"
+      "blockClass": "footer-title-social"
     }
   },
   "social-networks#social-1": {
@@ -384,3 +386,4 @@
     }
   }
 }
+
