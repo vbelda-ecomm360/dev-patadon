@@ -213,6 +213,9 @@
     .menuItem--top-bar-menu-blog {
         display: none;
     }
+    .menuItem--top-bar-menu-contacto {
+        display: none;
+    }
     
 }
 
@@ -282,13 +285,13 @@
     margin: 0;
 }
 .styledLinkContainer--comunidad-header-text .styledLinkContent--comunidad-header-text {
-    padding: 38px 0 0;
+    padding: 31px 0 0;
     line-height: 25px;
     color: #000;
     border-radius: 5px;
     font-size: 14px;
     background-repeat: no-repeat;
     background-size: 22px;
-    background-position: top 20px center;
+    background-position: top 12px center;
     background-image: url(/arquivos/star-ingreso-socios.png);
 }

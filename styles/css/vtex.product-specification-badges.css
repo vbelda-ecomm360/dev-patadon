@@ -107,3 +107,7 @@
 		width: 100%;
 	}
 }
+.groupContainer--badgesshortDescription {
+	margin: 0 0 20px;
+	width: 100%;
+}
